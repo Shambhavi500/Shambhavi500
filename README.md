@@ -1,133 +1,120 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0C0E12,50:2A1F00,100:E8A441&height=200&section=header&text=Shambhavi%20Patil&fontSize=52&fontColor=FFFFFF&fontAlignY=48&desc=Technology%20×%20Finance%20•%20Learning%20by%20Building&descAlignY=70&descSize=16&descColor=F5D7A1"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:3B82F6&height=200&section=header&text=Shambhavi%20Patil&fontSize=52&fontColor=FFFFFF&fontAlignY=48&desc=Building%20Projects.%20Exploring%20Ideas.%20Solving%20Problems.&descAlignY=70&descSize=16&descColor=DBEAFE"/>
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&pause=1500&color=E8A441&center=true&vCenter=true&width=650&lines=Technology+%C3%97+Finance;Learning+through+real-world+projects;AI+%7C+Software+Development+%7C+Markets;Building+skills+today+for+bigger+opportunities+tomorrow"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=15&pause=1400&color=60A5FA&center=true&vCenter=true&width=650&lines=Curious+about+technology+and+real-world+problems;AI+%7C+Software+Development+%7C+Blockchain;Exploring+Agritech+and+Intelligent+Systems;Learning+through+building+and+experimentation"/>
 
 <br><br>
 
 <a href="https://github.com/Shambhavi500">
-<img src="https://img.shields.io/badge/GitHub-0C0E12?style=for-the-badge&logo=github&logoColor=E8A441"/>
+<img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=60A5FA"/>
 </a>
 
 <a href="https://www.linkedin.com/in/shambhavi-patil05/">
-<img src="https://img.shields.io/badge/LinkedIn-E8A441?style=for-the-badge&logo=linkedin&logoColor=0C0E12"/>
+<img src="https://img.shields.io/badge/LinkedIn-3B82F6?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 </div>
 
 ---
 
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shambhavi500&layout=compact&hide_border=true&bg_color=0C0E12&title_color=E8A441&text_color=D4C5A9" width="38%"/>
+<h2>🚀 About Me</h2>
 
-## About Me
+I'm a builder who enjoys exploring ideas across technology, AI, software, blockchain, and emerging domains.
 
-I'm interested in understanding how systems work — whether they are software applications, AI models, businesses, or financial markets.
+I learn best by creating things, breaking them, improving them, and understanding how they work underneath.
 
-I learn best by building projects, experimenting with ideas, and solving real-world problems.
+My interests range from artificial intelligence and software systems to agritech, financial markets, and technology-driven problem solving.
 
-### Interests
+I am particularly interested in how technology can create impact in sectors like agriculture, education, and finance.
 
-- Artificial Intelligence
-- Software Development
-- Financial Markets
-- Blockchain
-- Product Building
-
-<br clear="right"/>
+I believe learning should be practical, curiosity-driven, and backed by real projects rather than endless tutorials.
 
 ---
 
-## Philosophy
+<h2>💡 Featured Projects</h2>
 
-```text
-Build before you're ready.
+### 🤖 AlphaTrader-RL
 
-Learn continuously.
+**Can reinforcement learning survive a real market crash?**
 
-Stay curious.
+Built an RL trading environment trained on NSE data to test trading strategies under realistic market conditions.
 
-Create value.
-```
+**Tech:** Python • PyTorch • Reinforcement Learning
 
 ---
 
-## Currently Learning
+### 🌾 KrishiSahAI
 
-```yaml
-Artificial Intelligence
-Machine Learning
-Data Structures & Algorithms
-Software Engineering
-Blockchain Fundamentals
-Financial Markets
-```
+**Making AI useful for farmers.**
+
+An AI-powered agricultural advisory platform focused on crop guidance, pest detection, and accessible decision support.
+
+**Tech:** Python • Machine Learning • Agritech
 
 ---
 
-## Featured Projects
+### ⛓️ KrishiSetu
 
-### AlphaTrader-RL
+**What if every agricultural product could be tracked from farm to consumer?**
 
-Reinforcement Learning based trading agent trained on financial market data.
+A blockchain-powered supply chain platform designed to improve transparency and trust.
 
-**Focus:** AI • Reinforcement Learning • Finance
-
----
-
-### KrishiSahAI
-
-AI-powered agricultural advisory platform designed to make technology more accessible.
-
-**Focus:** AI • Agriculture • Impact
+**Tech:** Blockchain • TypeScript • Web Development
 
 ---
 
-### KrishiSetu
-
-Blockchain-based agricultural supply chain platform focused on transparency and traceability.
-
-**Focus:** Blockchain • Product Development
-
----
-
-### More Coming Soon...
+### 🚀 More Coming Soon
 
 Always experimenting with new ideas through hackathons, internships, and personal projects.
 
 ---
 
-## Tech Stack
+<h2>⚙️ Tech Stack</h2>
 
 <div align="center">
 
-### Languages
+<h4>Languages</h4>
 
-<img src="https://skillicons.dev/icons?i=python,cpp,java,javascript"/>
+<img src="https://skillicons.dev/icons?i=python,cpp,java,javascript,typescript"/>
 
-### Tools
+<br><br>
+
+<h4>Web Development</h4>
+
+<img src="https://skillicons.dev/icons?i=react,nodejs,express,html,css"/>
+
+<br><br>
+
+<h4>Databases</h4>
+
+<img src="https://skillicons.dev/icons?i=mongodb,mysql"/>
+
+<br><br>
+
+<h4>AI / ML</h4>
+
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow"/>
+
+<br><br>
+
+<h4>Tools</h4>
 
 <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode"/>
-
-### Exploring
-
-<img src="https://img.shields.io/badge/AI-E8A441?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Blockchain-E8A441?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Finance-E8A441?style=for-the-badge"/>
 
 </div>
 
 ---
 
-## GitHub Stats
+<h2>📈 GitHub Journey</h2>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Shambhavi500&show_icons=true&hide_border=true&bg_color=0C0E12&title_color=E8A441&text_color=D4C5A9&icon_color=E8A441" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Shambhavi500&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Shambhavi500&hide_border=true&background=0C0E12&ring=E8A441&fire=C47B2B&currStreakLabel=E8A441&sideLabels=D4C5A9&dates=D4C5A9" height="170"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=Shambhavi500&theme=tokyonight&hide_border=true" height="170"/>
 
 </div>
 
@@ -135,38 +122,61 @@ Always experimenting with new ideas through hackathons, internships, and persona
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shambhavi500&bg_color=0C0E12&color=E8A441&line=C47B2B&point=E8A441&area=true&area_color=1a1400&hide_border=true" width="95%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shambhavi500&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=Shambhavi500&theme=tokyonight&no-frame=true&row=1&column=6"/>
 
 </div>
 
 ---
 
-## Current Focus
+<h2>🎯 What I'm Building</h2>
 
-```bash
-[ACTIVE]    Building real-world projects
-[ACTIVE]    Exploring AI and machine learning
-[ACTIVE]    Learning software engineering fundamentals
-[ACTIVE]    Understanding financial markets
-[LONG-TERM] Creating products that solve meaningful problems
+- AI-powered applications
+- Agritech solutions
+- Blockchain experiments
+- Practical software projects
+- Systems that solve real-world problems
+
+---
+
+<h2>🎮 Developer Dashboard</h2>
+
+```text
+☕ Coffee Consumed ............ ██████████
+🐛 Bugs Created ............... ███████████
+🔧 Bugs Fixed ................. ███████████████
+💡 Random Ideas ............... █████████████████
+🚀 Projects Started ........... ████████████
+😵 Stack Overflow Visits ...... ███████████████
 ```
 
 ---
 
+<h2>📊 Contribution Graph</h2>
+
 <div align="center">
 
-### Learning • Building • Growing
-
-<br>
-
-Technology × Finance
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shambhavi500&theme=tokyo-night&hide_border=true&area=true"/>
 
 </div>
 
-<br>
+---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:E8A441,100:0C0E12&height=100&section=footer"/>
+### 🌱 Curious Learner • Builder • Problem Solver
+
+*"Learning by building, improving through experimentation."*
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:3B82F6,100:0F172A&height=100&section=footer"/>
 
 </div>
