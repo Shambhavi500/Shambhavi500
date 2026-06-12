@@ -1,105 +1,95 @@
-<div align="center">
+<!--
+██████████████████████████████████████████
+  SHAMBHAVI PATIL — GITHUB PROFILE README
+██████████████████████████████████████████
+-->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0000,40:6B0000,80:9B1B1B,100:0d0000&height=160&section=header&text=Shambhavi%20Patil&fontSize=52&fontColor=ffffff&fontAlignY=52&desc=Electronics%20%26%20Telecom%20Engineer%20%C2%B7%20AI%2FML%20Intern%20%C2%B7%20Systems%20Builder&descAlignY=72&descSize=14&descColor=e8c8c8&animation=fadeIn"/>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
 
-</div>
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&pause=1200&color=FF6B6B&center=true&vCenter=true&width=560&lines=AI%2FML+R%26D+Intern+%40+MindstriX;Reinforcement+Learning+%7C+Embedded+Systems+%7C+IoT;PICT+Pune+%C2%B7+B.Tech+ENTC+%C2%B7+2024%E2%80%932028" alt="typing"/>
+<!-- ─────────────── LEFT PANEL ─────────────── -->
+<td width="30%" valign="top" align="center">
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-FF6B6B?style=for-the-badge&logo=linkedin&logoColor=1a0000)](https://www.linkedin.com/in/shambhavi-patil05/)&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-FF6B6B?style=for-the-badge&logo=github&logoColor=1a0000)](https://github.com/Shambhavi500)
+<img src="https://avatars.githubusercontent.com/Shambhavi500" width="120" style="border-radius:50%"/>
 
-</div>
+<br/><br/>
 
----
+### Shambhavi Patil
 
-### About
+<sub>B.Tech · Electronics & Telecom<br/>PICT Pune · 2024–2028</sub>
 
-Electronics and Telecommunication Engineering student at **PICT Pune**, currently working as an **AI/ML R&D Intern at MindstriX**.
+<br/>
 
-My background is in hardware and signals — which shapes how I approach software. I care about systems that work at the edges: embedded devices, real-time data, and models deployed where compute is constrained. On the software side, I build across ML, backend APIs, and on-chain systems depending on what the problem calls for.
+<a href="https://www.linkedin.com/in/shambhavi-patil05/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>&nbsp;
+<a href="https://github.com/Shambhavi500"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></a>
 
-`Machine Learning` &nbsp;·&nbsp; `Embedded Systems` &nbsp;·&nbsp; `IoT` &nbsp;·&nbsp; `DSA & Systems Programming`
-
----
-
-### Experience
-
-**AI/ML Research & Development Intern** &nbsp;·&nbsp; MindstriX &nbsp;·&nbsp; `Mar 2026 – Present`
-
-Working on applied ML projects — data pipelines, model training, and deployment in a production-focused environment.
+<br/><br/>
 
 ---
 
-### Recognition
-
-<div align="center">
-
-| Result | Event | Year |
-|:--|:--|:--:|
-| Runner-up | Pune Agri Hackathon — agri-tech supply chain solution | 2026 |
-| Winner | TechFiesta '26 International Hackathon | 2026 |
-
-</div>
+**AI/ML R&D Intern**
+MindstriX · Mar 2026 – Present
 
 ---
 
-### Projects
+<br/>
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+🏆 **TechFiesta '26** — Winner
 
-**[AlphaTrader-RL](https://github.com/Shambhavi500/AlphaTrader-RL)**
-`Meta PyTorch OpenEnv Hackathon`
+🥈 **Pune Agri Hackathon '26** — Runner-up
 
-RL agent trained on NSE stock data. Gymnasium-compliant 3-task environment — from single-stock trading to surviving the YES Bank 2020 crash with >80% drawdown.
+<br/>
 
-![Python](https://img.shields.io/badge/Python-8B0000?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-C0392B?style=flat-square&logo=pytorch&logoColor=white)
-![Gymnasium](https://img.shields.io/badge/Gymnasium-922B21?style=flat-square&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-E74C3C?style=flat-square&logo=docker&logoColor=white)
+---
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=Shambhavi500&style=flat-square&color=6e40c9&label=Profile+Views"/>
+
+<br/><br/>
 
 </td>
-<td width="50%" valign="top">
 
-**[KrishiSahAI](https://github.com/Shambhavi500/KrishiSahAI)**
-`AI Advisory for Indian Farmers`
+<!-- ─────────────── RIGHT PANEL ─────────────── -->
+<td width="70%" valign="top">
 
-ML-powered system providing crop guidance, pest detection, and market insights — designed for accessibility in rural environments with limited connectivity.
+<br/>
 
-![Python](https://img.shields.io/badge/Python-8B0000?style=flat-square&logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-C0392B?style=flat-square&logo=scikitlearn&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-E74C3C?style=flat-square&logo=fastapi&logoColor=white)
+```
+ SHAMBHAVI PATIL  /  AI·ML · Embedded Systems · IoT · DSA
+```
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+> Electronics & Telecom engineer who works at the hardware–software boundary.
+> Currently doing applied ML in production at MindstriX.
+> I care about systems that work at the edges — real-time data, embedded devices,
+> and models deployed where compute is constrained.
 
-**[KrishiSetu](https://github.com/Shambhavi500/KrishiSetu)**
-`Pune Agri Hackathon Runner-up 2026`
+<br/>
 
-Decentralised supply chain on-chain — eliminates middlemen between farmer and consumer, enforces price transparency via smart contracts.
+**⬡ &nbsp;Technical Skills**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-8B0000?style=flat-square&logo=typescript&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-C0392B?style=flat-square&logo=solidity&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-E74C3C?style=flat-square&logo=nodedotjs&logoColor=white)
+| Domain | Technologies |
+|:--|:--|
+| **Languages** | ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
+| **AI / ML** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) |
+| **Embedded & IoT** | ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) ![Embedded C](https://img.shields.io/badge/Embedded%20C-555555?style=flat-square) ![IoT](https://img.shields.io/badge/IoT%20Prototyping-0078D4?style=flat-square) ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white) |
+| **Web & Backend** | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white) |
+| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) |
 
-</td>
-<td width="50%" valign="top">
+<br/>
 
-**[DSA Problem Archive](https://github.com/Shambhavi500)**
-`Ongoing`
+**⬡ &nbsp;GitHub Stats**
 
-Structured solutions across arrays, trees, graphs, and DP — each documented with approach and complexity analysis. Built to develop intuition, not collect solutions.
+<a href="https://github.com/Shambhavi500">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=Shambhavi500&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&bg_color=0D1117&title_color=6e40c9&text_color=c9d1d9&icon_color=6e40c9"/>
+</a>
+<a href="https://github.com/Shambhavi500">
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shambhavi500&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6e40c9&text_color=c9d1d9"/>
+</a>
 
-![C++](https://img.shields.io/badge/C++-8B0000?style=flat-square&logo=cplusplus&logoColor=white)
-![LeetCode](https://img.shields.io/badge/LeetCode-C0392B?style=flat-square&logo=leetcode&logoColor=white)
+<br/>
 
 </td>
 </tr>
@@ -107,74 +97,76 @@ Structured solutions across arrays, trees, graphs, and DP — each documented wi
 
 ---
 
-### Stack
+## Featured Projects
 
-<div align="center">
+<table width="100%">
+<tr>
+<td width="33%" valign="top">
 
-**Languages**
+**[AlphaTrader-RL](https://github.com/Shambhavi500/AlphaTrader-RL)**
 
-<img src="https://skillicons.dev/icons?i=python,typescript,javascript,cpp,java&theme=dark" />
+RL agent on NSE stock data. Gymnasium-compliant 3-task environment — survives the YES Bank 2020 crash with >80% drawdown protection.
 
-**AI / ML / Data**
+`Python` `PyTorch` `Gymnasium` `Docker`
 
-<img src="https://skillicons.dev/icons?i=pytorch,sklearn,tensorflow&theme=dark" />
-&nbsp;
-<img src="https://img.shields.io/badge/NumPy-C0392B?style=flat-square&logo=numpy&logoColor=white"/>
-<img src="https://img.shields.io/badge/Pandas-8B0000?style=flat-square&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/Gymnasium-922B21?style=flat-square&logoColor=white"/>
+<sub>Meta PyTorch OpenEnv Hackathon</sub>
 
-**Web & Backend**
+</td>
+<td width="33%" valign="top">
 
-<img src="https://skillicons.dev/icons?i=react,nodejs,fastapi,express,mongodb&theme=dark" />
+**[KrishiSetu](https://github.com/Shambhavi500/KrishiSetu)**
 
-**Embedded & Hardware**
+Decentralised agri supply chain — smart contracts enforce price transparency and eliminate middlemen between farmer and consumer.
 
-<img src="https://skillicons.dev/icons?i=arduino&theme=dark" />
-&nbsp;
-<img src="https://img.shields.io/badge/Embedded%20C-8B0000?style=flat-square"/>
-<img src="https://img.shields.io/badge/IoT%20Prototyping-C0392B?style=flat-square"/>
-<img src="https://img.shields.io/badge/MATLAB-E74C3C?style=flat-square&logo=mathworks&logoColor=white"/>
+`TypeScript` `Solidity` `Node.js`
 
-**Tools & Infrastructure**
+<sub>🥈 Pune Agri Hackathon 2026</sub>
 
-<img src="https://skillicons.dev/icons?i=git,docker,linux,vscode,postman&theme=dark" />
+</td>
+<td width="33%" valign="top">
 
-</div>
+**[KrishiSahAI](https://github.com/Shambhavi500/KrishiSahAI)**
 
----
+ML advisory for Indian farmers — crop guidance, pest detection, and market insights. Designed for low-connectivity rural environments.
 
-### Stats
+`Python` `Scikit-learn` `FastAPI`
 
-<div align="center">
+<sub>AI for social impact</sub>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Shambhavi500&show_icons=true&hide_border=true&bg_color=0d0000&title_color=FF6B6B&text_color=e8c8c8&icon_color=FF6B6B&count_private=true&rank_icon=github" height="155"/>
-&nbsp;
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Shambhavi500&hide_border=true&background=0d0000&ring=FF6B6B&fire=C0392B&currStreakLabel=FF6B6B&sideLabels=e8c8c8&dates=e8c8c8&stroke=0d0000&currStreakNum=ffffff&sideNums=ffffff" height="155"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shambhavi500&bg_color=0d0000&color=FF6B6B&line=C0392B&point=FF6B6B&area=true&area_color=3d0000&hide_border=true" width="95%"/>
-
-</div>
+</td>
+</tr>
+</table>
 
 ---
 
-### Currently
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-```bash
-$ status
+**Currently learning**
+- Deep learning internals — not just APIs
+- LLM architecture and fine-tuning basics
+- RTOS and embedded systems architecture
+- Graph algorithms and advanced DP
 
-[ACTIVE]     AI/ML internship @ MindstriX     applied ML in a production environment
-[LEARNING]   deep learning + LLM internals     understanding systems, not just APIs
-[DAILY]      DSA practice                      C++ · graph theory · DP
-[BUILDING]   embedded + ML intersection        where my ENTC background is most useful
-[NEXT]       open to internships               embedded systems · ML engineering · IoT
-```
+</td>
+<td width="50%" valign="top">
+
+**Open to**
+- Internships in embedded systems / ML engineering / IoT
+- Hackathon teams
+- Research collaborations in applied ML or hardware-software systems
+
+</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0000,50:6B0000,100:0d0000&height=90&section=footer"/>
+<sub>
+<a href="https://www.linkedin.com/in/shambhavi-patil05/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="mailto:your.email@example.com">Email</a> &nbsp;·&nbsp;
+PICT Pune · B.Tech ENTC · 2028
+</sub>
 </div>
