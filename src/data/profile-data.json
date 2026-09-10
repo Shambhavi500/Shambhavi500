@@ -4,17 +4,155 @@
   "avatarUrl": "https://avatars.githubusercontent.com/u/222983931?v=4",
   "profileUrl": "https://github.com/Shambhavi500",
   "bio": "ENTC undergraduate | Curious about technology, systems, and their real-world impact | Learning by building projects",
-  "discipline": "Electronics & Telecommunication Engineering",
+  "discipline": "B.Tech in Electronics & Telecommunication Engineering",
+  "shortDiscipline": "B.Tech ENTC",
   "headline": "Architecting Autonomous Systems, AI Engines & High-Impact AgriTech",
+  "location": "Pune, Maharashtra, India",
+  "email": "shambhavipatil5631@gmail.com",
+  "linkedinUrl": "https://www.linkedin.com/in/shambhavi-patil05/",
+  "education": {
+    "institution": "Pune Institute of Computer Technology (PICT)",
+    "degree": "B.Tech in Electronics & Telecommunication Engineering",
+    "shortDegree": "B.Tech ENTC",
+    "period": "Aug 2024 – May 2028",
+    "cgpa": "8.6",
+    "location": "Pune, Maharashtra",
+    "schooling": {
+      "hsc": "89.83%",
+      "ssc": "96.40%"
+    }
+  },
+  "experience": [
+    {
+      "company": "Mindstrix Technologies LLP",
+      "role": "AI/ML Research & Development Intern",
+      "status": "Mar 2026 – Ongoing",
+      "mode": "Remote / Hybrid",
+      "highlights": [
+        "Contribute to application software development across the SDLC on live AI/ML and software platform projects under mentor guidance.",
+        "Design and code program modules for data processing, model training, and system integration; prepare test data and execute test cases.",
+        "Collaborate in an Agile team environment through technical reviews, brainstorming sessions, and cross-functional product development."
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": "01",
+      "edition": "01",
+      "event": "TECHFIESTA '26",
+      "title": "TECHFIESTA '26",
+      "place": "1ST PLACE",
+      "domain": "AGRICULTURE DOMAIN",
+      "project": "KrishiSahAI",
+      "scope": "PICT ENTC · 600+ Participating Teams",
+      "year": "2026",
+      "grantOrPrize": "1st Place out of 600+ Teams",
+      "summary": "Secured 1st place among 600+ participating teams for building KrishiSahAI, an AI-driven agricultural assistance platform.",
+      "metric": "600+ teams",
+      "badge": "WINNER"
+    },
+    {
+      "id": "02",
+      "edition": "02",
+      "event": "PUNE AGRI HACKATHON",
+      "title": "PUNE AGRI INTL HACKATHON",
+      "place": "NATIONAL RUNNER-UP",
+      "domain": "PRECISION AGRITECH",
+      "project": "Krishi Prabandh & NDVI",
+      "scope": "National Competition vs Startups & Companies",
+      "year": "May 2026",
+      "grantOrPrize": "INR 15L Government Development Grant",
+      "summary": "Secured National Runner-Up vs professional startups presenting Krishi Prabandh (AI governance & satellite NDVI validation) to Maharashtra CM.",
+      "metric": "₹15L grant",
+      "badge": "RUNNER-UP"
+    },
+    {
+      "id": "03",
+      "edition": "03",
+      "event": "MULTI-AGENT ARCHITECT",
+      "title": "MULTI-AGENT ARCHITECT",
+      "place": "FLAGSHIP AGENT",
+      "domain": "AUTONOMOUS WORKFLOWS",
+      "project": "Ovio (DaVinci Resolve)",
+      "scope": "Autonomous Video Editing & Orchestration",
+      "year": "2026",
+      "grantOrPrize": "Cinema-Grade AI Pipeline",
+      "summary": "Engineered Ovio: Autonomous DaVinci Resolve agent orchestration engine with multi-modal tools and video editing automation.",
+      "metric": "Agentic OS",
+      "badge": "ARCHITECT"
+    },
+    {
+      "id": "04",
+      "edition": "04",
+      "event": "QUANTITATIVE RL LAB",
+      "title": "QUANTITATIVE RL LAB",
+      "place": "SYSTEMS ENGINE",
+      "domain": "ALGORITHMIC TRADING",
+      "project": "AlphaTrader-RL & AIRA",
+      "scope": "NSE Market Simulation & Revenue Recovery",
+      "year": "2025 - 2026",
+      "grantOrPrize": "Gymnasium & Distributed FinTech",
+      "summary": "Developed AlphaTrader-RL custom Gymnasium environment with 50-dim observation space on NSE data & AIRA fintech recovery OS.",
+      "metric": "5+ Yrs NSE",
+      "badge": "ALGO LAB"
+    }
+  ],
+  "verifiedSkills": {
+    "languages": [
+      "C",
+      "C++",
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Java"
+    ],
+    "aiMl": [
+      "Machine Learning Fundamentals",
+      "Reinforcement Learning (Gymnasium)",
+      "Model Integration",
+      "Multi-Agent Orchestration",
+      "NDVI Spectral Analysis"
+    ],
+    "embeddedElectronics": [
+      "Arduino",
+      "Embedded C",
+      "Sensors & Interfacing",
+      "Circuit Design",
+      "Proteus & Tinkercad"
+    ],
+    "softwareEng": [
+      "SDLC & Agile",
+      "Test Plan Design & Execution",
+      "API Integration",
+      "Docker Containerization",
+      "Git & GitHub"
+    ],
+    "creativeTools": [
+      "DaVinci Resolve 19",
+      "Canva"
+    ]
+  },
+  "extracurricular": [
+    {
+      "title": "Volunteer, NGO UPAY",
+      "detail": "Taught basic technology and digital skills to underprivileged students."
+    },
+    {
+      "title": "Chess: Zonal Level Representative",
+      "detail": "Developed strategic thinking and analytical skills competing at zonal levels."
+    }
+  ],
   "stats": {
     "publicRepos": 14,
     "totalStars": 0,
     "totalForks": 1,
     "followers": 4,
     "following": 4,
-    "activeYears": "2025 - Present",
-    "verifiedSince": "July 2025",
-    "primaryFocus": "AI Systems & Distributed Engineering"
+    "totalContributions": 115,
+    "activeDaysCount": 35,
+    "accountCreatedAt": "2025-07-26T14:08:34Z",
+    "activeYears": "2025 - Present"
   },
   "languages": {
     "Python": 4,
@@ -22,188 +160,2440 @@
     "JavaScript": 3,
     "Kotlin": 1
   },
+  "languageDistribution": [
+    {
+      "language": "Python",
+      "count": 4,
+      "percentage": 33.3
+    },
+    {
+      "language": "TypeScript",
+      "count": 4,
+      "percentage": 33.3
+    },
+    {
+      "language": "JavaScript",
+      "count": 3,
+      "percentage": 25
+    },
+    {
+      "language": "Kotlin",
+      "count": 1,
+      "percentage": 8.3
+    }
+  ],
   "projects": [
     {
-      "id": "01",
-      "name": "Ovio",
-      "fullName": "Shambhavi500/Ovio",
-      "url": "https://github.com/Shambhavi500/Ovio",
-      "description": "Ovio - AI-powered DaVinci Resolve video editing assistant and multi-agent workflow engine",
-      "highlight": "AI DaVinci Resolve editing assistant & multi-agent workflow engine",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "category": "AI / MULTI-AGENT",
-      "tag": "FLAGSHIP COUTURE",
-      "isPinned": true
-    },
-    {
-      "id": "02",
-      "name": "Aira",
-      "fullName": "Shambhavi500/Aira",
-      "url": "https://github.com/Shambhavi500/Aira",
-      "description": "AIRA - Autonomous Revenue Recovery Operating System for the Indian Fintech Ecosystem",
-      "highlight": "Autonomous Revenue Recovery OS for Indian Fintech Ecosystem",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "category": "FINTECH / AUTONOMOUS",
-      "tag": "SYSTEM ARCHITECTURE",
-      "isPinned": true
-    },
-    {
-      "id": "03",
       "name": "KrishiSahAI",
       "fullName": "Shambhavi500/KrishiSahAI",
       "url": "https://github.com/Shambhavi500/KrishiSahAI",
       "description": "In an era of rapid technological advancement, KrishiSahai Advisory serves as a bridge, bringing state-of-the-art Artificial Intelligence to the heart of the Indian farmhouse. Our mission is to transform agriculture into a data-driven, sustainable, and highly profitable enterprise for every farmer.",
-      "highlight": "Data-driven AI advisory empowering sustainable Indian farmhouses",
+      "highlight": "Flagship AI agriculture platform for crop recommendations, soil telemetry & rural decision support.",
       "language": "Python",
       "stars": 0,
       "forks": 0,
+      "updatedAt": "2026-03-26T11:22:46Z",
+      "createdAt": "2026-03-22T07:55:09Z",
+      "sizeKb": 321930,
       "category": "AGRITECH / AI ADVISORY",
-      "tag": "MISSION IMPACT",
+      "tag": "1ST PLACE · TECHFIESTA '26",
+      "isAwardWinning": true,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 25300,
+        "lines": 405,
+        "sections": [
+          "Overview / About",
+          "Architecture / System",
+          "Features",
+          "Tech Stack",
+          "Getting Started / Install"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 42,
+        "badge": "COMPREHENSIVE"
+      },
+      "scoreData": {
+        "totalScore": 106,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 42,
+          "descScore": 15,
+          "sizeScore": 15,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 30
+        }
+      },
+      "id": "01",
       "isPinned": true
     },
     {
-      "id": "04",
-      "name": "KrishiSetu",
-      "fullName": "Shambhavi500/KrishiSetu",
-      "url": "https://github.com/Shambhavi500/KrishiSetu",
-      "description": "Decentralized agri-supply chain solution using blockchain to empower farmers and ensure price transparency.",
-      "highlight": "Decentralized agri-supply chain ensuring fair price transparency",
+      "name": "Ovio",
+      "fullName": "Shambhavi500/Ovio",
+      "url": "https://github.com/Shambhavi500/Ovio",
+      "description": "Ovio - AI-powered DaVinci Resolve video editing assistant and multi-agent workflow engine",
+      "highlight": "Cinema-grade AI DaVinci Resolve editing assistant & multi-agent workflow engine.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-09T19:10:46Z",
+      "createdAt": "2026-09-09T17:59:16Z",
+      "sizeKb": 7562,
+      "category": "AI / MULTI-AGENT",
+      "tag": "AUTONOMOUS WORKFLOW",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 17668,
+        "lines": 345,
+        "sections": [
+          "Architecture / System",
+          "Getting Started / Install",
+          "API / Endpoints"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 38,
+        "badge": "COMPREHENSIVE"
+      },
+      "scoreData": {
+        "totalScore": 90,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 38,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 10,
+          "socialScore": 0,
+          "achievementScore": 15
+        }
+      },
+      "id": "02",
+      "isPinned": true
+    },
+    {
+      "name": "Aira",
+      "fullName": "Shambhavi500/Aira",
+      "url": "https://github.com/Shambhavi500/Aira",
+      "description": "AIRA - Autonomous Revenue Recovery Operating System for the Indian Fintech Ecosystem",
+      "highlight": "Autonomous Revenue Recovery Operating System for Indian fintech ecosystem & payment pipelines.",
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "category": "BLOCKCHAIN / SUPPLY CHAIN",
-      "tag": "DECENTRALIZED",
+      "updatedAt": "2026-09-05T18:11:29Z",
+      "createdAt": "2026-09-05T14:08:19Z",
+      "sizeKb": 1603,
+      "category": "FINTECH / AUTONOMOUS OS",
+      "tag": "SYSTEM ARCHITECTURE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 11998,
+        "lines": 153,
+        "sections": [
+          "Overview / About",
+          "Architecture / System",
+          "Getting Started / Install"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 29,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 81,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 29,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 10,
+          "socialScore": 0,
+          "achievementScore": 15
+        }
+      },
+      "id": "03",
       "isPinned": true
     },
     {
-      "id": "05",
       "name": "AlphaTrader-RL",
       "fullName": "Shambhavi500/AlphaTrader-RL",
       "url": "https://github.com/Shambhavi500/AlphaTrader-RL",
-      "description": "Reinforcement learning system for algorithmic trading execution",
-      "highlight": "Reinforcement learning system for algorithmic trading execution",
+      "description": "Gymnasium RL trading environment on 5+ yrs NSE data with 50-dim observation space and Docker.",
+      "highlight": "Gymnasium RL trading environment on 5+ yrs NSE data with 50-dim observation space and Docker.",
       "language": "Python",
       "stars": 0,
       "forks": 1,
-      "category": "QUANTITATIVE / RL",
-      "tag": "RESEARCH LAB",
+      "updatedAt": "2026-04-08T06:43:18Z",
+      "createdAt": "2026-02-28T18:20:42Z",
+      "sizeKb": 26933,
+      "category": "QUANT / REINFORCEMENT LEARNING",
+      "tag": "FLAGSHIP RL RESEARCH",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 8248,
+        "lines": 284,
+        "sections": [
+          "Getting Started / Install",
+          "Reward / Evaluation"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 27,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 71,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 27,
+          "descScore": 0,
+          "sizeScore": 15,
+          "recencyScore": 4,
+          "socialScore": 5,
+          "achievementScore": 20
+        }
+      },
+      "id": "04",
       "isPinned": true
     },
     {
+      "name": "KRISHI-PRABANDH",
+      "fullName": "Shambhavi500/KRISHI-PRABANDH",
+      "url": "https://github.com/Shambhavi500/KRISHI-PRABANDH",
+      "description": "AI governance layer with OCR fraud detection & satellite NDVI spectral validation.",
+      "highlight": "AI governance layer with OCR fraud detection & satellite NDVI spectral validation.",
+      "language": "Multi-stack",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-05-10T07:24:37Z",
+      "createdAt": "2026-05-10T07:24:37Z",
+      "sizeKb": 796,
+      "category": "GOV-TECH / AGRONOMY",
+      "tag": "NATIONAL RUNNER-UP · ₹15L GRANT",
+      "isAwardWinning": true,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 3789,
+        "lines": 113,
+        "sections": [
+          "Features",
+          "Tech Stack",
+          "Getting Started / Install",
+          "API / Endpoints"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 26,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 59,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 26,
+          "descScore": 0,
+          "sizeScore": 4,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 25
+        }
+      },
+      "id": "05",
+      "isPinned": true
+    },
+    {
+      "name": "NDVI_satellite",
+      "fullName": "Shambhavi500/NDVI_satellite",
+      "url": "https://github.com/Shambhavi500/NDVI_satellite",
+      "description": "Vegetation index analysis using satellite spectral bands and Google Earth Engine.",
+      "highlight": "Vegetation index analysis using satellite spectral bands and Google Earth Engine.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-28T07:19:16Z",
+      "createdAt": "2026-04-07T13:45:40Z",
+      "sizeKb": 4375,
+      "category": "EARTH OBSERVATION / GIS",
+      "tag": "SPECTRAL REMOTE SENSING",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 5171,
+        "lines": 115,
+        "sections": [],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 23,
+        "badge": "STANDARD"
+      },
+      "scoreData": {
+        "totalScore": 52,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 23,
+          "descScore": 0,
+          "sizeScore": 12,
+          "recencyScore": 7,
+          "socialScore": 0,
+          "achievementScore": 10
+        }
+      },
       "id": "06",
+      "isPinned": true
+    }
+  ],
+  "allRankedProjects": [
+    {
+      "name": "KrishiSahAI",
+      "fullName": "Shambhavi500/KrishiSahAI",
+      "url": "https://github.com/Shambhavi500/KrishiSahAI",
+      "description": "In an era of rapid technological advancement, KrishiSahai Advisory serves as a bridge, bringing state-of-the-art Artificial Intelligence to the heart of the Indian farmhouse. Our mission is to transform agriculture into a data-driven, sustainable, and highly profitable enterprise for every farmer.",
+      "highlight": "Flagship AI agriculture platform for crop recommendations, soil telemetry & rural decision support.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-03-26T11:22:46Z",
+      "createdAt": "2026-03-22T07:55:09Z",
+      "sizeKb": 321930,
+      "category": "AGRITECH / AI ADVISORY",
+      "tag": "1ST PLACE · TECHFIESTA '26",
+      "isAwardWinning": true,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 25300,
+        "lines": 405,
+        "sections": [
+          "Overview / About",
+          "Architecture / System",
+          "Features",
+          "Tech Stack",
+          "Getting Started / Install"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 42,
+        "badge": "COMPREHENSIVE"
+      },
+      "scoreData": {
+        "totalScore": 106,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 42,
+          "descScore": 15,
+          "sizeScore": 15,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 30
+        }
+      }
+    },
+    {
+      "name": "Ovio",
+      "fullName": "Shambhavi500/Ovio",
+      "url": "https://github.com/Shambhavi500/Ovio",
+      "description": "Ovio - AI-powered DaVinci Resolve video editing assistant and multi-agent workflow engine",
+      "highlight": "Cinema-grade AI DaVinci Resolve editing assistant & multi-agent workflow engine.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-09T19:10:46Z",
+      "createdAt": "2026-09-09T17:59:16Z",
+      "sizeKb": 7562,
+      "category": "AI / MULTI-AGENT",
+      "tag": "AUTONOMOUS WORKFLOW",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 17668,
+        "lines": 345,
+        "sections": [
+          "Architecture / System",
+          "Getting Started / Install",
+          "API / Endpoints"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 38,
+        "badge": "COMPREHENSIVE"
+      },
+      "scoreData": {
+        "totalScore": 90,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 38,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 10,
+          "socialScore": 0,
+          "achievementScore": 15
+        }
+      }
+    },
+    {
+      "name": "Aira",
+      "fullName": "Shambhavi500/Aira",
+      "url": "https://github.com/Shambhavi500/Aira",
+      "description": "AIRA - Autonomous Revenue Recovery Operating System for the Indian Fintech Ecosystem",
+      "highlight": "Autonomous Revenue Recovery Operating System for Indian fintech ecosystem & payment pipelines.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-05T18:11:29Z",
+      "createdAt": "2026-09-05T14:08:19Z",
+      "sizeKb": 1603,
+      "category": "FINTECH / AUTONOMOUS OS",
+      "tag": "SYSTEM ARCHITECTURE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 11998,
+        "lines": 153,
+        "sections": [
+          "Overview / About",
+          "Architecture / System",
+          "Getting Started / Install"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 29,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 81,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 29,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 10,
+          "socialScore": 0,
+          "achievementScore": 15
+        }
+      }
+    },
+    {
+      "name": "AlphaTrader-RL",
+      "fullName": "Shambhavi500/AlphaTrader-RL",
+      "url": "https://github.com/Shambhavi500/AlphaTrader-RL",
+      "description": "Gymnasium RL trading environment on 5+ yrs NSE data with 50-dim observation space and Docker.",
+      "highlight": "Gymnasium RL trading environment on 5+ yrs NSE data with 50-dim observation space and Docker.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 1,
+      "updatedAt": "2026-04-08T06:43:18Z",
+      "createdAt": "2026-02-28T18:20:42Z",
+      "sizeKb": 26933,
+      "category": "QUANT / REINFORCEMENT LEARNING",
+      "tag": "FLAGSHIP RL RESEARCH",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 8248,
+        "lines": 284,
+        "sections": [
+          "Getting Started / Install",
+          "Reward / Evaluation"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 27,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 71,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 27,
+          "descScore": 0,
+          "sizeScore": 15,
+          "recencyScore": 4,
+          "socialScore": 5,
+          "achievementScore": 20
+        }
+      }
+    },
+    {
+      "name": "KRISHI-PRABANDH",
+      "fullName": "Shambhavi500/KRISHI-PRABANDH",
+      "url": "https://github.com/Shambhavi500/KRISHI-PRABANDH",
+      "description": "AI governance layer with OCR fraud detection & satellite NDVI spectral validation.",
+      "highlight": "AI governance layer with OCR fraud detection & satellite NDVI spectral validation.",
+      "language": "Multi-stack",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-05-10T07:24:37Z",
+      "createdAt": "2026-05-10T07:24:37Z",
+      "sizeKb": 796,
+      "category": "GOV-TECH / AGRONOMY",
+      "tag": "NATIONAL RUNNER-UP · ₹15L GRANT",
+      "isAwardWinning": true,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 3789,
+        "lines": 113,
+        "sections": [
+          "Features",
+          "Tech Stack",
+          "Getting Started / Install",
+          "API / Endpoints"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 26,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 59,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 26,
+          "descScore": 0,
+          "sizeScore": 4,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 25
+        }
+      }
+    },
+    {
+      "name": "NDVI_satellite",
+      "fullName": "Shambhavi500/NDVI_satellite",
+      "url": "https://github.com/Shambhavi500/NDVI_satellite",
+      "description": "Vegetation index analysis using satellite spectral bands and Google Earth Engine.",
+      "highlight": "Vegetation index analysis using satellite spectral bands and Google Earth Engine.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-06-28T07:19:16Z",
+      "createdAt": "2026-04-07T13:45:40Z",
+      "sizeKb": 4375,
+      "category": "EARTH OBSERVATION / GIS",
+      "tag": "SPECTRAL REMOTE SENSING",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 5171,
+        "lines": 115,
+        "sections": [],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 23,
+        "badge": "STANDARD"
+      },
+      "scoreData": {
+        "totalScore": 52,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 23,
+          "descScore": 0,
+          "sizeScore": 12,
+          "recencyScore": 7,
+          "socialScore": 0,
+          "achievementScore": 10
+        }
+      }
+    },
+    {
+      "name": "EPeekPahani",
+      "fullName": "Shambhavi500/EPeekPahani",
+      "url": "https://github.com/Shambhavi500/EPeekPahani",
+      "description": "Digital agricultural crop inspection and digital survey application for ground truth.",
+      "highlight": "Digital agricultural crop inspection and digital survey application for ground truth.",
+      "language": "Kotlin",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-05-13T11:41:28Z",
+      "createdAt": "2026-05-11T05:52:37Z",
+      "sizeKb": 375,
+      "category": "MOBILE / ANDROID",
+      "tag": "FIELD OPERATIONS",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 13820,
+        "lines": 230,
+        "sections": [
+          "Getting Started / Install"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 29,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 52,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 29,
+          "descScore": 0,
+          "sizeScore": 9,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 10
+        }
+      }
+    },
+    {
+      "name": "prometheus",
+      "fullName": "Shambhavi500/prometheus",
+      "url": "https://github.com/Shambhavi500/prometheus",
+      "description": "prometheus - Open source repository in TypeScript.",
+      "highlight": "prometheus - Open source repository in TypeScript.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-07-22T14:55:06Z",
+      "createdAt": "2026-07-19T10:49:07Z",
+      "sizeKb": 4392,
+      "category": "TYPESCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 5186,
+        "lines": 108,
+        "sections": [
+          "Getting Started / Install"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 29,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 48,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 29,
+          "descScore": 0,
+          "sizeScore": 12,
+          "recencyScore": 7,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
+    },
+    {
+      "name": "InsureRoute",
+      "fullName": "Shambhavi500/InsureRoute",
+      "url": "https://github.com/Shambhavi500/InsureRoute",
+      "description": "InsureRoute - Open source repository in JavaScript.",
+      "highlight": "InsureRoute - Open source repository in JavaScript.",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-04-17T19:40:53Z",
+      "createdAt": "2026-04-17T14:46:57Z",
+      "sizeKb": 1793,
+      "category": "JAVASCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 6879,
+        "lines": 102,
+        "sections": [
+          "Architecture / System"
+        ],
+        "hasVisuals": true,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 29,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 45,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 29,
+          "descScore": 0,
+          "sizeScore": 12,
+          "recencyScore": 4,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
+    },
+    {
+      "name": "Weather_News_Integration",
+      "fullName": "Shambhavi500/Weather_News_Integration",
+      "url": "https://github.com/Shambhavi500/Weather_News_Integration",
+      "description": "Weather_News_Integration - Open source repository in Python.",
+      "highlight": "Weather_News_Integration - Open source repository in Python.",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-02-12T12:12:11Z",
+      "createdAt": "2026-02-12T12:07:19Z",
+      "sizeKb": 7,
+      "category": "PYTHON / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 1993,
+        "lines": 63,
+        "sections": [
+          "Features",
+          "Getting Started / Install",
+          "Usage / Quickstart",
+          "API / Endpoints"
+        ],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 26,
+        "badge": "DETAILED"
+      },
+      "scoreData": {
+        "totalScore": 33,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 26,
+          "descScore": 0,
+          "sizeScore": 5,
+          "recencyScore": 2,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
+    },
+    {
       "name": "StockItUp",
       "fullName": "Shambhavi500/StockItUp",
       "url": "https://github.com/Shambhavi500/StockItUp",
       "description": "StockItUp is a stock tracking web application built to simplify market monitoring using real-time data APIs. It allows users to track live stock prices, create personalized watchlists, and analyze stock performance through interactive charts. The system focuses on clarity, responsiveness, and efficient data handling for a smooth user experience.",
-      "highlight": "Live market tracking application with real-time analytics & charts",
+      "highlight": "StockItUp is a stock tracking web application built to simplify market monitoring using real-time data APIs. It allows users to track live stock prices, create personalized watchlists, and analyze stock performance through interactive charts. The system focuses on clarity, responsiveness, and efficient data handling for a smooth user experience.",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "category": "FINTECH / REAL-TIME",
-      "tag": "DATA VISUALIZATION",
-      "isPinned": true
+      "updatedAt": "2026-01-08T10:31:30Z",
+      "createdAt": "2026-01-08T10:06:12Z",
+      "sizeKb": 9895,
+      "category": "JAVASCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": false,
+        "length": 0,
+        "lines": 0,
+        "sections": [],
+        "hasVisuals": false,
+        "hasCodeBlocks": false,
+        "hasDemoLink": false,
+        "score": 0,
+        "badge": "NO README"
+      },
+      "scoreData": {
+        "totalScore": 29,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 0,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 2,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
     },
     {
-      "id": "07",
-      "name": "NDVI_satellite",
-      "fullName": "Shambhavi500/NDVI_satellite",
-      "url": "https://github.com/Shambhavi500/NDVI_satellite",
-      "description": "Vegetation index analysis using satellite spectral bands",
-      "highlight": "Vegetation index analysis using satellite spectral bands",
+      "name": "KrishiSetu",
+      "fullName": "Shambhavi500/KrishiSetu",
+      "url": "https://github.com/Shambhavi500/KrishiSetu",
+      "description": "Decentralized agri-supply chain solution using blockchain to empower farmers and ensure price transparency.",
+      "highlight": "Decentralized agri-supply chain solution using blockchain to empower farmers and ensure price transparency.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-01-02T12:57:24Z",
+      "createdAt": "2026-01-02T12:47:09Z",
+      "sizeKb": 1258,
+      "category": "TYPESCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": false,
+        "length": 0,
+        "lines": 0,
+        "sections": [],
+        "hasVisuals": false,
+        "hasCodeBlocks": false,
+        "hasDemoLink": false,
+        "score": 0,
+        "badge": "NO README"
+      },
+      "scoreData": {
+        "totalScore": 29,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 0,
+          "descScore": 15,
+          "sizeScore": 12,
+          "recencyScore": 2,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
+    },
+    {
+      "name": "seed-to-shelf-flow",
+      "fullName": "Shambhavi500/seed-to-shelf-flow",
+      "url": "https://github.com/Shambhavi500/seed-to-shelf-flow",
+      "description": "seed-to-shelf-flow - Open source repository in TypeScript.",
+      "highlight": "seed-to-shelf-flow - Open source repository in TypeScript.",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2025-09-04T13:38:39Z",
+      "createdAt": "2025-09-04T12:59:48Z",
+      "sizeKb": 196,
+      "category": "TYPESCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 2148,
+        "lines": 73,
+        "sections": [],
+        "hasVisuals": false,
+        "hasCodeBlocks": true,
+        "hasDemoLink": false,
+        "score": 18,
+        "badge": "STANDARD"
+      },
+      "scoreData": {
+        "totalScore": 29,
+        "isFeaturedEligible": true,
+        "breakdown": {
+          "readmeScore": 18,
+          "descScore": 0,
+          "sizeScore": 9,
+          "recencyScore": 2,
+          "socialScore": 0,
+          "achievementScore": 0
+        }
+      }
+    },
+    {
+      "name": "Shambhavi500",
+      "fullName": "Shambhavi500/Shambhavi500",
+      "url": "https://github.com/Shambhavi500/Shambhavi500",
+      "description": "Shambhavi500 - Open source repository in JavaScript.",
+      "highlight": "Shambhavi500 - Open source repository in JavaScript.",
       "language": "JavaScript",
       "stars": 0,
       "forks": 0,
-      "category": "GEO-SPATIAL / REMOTE SENSING",
-      "tag": "EARTH OBSERVATION",
-      "isPinned": true
-    },
-    {
-      "id": "08",
-      "name": "EPeekPahani",
-      "fullName": "Shambhavi500/EPeekPahani",
-      "url": "https://github.com/Shambhavi500/EPeekPahani",
-      "description": "Digital agricultural crop inspection & digital survey application",
-      "highlight": "Digital agricultural crop inspection & digital survey application",
-      "language": "Kotlin",
-      "stars": 0,
-      "forks": 0,
-      "category": "MOBILE / ANDROID",
-      "tag": "FIELD OPERATIONS",
-      "isPinned": true
+      "updatedAt": "2026-09-10T17:16:16Z",
+      "createdAt": "2026-06-12T12:11:16Z",
+      "sizeKb": 67,
+      "category": "JAVASCRIPT / SYSTEMS",
+      "tag": "OPEN SOURCE",
+      "isAwardWinning": false,
+      "readmeAnalysis": {
+        "hasReadme": true,
+        "length": 4865,
+        "lines": 119,
+        "sections": [],
+        "hasVisuals": true,
+        "hasCodeBlocks": false,
+        "hasDemoLink": false,
+        "score": 19,
+        "badge": "STANDARD"
+      },
+      "scoreData": {
+        "totalScore": -100,
+        "isFeaturedEligible": false,
+        "breakdown": {
+          "profileRepoPenalty": -100
+        }
+      }
     }
   ],
-  "techWardrobe": {
-    "languages": [
-      "Python",
-      "TypeScript",
-      "JavaScript",
-      "Kotlin",
-      "C / C++",
-      "SQL"
-    ],
-    "autonomousAi": [
-      "Multi-Agent Workflows",
-      "Reinforcement Learning",
-      "Computer Vision",
-      "LLM Agents",
-      "NDVI Remote Sensing"
-    ],
-    "webFrontend": [
-      "React.js",
-      "Next.js",
-      "Vite",
-      "Tailwind CSS",
-      "Responsive UI",
-      "Modern SVG Architecture"
-    ],
-    "systemsBackend": [
-      "FastAPI",
-      "Node.js",
-      "Express",
-      "RESTful APIs",
-      "Blockchain / Smart Contracts",
-      "PostgreSQL"
-    ],
-    "specialized": [
-      "DaVinci Resolve API",
-      "Satellite Spectral Imagery",
-      "Real-Time Financial APIs",
-      "Android SDK"
+  "contributions": {
+    "totalContributions": 115,
+    "daysCount": 369,
+    "activeDaysCount": 35,
+    "weeks": [
+      [
+        {
+          "date": "2025-10-12",
+          "level": 0
+        },
+        {
+          "date": "2025-10-19",
+          "level": 0
+        },
+        {
+          "date": "2025-10-26",
+          "level": 0
+        },
+        {
+          "date": "2025-11-02",
+          "level": 0
+        },
+        {
+          "date": "2025-11-09",
+          "level": 0
+        },
+        {
+          "date": "2025-11-16",
+          "level": 0
+        },
+        {
+          "date": "2025-11-23",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-11-30",
+          "level": 0
+        },
+        {
+          "date": "2025-12-07",
+          "level": 0
+        },
+        {
+          "date": "2025-12-14",
+          "level": 0
+        },
+        {
+          "date": "2025-12-21",
+          "level": 0
+        },
+        {
+          "date": "2025-12-28",
+          "level": 0
+        },
+        {
+          "date": "2026-01-04",
+          "level": 0
+        },
+        {
+          "date": "2026-01-11",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-01-18",
+          "level": 0
+        },
+        {
+          "date": "2026-01-25",
+          "level": 0
+        },
+        {
+          "date": "2026-02-01",
+          "level": 0
+        },
+        {
+          "date": "2026-02-08",
+          "level": 0
+        },
+        {
+          "date": "2026-02-15",
+          "level": 0
+        },
+        {
+          "date": "2026-02-22",
+          "level": 0
+        },
+        {
+          "date": "2026-03-01",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-03-08",
+          "level": 0
+        },
+        {
+          "date": "2026-03-15",
+          "level": 0
+        },
+        {
+          "date": "2026-03-22",
+          "level": 2
+        },
+        {
+          "date": "2026-03-29",
+          "level": 0
+        },
+        {
+          "date": "2026-04-05",
+          "level": 2
+        },
+        {
+          "date": "2026-04-12",
+          "level": 0
+        },
+        {
+          "date": "2026-04-19",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-04-26",
+          "level": 0
+        },
+        {
+          "date": "2026-05-03",
+          "level": 0
+        },
+        {
+          "date": "2026-05-10",
+          "level": 1
+        },
+        {
+          "date": "2026-05-17",
+          "level": 0
+        },
+        {
+          "date": "2026-05-24",
+          "level": 0
+        },
+        {
+          "date": "2026-05-31",
+          "level": 0
+        },
+        {
+          "date": "2026-06-07",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-06-14",
+          "level": 0
+        },
+        {
+          "date": "2026-06-21",
+          "level": 0
+        },
+        {
+          "date": "2026-06-28",
+          "level": 0
+        },
+        {
+          "date": "2026-07-05",
+          "level": 0
+        },
+        {
+          "date": "2026-07-12",
+          "level": 0
+        },
+        {
+          "date": "2026-07-19",
+          "level": 2
+        },
+        {
+          "date": "2026-07-26",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-08-02",
+          "level": 0
+        },
+        {
+          "date": "2026-08-09",
+          "level": 0
+        },
+        {
+          "date": "2026-08-16",
+          "level": 2
+        },
+        {
+          "date": "2026-08-23",
+          "level": 0
+        },
+        {
+          "date": "2026-08-30",
+          "level": 0
+        },
+        {
+          "date": "2026-09-06",
+          "level": 0
+        },
+        {
+          "date": "2025-09-08",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-09-15",
+          "level": 0
+        },
+        {
+          "date": "2025-09-22",
+          "level": 0
+        },
+        {
+          "date": "2025-09-29",
+          "level": 0
+        },
+        {
+          "date": "2025-10-06",
+          "level": 0
+        },
+        {
+          "date": "2025-10-13",
+          "level": 0
+        },
+        {
+          "date": "2025-10-20",
+          "level": 0
+        },
+        {
+          "date": "2025-10-27",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-11-03",
+          "level": 0
+        },
+        {
+          "date": "2025-11-10",
+          "level": 0
+        },
+        {
+          "date": "2025-11-17",
+          "level": 0
+        },
+        {
+          "date": "2025-11-24",
+          "level": 0
+        },
+        {
+          "date": "2025-12-01",
+          "level": 0
+        },
+        {
+          "date": "2025-12-08",
+          "level": 0
+        },
+        {
+          "date": "2025-12-15",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-12-22",
+          "level": 0
+        },
+        {
+          "date": "2025-12-29",
+          "level": 0
+        },
+        {
+          "date": "2026-01-05",
+          "level": 0
+        },
+        {
+          "date": "2026-01-12",
+          "level": 0
+        },
+        {
+          "date": "2026-01-19",
+          "level": 0
+        },
+        {
+          "date": "2026-01-26",
+          "level": 0
+        },
+        {
+          "date": "2026-02-02",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-02-09",
+          "level": 0
+        },
+        {
+          "date": "2026-02-16",
+          "level": 0
+        },
+        {
+          "date": "2026-02-23",
+          "level": 0
+        },
+        {
+          "date": "2026-03-02",
+          "level": 0
+        },
+        {
+          "date": "2026-03-09",
+          "level": 0
+        },
+        {
+          "date": "2026-03-16",
+          "level": 0
+        },
+        {
+          "date": "2026-03-23",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-03-30",
+          "level": 0
+        },
+        {
+          "date": "2026-04-06",
+          "level": 0
+        },
+        {
+          "date": "2026-04-13",
+          "level": 0
+        },
+        {
+          "date": "2026-04-20",
+          "level": 0
+        },
+        {
+          "date": "2026-04-27",
+          "level": 0
+        },
+        {
+          "date": "2026-05-04",
+          "level": 0
+        },
+        {
+          "date": "2026-05-11",
+          "level": 1
+        }
+      ],
+      [
+        {
+          "date": "2026-05-18",
+          "level": 0
+        },
+        {
+          "date": "2026-05-25",
+          "level": 0
+        },
+        {
+          "date": "2026-06-01",
+          "level": 0
+        },
+        {
+          "date": "2026-06-08",
+          "level": 0
+        },
+        {
+          "date": "2026-06-15",
+          "level": 0
+        },
+        {
+          "date": "2026-06-22",
+          "level": 0
+        },
+        {
+          "date": "2026-06-29",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-07-06",
+          "level": 0
+        },
+        {
+          "date": "2026-07-13",
+          "level": 0
+        },
+        {
+          "date": "2026-07-20",
+          "level": 0
+        },
+        {
+          "date": "2026-07-27",
+          "level": 0
+        },
+        {
+          "date": "2026-08-03",
+          "level": 0
+        },
+        {
+          "date": "2026-08-10",
+          "level": 1
+        },
+        {
+          "date": "2026-08-17",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-08-24",
+          "level": 1
+        },
+        {
+          "date": "2026-08-31",
+          "level": 0
+        },
+        {
+          "date": "2026-09-07",
+          "level": 0
+        },
+        {
+          "date": "2025-09-09",
+          "level": 0
+        },
+        {
+          "date": "2025-09-16",
+          "level": 0
+        },
+        {
+          "date": "2025-09-23",
+          "level": 0
+        },
+        {
+          "date": "2025-09-30",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-10-07",
+          "level": 0
+        },
+        {
+          "date": "2025-10-14",
+          "level": 0
+        },
+        {
+          "date": "2025-10-21",
+          "level": 0
+        },
+        {
+          "date": "2025-10-28",
+          "level": 0
+        },
+        {
+          "date": "2025-11-04",
+          "level": 0
+        },
+        {
+          "date": "2025-11-11",
+          "level": 0
+        },
+        {
+          "date": "2025-11-18",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-11-25",
+          "level": 0
+        },
+        {
+          "date": "2025-12-02",
+          "level": 0
+        },
+        {
+          "date": "2025-12-09",
+          "level": 0
+        },
+        {
+          "date": "2025-12-16",
+          "level": 0
+        },
+        {
+          "date": "2025-12-23",
+          "level": 0
+        },
+        {
+          "date": "2025-12-30",
+          "level": 0
+        },
+        {
+          "date": "2026-01-06",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-01-13",
+          "level": 0
+        },
+        {
+          "date": "2026-01-20",
+          "level": 0
+        },
+        {
+          "date": "2026-01-27",
+          "level": 0
+        },
+        {
+          "date": "2026-02-03",
+          "level": 0
+        },
+        {
+          "date": "2026-02-10",
+          "level": 0
+        },
+        {
+          "date": "2026-02-17",
+          "level": 0
+        },
+        {
+          "date": "2026-02-24",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-03-03",
+          "level": 0
+        },
+        {
+          "date": "2026-03-10",
+          "level": 0
+        },
+        {
+          "date": "2026-03-17",
+          "level": 0
+        },
+        {
+          "date": "2026-03-24",
+          "level": 0
+        },
+        {
+          "date": "2026-03-31",
+          "level": 0
+        },
+        {
+          "date": "2026-04-07",
+          "level": 4
+        },
+        {
+          "date": "2026-04-14",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-04-21",
+          "level": 0
+        },
+        {
+          "date": "2026-04-28",
+          "level": 0
+        },
+        {
+          "date": "2026-05-05",
+          "level": 0
+        },
+        {
+          "date": "2026-05-12",
+          "level": 2
+        },
+        {
+          "date": "2026-05-19",
+          "level": 0
+        },
+        {
+          "date": "2026-05-26",
+          "level": 0
+        },
+        {
+          "date": "2026-06-02",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-06-09",
+          "level": 0
+        },
+        {
+          "date": "2026-06-16",
+          "level": 0
+        },
+        {
+          "date": "2026-06-23",
+          "level": 0
+        },
+        {
+          "date": "2026-06-30",
+          "level": 0
+        },
+        {
+          "date": "2026-07-07",
+          "level": 0
+        },
+        {
+          "date": "2026-07-14",
+          "level": 0
+        },
+        {
+          "date": "2026-07-21",
+          "level": 1
+        }
+      ],
+      [
+        {
+          "date": "2026-07-28",
+          "level": 0
+        },
+        {
+          "date": "2026-08-04",
+          "level": 0
+        },
+        {
+          "date": "2026-08-11",
+          "level": 0
+        },
+        {
+          "date": "2026-08-18",
+          "level": 0
+        },
+        {
+          "date": "2026-08-25",
+          "level": 4
+        },
+        {
+          "date": "2026-09-01",
+          "level": 0
+        },
+        {
+          "date": "2026-09-08",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-09-10",
+          "level": 0
+        },
+        {
+          "date": "2025-09-17",
+          "level": 0
+        },
+        {
+          "date": "2025-09-24",
+          "level": 0
+        },
+        {
+          "date": "2025-10-01",
+          "level": 0
+        },
+        {
+          "date": "2025-10-08",
+          "level": 0
+        },
+        {
+          "date": "2025-10-15",
+          "level": 0
+        },
+        {
+          "date": "2025-10-22",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-10-29",
+          "level": 0
+        },
+        {
+          "date": "2025-11-05",
+          "level": 0
+        },
+        {
+          "date": "2025-11-12",
+          "level": 0
+        },
+        {
+          "date": "2025-11-19",
+          "level": 0
+        },
+        {
+          "date": "2025-11-26",
+          "level": 0
+        },
+        {
+          "date": "2025-12-03",
+          "level": 0
+        },
+        {
+          "date": "2025-12-10",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-12-17",
+          "level": 0
+        },
+        {
+          "date": "2025-12-24",
+          "level": 0
+        },
+        {
+          "date": "2025-12-31",
+          "level": 0
+        },
+        {
+          "date": "2026-01-07",
+          "level": 0
+        },
+        {
+          "date": "2026-01-14",
+          "level": 0
+        },
+        {
+          "date": "2026-01-21",
+          "level": 0
+        },
+        {
+          "date": "2026-01-28",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-02-04",
+          "level": 0
+        },
+        {
+          "date": "2026-02-11",
+          "level": 0
+        },
+        {
+          "date": "2026-02-18",
+          "level": 0
+        },
+        {
+          "date": "2026-02-25",
+          "level": 0
+        },
+        {
+          "date": "2026-03-04",
+          "level": 0
+        },
+        {
+          "date": "2026-03-11",
+          "level": 0
+        },
+        {
+          "date": "2026-03-18",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-03-25",
+          "level": 0
+        },
+        {
+          "date": "2026-04-01",
+          "level": 0
+        },
+        {
+          "date": "2026-04-08",
+          "level": 1
+        },
+        {
+          "date": "2026-04-15",
+          "level": 0
+        },
+        {
+          "date": "2026-04-22",
+          "level": 0
+        },
+        {
+          "date": "2026-04-29",
+          "level": 0
+        },
+        {
+          "date": "2026-05-06",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-05-13",
+          "level": 3
+        },
+        {
+          "date": "2026-05-20",
+          "level": 0
+        },
+        {
+          "date": "2026-05-27",
+          "level": 0
+        },
+        {
+          "date": "2026-06-03",
+          "level": 0
+        },
+        {
+          "date": "2026-06-10",
+          "level": 0
+        },
+        {
+          "date": "2026-06-17",
+          "level": 0
+        },
+        {
+          "date": "2026-06-24",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-07-01",
+          "level": 0
+        },
+        {
+          "date": "2026-07-08",
+          "level": 0
+        },
+        {
+          "date": "2026-07-15",
+          "level": 0
+        },
+        {
+          "date": "2026-07-22",
+          "level": 3
+        },
+        {
+          "date": "2026-07-29",
+          "level": 1
+        },
+        {
+          "date": "2026-08-05",
+          "level": 0
+        },
+        {
+          "date": "2026-08-12",
+          "level": 4
+        }
+      ],
+      [
+        {
+          "date": "2026-08-19",
+          "level": 0
+        },
+        {
+          "date": "2026-08-26",
+          "level": 2
+        },
+        {
+          "date": "2026-09-02",
+          "level": 0
+        },
+        {
+          "date": "2026-09-09",
+          "level": 2
+        },
+        {
+          "date": "2025-09-11",
+          "level": 0
+        },
+        {
+          "date": "2025-09-18",
+          "level": 0
+        },
+        {
+          "date": "2025-09-25",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-10-02",
+          "level": 0
+        },
+        {
+          "date": "2025-10-09",
+          "level": 0
+        },
+        {
+          "date": "2025-10-16",
+          "level": 0
+        },
+        {
+          "date": "2025-10-23",
+          "level": 0
+        },
+        {
+          "date": "2025-10-30",
+          "level": 0
+        },
+        {
+          "date": "2025-11-06",
+          "level": 0
+        },
+        {
+          "date": "2025-11-13",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-11-20",
+          "level": 0
+        },
+        {
+          "date": "2025-11-27",
+          "level": 0
+        },
+        {
+          "date": "2025-12-04",
+          "level": 0
+        },
+        {
+          "date": "2025-12-11",
+          "level": 0
+        },
+        {
+          "date": "2025-12-18",
+          "level": 0
+        },
+        {
+          "date": "2025-12-25",
+          "level": 0
+        },
+        {
+          "date": "2026-01-01",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-01-08",
+          "level": 2
+        },
+        {
+          "date": "2026-01-15",
+          "level": 0
+        },
+        {
+          "date": "2026-01-22",
+          "level": 0
+        },
+        {
+          "date": "2026-01-29",
+          "level": 0
+        },
+        {
+          "date": "2026-02-05",
+          "level": 0
+        },
+        {
+          "date": "2026-02-12",
+          "level": 2
+        },
+        {
+          "date": "2026-02-19",
+          "level": 2
+        }
+      ],
+      [
+        {
+          "date": "2026-02-26",
+          "level": 0
+        },
+        {
+          "date": "2026-03-05",
+          "level": 0
+        },
+        {
+          "date": "2026-03-12",
+          "level": 0
+        },
+        {
+          "date": "2026-03-19",
+          "level": 0
+        },
+        {
+          "date": "2026-03-26",
+          "level": 0
+        },
+        {
+          "date": "2026-04-02",
+          "level": 0
+        },
+        {
+          "date": "2026-04-09",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-04-16",
+          "level": 0
+        },
+        {
+          "date": "2026-04-23",
+          "level": 0
+        },
+        {
+          "date": "2026-04-30",
+          "level": 0
+        },
+        {
+          "date": "2026-05-07",
+          "level": 0
+        },
+        {
+          "date": "2026-05-14",
+          "level": 4
+        },
+        {
+          "date": "2026-05-21",
+          "level": 0
+        },
+        {
+          "date": "2026-05-28",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-06-04",
+          "level": 0
+        },
+        {
+          "date": "2026-06-11",
+          "level": 0
+        },
+        {
+          "date": "2026-06-18",
+          "level": 0
+        },
+        {
+          "date": "2026-06-25",
+          "level": 0
+        },
+        {
+          "date": "2026-07-02",
+          "level": 0
+        },
+        {
+          "date": "2026-07-09",
+          "level": 0
+        },
+        {
+          "date": "2026-07-16",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-07-23",
+          "level": 0
+        },
+        {
+          "date": "2026-07-30",
+          "level": 0
+        },
+        {
+          "date": "2026-08-06",
+          "level": 2
+        },
+        {
+          "date": "2026-08-13",
+          "level": 3
+        },
+        {
+          "date": "2026-08-20",
+          "level": 0
+        },
+        {
+          "date": "2026-08-27",
+          "level": 1
+        },
+        {
+          "date": "2026-09-03",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-09-10",
+          "level": 1
+        },
+        {
+          "date": "2025-09-12",
+          "level": 0
+        },
+        {
+          "date": "2025-09-19",
+          "level": 0
+        },
+        {
+          "date": "2025-09-26",
+          "level": 0
+        },
+        {
+          "date": "2025-10-03",
+          "level": 0
+        },
+        {
+          "date": "2025-10-10",
+          "level": 0
+        },
+        {
+          "date": "2025-10-17",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-10-24",
+          "level": 0
+        },
+        {
+          "date": "2025-10-31",
+          "level": 0
+        },
+        {
+          "date": "2025-11-07",
+          "level": 0
+        },
+        {
+          "date": "2025-11-14",
+          "level": 0
+        },
+        {
+          "date": "2025-11-21",
+          "level": 0
+        },
+        {
+          "date": "2025-11-28",
+          "level": 0
+        },
+        {
+          "date": "2025-12-05",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-12-12",
+          "level": 0
+        },
+        {
+          "date": "2025-12-19",
+          "level": 0
+        },
+        {
+          "date": "2025-12-26",
+          "level": 0
+        },
+        {
+          "date": "2026-01-02",
+          "level": 2
+        },
+        {
+          "date": "2026-01-09",
+          "level": 0
+        },
+        {
+          "date": "2026-01-16",
+          "level": 0
+        },
+        {
+          "date": "2026-01-23",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-01-30",
+          "level": 0
+        },
+        {
+          "date": "2026-02-06",
+          "level": 0
+        },
+        {
+          "date": "2026-02-13",
+          "level": 0
+        },
+        {
+          "date": "2026-02-20",
+          "level": 0
+        },
+        {
+          "date": "2026-02-27",
+          "level": 0
+        },
+        {
+          "date": "2026-03-06",
+          "level": 0
+        },
+        {
+          "date": "2026-03-13",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-03-20",
+          "level": 0
+        },
+        {
+          "date": "2026-03-27",
+          "level": 0
+        },
+        {
+          "date": "2026-04-03",
+          "level": 0
+        },
+        {
+          "date": "2026-04-10",
+          "level": 0
+        },
+        {
+          "date": "2026-04-17",
+          "level": 1
+        },
+        {
+          "date": "2026-04-24",
+          "level": 0
+        },
+        {
+          "date": "2026-05-01",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-05-08",
+          "level": 0
+        },
+        {
+          "date": "2026-05-15",
+          "level": 0
+        },
+        {
+          "date": "2026-05-22",
+          "level": 0
+        },
+        {
+          "date": "2026-05-29",
+          "level": 0
+        },
+        {
+          "date": "2026-06-05",
+          "level": 0
+        },
+        {
+          "date": "2026-06-12",
+          "level": 4
+        },
+        {
+          "date": "2026-06-19",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-06-26",
+          "level": 0
+        },
+        {
+          "date": "2026-07-03",
+          "level": 0
+        },
+        {
+          "date": "2026-07-10",
+          "level": 0
+        },
+        {
+          "date": "2026-07-17",
+          "level": 0
+        },
+        {
+          "date": "2026-07-24",
+          "level": 0
+        },
+        {
+          "date": "2026-07-31",
+          "level": 0
+        },
+        {
+          "date": "2026-08-07",
+          "level": 1
+        }
+      ],
+      [
+        {
+          "date": "2026-08-14",
+          "level": 0
+        },
+        {
+          "date": "2026-08-21",
+          "level": 0
+        },
+        {
+          "date": "2026-08-28",
+          "level": 0
+        },
+        {
+          "date": "2026-09-04",
+          "level": 0
+        },
+        {
+          "date": "2025-09-13",
+          "level": 0
+        },
+        {
+          "date": "2025-09-20",
+          "level": 0
+        },
+        {
+          "date": "2025-09-27",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-10-04",
+          "level": 0
+        },
+        {
+          "date": "2025-10-11",
+          "level": 0
+        },
+        {
+          "date": "2025-10-18",
+          "level": 0
+        },
+        {
+          "date": "2025-10-25",
+          "level": 0
+        },
+        {
+          "date": "2025-11-01",
+          "level": 0
+        },
+        {
+          "date": "2025-11-08",
+          "level": 0
+        },
+        {
+          "date": "2025-11-15",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2025-11-22",
+          "level": 0
+        },
+        {
+          "date": "2025-11-29",
+          "level": 0
+        },
+        {
+          "date": "2025-12-06",
+          "level": 0
+        },
+        {
+          "date": "2025-12-13",
+          "level": 0
+        },
+        {
+          "date": "2025-12-20",
+          "level": 0
+        },
+        {
+          "date": "2025-12-27",
+          "level": 0
+        },
+        {
+          "date": "2026-01-03",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-01-10",
+          "level": 0
+        },
+        {
+          "date": "2026-01-17",
+          "level": 0
+        },
+        {
+          "date": "2026-01-24",
+          "level": 0
+        },
+        {
+          "date": "2026-01-31",
+          "level": 0
+        },
+        {
+          "date": "2026-02-07",
+          "level": 0
+        },
+        {
+          "date": "2026-02-14",
+          "level": 0
+        },
+        {
+          "date": "2026-02-21",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-02-28",
+          "level": 2
+        },
+        {
+          "date": "2026-03-07",
+          "level": 0
+        },
+        {
+          "date": "2026-03-14",
+          "level": 0
+        },
+        {
+          "date": "2026-03-21",
+          "level": 0
+        },
+        {
+          "date": "2026-03-28",
+          "level": 0
+        },
+        {
+          "date": "2026-04-04",
+          "level": 0
+        },
+        {
+          "date": "2026-04-11",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-04-18",
+          "level": 0
+        },
+        {
+          "date": "2026-04-25",
+          "level": 0
+        },
+        {
+          "date": "2026-05-02",
+          "level": 0
+        },
+        {
+          "date": "2026-05-09",
+          "level": 0
+        },
+        {
+          "date": "2026-05-16",
+          "level": 0
+        },
+        {
+          "date": "2026-05-23",
+          "level": 0
+        },
+        {
+          "date": "2026-05-30",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-06-06",
+          "level": 0
+        },
+        {
+          "date": "2026-06-13",
+          "level": 0
+        },
+        {
+          "date": "2026-06-20",
+          "level": 0
+        },
+        {
+          "date": "2026-06-27",
+          "level": 0
+        },
+        {
+          "date": "2026-07-04",
+          "level": 0
+        },
+        {
+          "date": "2026-07-11",
+          "level": 0
+        },
+        {
+          "date": "2026-07-18",
+          "level": 0
+        }
+      ],
+      [
+        {
+          "date": "2026-07-25",
+          "level": 0
+        },
+        {
+          "date": "2026-08-01",
+          "level": 0
+        },
+        {
+          "date": "2026-08-08",
+          "level": 0
+        },
+        {
+          "date": "2026-08-15",
+          "level": 2
+        },
+        {
+          "date": "2026-08-22",
+          "level": 2
+        },
+        {
+          "date": "2026-08-29",
+          "level": 0
+        },
+        {
+          "date": "2026-09-05",
+          "level": 4
+        }
+      ]
     ]
   },
-  "achievements": [
-    {
-      "code": "EDITION 01",
-      "title": "MULTI-AGENT ARCHITECT",
-      "description": "Engineered Ovio: Autonomous DaVinci Resolve agent orchestration pipeline.",
-      "metric": "Autonomous AI"
-    },
-    {
-      "code": "EDITION 02",
-      "title": "AGRITECH IMPACT BUILDER",
-      "description": "Designed KrishiSahAI, KrishiSetu & NDVI satellite systems for agricultural intelligence.",
-      "metric": "Social & Earth Impact"
-    },
-    {
-      "code": "EDITION 03",
-      "title": "FINTECH ALGO ENGINEER",
-      "description": "Developed AIRA autonomous recovery OS & AlphaTrader-RL reinforcement learning trading.",
-      "metric": "Quantitative Systems"
-    },
-    {
-      "code": "EDITION 04",
-      "title": "POLYGLOT ATELIER",
-      "description": "Production code spanning Python, TypeScript, Kotlin, JavaScript, and C/C++.",
-      "metric": "14 Repositories"
-    }
-  ],
-  "socials": {
-    "github": "https://github.com/Shambhavi500",
-    "email": "shambhavipatil5631@gmail.com"
-  },
-  "updatedAt": "2026-09-10T16:54:09.844Z"
+  "updatedAt": "2026-09-10T17:43:48.513Z"
 }

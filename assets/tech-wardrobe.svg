@@ -3,486 +3,467 @@
     <defs>
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
         .editorial-title {
-          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
           font-style: italic;
+          letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
         }
         .code-mono {
           font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
         }
         
         /* Subtle Shimmer & Pulse Keyframes */
-        @keyframes shimmerPulse {
-          0% { stop-color: #E0218A; stop-opacity: 0.85; }
-          50% { stop-color: #FF2D87; stop-opacity: 1; }
-          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
         }
-        @keyframes sparkleGlint {
-          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
-          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
-        }
-        @keyframes runwayGlow {
-          0%, 100% { opacity: 0.6; }
-          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
         }
         
-        .sparkle-anim {
-          animation: sparkleGlint 4s ease-in-out infinite;
-          transform-origin: center;
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
         }
-        .runway-glow {
-          animation: runwayGlow 3s ease-in-out infinite;
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
         }
       ]]></style>
 
-      <!-- Barbie Chrome Metallic Gradient -->
+      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <linearGradient id="ward_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C2185B" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="ward_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
+        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
+      </linearGradient>
+
+      <!-- Rose Satin Monogram Gradient -->
+      <linearGradient id="ward_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D1124" />
+        <stop offset="100%" stop-color="#1A0D18" />
+      </linearGradient>
+
+      <!-- Light Rose Ambient Surface Gradient -->
+      <linearGradient id="ward_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#FFF5F8" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="ward_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
+        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
+        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
+      </linearGradient>
+
+      <!-- Platinum / Chrome Luxury Accent Gradient -->
       <linearGradient id="ward_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="25%" stop-color="#FFD6E8" />
-        <stop offset="50%" stop-color="#FFFFFF" />
-        <stop offset="75%" stop-color="#E2E8F0" />
-        <stop offset="100%" stop-color="#FFA8D3" />
+        <stop offset="35%" stop-color="#F1F5F9" />
+        <stop offset="70%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#E2E8F0" />
       </linearGradient>
 
-      <!-- Signature Barbie Dreamhouse Pink Gradient -->
-      <linearGradient id="ward_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#D4145A" />
-        <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#FF2D87" />
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="ward_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Satin Rose Glow Gradient -->
-      <linearGradient id="ward_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
-        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
-        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
-      </linearGradient>
-
-      <!-- Glassmorphic Card Fill -->
-      <linearGradient id="ward_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
-        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
-      </linearGradient>
-
-      <!-- Subtle Accent Border Gradient -->
-      <linearGradient id="ward_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
-        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
-        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
-        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
-      </linearGradient>
-
-      <!-- Soft Radial Dreamhouse Glow -->
-      <radialGradient id="ward_radialAura" cx="50%" cy="0%" r="70%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
-        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
+      <radialGradient id="ward_radialAura" cx="80%" cy="10%" r="70%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
+        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
         <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Star / Sparkle Filter -->
+      <!-- Card Soft Shadow Filter -->
+      <filter id="ward_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="ward_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
       <filter id="ward_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feGaussianBlur stdDeviation="6" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
     </defs>
   
     
-    <!-- Background Canvas -->
-    <rect width="940" height="400" rx="16" fill="#0D0B14" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="400" rx="16" fill="#FAFAFC" />
     <rect width="940" height="400" rx="16" fill="url(#ward_radialAura)" />
 
-    <!-- Outer Structural Frame -->
+    <!-- Outer Structural Frame with Soft Shadow -->
     <rect x="16" y="16" width="908" height="368" rx="14"
-          fill="url(#ward_cardGlass)" stroke="url(#ward_borderGrad)" stroke-width="1" />
+          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#ward_cardShadow)" />
 
     <!-- Editorial Header Line -->
     <g transform="translate(42, 44)">
-      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#ward_chromeGrad)">
-        TECH WARDROBE // THE ENGINEERING ENSEMBLE
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#E0218A" letter-spacing="0.14em">
+        THE LAB // AI/ML &amp; ENGINEERING STACK
       </text>
-      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
-        CURATED LANGUAGES, ARCHITECTURAL FRAMEWORKS &amp; AUTONOMOUS TOOLING
+      <text x="0" y="18" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.08em">
+        CURATED LANGUAGES, ENTC EMBEDDED SYSTEMS &amp; AUTONOMOUS AI STACK
       </text>
     </g>
 
     <g transform="translate(898, 44)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.1em">
-        HAUTE COUTURE STACK
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.1em">
+        PICT ENTC &amp; PRODUCTION VERIFIED
       </text>
-      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
-        ● ALL PRODUCTION TESTED
+      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676" font-weight="700">
+        ● ALL SKILLS VALIDATED
       </text>
     </g>
+
+    <!-- Header Divider Line -->
+    <line x1="42" y1="68" x2="898" y2="68" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
 
     <!-- 4 Wardrobe Columns -->
     
       <!-- Column 1: 01 / CORE LANGUAGES -->
       <g transform="translate(42, 82)">
-        <rect x="0" y="0" width="200" height="280" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <rect x="0" y="0" width="200" height="280" rx="14"
+              fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
 
         <!-- Column Top Trim -->
         <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ward_barbieGrad)" />
 
         <g transform="translate(14, 28)">
-          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
             01 / CORE LANGUAGES
           </text>
-          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="500" fill="#A89EAE">
-            Polyglot Foundations
+          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="600" fill="#4A4A58">
+            Verified &amp; Production
           </text>
-          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
         </g>
 
         
-        <!-- Pill Python -->
+        <!-- Pill C -->
         <g transform="translate(14, 86)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            C
+          </text>
+        </g>
+      
+        <!-- Pill C++ -->
+        <g transform="translate(14, 120)">
+          <rect x="0" y="0" width="172" height="26" rx="13"
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            C++
+          </text>
+        </g>
+      
+        <!-- Pill Python -->
+        <g transform="translate(14, 154)">
+          <rect x="0" y="0" width="172" height="26" rx="13"
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
             Python
           </text>
         </g>
       
-        <!-- Pill TypeScript -->
-        <g transform="translate(14, 120)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            TypeScript
-          </text>
-        </g>
-      
         <!-- Pill JavaScript -->
-        <g transform="translate(14, 154)">
+        <g transform="translate(14, 188)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
             JavaScript
           </text>
         </g>
       
-        <!-- Pill Kotlin -->
-        <g transform="translate(14, 188)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Kotlin
-          </text>
-        </g>
-      
-        <!-- Pill C / C++ -->
+        <!-- Pill HTML -->
         <g transform="translate(14, 222)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            C / C++
-          </text>
-        </g>
-      
-        <!-- Pill SQL -->
-        <g transform="translate(14, 256)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            SQL
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            HTML
           </text>
         </g>
       
       </g>
     
-      <!-- Column 2: 02 / AGENTIC &amp; AI SYSTEMS -->
+      <!-- Column 2: 02 / AI &amp; INTELLIGENCE -->
       <g transform="translate(258, 82)">
-        <rect x="0" y="0" width="200" height="280" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <rect x="0" y="0" width="200" height="280" rx="14"
+              fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
 
         <!-- Column Top Trim -->
         <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ward_barbieGrad)" />
 
         <g transform="translate(14, 28)">
-          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
-            02 / AGENTIC &amp; AI SYSTEMS
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+            02 / AI &amp; INTELLIGENCE
           </text>
-          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="500" fill="#A89EAE">
+          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="600" fill="#4A4A58">
             Autonomous Workflows &amp; ML
           </text>
-          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
         </g>
 
         
-        <!-- Pill Multi-Agent Systems -->
+        <!-- Pill Reinforcement Learning -->
         <g transform="translate(14, 86)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Multi-Agent Systems
-          </text>
-        </g>
-      
-        <!-- Pill Reinforcement Learning -->
-        <g transform="translate(14, 120)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
             Reinforcement Learning
           </text>
         </g>
       
-        <!-- Pill Computer Vision -->
+        <!-- Pill Machine Learning Models -->
+        <g transform="translate(14, 120)">
+          <rect x="0" y="0" width="172" height="26" rx="13"
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Machine Learning Models
+          </text>
+        </g>
+      
+        <!-- Pill Multi-Agent Workflows -->
         <g transform="translate(14, 154)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Computer Vision
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Multi-Agent Workflows
           </text>
         </g>
       
-        <!-- Pill LLM Orchestration -->
+        <!-- Pill Spectral Remote Sensing -->
         <g transform="translate(14, 188)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            LLM Orchestration
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Spectral Remote Sensing
           </text>
         </g>
       
-        <!-- Pill NDVI Spectral AI -->
+        <!-- Pill Gymnasium Simulation -->
         <g transform="translate(14, 222)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            NDVI Spectral AI
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Gymnasium Simulation
           </text>
         </g>
       
       </g>
     
-      <!-- Column 3: 03 / FRONTEND &amp; DESIGN -->
+      <!-- Column 3: 03 / EMBEDDED &amp; HARDWARE -->
       <g transform="translate(474, 82)">
-        <rect x="0" y="0" width="200" height="280" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <rect x="0" y="0" width="200" height="280" rx="14"
+              fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
 
         <!-- Column Top Trim -->
         <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ward_barbieGrad)" />
 
         <g transform="translate(14, 28)">
-          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
-            03 / FRONTEND &amp; DESIGN
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+            03 / EMBEDDED &amp; HARDWARE
           </text>
-          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="500" fill="#A89EAE">
-            Modern Interfaces
+          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="600" fill="#4A4A58">
+            PICT ENTC Foundation
           </text>
-          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
         </g>
 
         
-        <!-- Pill React.js -->
+        <!-- Pill Arduino &amp; Embedded C -->
         <g transform="translate(14, 86)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            React.js
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Arduino &amp; Embedded C
           </text>
         </g>
       
-        <!-- Pill Next.js -->
+        <!-- Pill Sensors &amp; Interfacing -->
         <g transform="translate(14, 120)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Next.js
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Sensors &amp; Interfacing
           </text>
         </g>
       
-        <!-- Pill Vite -->
+        <!-- Pill Circuit Design -->
         <g transform="translate(14, 154)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Vite
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Circuit Design
           </text>
         </g>
       
-        <!-- Pill Tailwind CSS -->
+        <!-- Pill Proteus &amp; Tinkercad -->
         <g transform="translate(14, 188)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Tailwind CSS
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Proteus &amp; Tinkercad
           </text>
         </g>
       
-        <!-- Pill Responsive UI -->
+        <!-- Pill Hardware-Software I/O -->
         <g transform="translate(14, 222)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Responsive UI
-          </text>
-        </g>
-      
-        <!-- Pill Haute SVG Systems -->
-        <g transform="translate(14, 256)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Haute SVG Systems
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Hardware-Software I/O
           </text>
         </g>
       
       </g>
     
-      <!-- Column 4: 04 / BACKEND &amp; PLATFORMS -->
+      <!-- Column 4: 04 / DEV TOOLS &amp; SDLC -->
       <g transform="translate(690, 82)">
-        <rect x="0" y="0" width="200" height="280" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <rect x="0" y="0" width="200" height="280" rx="14"
+              fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
 
         <!-- Column Top Trim -->
         <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ward_barbieGrad)" />
 
         <g transform="translate(14, 28)">
-          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
-            04 / BACKEND &amp; PLATFORMS
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+            04 / DEV TOOLS &amp; SDLC
           </text>
-          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="500" fill="#A89EAE">
-            Distributed Architecture
+          <text x="0" y="16" class="editorial-sans" font-size="11" font-weight="600" fill="#4A4A58">
+            Engineering Infrastructure
           </text>
-          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
+          <line x1="0" y1="28" x2="172" y2="28" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
         </g>
 
         
-        <!-- Pill FastAPI -->
+        <!-- Pill Docker Containerization -->
         <g transform="translate(14, 86)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            FastAPI
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Docker Containerization
           </text>
         </g>
       
-        <!-- Pill Node.js -->
+        <!-- Pill Git &amp; GitHub Pipelines -->
         <g transform="translate(14, 120)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Node.js
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            Git &amp; GitHub Pipelines
           </text>
         </g>
       
-        <!-- Pill Express -->
+        <!-- Pill SDLC &amp; Agile Workflows -->
         <g transform="translate(14, 154)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Express
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            SDLC &amp; Agile Workflows
           </text>
         </g>
       
-        <!-- Pill Blockchain (Web3) -->
+        <!-- Pill API Design &amp; Integration -->
         <g transform="translate(14, 188)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            Blockchain (Web3)
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            API Design &amp; Integration
           </text>
         </g>
       
-        <!-- Pill REST APIs -->
+        <!-- Pill DaVinci Resolve API -->
         <g transform="translate(14, 222)">
           <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
+                fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
           <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            REST APIs
-          </text>
-        </g>
-      
-        <!-- Pill PostgreSQL -->
-        <g transform="translate(14, 256)">
-          <rect x="0" y="0" width="172" height="26" rx="13"
-                fill="rgba(255, 45, 135, 0.08)" stroke="rgba(255, 45, 135, 0.28)" stroke-width="0.8" />
-          <circle cx="12" cy="13" r="2.5" fill="#FF2D87" />
-          <text x="22" y="16.5" class="code-mono" font-size="9" font-weight="600" fill="#FDFBFD">
-            PostgreSQL
+          <text x="22" y="16.5" class="code-mono" font-size="8.8" font-weight="700" fill="#111116">
+            DaVinci Resolve API
           </text>
         </g>
       
       </g>
     
 
-    <!-- Sparkles -->
+    <!-- Restrained Luxury Glint Sparkles -->
     
-    <g class="sparkle-anim" style="transform-origin: 904px 36px;">
+    <g class="glint-anim" style="transform-origin: 904px 42px;">
       <path d="
-        M 904 31
-        Q 906 34 909 36
-        Q 906 38 904 41
-        Q 902 38 899 36
-        Q 902 34 904 31
+        M 904 37
+        Q 906.2 39.8 909 42
+        Q 906.2 44.2 904 47
+        Q 901.8 44.2 899 42
+        Q 901.8 39.8 904 37
         Z"
-        fill="#FFFFFF"
-        opacity="0.9"
+        fill="#FF2D87"
+        opacity="0.85"
       />
-      <circle cx="904" cy="36" r="1.5" fill="#FFFFFF" />
+      <circle cx="904" cy="42" r="1.4000000000000001" fill="#FFFFFF" />
     </g>
   
     
-    <g class="sparkle-anim" style="transform-origin: 470px 40px;">
+    <g class="glint-anim" style="transform-origin: 470px 44px;">
       <path d="
-        M 470 35
-        Q 472 38 475 40
-        Q 472 42 470 45
-        Q 468 42 465 40
-        Q 468 38 470 35
+        M 470 39
+        Q 472.2 41.8 475 44
+        Q 472.2 46.2 470 49
+        Q 467.8 46.2 465 44
+        Q 467.8 41.8 470 39
         Z"
         fill="#FF85C0"
-        opacity="0.9"
+        opacity="0.85"
       />
-      <circle cx="470" cy="40" r="1.5" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 45px 370px;">
-      <path d="
-        M 45 365
-        Q 47 368 50 370
-        Q 47 372 45 375
-        Q 43 372 40 370
-        Q 43 368 45 365
-        Z"
-        fill="#FFA8D3"
-        opacity="0.9"
-      />
-      <circle cx="45" cy="370" r="1.5" fill="#FFFFFF" />
+      <circle cx="470" cy="44" r="1.4000000000000001" fill="#FFFFFF" />
     </g>
   
   </svg>

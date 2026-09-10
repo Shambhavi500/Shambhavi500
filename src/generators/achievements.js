@@ -1,112 +1,165 @@
-import { getSharedDefs, renderSparkle, escapeXml, COLORS } from './theme.js';
+import { getSharedDefs, renderSparkle, escapeXml, theme } from './theme.js';
 
 export function generateAchievementsSvg(data) {
   const width = 940;
-  const height = 290;
-  const achievements = data.achievements || [];
+  const height = 370;
+  const achievements = (data.achievements && data.achievements.length >= 4)
+    ? data.achievements
+    : [
+        {
+          id: '01',
+          event: "TECHFIESTA '26",
+          place: '1ST PLACE',
+          domain: 'AGRICULTURE DOMAIN',
+          project: 'KrishiSahAI',
+          metric: '600+ teams',
+          badge: 'WINNER',
+          accent: theme.colors.accentHot
+        },
+        {
+          id: '02',
+          event: 'PUNE AGRI HACKATHON',
+          place: 'NATIONAL RUNNER-UP',
+          domain: 'PRECISION AGRITECH',
+          project: 'Krishi Prabandh',
+          metric: '₹15L grant',
+          badge: 'RUNNER-UP',
+          accent: theme.colors.accent
+        },
+        {
+          id: '03',
+          event: 'AUTONOMOUS AI',
+          place: 'FLAGSHIP AGENT',
+          domain: 'AGENTIC WORKFLOWS',
+          project: 'Ovio (DaVinci)',
+          metric: 'Agentic OS',
+          badge: 'ARCHITECT',
+          accent: theme.colors.accentSoft
+        },
+        {
+          id: '04',
+          event: 'QUANTITATIVE RL',
+          place: 'SYSTEMS ENGINE',
+          domain: 'ALGORITHMIC TRADING',
+          project: 'AlphaTrader-RL',
+          metric: '5+ Yrs NSE Data',
+          badge: 'ALGO LAB',
+          accent: theme.colors.textPrimary
+        }
+      ];
 
-  const cardWidth = 200;
-  const cardHeight = 180;
-  const startX = 42;
-  const startY = 74;
-  const gap = 16;
-
-  const cardsSvg = achievements.map((ach, idx) => {
-    const x = startX + idx * (cardWidth + gap);
-
-    return `
-      <!-- Achievement Card ${idx + 1}: ${escapeXml(ach.title)} -->
-      <g transform="translate(${x}, ${startY})">
-        <!-- Card Base -->
-        <rect x="0" y="0" width="${cardWidth}" height="${cardHeight}" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
-
-        <!-- Top Accent Strip -->
-        <rect x="0" y="0" width="${cardWidth}" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
-
-        <!-- Edition Tag -->
-        <g transform="translate(14, 24)">
-          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
-          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
-            ${escapeXml(ach.code)}
-          </text>
-        </g>
-
-        <!-- Medal / Badge Emblem in Chrome -->
-        <g transform="translate(156, 26)">
-          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
-          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
-        </g>
-
-        <!-- Title -->
-        <g transform="translate(14, 70)">
-          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            ${escapeXml(ach.title.split(' ')[0])}
-          </text>
-          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            ${escapeXml(ach.title.split(' ').slice(1).join(' '))}
-          </text>
-        </g>
-
-        <!-- Description -->
-        <g transform="translate(14, 110)">
-          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ${escapeXml(ach.description.slice(0, 32))}
-          </text>
-          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ${escapeXml(ach.description.slice(32, 64))}
-          </text>
-          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ${escapeXml(ach.description.slice(64))}
-          </text>
-        </g>
-
-        <!-- Metric Footer -->
-        <g transform="translate(14, 162)">
-          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
-            &#10003; ${escapeXml(ach.metric)}
-          </text>
-        </g>
-      </g>
-    `;
-  }).join('');
+  const cardWidth = 203;
+  const cardHeight = 270;
+  const cardGap = 16;
+  const startX = 40;
+  const startY = 72;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" fill="none">
     ${getSharedDefs('ach_')}
     
-    <!-- Dark Studio Base -->
-    <rect width="${width}" height="${height}" rx="16" fill="${COLORS.surfaceDark}" />
-    <rect width="${width}" height="${height}" rx="16" fill="url(#ach_radialAura)" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="${theme.colors.background}" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="url(#ach_radialAura)" />
 
-    <!-- Outer Structural Frame -->
-    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="14"
-          fill="url(#ach_cardGlass)" stroke="url(#ach_borderGrad)" stroke-width="1" />
+    <!-- Outer Structural Frame with Soft Shadow -->
+    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${theme.radius.card}"
+          fill="${theme.colors.surface}" stroke="${theme.colors.border}" stroke-width="1" filter="url(#ach_cardShadow)" />
 
-    <!-- Section Header -->
-    <g transform="translate(42, 44)">
-      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#ach_chromeGrad)">
-        CAREER EDITION // ATELIER MILESTONES
-      </text>
-      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
-        VERIFIED REPOSITORY RELEASES, ARCHITECTURAL DESIGNS &amp; IMPACT DOMAINS
+    <!-- Section Header Tag -->
+    <g transform="translate(40, 42)">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.14em">
+        THE WINS // HACKATHONS &amp; ENGINEERING HONORS
       </text>
     </g>
 
-    <g transform="translate(${width - 42}, 44)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.1em">
-        4 VERIFIED BADGES
-      </text>
-      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
-        ● AUTHENTIC CRITERIA MET
+    <g transform="translate(${width - 40}, 42)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="${theme.colors.textMuted}" letter-spacing="0.1em">
+        OFFICIALLY ACCREDITED · <tspan fill="${theme.colors.success}" font-weight="700">● VERIFIED MILESTONES</tspan>
       </text>
     </g>
 
-    <!-- 4 Achievement Cards -->
-    ${cardsSvg}
+    <!-- Header Divider Line -->
+    <line x1="40" y1="54" x2="${width - 40}" y2="54" stroke="${theme.colors.borderSubtle}" stroke-width="1" />
 
-    <!-- Sparkles -->
-    ${renderSparkle(width - 36, 36, 10, '#FFFFFF')}
-    ${renderSparkle(width / 2, 40, 10, '#FF85C0')}
-    ${renderSparkle(width - 60, height - 25, 11, '#FFA8D3')}
+    <!-- 4 Fashion-Tech Award Plaques -->
+    ${achievements.slice(0, 4).map((ach, idx) => {
+      const x = startX + idx * (cardWidth + cardGap);
+      const y = startY;
+      const isWinner = idx === 0;
+      const isRunnerUp = idx === 1;
+      const accentColor = isWinner ? theme.colors.accentHot : (isRunnerUp ? theme.colors.accent : theme.colors.textPrimary);
+      const badgeFill = isWinner ? theme.colors.accentHot : theme.colors.accentBlush;
+      const badgeText = isWinner ? '#FFFFFF' : theme.colors.accent;
+
+      return `
+        <!-- Plaque Card ${ach.id || (idx + 1)} -->
+        <g transform="translate(${x}, ${y})">
+          <!-- Card Base -->
+          <rect x="0" y="0" width="${cardWidth}" height="${cardHeight}" rx="${theme.radius.card}"
+                fill="${theme.colors.surface}" stroke="${isWinner ? theme.colors.accentHot : theme.colors.border}" stroke-width="${isWinner ? '1.5' : '1'}" />
+
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="${cardWidth}" height="4" rx="2" fill="${isWinner ? 'url(#ach_barbieGrad)' : theme.colors.border}" />
+
+          <!-- Plaque Number '01' -->
+          <text x="18" y="32" class="display-title" font-size="16" font-weight="800" fill="${accentColor}">
+            ${escapeXml(ach.id || `0${idx + 1}`)}
+          </text>
+
+          <!-- Trophy / Medal Mini Icon -->
+          <text x="${cardWidth - 18}" y="32" text-anchor="end" font-size="14">
+            ${isWinner ? '🏆' : (isRunnerUp ? '🥈' : '✦')}
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="18" y1="44" x2="${cardWidth - 18}" y2="44" stroke="${theme.colors.borderSubtle}" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="${theme.colors.textPrimary}" letter-spacing="0.02em">
+            ${escapeXml(ach.event || ach.title)}
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="${accentColor}" letter-spacing="0.05em">
+            ${escapeXml(ach.place || (isWinner ? '1ST PLACE' : 'RUNNER-UP'))}
+          </text>
+
+          <!-- Domain -->
+          <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="${theme.colors.textMuted}" letter-spacing="0.06em">
+            ${escapeXml(ach.domain || 'SYSTEMS')}
+          </text>
+
+          <!-- Subtle Center Decor Line -->
+          <line x1="18" y1="130" x2="${cardWidth - 18}" y2="130" stroke="${theme.colors.borderSubtle}" stroke-width="0.8" />
+
+          <!-- Associated Project -->
+          <text x="18" y="156" class="code-mono" font-size="8.5" fill="${theme.colors.textMuted}" letter-spacing="0.06em">
+            PROJECT
+          </text>
+          <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="${theme.colors.textPrimary}">
+            ${escapeXml(ach.project || ach.associatedRepo || 'KrishiSahAI')}
+          </text>
+
+          <!-- Competition Scale / Metric -->
+          <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="${theme.colors.textSecondary}">
+            ${escapeXml(ach.metric || ach.scope || '600+ teams')}
+          </text>
+
+          <!-- Badge Pill -->
+          <g transform="translate(18, 222)">
+            <rect x="0" y="0" width="${cardWidth - 36}" height="26" rx="13"
+                  fill="${badgeFill}" stroke="${isWinner ? theme.colors.accentHot : theme.colors.border}" stroke-width="0.8" />
+            <text x="${(cardWidth - 36) / 2}" y="17" text-anchor="middle"
+                  class="code-mono" font-size="9" font-weight="800" fill="${badgeText}" letter-spacing="0.1em">
+              [${escapeXml(ach.badge || (isWinner ? 'WINNER' : 'RECOGNIZED'))}]
+            </text>
+          </g>
+        </g>
+      `;
+    }).join('')}
+
+    <!-- Restrained Luxury Glint Sparkles -->
+    ${renderSparkle(width - 50, 40, 12, theme.colors.accentHot)}
+    ${renderSparkle(width / 2 + 30, 42, 10, theme.colors.accentSoft)}
   </svg>`;
 }

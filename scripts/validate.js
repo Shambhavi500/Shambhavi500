@@ -25,7 +25,7 @@ function validateXml(xmlString, filename) {
     }
   }
 
-  // Check for forbidden unescaped tokens outside tags
+  // Check for forbidden unrendered tokens outside tags
   if (xmlString.includes('undefined') || xmlString.includes('NaN') || xmlString.includes('null')) {
     throw new Error(`${filename}: Contains unrendered JS token ('undefined', 'NaN', or 'null')`);
   }
@@ -48,7 +48,7 @@ export async function runValidation() {
   let errors = 0;
 
   // 1. Validate Data File
-  console.log('[1/5] Validating Profile Data...');
+  console.log('[1/5] Validating Profile Data & Truth Sources...');
   if (!fs.existsSync(DATA_FILE)) {
     console.error('  ✖ Missing data file at', DATA_FILE);
     errors++;
@@ -59,6 +59,37 @@ export async function runValidation() {
       errors++;
     } else {
       console.log(`  ✔ Verified username: ${data.username} (${data.name})`);
+    }
+
+    // Verify verified truth items
+    if (!data.education || !data.education.institution.includes('PICT') || data.education.cgpa !== '8.6') {
+      console.error(`  ✖ Missing or inaccurate education in profile data`);
+      errors++;
+    } else {
+      console.log(`  ✔ Verified Academic Pedigree: ${data.education.institution} (${data.education.shortDegree}) CGPA: ${data.education.cgpa}`);
+    }
+
+    if (!data.experience || data.experience.length === 0 || !data.experience[0].company.includes('Mindstrix')) {
+      console.error(`  ✖ Missing or inaccurate internship data`);
+      errors++;
+    } else {
+      console.log(`  ✔ Verified Internship: ${data.experience[0].company} - ${data.experience[0].role}`);
+    }
+
+    const hasTechFiesta = (data.achievements || []).some(a => a.title.includes('TECHFIESTA'));
+    const hasPuneAgri = (data.achievements || []).some(a => a.title.includes('PUNE AGRI'));
+    if (!hasTechFiesta || !hasPuneAgri) {
+      console.error(`  ✖ Missing prominent hackathon achievements in profile data`);
+      errors++;
+    } else {
+      console.log(`  ✔ Verified Achievements: TechFiesta '26 (1st Place) & Pune Agri Hackathon (National Runner-Up)`);
+    }
+
+    if (!data.projects || data.projects.length < 4) {
+      console.error(`  ✖ Expected at least 4 ranked featured projects, got ${data.projects?.length}`);
+      errors++;
+    } else {
+      console.log(`  ✔ Verified Ranked Projects: ${data.projects.length} showcase projects ranked`);
     }
   }
 
@@ -84,6 +115,22 @@ export async function runValidation() {
         errors++;
       }
     }
+
+    // Check hierarchy: Achievements & Experience must appear BEFORE projects & dashboard
+    const achIdx = readme.indexOf('achievements.svg');
+    const expIdx = readme.indexOf('experience.svg');
+    const projIdx = readme.indexOf('projects.svg');
+    const dashIdx = readme.indexOf('dashboard.svg');
+
+    if (achIdx === -1 || expIdx === -1 || projIdx === -1 || dashIdx === -1) {
+      console.error('  ✖ README missing required SVG section references');
+      errors++;
+    } else if (achIdx > projIdx || expIdx > projIdx) {
+      console.error('  ✖ Hierarchy violation: Achievements and Experience must precede Projects in README');
+      errors++;
+    } else {
+      console.log('  ✔ Hierarchy verified: Achievements & Experience precede Projects & Dashboard');
+    }
   }
 
   // 3. Validate Referenced Assets in README
@@ -106,11 +153,12 @@ export async function runValidation() {
   const expectedSvgs = [
     'hero.svg',
     'identity.svg',
-    'dashboard.svg',
+    'achievements.svg',
+    'experience.svg',
     'projects.svg',
+    'dashboard.svg',
     'tech-wardrobe.svg',
     'runway.svg',
-    'achievements.svg',
     'footer.svg',
     'divider.svg'
   ];

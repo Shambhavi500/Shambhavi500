@@ -1,109 +1,155 @@
-import { getSharedDefs, renderSparkle, escapeXml, COLORS } from './theme.js';
+import { getSharedDefs, renderSparkle, renderAbstractSilhouette, escapeXml, theme } from './theme.js';
 
 export function generateHeroSvg(data) {
   const width = 940;
-  const height = 330;
+  const height = 340;
   const username = data.username || 'Shambhavi500';
-  const name = (data.name || 'SHAMBHAVI PATIL').toUpperCase();
-  const discipline = 'ELECTRONICS & TELECOMMUNICATIONS · AUTONOMOUS AGENTS · AGRI-AI';
+  const name = data.name || 'Shambhavi Patil';
+  const shortDiscipline = (data.shortDiscipline || 'ENTC').toUpperCase();
+
+  // Top languages
+  const topLanguages = (data.languageDistribution || [])
+    .slice(0, 3)
+    .map(l => l.language.toUpperCase())
+    .join(' · ') || 'PYTHON · TYPESCRIPT · JAVASCRIPT';
+
+  const publicRepos = data.stats && data.stats.publicRepos ? data.stats.publicRepos : 14;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" fill="none">
     ${getSharedDefs('hero_')}
     
-    <!-- Deep Haute Couture Studio Background -->
-    <rect width="${width}" height="${height}" rx="16" fill="${COLORS.surfaceDark}" />
-    <rect width="${width}" height="${height}" rx="16" fill="url(#hero_radialAura)" />
-    
-    <!-- Architectural Dreamhouse Subtle Grid Lines -->
-    <g stroke="rgba(224, 33, 138, 0.07)" stroke-width="0.8">
-      <line x1="60" y1="0" x2="60" y2="${height}" />
-      <line x1="880" y1="0" x2="880" y2="${height}" />
-      <line x1="0" y1="50" x2="${width}" y2="50" />
-      <line x1="0" y1="280" x2="${width}" y2="280" />
-      <circle cx="${width / 2}" cy="${height / 2}" r="180" stroke="rgba(255, 45, 135, 0.05)" fill="none" />
-      <circle cx="${width / 2}" cy="${height / 2}" r="260" stroke="rgba(255, 45, 135, 0.03)" fill="none" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="${theme.colors.background}" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="url(#hero_radialAura)" />
+
+    <!-- Architectural Background Hairline Grid -->
+    <g stroke="rgba(224, 33, 138, 0.05)" stroke-width="0.8">
+      <line x1="56" y1="0" x2="56" y2="${height}" />
+      <line x1="${width - 56}" y1="0" x2="${width - 56}" y2="${height}" />
+      <line x1="0" y1="46" x2="${width}" y2="46" />
+      <line x1="0" y1="${height - 56}" x2="${width}" y2="${height - 56}" />
+      <circle cx="${width - 180}" cy="${height / 2}" r="140" stroke="rgba(255, 45, 135, 0.04)" fill="none" />
     </g>
 
-    <!-- Outer Precision Frame with Chrome / Rose Gradient -->
-    <rect x="18" y="18" width="${width - 36}" height="${height - 36}" rx="12"
-          fill="${COLORS.surfaceLightGlass}" stroke="url(#hero_borderGrad)" stroke-width="1.2" />
+    <!-- Main Pure White Surface Card with Soft Shadow -->
+    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${theme.radius.card}"
+          fill="${theme.colors.surface}" stroke="${theme.colors.border}" stroke-width="1" filter="url(#hero_cardShadow)" />
 
-    <!-- Corner Couture Framing Accents -->
-    <g stroke="url(#hero_chromeGrad)" stroke-width="2" fill="none">
-      <path d="M 28 42 L 28 28 L 42 28" />
-      <path d="M ${width - 42} 28 L ${width - 28} 28 L ${width - 28} 42" />
-      <path d="M 28 ${height - 42} L 28 ${height - 28} L 42 ${height - 28}" />
-      <path d="M ${width - 42} ${height - 28} L ${width - 28} ${height - 28} L ${width - 28} ${height - 42}" />
+    <!-- Abstract Barbie Silhouette / Ponytail Flowing Vector Graphic (Ambient Composition) -->
+    ${renderAbstractSilhouette(width - 290, 20, 1.05, 0.065, theme.colors.accent)}
+
+    <!-- Corner Editorial Framing Accents -->
+    <g stroke="${theme.colors.accentHot}" stroke-width="1.5" stroke-opacity="0.45" fill="none">
+      <path d="M 26 38 L 26 26 L 38 26" />
+      <path d="M ${width - 38} 26 L ${width - 26} 26 L ${width - 26} 38" />
+      <path d="M 26 ${height - 38} L 26 ${height - 26} L 38 ${height - 26}" />
+      <path d="M ${width - 38} ${height - 26} L ${width - 26} ${height - 26} L ${width - 26} ${height - 38}" />
     </g>
 
-    <!-- Header Atelier Monogram & Badge -->
-    <g transform="translate(45, 44)">
-      <!-- Mini Badge -->
-      <rect x="0" y="0" width="220" height="22" rx="11" fill="rgba(224, 33, 138, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.8"/>
-      <circle cx="12" cy="11" r="3.5" fill="#FF2D87">
+    <!-- Header Brand Bar -->
+    <g transform="translate(46, 42)">
+      <!-- Brand Pill -->
+      <rect x="0" y="0" width="232" height="24" rx="12" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+      <circle cx="12" cy="12" r="3.5" fill="${theme.colors.accentHot}">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="24" y="14.5" class="code-mono" font-size="9.5" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        ATELIER NO. 500 · 2026 COUTURE
+      <text x="24" y="15.5" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.textPink}" letter-spacing="0.12em">
+        ATELIER NO. 500 · AI/ML &amp; SYSTEMS
       </text>
     </g>
 
-    <g transform="translate(${width - 215}, 44)">
-      <text x="170" y="14.5" text-anchor="end" class="code-mono" font-size="9.5" fill="#A89EAE" letter-spacing="0.14em">
-        @${escapeXml(username)} // DEPLOYED
+    <!-- Right Telemetry Badge -->
+    <g transform="translate(${width - 46}, 42)">
+      <text x="0" y="15.5" text-anchor="end" class="code-mono" font-size="9.5" fill="${theme.colors.textMuted}" letter-spacing="0.14em">
+        @${escapeXml(username)} // PICT ENTC
       </text>
     </g>
 
-    <!-- Main Editorial Display Name -->
-    <g transform="translate(${width / 2}, 142)">
-      <!-- Chrome Mirror Shadow Glow -->
-      <text x="0" y="0" text-anchor="middle" class="editorial-title" font-size="44" fill="#FF2D87" opacity="0.3" filter="url(#hero_glowFilter)">
-        ${escapeXml(name)}
-      </text>
-      <!-- Main Text in Chrome & Platinum Gradient -->
-      <text x="0" y="0" text-anchor="middle" class="editorial-title" font-size="44" fill="url(#hero_chromeGrad)">
-        ${escapeXml(name)}
+    <!-- Flowing Decorative Accent Ribbon -->
+    <path d="M 46 80 C 120 74, 200 86, 280 80" stroke="url(#hero_barbieGrad)" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Main Editorial Heading: Hi, I'm Shambhavi. -->
+    <g transform="translate(46, 126)">
+      <text x="0" y="0" class="display-title" font-size="42" fill="${theme.colors.textPrimary}">
+        Hi, I&apos;m <tspan fill="${theme.colors.accentHot}">${escapeXml(name.split(' ')[0])}</tspan><tspan fill="${theme.colors.textPrimary}">.</tspan>
       </text>
     </g>
 
-    <!-- Subtitle Editorial Script Tagline -->
-    <g transform="translate(${width / 2}, 184)">
-      <text x="0" y="0" text-anchor="middle" class="editorial-script" font-size="16" fill="#F3E8FF" letter-spacing="0.04em">
-        The Dreamhouse of Autonomous Intelligence &amp; Precision Engineering
+    <!-- Subtitle: Disciplines & Domains -->
+    <g transform="translate(46, 160)">
+      <text x="0" y="0" class="code-mono" font-size="12" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.08em">
+        AI/ML • SOFTWARE ENGINEERING • ELECTRONICS &amp; TELECOMMUNICATION
       </text>
     </g>
 
-    <!-- Technical Discipline Spec Ribbon -->
-    <g transform="translate(${width / 2}, 226)">
-      <rect x="-310" y="-14" width="620" height="28" rx="14"
-            fill="rgba(21, 17, 34, 0.85)" stroke="rgba(224, 33, 138, 0.4)" stroke-width="0.8" />
-      <text x="0" y="4.5" text-anchor="middle" class="code-mono" font-size="10.5" font-weight="600" fill="#FF85C0" letter-spacing="0.15em">
-        ${escapeXml(discipline)}
+    <!-- Mission Statement -->
+    <g transform="translate(46, 192)">
+      <text x="0" y="0" class="editorial-sans" font-size="15" fill="${theme.colors.textSecondary}">
+        Building intelligent systems with real-world impact.
       </text>
     </g>
 
-    <!-- Dynamic Metrics Preview Bar -->
-    <g transform="translate(60, 266)">
-      <text x="0" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        SYSTEM: <tspan fill="#FDFBFD" font-weight="600">ONLINE</tspan>
+    <!-- Interactive Navigation / Action Pills -->
+    <g transform="translate(46, 218)">
+      <!-- GitHub Button -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="${theme.colors.textPrimary}" />
+        <text x="52" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="#FFFFFF" letter-spacing="0.05em">
+          GITHUB &#8599;
+        </text>
+      </g>
+
+      <!-- LinkedIn Button -->
+      <g transform="translate(116, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="14" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="1" />
+        <text x="56" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.05em">
+          LINKEDIN &#8599;
+        </text>
+      </g>
+
+      <!-- Projects Button -->
+      <g transform="translate(240, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="14" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="1" />
+        <text x="56" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.05em">
+          PROJECTS &#8595;
+        </text>
+      </g>
+
+      <!-- Hackathons Plaque Button -->
+      <g transform="translate(364, 0)">
+        <rect x="0" y="0" width="128" height="28" rx="14" fill="url(#hero_barbieGrad)" />
+        <text x="64" y="18" text-anchor="middle" class="code-mono" font-size="9.5" font-weight="700" fill="#FFFFFF" letter-spacing="0.06em">
+          ★ AWARDS 2026
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Telemetry Specs Strip -->
+    <g transform="translate(46, 292)">
+      <!-- Separator line -->
+      <line x1="0" y1="-14" x2="${width - 92}" y2="-14" stroke="${theme.colors.borderSubtle}" stroke-width="1" />
+
+      <text x="0" y="0" class="code-mono" font-size="9.5" fill="${theme.colors.textMuted}" letter-spacing="0.06em">
+        STATUS: <tspan fill="${theme.colors.success}" font-weight="700">● LIVE</tspan>
       </text>
-      <text x="210" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        CORE REPOSITORIES: <tspan fill="#FF2D87" font-weight="600">14 LIVE</tspan>
+
+      <text x="140" y="0" class="code-mono" font-size="9.5" fill="${theme.colors.textMuted}" letter-spacing="0.06em">
+        REPOSITORIES: <tspan fill="${theme.colors.accentHot}" font-weight="700">${publicRepos} SHIPPED</tspan>
       </text>
-      <text x="450" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        STACK: <tspan fill="#FDFBFD" font-weight="600">PYTHON · TYPESCRIPT · KOTLIN</tspan>
+
+      <text x="340" y="0" class="code-mono" font-size="9.5" fill="${theme.colors.textMuted}" letter-spacing="0.06em">
+        CORE STACK: <tspan fill="${theme.colors.textPrimary}" font-weight="700">${escapeXml(topLanguages)}</tspan>
       </text>
-      <text x="${width - 120}" y="10" text-anchor="end" class="code-mono" font-size="9.5" fill="#FF85C0" letter-spacing="0.12em">
-        BARBIE COUTURE EDITION
+
+      <text x="${width - 92}" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.1em">
+        HAUTE COUTURE ENGINEERING
       </text>
     </g>
 
-    <!-- Haute Sparkles -->
-    ${renderSparkle(115, 110, 16, '#FFFFFF')}
-    ${renderSparkle(width - 130, 125, 18, '#FF85C0')}
-    ${renderSparkle(width / 2 - 280, 180, 11, '#FF2D87')}
-    ${renderSparkle(width / 2 + 270, 160, 13, '#FFFFFF')}
-    ${renderSparkle(210, 240, 9, '#FFA8D3')}
-    ${renderSparkle(width - 240, 245, 10, '#FF85C0')}
+    <!-- Restrained Luxury Glint Sparkles -->
+    ${renderSparkle(width - 80, 110, 14, theme.colors.accentHot)}
+    ${renderSparkle(width - 190, 180, 11, theme.colors.accentSoft)}
+    ${renderSparkle(width - 110, 240, 10, '#CBD5E1')}
+    ${renderSparkle(310, 78, 9, theme.colors.accentHot)}
   </svg>`;
 }

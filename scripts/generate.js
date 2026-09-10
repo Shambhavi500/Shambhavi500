@@ -4,11 +4,12 @@ import { fileURLToPath } from 'url';
 
 import { generateHeroSvg } from '../src/generators/hero.js';
 import { generateIdentitySvg } from '../src/generators/identity.js';
+import { generateAchievementsSvg } from '../src/generators/achievements.js';
+import { generateExperienceSvg } from '../src/generators/experience.js';
 import { generateDashboardSvg } from '../src/generators/dashboard.js';
 import { generateProjectsSvg } from '../src/generators/projects.js';
 import { generateTechWardrobeSvg } from '../src/generators/tech-wardrobe.js';
 import { generateRunwaySvg } from '../src/generators/runway.js';
-import { generateAchievementsSvg } from '../src/generators/achievements.js';
 import { generateFooterSvg } from '../src/generators/footer.js';
 import { generateDividerSvg } from '../src/generators/divider.js';
 import { generateReadme } from '../src/generators/readme.js';
@@ -38,11 +39,12 @@ export async function generateAll() {
   const tasks = [
     { filename: 'hero.svg', generator: () => generateHeroSvg(profileData) },
     { filename: 'identity.svg', generator: () => generateIdentitySvg(profileData) },
-    { filename: 'dashboard.svg', generator: () => generateDashboardSvg(profileData) },
+    { filename: 'achievements.svg', generator: () => generateAchievementsSvg(profileData) },
+    { filename: 'experience.svg', generator: () => generateExperienceSvg(profileData) },
     { filename: 'projects.svg', generator: () => generateProjectsSvg(profileData) },
+    { filename: 'dashboard.svg', generator: () => generateDashboardSvg(profileData) },
     { filename: 'tech-wardrobe.svg', generator: () => generateTechWardrobeSvg(profileData) },
     { filename: 'runway.svg', generator: () => generateRunwaySvg(profileData) },
-    { filename: 'achievements.svg', generator: () => generateAchievementsSvg(profileData) },
     { filename: 'footer.svg', generator: () => generateFooterSvg(profileData) },
     { filename: 'divider.svg', generator: () => generateDividerSvg() }
   ];

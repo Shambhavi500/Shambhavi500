@@ -1,390 +1,435 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 290" width="100%" height="290" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 370" width="100%" height="370" fill="none">
     
     <defs>
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
         .editorial-title {
-          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
           font-style: italic;
+          letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
         }
         .code-mono {
           font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
         }
         
         /* Subtle Shimmer & Pulse Keyframes */
-        @keyframes shimmerPulse {
-          0% { stop-color: #E0218A; stop-opacity: 0.85; }
-          50% { stop-color: #FF2D87; stop-opacity: 1; }
-          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
         }
-        @keyframes sparkleGlint {
-          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
-          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
-        }
-        @keyframes runwayGlow {
-          0%, 100% { opacity: 0.6; }
-          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
         }
         
-        .sparkle-anim {
-          animation: sparkleGlint 4s ease-in-out infinite;
-          transform-origin: center;
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
         }
-        .runway-glow {
-          animation: runwayGlow 3s ease-in-out infinite;
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
         }
       ]]></style>
 
-      <!-- Barbie Chrome Metallic Gradient -->
+      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <linearGradient id="ach_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C2185B" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="ach_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
+        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
+      </linearGradient>
+
+      <!-- Rose Satin Monogram Gradient -->
+      <linearGradient id="ach_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D1124" />
+        <stop offset="100%" stop-color="#1A0D18" />
+      </linearGradient>
+
+      <!-- Light Rose Ambient Surface Gradient -->
+      <linearGradient id="ach_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#FFF5F8" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="ach_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
+        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
+        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
+      </linearGradient>
+
+      <!-- Platinum / Chrome Luxury Accent Gradient -->
       <linearGradient id="ach_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="25%" stop-color="#FFD6E8" />
-        <stop offset="50%" stop-color="#FFFFFF" />
-        <stop offset="75%" stop-color="#E2E8F0" />
-        <stop offset="100%" stop-color="#FFA8D3" />
+        <stop offset="35%" stop-color="#F1F5F9" />
+        <stop offset="70%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#E2E8F0" />
       </linearGradient>
 
-      <!-- Signature Barbie Dreamhouse Pink Gradient -->
-      <linearGradient id="ach_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#D4145A" />
-        <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#FF2D87" />
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="ach_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Satin Rose Glow Gradient -->
-      <linearGradient id="ach_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
-        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
-        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
-      </linearGradient>
-
-      <!-- Glassmorphic Card Fill -->
-      <linearGradient id="ach_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
-        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
-      </linearGradient>
-
-      <!-- Subtle Accent Border Gradient -->
-      <linearGradient id="ach_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
-        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
-        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
-        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
-      </linearGradient>
-
-      <!-- Soft Radial Dreamhouse Glow -->
-      <radialGradient id="ach_radialAura" cx="50%" cy="0%" r="70%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
-        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
+      <radialGradient id="ach_radialAura" cx="80%" cy="10%" r="70%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
+        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
         <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Star / Sparkle Filter -->
+      <!-- Card Soft Shadow Filter -->
+      <filter id="ach_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="ach_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
       <filter id="ach_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feGaussianBlur stdDeviation="6" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
     </defs>
   
     
-    <!-- Dark Studio Base -->
-    <rect width="940" height="290" rx="16" fill="#0D0B14" />
-    <rect width="940" height="290" rx="16" fill="url(#ach_radialAura)" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="370" rx="16" fill="#FAFAFC" />
+    <rect width="940" height="370" rx="16" fill="url(#ach_radialAura)" />
 
-    <!-- Outer Structural Frame -->
-    <rect x="16" y="16" width="908" height="258" rx="14"
-          fill="url(#ach_cardGlass)" stroke="url(#ach_borderGrad)" stroke-width="1" />
+    <!-- Outer Structural Frame with Soft Shadow -->
+    <rect x="16" y="16" width="908" height="338" rx="14"
+          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#ach_cardShadow)" />
 
-    <!-- Section Header -->
-    <g transform="translate(42, 44)">
-      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#ach_chromeGrad)">
-        CAREER EDITION // ATELIER MILESTONES
-      </text>
-      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
-        VERIFIED REPOSITORY RELEASES, ARCHITECTURAL DESIGNS &amp; IMPACT DOMAINS
+    <!-- Section Header Tag -->
+    <g transform="translate(40, 42)">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#E0218A" letter-spacing="0.14em">
+        THE WINS // HACKATHONS &amp; ENGINEERING HONORS
       </text>
     </g>
 
-    <g transform="translate(898, 44)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.1em">
-        4 VERIFIED BADGES
-      </text>
-      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
-        ● AUTHENTIC CRITERIA MET
+    <g transform="translate(900, 42)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.1em">
+        OFFICIALLY ACCREDITED · <tspan fill="#00E676" font-weight="700">● VERIFIED MILESTONES</tspan>
       </text>
     </g>
 
-    <!-- 4 Achievement Cards -->
+    <!-- Header Divider Line -->
+    <line x1="40" y1="54" x2="900" y2="54" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
+
+    <!-- 4 Fashion-Tech Award Plaques -->
     
-      <!-- Achievement Card 1: MULTI-AGENT ARCHITECT -->
-      <g transform="translate(42, 74)">
-        <!-- Card Base -->
-        <rect x="0" y="0" width="200" height="180" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <!-- Plaque Card 01 -->
+        <g transform="translate(40, 72)">
+          <!-- Card Base -->
+          <rect x="0" y="0" width="203" height="270" rx="14"
+                fill="#FFFFFF" stroke="#FF2D87" stroke-width="1.5" />
 
-        <!-- Top Accent Strip -->
-        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="203" height="4" rx="2" fill="url(#ach_barbieGrad)" />
 
-        <!-- Edition Tag -->
-        <g transform="translate(14, 24)">
-          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
-          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
-            EDITION 01
+          <!-- Plaque Number '01' -->
+          <text x="18" y="32" class="display-title" font-size="16" font-weight="800" fill="#FF2D87">
+            01
           </text>
+
+          <!-- Trophy / Medal Mini Icon -->
+          <text x="185" y="32" text-anchor="end" font-size="14">
+            🏆
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="18" y1="44" x2="185" y2="44" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
+            TECHFIESTA &apos;26
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#FF2D87" letter-spacing="0.05em">
+            1ST PLACE
+          </text>
+
+          <!-- Domain -->
+          <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
+            AGRICULTURE DOMAIN
+          </text>
+
+          <!-- Subtle Center Decor Line -->
+          <line x1="18" y1="130" x2="185" y2="130" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Associated Project -->
+          <text x="18" y="156" class="code-mono" font-size="8.5" fill="#7A7A8E" letter-spacing="0.06em">
+            PROJECT
+          </text>
+          <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
+            KrishiSahAI
+          </text>
+
+          <!-- Competition Scale / Metric -->
+          <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
+            600+ teams
+          </text>
+
+          <!-- Badge Pill -->
+          <g transform="translate(18, 222)">
+            <rect x="0" y="0" width="167" height="26" rx="13"
+                  fill="#FF2D87" stroke="#FF2D87" stroke-width="0.8" />
+            <text x="83.5" y="17" text-anchor="middle"
+                  class="code-mono" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.1em">
+              [WINNER]
+            </text>
+          </g>
         </g>
+      
+        <!-- Plaque Card 02 -->
+        <g transform="translate(259, 72)">
+          <!-- Card Base -->
+          <rect x="0" y="0" width="203" height="270" rx="14"
+                fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" />
 
-        <!-- Medal / Badge Emblem in Chrome -->
-        <g transform="translate(156, 26)">
-          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
-          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
-        </g>
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="203" height="4" rx="2" fill="rgba(224, 33, 138, 0.18)" />
 
-        <!-- Title -->
-        <g transform="translate(14, 70)">
-          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            MULTI-AGENT
+          <!-- Plaque Number '01' -->
+          <text x="18" y="32" class="display-title" font-size="16" font-weight="800" fill="#E0218A">
+            02
           </text>
-          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            ARCHITECT
-          </text>
-        </g>
 
-        <!-- Description -->
-        <g transform="translate(14, 110)">
-          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            Engineered Ovio: Autonomous DaVi
+          <!-- Trophy / Medal Mini Icon -->
+          <text x="185" y="32" text-anchor="end" font-size="14">
+            🥈
           </text>
-          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            nci Resolve agent orchestration 
-          </text>
-          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            pipeline.
-          </text>
-        </g>
 
-        <!-- Metric Footer -->
-        <g transform="translate(14, 162)">
-          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
-            &#10003; Autonomous AI
+          <!-- Hairline Divider -->
+          <line x1="18" y1="44" x2="185" y2="44" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
+            PUNE AGRI HACKATHON
           </text>
+
+          <!-- Place / Ranking -->
+          <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#E0218A" letter-spacing="0.05em">
+            NATIONAL RUNNER-UP
+          </text>
+
+          <!-- Domain -->
+          <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
+            PRECISION AGRITECH
+          </text>
+
+          <!-- Subtle Center Decor Line -->
+          <line x1="18" y1="130" x2="185" y2="130" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Associated Project -->
+          <text x="18" y="156" class="code-mono" font-size="8.5" fill="#7A7A8E" letter-spacing="0.06em">
+            PROJECT
+          </text>
+          <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
+            Krishi Prabandh &amp; NDVI
+          </text>
+
+          <!-- Competition Scale / Metric -->
+          <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
+            ₹15L grant
+          </text>
+
+          <!-- Badge Pill -->
+          <g transform="translate(18, 222)">
+            <rect x="0" y="0" width="167" height="26" rx="13"
+                  fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+            <text x="83.5" y="17" text-anchor="middle"
+                  class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
+              [RUNNER-UP]
+            </text>
+          </g>
         </g>
-      </g>
+      
+        <!-- Plaque Card 03 -->
+        <g transform="translate(478, 72)">
+          <!-- Card Base -->
+          <rect x="0" y="0" width="203" height="270" rx="14"
+                fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" />
+
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="203" height="4" rx="2" fill="rgba(224, 33, 138, 0.18)" />
+
+          <!-- Plaque Number '01' -->
+          <text x="18" y="32" class="display-title" font-size="16" font-weight="800" fill="#111116">
+            03
+          </text>
+
+          <!-- Trophy / Medal Mini Icon -->
+          <text x="185" y="32" text-anchor="end" font-size="14">
+            ✦
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="18" y1="44" x2="185" y2="44" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
+            MULTI-AGENT ARCHITECT
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#111116" letter-spacing="0.05em">
+            FLAGSHIP AGENT
+          </text>
+
+          <!-- Domain -->
+          <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
+            AUTONOMOUS WORKFLOWS
+          </text>
+
+          <!-- Subtle Center Decor Line -->
+          <line x1="18" y1="130" x2="185" y2="130" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Associated Project -->
+          <text x="18" y="156" class="code-mono" font-size="8.5" fill="#7A7A8E" letter-spacing="0.06em">
+            PROJECT
+          </text>
+          <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
+            Ovio (DaVinci Resolve)
+          </text>
+
+          <!-- Competition Scale / Metric -->
+          <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
+            Agentic OS
+          </text>
+
+          <!-- Badge Pill -->
+          <g transform="translate(18, 222)">
+            <rect x="0" y="0" width="167" height="26" rx="13"
+                  fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+            <text x="83.5" y="17" text-anchor="middle"
+                  class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
+              [ARCHITECT]
+            </text>
+          </g>
+        </g>
+      
+        <!-- Plaque Card 04 -->
+        <g transform="translate(697, 72)">
+          <!-- Card Base -->
+          <rect x="0" y="0" width="203" height="270" rx="14"
+                fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" />
+
+          <!-- Top Accent Ribbon -->
+          <rect x="0" y="0" width="203" height="4" rx="2" fill="rgba(224, 33, 138, 0.18)" />
+
+          <!-- Plaque Number '01' -->
+          <text x="18" y="32" class="display-title" font-size="16" font-weight="800" fill="#111116">
+            04
+          </text>
+
+          <!-- Trophy / Medal Mini Icon -->
+          <text x="185" y="32" text-anchor="end" font-size="14">
+            ✦
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="18" y1="44" x2="185" y2="44" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
+            QUANTITATIVE RL LAB
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#111116" letter-spacing="0.05em">
+            SYSTEMS ENGINE
+          </text>
+
+          <!-- Domain -->
+          <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
+            ALGORITHMIC TRADING
+          </text>
+
+          <!-- Subtle Center Decor Line -->
+          <line x1="18" y1="130" x2="185" y2="130" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+
+          <!-- Associated Project -->
+          <text x="18" y="156" class="code-mono" font-size="8.5" fill="#7A7A8E" letter-spacing="0.06em">
+            PROJECT
+          </text>
+          <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
+            AlphaTrader-RL &amp; AIRA
+          </text>
+
+          <!-- Competition Scale / Metric -->
+          <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
+            5+ Yrs NSE
+          </text>
+
+          <!-- Badge Pill -->
+          <g transform="translate(18, 222)">
+            <rect x="0" y="0" width="167" height="26" rx="13"
+                  fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+            <text x="83.5" y="17" text-anchor="middle"
+                  class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
+              [ALGO LAB]
+            </text>
+          </g>
+        </g>
+      
+
+    <!-- Restrained Luxury Glint Sparkles -->
     
-      <!-- Achievement Card 2: AGRITECH IMPACT BUILDER -->
-      <g transform="translate(258, 74)">
-        <!-- Card Base -->
-        <rect x="0" y="0" width="200" height="180" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
-
-        <!-- Top Accent Strip -->
-        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
-
-        <!-- Edition Tag -->
-        <g transform="translate(14, 24)">
-          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
-          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
-            EDITION 02
-          </text>
-        </g>
-
-        <!-- Medal / Badge Emblem in Chrome -->
-        <g transform="translate(156, 26)">
-          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
-          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
-        </g>
-
-        <!-- Title -->
-        <g transform="translate(14, 70)">
-          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            AGRITECH
-          </text>
-          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            IMPACT BUILDER
-          </text>
-        </g>
-
-        <!-- Description -->
-        <g transform="translate(14, 110)">
-          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            Designed KrishiSahAI, KrishiSetu
-          </text>
-          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-             &amp; NDVI satellite systems for ag
-          </text>
-          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ricultural intelligence.
-          </text>
-        </g>
-
-        <!-- Metric Footer -->
-        <g transform="translate(14, 162)">
-          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
-            &#10003; Social &amp; Earth Impact
-          </text>
-        </g>
-      </g>
-    
-      <!-- Achievement Card 3: FINTECH ALGO ENGINEER -->
-      <g transform="translate(474, 74)">
-        <!-- Card Base -->
-        <rect x="0" y="0" width="200" height="180" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
-
-        <!-- Top Accent Strip -->
-        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
-
-        <!-- Edition Tag -->
-        <g transform="translate(14, 24)">
-          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
-          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
-            EDITION 03
-          </text>
-        </g>
-
-        <!-- Medal / Badge Emblem in Chrome -->
-        <g transform="translate(156, 26)">
-          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
-          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
-        </g>
-
-        <!-- Title -->
-        <g transform="translate(14, 70)">
-          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            FINTECH
-          </text>
-          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            ALGO ENGINEER
-          </text>
-        </g>
-
-        <!-- Description -->
-        <g transform="translate(14, 110)">
-          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            Developed AIRA autonomous recove
-          </text>
-          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ry OS &amp; AlphaTrader-RL reinforce
-          </text>
-          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            ment learning trading.
-          </text>
-        </g>
-
-        <!-- Metric Footer -->
-        <g transform="translate(14, 162)">
-          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
-            &#10003; Quantitative Systems
-          </text>
-        </g>
-      </g>
-    
-      <!-- Achievement Card 4: POLYGLOT ATELIER -->
-      <g transform="translate(690, 74)">
-        <!-- Card Base -->
-        <rect x="0" y="0" width="200" height="180" rx="12"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
-
-        <!-- Top Accent Strip -->
-        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
-
-        <!-- Edition Tag -->
-        <g transform="translate(14, 24)">
-          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
-          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
-            EDITION 04
-          </text>
-        </g>
-
-        <!-- Medal / Badge Emblem in Chrome -->
-        <g transform="translate(156, 26)">
-          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
-          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
-        </g>
-
-        <!-- Title -->
-        <g transform="translate(14, 70)">
-          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            POLYGLOT
-          </text>
-          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
-            ATELIER
-          </text>
-        </g>
-
-        <!-- Description -->
-        <g transform="translate(14, 110)">
-          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-            Production code spanning Python,
-          </text>
-          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-             TypeScript, Kotlin, JavaScript,
-          </text>
-          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
-             and C/C++.
-          </text>
-        </g>
-
-        <!-- Metric Footer -->
-        <g transform="translate(14, 162)">
-          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
-            &#10003; 14 Repositories
-          </text>
-        </g>
-      </g>
-    
-
-    <!-- Sparkles -->
-    
-    <g class="sparkle-anim" style="transform-origin: 904px 36px;">
+    <g class="glint-anim" style="transform-origin: 890px 40px;">
       <path d="
-        M 904 31
-        Q 906 34 909 36
-        Q 906 38 904 41
-        Q 902 38 899 36
-        Q 902 34 904 31
+        M 890 34
+        Q 892.64 37.36 896 40
+        Q 892.64 42.64 890 46
+        Q 887.36 42.64 884 40
+        Q 887.36 37.36 890 34
         Z"
-        fill="#FFFFFF"
-        opacity="0.9"
+        fill="#FF2D87"
+        opacity="0.85"
       />
-      <circle cx="904" cy="36" r="1.5" fill="#FFFFFF" />
+      <circle cx="890" cy="40" r="1.6800000000000002" fill="#FFFFFF" />
     </g>
   
     
-    <g class="sparkle-anim" style="transform-origin: 470px 40px;">
+    <g class="glint-anim" style="transform-origin: 500px 42px;">
       <path d="
-        M 470 35
-        Q 472 38 475 40
-        Q 472 42 470 45
-        Q 468 42 465 40
-        Q 468 38 470 35
+        M 500 37
+        Q 502.2 39.8 505 42
+        Q 502.2 44.2 500 47
+        Q 497.8 44.2 495 42
+        Q 497.8 39.8 500 37
         Z"
         fill="#FF85C0"
-        opacity="0.9"
+        opacity="0.85"
       />
-      <circle cx="470" cy="40" r="1.5" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 880px 265px;">
-      <path d="
-        M 880 259.5
-        Q 882.2 262.8 885.5 265
-        Q 882.2 267.2 880 270.5
-        Q 877.8 267.2 874.5 265
-        Q 877.8 262.8 880 259.5
-        Z"
-        fill="#FFA8D3"
-        opacity="0.9"
-      />
-      <circle cx="880" cy="265" r="1.65" fill="#FFFFFF" />
+      <circle cx="500" cy="42" r="1.4000000000000001" fill="#FFFFFF" />
     </g>
   
   </svg>

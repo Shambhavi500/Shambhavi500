@@ -1,119 +1,130 @@
 <div align="center">
 
-<!-- HERO SECTION // ATELIER SHAMBHAVI -->
+<!-- 01. HERO SECTION // ATELIER NO. 500 -->
 <a href="https://github.com/Shambhavi500">
-  <img src="./assets/hero.svg" alt="Shambhavi Patil - Luxury Barbie-Inspired Developer Profile" width="100%" />
+  <img src="./assets/hero.svg" alt="Shambhavi Patil - Luxury Barbie-Inspired Engineering Portfolio" width="100%" />
 </a>
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- WHO IS SHAMBHAVI? // IDENTITY DOSSIER -->
+<!-- 02. THE PERSON // ENGINEERING PROFILE & FOCUS -->
 <a href="https://github.com/Shambhavi500">
-  <img src="./assets/identity.svg" alt="Identity Dossier - Shambhavi Patil" width="100%" />
+  <img src="./assets/identity.svg" alt="The Person - Shambhavi Patil Profile &amp; Focus" width="100%" />
 </a>
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- DREAMHOUSE DASHBOARD // METRICS -->
-<a href="https://github.com/Shambhavi500?tab=repositories">
-  <img src="./assets/dashboard.svg" alt="Dreamhouse Dashboard - Telemetry &amp; Metrics" width="100%" />
+<!-- 03. THE WINS // HACKATHONS & ENGINEERING HONORS -->
+<a href="https://github.com/Shambhavi500">
+  <img src="./assets/achievements.svg" alt="The Wins - Hackathon Honors &amp; Recognitions" width="100%" />
 </a>
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- DREAM PROJECTS // THE ATELIER COLLECTION -->
+<!-- 04. PROFESSIONAL EDIT // INDUSTRY APPOINTMENT & ACADEMICS -->
+<a href="https://www.linkedin.com/in/shambhavi-patil05/">
+  <img src="./assets/experience.svg" alt="Professional Edit - Mindstrix Technologies LLP AI/ML Intern &amp; PICT ENTC" width="100%" />
+</a>
+
+<br/>
+
+<!-- FLOWING PINK CURVE DIVIDER -->
+<img src="./assets/divider.svg" alt="Divider" width="100%" />
+
+<br/>
+
+<!-- 05. THE WORK // FEATURED PROJECTS & ARCHITECTURES -->
 <a href="https://github.com/Shambhavi500?tab=repositories">
-  <img src="./assets/projects.svg" alt="Dream Projects - Featured Open Source Systems" width="100%" />
+  <img src="./assets/projects.svg" alt="The Work - Featured Projects &amp; Architectures" width="100%" />
 </a>
 
 </div>
 
-### ✦ Atelier Project Directory
+### ✦ Curated Atelier Architectures
 
-| Project | Domain / Category | Primary Architecture | Description |
+| Project | Domain / Category | Primary Architecture | Description & Recognition |
 | :--- | :--- | :--- | :--- |
-| **[Ovio](https://github.com/Shambhavi500/Ovio)** | `AI / MULTI-AGENT` | **Python** · Multi-Agent Orchestration | AI-powered DaVinci Resolve video editing assistant and multi-agent workflow engine |
-| **[Aira](https://github.com/Shambhavi500/Aira)** | `FINTECH / AUTONOMOUS` | **TypeScript** · Distributed Systems | Autonomous Revenue Recovery Operating System for the Indian Fintech Ecosystem |
-| **[KrishiSahAI](https://github.com/Shambhavi500/KrishiSahAI)** | `AGRITECH / AI ADVISORY` | **Python** · Machine Learning | State-of-the-art AI advisory bringing precision agriculture to Indian farmhouses |
-| **[KrishiSetu](https://github.com/Shambhavi500/KrishiSetu)** | `BLOCKCHAIN / SUPPLY CHAIN` | **TypeScript** · Web3 | Decentralized agri-supply chain solution ensuring transparent and fair farmer pricing |
-| **[AlphaTrader-RL](https://github.com/Shambhavi500/AlphaTrader-RL)** | `QUANT / REINFORCEMENT LEARNING` | **Python** · RL Trading Engine | Reinforcement learning algorithms for automated trading execution |
-| **[StockItUp](https://github.com/Shambhavi500/StockItUp)** | `FINTECH / REAL-TIME` | **JavaScript** · Live APIs | Real-time market tracking platform with interactive financial charting |
-| **[NDVI_satellite](https://github.com/Shambhavi500/NDVI_satellite)** | `EARTH OBSERVATION / GIS` | **JavaScript** · Spectral Bands | Normalized Difference Vegetation Index analysis using multi-spectral satellite imagery |
-| **[EPeekPahani](https://github.com/Shambhavi500/EPeekPahani)** | `MOBILE / ANDROID` | **Kotlin** · Android SDK | Digital crop survey and agricultural ground-truth verification application |
+| **[KrishiSahAI](https://github.com/Shambhavi500/KrishiSahAI)** | `AGRITECH / AI ADVISORY` | **Python** | Flagship AI agriculture platform for crop recommendations, soil telemetry & rural decision support. `1ST PLACE · TECHFIESTA '26` |
+| **[Ovio](https://github.com/Shambhavi500/Ovio)** | `AI / MULTI-AGENT` | **Python** | Cinema-grade AI DaVinci Resolve editing assistant & multi-agent workflow engine. `AUTONOMOUS WORKFLOW` |
+| **[Aira](https://github.com/Shambhavi500/Aira)** | `FINTECH / AUTONOMOUS OS` | **TypeScript** | Autonomous Revenue Recovery Operating System for Indian fintech ecosystem & payment pipelines. `SYSTEM ARCHITECTURE` |
+| **[AlphaTrader-RL](https://github.com/Shambhavi500/AlphaTrader-RL)** | `QUANT / REINFORCEMENT LEARNING` | **Python** | Gymnasium RL trading environment on 5+ yrs NSE data with 50-dim observation space and Docker. `FLAGSHIP RL RESEARCH` |
+| **[KRISHI-PRABANDH](https://github.com/Shambhavi500/KRISHI-PRABANDH)** | `GOV-TECH / AGRONOMY` | **Multi-stack** | AI governance layer with OCR fraud detection & satellite NDVI spectral validation. `NATIONAL RUNNER-UP · ₹15L GRANT` |
+| **[NDVI_satellite](https://github.com/Shambhavi500/NDVI_satellite)** | `EARTH OBSERVATION / GIS` | **JavaScript** | Vegetation index analysis using satellite spectral bands and Google Earth Engine. `SPECTRAL REMOTE SENSING` |
 
 <div align="center">
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- TECH WARDROBE // THE ENGINEERING ENSEMBLE -->
+<!-- 06. THE TELEMETRY // SYSTEM METRICS & TECH DISTRIBUTION -->
 <a href="https://github.com/Shambhavi500?tab=repositories">
-  <img src="./assets/tech-wardrobe.svg" alt="Tech Wardrobe - Curated Technology Stack" width="100%" />
+  <img src="./assets/dashboard.svg" alt="The Telemetry - System Metrics &amp; Stack Distribution" width="100%" />
 </a>
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- DEVELOPER RUNWAY // CODE CADENCE -->
+<!-- 07. THE LAB // AI/ML & ENGINEERING STACK -->
+<a href="https://github.com/Shambhavi500?tab=repositories">
+  <img src="./assets/tech-wardrobe.svg" alt="The Lab - AI/ML &amp; Engineering Stack" width="100%" />
+</a>
+
+<br/>
+
+<!-- FLOWING PINK CURVE DIVIDER -->
+<img src="./assets/divider.svg" alt="Divider" width="100%" />
+
+<br/>
+
+<!-- 08. THE BUILD LOG // ACTIVITY RUNWAY & CADENCE -->
 <a href="https://github.com/Shambhavi500">
-  <img src="./assets/runway.svg" alt="Developer Runway - Contribution Activity" width="100%" />
+  <img src="./assets/runway.svg" alt="The Build Log - Activity Runway &amp; Cadence" width="100%" />
 </a>
 
 <br/>
 
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
+<!-- FLOWING PINK CURVE DIVIDER -->
 <img src="./assets/divider.svg" alt="Divider" width="100%" />
 
 <br/>
 
-<!-- CAREER EDITION // ATELIER MILESTONES -->
-<a href="https://github.com/Shambhavi500?tab=repositories">
-  <img src="./assets/achievements.svg" alt="Career Edition - Milestone Badges" width="100%" />
-</a>
-
-<br/>
-
-<!-- HAUTE COUTURE RIBBON DIVIDER -->
-<img src="./assets/divider.svg" alt="Divider" width="100%" />
-
-<br/>
-
-<!-- FOOTER // DREAMHOUSE CLOSING -->
+<!-- 09. THE CLOSING // HAUTE COUTURE SIGNATURE -->
 <a href="mailto:shambhavipatil5631@gmail.com">
-  <img src="./assets/footer.svg" alt="Welcome to Shambhavi's Dreamhouse" width="100%" />
+  <img src="./assets/footer.svg" alt="The Closing - Shambhavi Patil Portfolio" width="100%" />
 </a>
 
 <br/><br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Shambhavi500-E0218A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shambhavi500)
-[![Email](https://img.shields.io/badge/Email-shambhavipatil5631%40gmail.com-151122?style=for-the-badge&logo=gmail&logoColor=FF2D87)](mailto:shambhavipatil5631@gmail.com)
-[![Status](https://img.shields.io/badge/Status-Building_Autonomous_Systems-E0218A?style=for-the-badge)](https://github.com/Shambhavi500)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Shambhavi_Patil-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shambhavi-patil05/)
+[![Email](https://img.shields.io/badge/Email-shambhavipatil5631%40gmail.com-111116?style=for-the-badge&logo=gmail&logoColor=FF2D87)](mailto:shambhavipatil5631@gmail.com)
+[![Status](https://img.shields.io/badge/Status-AI%2FML_R%26D_Intern_%40Mindstrix-E0218A?style=for-the-badge)](https://github.com/Shambhavi500)
 
 <br/><br/>
 
-<sub>Curated with intention &amp; precision in the <b>Atelier No. 500</b>. Inspired by Barbie Couture &amp; Modern Systems Engineering.</sub>
+<sub>Curated with intention &amp; precision in the <b>Atelier No. 500</b>. Where Autonomous Intelligence Meets Haute Couture Engineering.</sub>
 
 </div>

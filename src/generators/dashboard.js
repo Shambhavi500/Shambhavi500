@@ -1,152 +1,179 @@
-import { getSharedDefs, renderSparkle, escapeXml, COLORS } from './theme.js';
+import { getSharedDefs, renderSparkle, escapeXml, theme } from './theme.js';
+
+const LANG_COLORS = {
+  'Python': '#3572A5',
+  'TypeScript': '#3178C6',
+  'JavaScript': '#F1E05A',
+  'Kotlin': '#A97BFF',
+  'Java': '#B07219',
+  'C': '#555555',
+  'C++': '#F34B7D',
+  'HTML': '#E34C26',
+  'CSS': '#563D7C'
+};
 
 export function generateDashboardSvg(data) {
   const width = 940;
   const height = 310;
   const stats = data.stats || {};
-  const reposCount = stats.publicRepos || 14;
-  const languages = data.languages || { Python: 4, TypeScript: 4, JavaScript: 3, Kotlin: 1 };
-  const totalLangs = Object.keys(languages).length;
-  const topLang = 'Python & TypeScript';
+  const reposCount = stats.publicRepos || (data.projects ? data.projects.length : 14);
+  const starsCount = stats.totalStars || 0;
+  const forksCount = stats.totalForks || 0;
+  const followers = stats.followers || 4;
+  const following = stats.following || 4;
+
+  const distribution = data.languageDistribution || [
+    { language: 'Python', count: 4, percentage: 33.3 },
+    { language: 'TypeScript', count: 4, percentage: 33.3 },
+    { language: 'JavaScript', count: 3, percentage: 25.0 },
+    { language: 'Kotlin', count: 1, percentage: 8.4 }
+  ];
+
+  // Calculate dynamic bar segments across 820px
+  const barWidth = 820;
+  let currentX = 0;
+  const barSegmentsSvg = distribution.map((item, idx) => {
+    const isFirst = idx === 0;
+    const isLast = idx === distribution.length - 1;
+    let segWidth = Math.round((item.percentage / 100) * barWidth);
+    if (isLast) {
+      segWidth = Math.max(4, barWidth - currentX);
+    }
+    const color = LANG_COLORS[item.language] || theme.colors.accentHot;
+    const rx = (isFirst || isLast) ? 4 : 0;
+    const rect = `<rect x="${currentX}" y="0" width="${segWidth}" height="10" rx="${rx}" fill="${color}" />`;
+    currentX += segWidth;
+    return rect;
+  }).join('\n        ');
+
+  // Dynamic Legend Items
+  const legendSpacing = Math.floor(barWidth / Math.min(4, distribution.length));
+  const legendSvg = distribution.slice(0, 4).map((item, idx) => {
+    const x = idx * legendSpacing;
+    const color = LANG_COLORS[item.language] || theme.colors.accentHot;
+    return `<g transform="translate(${x}, 0)">
+        <circle cx="5" cy="5" r="4.5" fill="${color}" />
+        <text x="16" y="8.5" class="code-mono" font-size="9" fill="${theme.colors.textPrimary}" font-weight="700">
+          ${escapeXml(item.language)}
+        </text>
+        <text x="16" y="22" class="code-mono" font-size="8.5" fill="${theme.colors.textMuted}">
+          ${item.percentage}% · ${item.count} Repos
+        </text>
+      </g>`;
+  }).join('\n        ');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" fill="none">
     ${getSharedDefs('dash_')}
     
-    <!-- Outer Studio Glass Base -->
-    <rect width="${width}" height="${height}" rx="16" fill="${COLORS.surfaceDark}" />
-    <rect width="${width}" height="${height}" rx="16" fill="url(#dash_radialAura)" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="${theme.colors.background}" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="url(#dash_radialAura)" />
 
-    <!-- Outer Frame -->
-    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="14"
-          fill="url(#dash_cardGlass)" stroke="url(#dash_borderGrad)" stroke-width="1" />
+    <!-- Outer Structural Frame with Soft Shadow -->
+    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${theme.radius.card}"
+          fill="${theme.colors.surface}" stroke="${theme.colors.border}" stroke-width="1" filter="url(#dash_cardShadow)" />
 
-    <!-- Dashboard Header Line -->
-    <g transform="translate(42, 38)">
-      <text x="0" y="0" class="code-mono" font-size="10" font-weight="600" fill="#FF85C0" letter-spacing="0.14em">
-        DREAMHOUSE DASHBOARD // TELEMETRY &amp; GITHUB METRICS
-      </text>
-    </g>
-    <g transform="translate(${width - 42}, 38)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.12em">
-        REAL-TIME REPOSITORY TELEMETRY
+    <!-- Header Section -->
+    <g transform="translate(42, 42)">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.14em">
+        THE TELEMETRY // REPOSITORY METRICS &amp; STACK DISTRIBUTION
       </text>
     </g>
 
-    <!-- 4 High-Fashion Statistic Pods in Grid -->
-    <!-- Card 1: Public Repositories -->
-    <g transform="translate(42, 60)">
-      <rect x="0" y="0" width="200" height="120" rx="10" fill="#130F1E" stroke="rgba(224, 33, 138, 0.3)" stroke-width="0.9" />
-      <text x="16" y="24" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        PUBLIC REPOSITORIES
-      </text>
-      <text x="16" y="72" class="editorial-title" font-size="42" fill="url(#dash_chromeGrad)">
-        ${reposCount}
-      </text>
-      <text x="16" y="98" class="code-mono" font-size="9" fill="#9D93A8">
-        100% Original Open Source
-      </text>
-      <circle cx="176" cy="22" r="3.5" fill="#FF2D87" />
-    </g>
-
-    <!-- Card 2: Polyglot Architecture -->
-    <g transform="translate(260, 60)">
-      <rect x="0" y="0" width="200" height="120" rx="10" fill="#130F1E" stroke="rgba(224, 33, 138, 0.3)" stroke-width="0.9" />
-      <text x="16" y="24" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        PRIMARY STACK
-      </text>
-      <text x="16" y="66" class="editorial-sans" font-size="20" font-weight="700" fill="#FFFFFF">
-        Py &amp; TS
-      </text>
-      <text x="16" y="86" class="code-mono" font-size="10" fill="#FF85C0">
-        4 Python · 4 TypeScript
-      </text>
-      <text x="16" y="104" class="code-mono" font-size="9" fill="#9D93A8">
-        + JS (3) · Kotlin (1)
+    <g transform="translate(${width - 42}, 42)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="${theme.colors.textMuted}" letter-spacing="0.1em">
+        DATA SOURCE: API.GITHUB.COM · <tspan fill="${theme.colors.success}" font-weight="700">● LIVE</tspan>
       </text>
     </g>
 
-    <!-- Card 3: Domain Specializations -->
-    <g transform="translate(478, 60)">
-      <rect x="0" y="0" width="200" height="120" rx="10" fill="#130F1E" stroke="rgba(224, 33, 138, 0.3)" stroke-width="0.9" />
-      <text x="16" y="24" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        CORE SPECIALTIES
-      </text>
-      <text x="16" y="68" class="editorial-title" font-size="38" fill="url(#dash_chromeGrad)">
-        03
-      </text>
-      <text x="16" y="92" class="code-mono" font-size="9" fill="#E2D9E8">
-        AI Agents · AgriTech
-      </text>
-      <text x="16" y="106" class="code-mono" font-size="9" fill="#FF85C0">
-        · Algo FinTech
-      </text>
-    </g>
+    <!-- Header Divider Line -->
+    <line x1="42" y1="54" x2="${width - 42}" y2="54" stroke="${theme.colors.borderSubtle}" stroke-width="1" />
 
-    <!-- Card 4: Engineering Discipline -->
-    <g transform="translate(696, 60)">
-      <rect x="0" y="0" width="202" height="120" rx="10" fill="#130F1E" stroke="rgba(224, 33, 138, 0.3)" stroke-width="0.9" />
-      <text x="16" y="24" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        DISCIPLINE / CADENCE
-      </text>
-      <text x="16" y="68" class="editorial-title" font-size="28" fill="url(#dash_chromeGrad)">
-        ENTC
-      </text>
-      <text x="16" y="90" class="code-mono" font-size="9" fill="#E2D9E8">
-        Systems &amp; Telecomm
-      </text>
-      <text x="16" y="106" class="code-mono" font-size="9" fill="#00E676">
-        ● Active Builder
-      </text>
-    </g>
-
-    <!-- Lower Panel: Language Proportion Haute Bar -->
-    <g transform="translate(42, 200)">
-      <rect x="0" y="0" width="856" height="74" rx="10" fill="#130F1E" stroke="rgba(255, 255, 255, 0.08)" stroke-width="0.8" />
-      
-      <text x="18" y="24" class="code-mono" font-size="9.5" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        LANGUAGE SPECTRUM // VERIFIED ARCHITECTURE
-      </text>
-      <text x="838" y="24" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8">
-        DETERMINISTIC ANALYSIS
-      </text>
-
-      <!-- Multi-segment Luxury Progress Bar -->
-      <g transform="translate(18, 34)">
-        <!-- Bar background -->
-        <rect x="0" y="0" width="820" height="8" rx="4" fill="rgba(255, 255, 255, 0.05)" />
-        
-        <!-- Segment 1: Python (33%) -->
-        <rect x="0" y="0" width="270" height="8" rx="4" fill="#FF2D87" />
-        <!-- Segment 2: TypeScript (33%) -->
-        <rect x="274" y="0" width="270" height="8" rx="4" fill="#E0218A" />
-        <!-- Segment 3: JavaScript (23%) -->
-        <rect x="548" y="0" width="180" height="8" rx="4" fill="#FFA8D3" />
-        <!-- Segment 4: Kotlin (11%) -->
-        <rect x="732" y="0" width="88" height="8" rx="4" fill="#7928CA" />
+    <!-- Top 4 Metric Tiles Grid -->
+    <g transform="translate(42, 74)">
+      <!-- Tile 1: Public Repos -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="${theme.radius.md}" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.1em">
+          01 // REPOSITORIES
+        </text>
+        <!-- Important Statistics in Barbie Pink -->
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="${theme.colors.accentHot}">
+          ${reposCount}
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="${theme.colors.textSecondary}">
+          PUBLIC REPOSITORIES
+        </text>
       </g>
 
-      <!-- Legend row -->
-      <g transform="translate(18, 60)">
-        <circle cx="5" cy="-4" r="3.5" fill="#FF2D87" />
-        <text x="14" y="0" class="code-mono" font-size="9" fill="#E2D9E8">Python (33.3%)</text>
+      <!-- Tile 2: Total Stargazers -->
+      <g transform="translate(220, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="${theme.radius.md}" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.1em">
+          02 // STARGAZERS
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="${theme.colors.accentHot}">
+          ${starsCount}
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="${theme.colors.textSecondary}">
+          COMMUNITY STARS
+        </text>
+      </g>
 
-        <circle cx="155" cy="-4" r="3.5" fill="#E0218A" />
-        <text x="164" y="0" class="code-mono" font-size="9" fill="#E2D9E8">TypeScript (33.3%)</text>
+      <!-- Tile 3: Total Forks -->
+      <g transform="translate(440, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="${theme.radius.md}" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.1em">
+          03 // FORKS &amp; LABS
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="${theme.colors.accentHot}">
+          ${forksCount}
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="${theme.colors.textSecondary}">
+          BRANCHED FORKS
+        </text>
+      </g>
 
-        <circle cx="320" cy="-4" r="3.5" fill="#FFA8D3" />
-        <text x="329" y="0" class="code-mono" font-size="9" fill="#E2D9E8">JavaScript (25.0%)</text>
-
-        <circle cx="485" cy="-4" r="3.5" fill="#7928CA" />
-        <text x="494" y="0" class="code-mono" font-size="9" fill="#E2D9E8">Kotlin (8.4%)</text>
-
-        <text x="820" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#FF85C0">
-          Polyglot Atelier
+      <!-- Tile 4: Network -->
+      <g transform="translate(660, 0)">
+        <rect x="0" y="0" width="196" height="92" rx="${theme.radius.md}" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.1em">
+          04 // NETWORK
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="${theme.colors.accentHot}">
+          ${followers}
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="${theme.colors.textSecondary}">
+          ${followers} FOLLOWERS · ${following} FOLLOWING
         </text>
       </g>
     </g>
 
-    <!-- Sparkles -->
-    ${renderSparkle(250, 48, 12, '#FFFFFF')}
-    ${renderSparkle(width - 50, 195, 14, '#FF85C0')}
+    <!-- Lower Panel: Dynamic Language Spectrum Progress Bar & Legend -->
+    <g transform="translate(42, 186)">
+      <rect x="0" y="0" width="856" height="94" rx="${theme.radius.md}" fill="#FFFFFF" stroke="${theme.colors.border}" stroke-width="0.8" />
+      
+      <!-- Panel Title -->
+      <text x="18" y="24" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.12em">
+        LANGUAGE SPECTRUM BREAKDOWN
+      </text>
+      <text x="838" y="24" text-anchor="end" class="code-mono" font-size="8.5" fill="${theme.colors.textMuted}">
+        DYNAMIC REPOSITORY AUDIT
+      </text>
+
+      <!-- Dynamic Progress Bar -->
+      <g transform="translate(18, 36)">
+        ${barSegmentsSvg}
+      </g>
+
+      <!-- Dynamic Legend Row -->
+      <g transform="translate(18, 58)">
+        ${legendSvg}
+      </g>
+    </g>
+
+    <!-- Restrained Luxury Glint Sparkles -->
+    ${renderSparkle(width - 50, 48, 12, theme.colors.accentHot)}
+    ${renderSparkle(width / 2, 44, 9, theme.colors.accentSoft)}
   </svg>`;
 }

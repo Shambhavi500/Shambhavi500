@@ -3,173 +3,239 @@
     <defs>
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
         .editorial-title {
-          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
           font-style: italic;
+          letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
         }
         .code-mono {
           font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
         }
         
         /* Subtle Shimmer & Pulse Keyframes */
-        @keyframes shimmerPulse {
-          0% { stop-color: #E0218A; stop-opacity: 0.85; }
-          50% { stop-color: #FF2D87; stop-opacity: 1; }
-          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
         }
-        @keyframes sparkleGlint {
-          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
-          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
-        }
-        @keyframes runwayGlow {
-          0%, 100% { opacity: 0.6; }
-          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
         }
         
-        .sparkle-anim {
-          animation: sparkleGlint 4s ease-in-out infinite;
-          transform-origin: center;
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
         }
-        .runway-glow {
-          animation: runwayGlow 3s ease-in-out infinite;
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
         }
       ]]></style>
 
-      <!-- Barbie Chrome Metallic Gradient -->
+      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <linearGradient id="foot_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C2185B" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="foot_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
+        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
+      </linearGradient>
+
+      <!-- Rose Satin Monogram Gradient -->
+      <linearGradient id="foot_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D1124" />
+        <stop offset="100%" stop-color="#1A0D18" />
+      </linearGradient>
+
+      <!-- Light Rose Ambient Surface Gradient -->
+      <linearGradient id="foot_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#FFF5F8" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="foot_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
+        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
+        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
+      </linearGradient>
+
+      <!-- Platinum / Chrome Luxury Accent Gradient -->
       <linearGradient id="foot_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="25%" stop-color="#FFD6E8" />
-        <stop offset="50%" stop-color="#FFFFFF" />
-        <stop offset="75%" stop-color="#E2E8F0" />
-        <stop offset="100%" stop-color="#FFA8D3" />
+        <stop offset="35%" stop-color="#F1F5F9" />
+        <stop offset="70%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#E2E8F0" />
       </linearGradient>
 
-      <!-- Signature Barbie Dreamhouse Pink Gradient -->
-      <linearGradient id="foot_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#D4145A" />
-        <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#FF2D87" />
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="foot_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Satin Rose Glow Gradient -->
-      <linearGradient id="foot_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
-        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
-        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
-      </linearGradient>
-
-      <!-- Glassmorphic Card Fill -->
-      <linearGradient id="foot_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
-        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
-      </linearGradient>
-
-      <!-- Subtle Accent Border Gradient -->
-      <linearGradient id="foot_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
-        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
-        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
-        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
-      </linearGradient>
-
-      <!-- Soft Radial Dreamhouse Glow -->
-      <radialGradient id="foot_radialAura" cx="50%" cy="0%" r="70%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
-        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
+      <radialGradient id="foot_radialAura" cx="80%" cy="10%" r="70%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
+        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
         <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Star / Sparkle Filter -->
+      <!-- Card Soft Shadow Filter -->
+      <filter id="foot_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="foot_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
       <filter id="foot_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feGaussianBlur stdDeviation="6" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
     </defs>
   
     
-    <!-- Dark Studio Base -->
-    <rect width="940" height="180" rx="16" fill="#0D0B14" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="180" rx="16" fill="#FAFAFC" />
     <rect width="940" height="180" rx="16" fill="url(#foot_radialAura)" />
 
-    <!-- Outer Frame with Chrome Bevel -->
+    <!-- Outer Frame with Soft Shadow -->
     <rect x="16" y="16" width="908" height="148" rx="14"
-          fill="url(#foot_cardGlass)" stroke="url(#foot_borderGrad)" stroke-width="1" />
+          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#foot_cardShadow)" />
 
-    <!-- Centerpiece Closing Editorial Statement -->
-    <g transform="translate(470, 64)">
-      <text x="0" y="0" text-anchor="middle" class="editorial-script" font-size="22" fill="#FFFFFF">
-        &quot;Welcome to Shambhavi&apos;s Dreamhouse.&quot;
+    <!-- Minimal Abstract Pink Silhouette Signature (Subtle Background Touch) -->
+    
+    <g transform="translate(425, 10) scale(0.45)" opacity="0.08" fill="#E0218A">
+      <path d="
+        M 10 90
+        C 15 65, 30 45, 55 35
+        C 80 25, 110 30, 125 50
+        C 140 70, 135 100, 115 125
+        C 105 138, 95 155, 95 175
+        C 95 195, 105 210, 120 225
+        C 100 220, 80 210, 68 190
+        C 58 175, 58 150, 68 130
+        C 75 115, 78 95, 65 80
+        C 52 65, 35 68, 25 78
+        C 18 85, 14 90, 10 90
+        Z
+      " />
+      <path d="
+        M 120 45
+        C 145 20, 185 15, 215 35
+        C 245 55, 260 95, 240 135
+        C 225 165, 195 195, 180 230
+        C 170 255, 175 275, 195 295
+        C 170 285, 155 260, 155 235
+        C 155 205, 180 175, 200 145
+        C 220 115, 220 80, 195 60
+        C 175 45, 145 42, 120 45
+        Z
+      " />
+      <path d="
+        M 68 190
+        C 80 220, 105 250, 140 270
+        C 115 265, 90 250, 75 230
+        C 65 215, 62 200, 68 190
+        Z
+      " />
+    </g>
+  
+
+    <!-- Centerpiece Closing Statement -->
+    <g transform="translate(470, 66)">
+      <text x="0" y="0" text-anchor="middle" class="display-title" font-size="20" font-weight="800" fill="#111116">
+        &quot;Crafting intelligent systems with elegance and precision.&quot;
       </text>
-      <text x="0" y="24" text-anchor="middle" class="code-mono" font-size="10" font-weight="600" fill="#FF85C0" letter-spacing="0.16em">
-        WHERE AUTONOMOUS INTELLIGENCE MEETS HAUTE COUTURE ENGINEERING
+      <text x="0" y="24" text-anchor="middle" class="code-mono" font-size="9.5" font-weight="700" fill="#E0218A" letter-spacing="0.16em">
+        SHAMBHAVI PATIL · AI/ML &amp; SYSTEMS ENGINEERING · PICT PUNE
       </text>
     </g>
 
+    <!-- Flowing Pink Curve Signature Line -->
+    <path d="M 350 104 C 430 100, 510 108, 590 104"
+          stroke="url(#foot_barbieGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+
     <!-- Bottom Colophon Row -->
     <g transform="translate(42, 136)">
-      <text x="0" y="0" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.12em">
-        ATELIER @Shambhavi500 · ELECTRONICS &amp; TELECOMMUNICATION
+      <text x="0" y="0" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.1em">
+        ATELIER @Shambhavi500 · B.TECH ENTC · PUNE, MAHARASHTRA, INDIA
       </text>
     </g>
 
     <g transform="translate(898, 136)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#E2D9E8" letter-spacing="0.1em">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#E0218A" letter-spacing="0.1em">
         DESIGNED WITH INTENTION · BUILT WITH CODE
       </text>
     </g>
 
-    <!-- Sparkles -->
+    <!-- Restrained Luxury Glint Sparkles -->
     
-    <g class="sparkle-anim" style="transform-origin: 230px 60px;">
+    <g class="glint-anim" style="transform-origin: 260px 62px;">
       <path d="
-        M 230 54
-        Q 232.4 57.6 236 60
-        Q 232.4 62.4 230 66
-        Q 227.6 62.4 224 60
-        Q 227.6 57.6 230 54
+        M 260 56.5
+        Q 262.42 59.58 265.5 62
+        Q 262.42 64.42 260 67.5
+        Q 257.58 64.42 254.5 62
+        Q 257.58 59.58 260 56.5
         Z"
-        fill="#FFFFFF"
-        opacity="0.9"
+        fill="#FF2D87"
+        opacity="0.85"
       />
-      <circle cx="230" cy="60" r="1.7999999999999998" fill="#FFFFFF" />
+      <circle cx="260" cy="62" r="1.54" fill="#FFFFFF" />
     </g>
   
     
-    <g class="sparkle-anim" style="transform-origin: 710px 60px;">
+    <g class="glint-anim" style="transform-origin: 680px 62px;">
       <path d="
-        M 710 53
-        Q 712.8 57.2 717 60
-        Q 712.8 62.8 710 67
-        Q 707.2 62.8 703 60
-        Q 707.2 57.2 710 53
+        M 680 56.5
+        Q 682.42 59.58 685.5 62
+        Q 682.42 64.42 680 67.5
+        Q 677.58 64.42 674.5 62
+        Q 677.58 59.58 680 56.5
         Z"
         fill="#FF85C0"
-        opacity="0.9"
+        opacity="0.85"
       />
-      <circle cx="710" cy="60" r="2.1" fill="#FFFFFF" />
+      <circle cx="680" cy="62" r="1.54" fill="#FFFFFF" />
     </g>
   
     
-    <g class="sparkle-anim" style="transform-origin: 880px 48px;">
+    <g class="glint-anim" style="transform-origin: 885px 42px;">
       <path d="
-        M 880 43
-        Q 882 46 885 48
-        Q 882 50 880 53
-        Q 878 50 875 48
-        Q 878 46 880 43
+        M 885 37.5
+        Q 886.98 40.02 889.5 42
+        Q 886.98 43.98 885 46.5
+        Q 883.02 43.98 880.5 42
+        Q 883.02 40.02 885 37.5
         Z"
-        fill="#FFA8D3"
-        opacity="0.9"
+        fill="#FF2D87"
+        opacity="0.85"
       />
-      <circle cx="880" cy="48" r="1.5" fill="#FFFFFF" />
+      <circle cx="885" cy="42" r="1.2600000000000002" fill="#FFFFFF" />
     </g>
   
   </svg>

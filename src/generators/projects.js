@@ -1,4 +1,20 @@
-import { getSharedDefs, renderSparkle, escapeXml, COLORS } from './theme.js';
+import { getSharedDefs, renderSparkle, escapeXml, theme } from './theme.js';
+
+function wrapText(text, maxLine = 48) {
+  const words = (text || '').split(' ');
+  const lines = [];
+  let current = '';
+  for (const w of words) {
+    if ((current + ' ' + w).trim().length <= maxLine) {
+      current = (current + ' ' + w).trim();
+    } else {
+      if (current) lines.push(current);
+      current = w;
+    }
+  }
+  if (current) lines.push(current);
+  return lines;
+}
 
 export function generateProjectsSvg(data) {
   const width = 940;
@@ -19,67 +35,85 @@ export function generateProjectsSvg(data) {
     const x = startX + col * (cardWidth + gapX);
     const y = startY + row * (cardHeight + gapY);
 
-    // Truncate long descriptions cleanly for SVG rendering
-    let desc = p.highlight || p.description || '';
-    if (desc.length > 95) {
-      desc = desc.substring(0, 92) + '...';
-    }
+    // Word wrapping
+    const rawDesc = p.highlight || p.description || '';
+    const wrappedLines = wrapText(rawDesc, 46);
+    const line1 = wrappedLines[0] || '';
+    const line2 = wrappedLines.length > 1 ? (wrappedLines.slice(1).join(' ').length > 46 ? wrappedLines[1] + '...' : wrappedLines.slice(1).join(' ')) : '';
+
+    const langName = p.language || 'Code';
+    const langPillWidth = Math.max(70, langName.length * 7 + 22);
+
+    const tagText = p.tag || 'OPEN SOURCE';
+    const isSpecialAward = p.isAwardWinning || tagText.includes('1ST') || tagText.includes('RUNNER-UP') || tagText.includes('FLAGSHIP');
+    const tagPillWidth = Math.min(185, Math.max(85, tagText.length * 6.2 + 20));
 
     return `
       <!-- Project Card ${p.id}: ${escapeXml(p.name)} -->
       <g transform="translate(${x}, ${y})">
-        <!-- Card Backing -->
-        <rect x="0" y="0" width="${cardWidth}" height="${cardHeight}" rx="10"
-              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+        <!-- Pure White Card Backing with Subtle Pink Hairline -->
+        <rect x="0" y="0" width="${cardWidth}" height="${cardHeight}" rx="${theme.radius.card}"
+              fill="${theme.colors.surface}" stroke="${isSpecialAward ? theme.colors.accentHot : theme.colors.border}" stroke-width="${isSpecialAward ? '1.2' : '0.8'}" />
 
-        <!-- Top Accent Bar -->
-        <rect x="0" y="0" width="${cardWidth}" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+        <!-- Signature Pink Accent Line along Top -->
+        <rect x="0" y="0" width="${cardWidth}" height="3" rx="1.5" fill="url(#proj_barbieGrad)" />
+
+        <!-- Subtle Silhouette-Inspired Flowing Curve Art (Top Right) -->
+        <path d="
+          M ${cardWidth - 95} 12
+          C ${cardWidth - 65} 6, ${cardWidth - 45} 18, ${cardWidth - 30} 32
+          C ${cardWidth - 15} 46, ${cardWidth - 12} 70, ${cardWidth - 20} 85
+          C ${cardWidth - 28} 100, ${cardWidth - 45} 110, ${cardWidth - 60} 115
+        " fill="none" stroke="${theme.colors.accent}" stroke-width="1.2" stroke-linecap="round" opacity="0.12" />
 
         <!-- Category & Number Header -->
-        <g transform="translate(16, 22)">
-          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+        <g transform="translate(16, 24)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.12em">
             ${escapeXml(p.category || 'SYSTEM')}
           </text>
-          <text x="${cardWidth - 32}" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+          <text x="${cardWidth - 32}" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="800" fill="${theme.colors.accentHot}">
             // NO. ${escapeXml(p.id)}
           </text>
         </g>
 
         <!-- Project Title -->
         <g transform="translate(16, 52)">
-          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+          <text x="0" y="0" class="display-title" font-size="18" font-weight="800" fill="${theme.colors.textPrimary}">
             ${escapeXml(p.name)}
           </text>
         </g>
 
         <!-- Project Description -->
         <g transform="translate(16, 74)">
-          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
-            ${escapeXml(desc.slice(0, 48))}
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="${theme.colors.textSecondary}">
+            ${escapeXml(line1)}
           </text>
-          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
-            ${escapeXml(desc.slice(48))}
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="${theme.colors.textSecondary}">
+            ${escapeXml(line2)}
           </text>
         </g>
 
         <!-- Bottom Metadata Footer -->
         <g transform="translate(16, 138)">
           <!-- Language Tag Pill -->
-          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
-          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
-          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
-            ${escapeXml(p.language)}
+          <rect x="0" y="-14" width="${langPillWidth}" height="20" rx="10" fill="${theme.colors.accentBlush}" stroke="${theme.colors.border}" stroke-width="0.8" />
+          <circle cx="10" cy="-4" r="3" fill="${theme.colors.accentHot}" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="700" fill="${theme.colors.textPrimary}">
+            ${escapeXml(langName)}
           </text>
 
-          <!-- Edition Tag -->
-          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
-          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
-            ${escapeXml(p.tag || 'OPEN SOURCE')}
+          <!-- Dynamic Badge Pill -->
+          <rect x="${langPillWidth + 10}" y="-14" width="${tagPillWidth}" height="20" rx="10"
+                fill="${isSpecialAward ? theme.colors.accentBlush : '#F8FAFC'}"
+                stroke="${isSpecialAward ? theme.colors.accentHot : theme.colors.borderSubtle}" stroke-width="0.8" />
+          <text x="${langPillWidth + 10 + tagPillWidth / 2}" y="-0.5" text-anchor="middle"
+                class="code-mono" font-size="8" font-weight="700" fill="${isSpecialAward ? theme.colors.accentHot : theme.colors.textMuted}" letter-spacing="0.05em">
+            ${escapeXml(tagText)}
           </text>
 
           <!-- Action Indicator -->
-          <text x="${cardWidth - 32}" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
-            VIEW REPO &#8599;
+          <text x="${cardWidth - 32}" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.accent}">
+            VIEW REPOSITORY &#8599;
           </text>
         </g>
       </g>
@@ -89,39 +123,41 @@ export function generateProjectsSvg(data) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" fill="none">
     ${getSharedDefs('proj_')}
     
-    <!-- Deep Container Background -->
-    <rect width="${width}" height="${height}" rx="16" fill="${COLORS.surfaceDark}" />
-    <rect width="${width}" height="${height}" rx="16" fill="url(#proj_radialAura)" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="${theme.colors.background}" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="url(#proj_radialAura)" />
 
-    <!-- Outer Structural Frame -->
-    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="14"
-          fill="url(#proj_cardGlass)" stroke="url(#proj_borderGrad)" stroke-width="1" />
+    <!-- Outer Frame with Soft Shadow -->
+    <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${theme.radius.card}"
+          fill="${theme.colors.surface}" stroke="${theme.colors.border}" stroke-width="1" filter="url(#proj_cardShadow)" />
 
-    <!-- Editorial Section Header -->
+    <!-- Section Header Tag -->
     <g transform="translate(42, 44)">
-      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#proj_chromeGrad)">
-        DREAM PROJECTS // THE ATELIER COLLECTION
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.14em">
+        THE WORK // FEATURED PROJECTS &amp; ARCHITECTURES
       </text>
-      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
-        FEATURED AUTONOMOUS AGENTS, AGRITECH PLATFORMS &amp; QUANT ENGINES
+      <text x="0" y="18" class="code-mono" font-size="9" fill="${theme.colors.textMuted}" letter-spacing="0.08em">
+        AUTONOMOUS AI AGENTS • SATELLITE AGRITECH • QUANTITATIVE RL ENGINES
       </text>
     </g>
 
     <g transform="translate(${width - 42}, 44)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9.5" fill="#9D93A8" letter-spacing="0.1em">
-        6 CURATED ARCHITECTURES
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9.5" fill="${theme.colors.textMuted}" letter-spacing="0.1em">
+        6 DYNAMICALLY RANKED PROJECTS
       </text>
-      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
+      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="${theme.colors.success}" font-weight="700">
         ● ALL PRODUCTION REPOSITORIES
       </text>
     </g>
 
+    <!-- Header Divider Line -->
+    <line x1="42" y1="68" x2="${width - 42}" y2="68" stroke="${theme.colors.borderSubtle}" stroke-width="1" />
+
     <!-- The 6 Project Cards -->
     ${projectCardsSvg}
 
-    <!-- Sparkles -->
-    ${renderSparkle(width - 36, 36, 11, '#FFFFFF')}
-    ${renderSparkle(width / 2, 40, 10, '#FF85C0')}
-    ${renderSparkle(width - 55, height - 30, 12, '#FFA8D3')}
+    <!-- Restrained Luxury Glint Sparkles -->
+    ${renderSparkle(width - 36, 42, 11, theme.colors.accentHot)}
+    ${renderSparkle(width / 2 + 50, 44, 9, theme.colors.accentSoft)}
   </svg>`;
 }

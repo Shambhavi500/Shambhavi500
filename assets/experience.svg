@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320" width="100%" height="320" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        .editorial-title {
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
+          font-style: italic;
+          letter-spacing: 0.02em;
+        }
+        .editorial-sans {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
+        }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
+        }
+        
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
+        }
+      ]]></style>
+
+      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <linearGradient id="exp_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C2185B" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="exp_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
+        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
+      </linearGradient>
+
+      <!-- Rose Satin Monogram Gradient -->
+      <linearGradient id="exp_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D1124" />
+        <stop offset="100%" stop-color="#1A0D18" />
+      </linearGradient>
+
+      <!-- Light Rose Ambient Surface Gradient -->
+      <linearGradient id="exp_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#FFF5F8" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="exp_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
+        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
+        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
+      </linearGradient>
+
+      <!-- Platinum / Chrome Luxury Accent Gradient -->
+      <linearGradient id="exp_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="35%" stop-color="#F1F5F9" />
+        <stop offset="70%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#E2E8F0" />
+      </linearGradient>
+
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="exp_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
+      </linearGradient>
+
+      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
+      <radialGradient id="exp_radialAura" cx="80%" cy="10%" r="70%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
+        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Card Soft Shadow Filter -->
+      <filter id="exp_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="exp_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
+      <filter id="exp_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="6" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="320" rx="16" fill="#FAFAFC" />
+    <rect width="940" height="320" rx="16" fill="url(#exp_radialAura)" />
+
+    <!-- Outer Frame with Soft Shadow -->
+    <rect x="16" y="16" width="908" height="288" rx="14"
+          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#exp_cardShadow)" />
+
+    <!-- Section Header Line -->
+    <g transform="translate(42, 42)">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#E0218A" letter-spacing="0.14em">
+        PROFESSIONAL EDIT // INDUSTRY APPOINTMENT &amp; ACADEMICS
+      </text>
+      <text x="0" y="18" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.08em">
+        AI/ML R&amp;D INTERNSHIP · PICT ENTC UNDERGRADUATE PEDIGREE · APPLIED SYSTEMS
+      </text>
+    </g>
+
+    <g transform="translate(898, 42)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.1em">
+        CURRENT CADENCE
+      </text>
+      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676" font-weight="700">
+        ● ACTIVE ENGAGEMENTS
+      </text>
+    </g>
+
+    <!-- Header Divider Line -->
+    <line x1="42" y1="68" x2="898" y2="68" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
+
+    <!-- Card 1: Internship (Mindstrix Technologies LLP) -->
+    <g transform="translate(42, 82)">
+      <rect x="0" y="0" width="460" height="212" rx="14" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.9" />
+      <rect x="0" y="0" width="460" height="3" rx="1.5" fill="url(#exp_barbieGrad)" />
+
+      <!-- Edition Tag -->
+      <g transform="translate(16, 22)">
+        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
+        <circle cx="10" cy="10" r="3" fill="#00E676">
+          <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+          INDUSTRY R&amp;D INTERNSHIP
+        </text>
+      </g>
+
+      <!-- Company & Role -->
+      <g transform="translate(16, 66)">
+        <text x="0" y="0" class="display-title" font-size="18" font-weight="800" fill="#111116">
+          MINDSTRIX TECHNOLOGIES LLP
+        </text>
+        <text x="0" y="20" class="editorial-sans" font-size="13" font-weight="700" fill="#FF2D87">
+          AI/ML Research &amp; Development Intern
+        </text>
+        <text x="0" y="36" class="code-mono" font-size="9" fill="#7A7A8E">
+          Mar 2026 – Ongoing · Remote / Hybrid
+        </text>
+      </g>
+
+      <!-- Verified Responsibilities -->
+      <g transform="translate(16, 126)">
+        <circle cx="4" cy="5" r="2.5" fill="#FF2D87" />
+        <text x="14" y="8" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+          Full SDLC contribution on live AI/ML &amp; software platform projects.
+        </text>
+
+        <circle cx="4" cy="25" r="2.5" fill="#FF2D87" />
+        <text x="14" y="28" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+          Designing modules for data processing, model training &amp; integration.
+        </text>
+
+        <circle cx="4" cy="45" r="2.5" fill="#FF2D87" />
+        <text x="14" y="48" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+          Agile technical reviews, test execution &amp; cross-functional teamwork.
+        </text>
+      </g>
+
+      <!-- Verified Metric Footer -->
+      <g transform="translate(16, 186)">
+        <rect x="0" y="-12" width="200" height="22" rx="11" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+        <circle cx="12" cy="-1" r="3" fill="#FF2D87" />
+        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A">
+          SDLC · ML MODEL PIPELINES
+        </text>
+        <text x="428" y="2.5" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676" font-weight="700">
+          ● ONGOING PRACTICE
+        </text>
+      </g>
+    </g>
+
+    <!-- Card 2: Academic Pedigree (PICT) -->
+    <g transform="translate(522, 82)">
+      <rect x="0" y="0" width="376" height="212" rx="14" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.9" />
+      <rect x="0" y="0" width="376" height="3" rx="1.5" fill="url(#exp_barbieGrad)" />
+
+      <!-- Edition Tag -->
+      <g transform="translate(16, 22)">
+        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
+        <circle cx="10" cy="10" r="3" fill="#FF2D87" />
+        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+          ACADEMIC FOUNDATION
+        </text>
+      </g>
+
+      <!-- University & Degree -->
+      <g transform="translate(16, 66)">
+        <text x="0" y="0" class="display-title" font-size="16" font-weight="800" fill="#111116">
+          PICT PUNE
+        </text>
+        <text x="0" y="20" class="editorial-sans" font-size="12" font-weight="700" fill="#111116">
+          B.Tech, Electronics &amp; Telecommunication
+        </text>
+        <text x="0" y="36" class="code-mono" font-size="9" fill="#7A7A8E">
+          Aug 2024 – May 2028 · Pune, Maharashtra
+        </text>
+      </g>
+
+      <!-- Academic Standing & Extracurriculars -->
+      <g transform="translate(16, 126)">
+        <rect x="0" y="-8" width="140" height="24" rx="6" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
+        <text x="70" y="8" text-anchor="middle" class="code-mono" font-size="10" font-weight="800" fill="#FF2D87">
+          CGPA: 8.6 / 10.0
+        </text>
+
+        <text x="0" y="32" class="code-mono" font-size="9" fill="#7A7A8E">
+          HSC: 89.83% · SSC: 96.40%
+        </text>
+
+        <text x="0" y="48" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+          Extracurricular: Volunteer @ NGO UPAY · Zonal Chess
+        </text>
+      </g>
+
+      <!-- Verified Metric Footer -->
+      <g transform="translate(16, 186)">
+        <rect x="0" y="-12" width="160" height="22" rx="11" fill="#F8FAFC" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
+        <circle cx="12" cy="-1" r="3" fill="#FF2D87" />
+        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#111116">
+          CLASS OF 2028 · ENTC
+        </text>
+        <text x="344" y="2.5" text-anchor="end" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A">
+          VERIFIED &#10003;
+        </text>
+      </g>
+    </g>
+
+    <!-- Restrained Luxury Glint Sparkles -->
+    
+    <g class="glint-anim" style="transform-origin: 904px 42px;">
+      <path d="
+        M 904 36.5
+        Q 906.42 39.58 909.5 42
+        Q 906.42 44.42 904 47.5
+        Q 901.58 44.42 898.5 42
+        Q 901.58 39.58 904 36.5
+        Z"
+        fill="#FF2D87"
+        opacity="0.85"
+      />
+      <circle cx="904" cy="42" r="1.54" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 470px 44px;">
+      <path d="
+        M 470 39
+        Q 472.2 41.8 475 44
+        Q 472.2 46.2 470 49
+        Q 467.8 46.2 465 44
+        Q 467.8 41.8 470 39
+        Z"
+        fill="#FF85C0"
+        opacity="0.85"
+      />
+      <circle cx="470" cy="44" r="1.4000000000000001" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

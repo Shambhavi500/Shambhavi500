@@ -1,4 +1,4 @@
-import { getSharedDefs, renderSparkle } from './theme.js';
+import { getSharedDefs, renderSparkle, theme } from './theme.js';
 
 export function generateDividerSvg() {
   const width = 940;
@@ -7,18 +7,23 @@ export function generateDividerSvg() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="${height}" fill="none">
     ${getSharedDefs('div_')}
     
-    <!-- Central Ribbon Line -->
-    <line x1="42" y1="18" x2="420" y2="18" stroke="url(#div_barbieGrad)" stroke-width="0.8" opacity="0.6" />
-    <line x1="520" y1="18" x2="${width - 42}" y2="18" stroke="url(#div_barbieGrad)" stroke-width="0.8" opacity="0.6" />
+    <!-- Left Flowing Pink Curve -->
+    <path d="M 42 18 C 160 12, 280 24, 430 18" stroke="url(#div_barbieGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.65" />
+    <path d="M 120 18 C 220 22, 320 14, 410 18" stroke="${theme.colors.borderPink}" stroke-width="0.8" stroke-linecap="round" opacity="0.5" />
 
-    <!-- Center Faceted Haute Diamond -->
+    <!-- Center Editorial Monogram Knot -->
     <g transform="translate(${width / 2}, 18)">
-      <circle cx="0" cy="0" r="12" fill="#130F1E" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.8" />
-      <polygon points="0,-6 6,0 0,6 -6,0" fill="url(#div_chromeGrad)" />
-      <circle cx="0" cy="0" r="1.5" fill="#FF2D87" />
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="${theme.colors.borderPink}" stroke-width="1" />
+      <polygon points="0,-4.5 4.5,0 0,4.5 -4.5,0" fill="${theme.colors.accentHot}" />
+      <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
     </g>
 
-    ${renderSparkle(width / 2 - 60, 18, 9, '#FFFFFF')}
-    ${renderSparkle(width / 2 + 60, 18, 9, '#FF85C0')}
+    <!-- Right Flowing Pink Curve -->
+    <path d="M 510 18 C 660 12, 780 24, ${width - 42} 18" stroke="url(#div_barbieGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.65" />
+    <path d="M 530 18 C 620 22, 720 14, 820 18" stroke="${theme.colors.borderPink}" stroke-width="0.8" stroke-linecap="round" opacity="0.5" />
+
+    <!-- Restrained Sparkles -->
+    ${renderSparkle(width / 2 - 50, 18, 8, theme.colors.accentHot)}
+    ${renderSparkle(width / 2 + 50, 18, 8, theme.colors.accentSoft)}
   </svg>`;
 }

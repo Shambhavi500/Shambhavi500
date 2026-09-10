@@ -1,277 +1,346 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 330" width="100%" height="330" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" height="340" fill="none">
     
     <defs>
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
         .editorial-title {
-          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
           font-style: italic;
+          letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
         }
         .code-mono {
           font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
         }
         
         /* Subtle Shimmer & Pulse Keyframes */
-        @keyframes shimmerPulse {
-          0% { stop-color: #E0218A; stop-opacity: 0.85; }
-          50% { stop-color: #FF2D87; stop-opacity: 1; }
-          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
         }
-        @keyframes sparkleGlint {
-          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
-          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
-        }
-        @keyframes runwayGlow {
-          0%, 100% { opacity: 0.6; }
-          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
         }
         
-        .sparkle-anim {
-          animation: sparkleGlint 4s ease-in-out infinite;
-          transform-origin: center;
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
         }
-        .runway-glow {
-          animation: runwayGlow 3s ease-in-out infinite;
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
         }
       ]]></style>
 
-      <!-- Barbie Chrome Metallic Gradient -->
+      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <linearGradient id="hero_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C2185B" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="hero_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
+        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
+      </linearGradient>
+
+      <!-- Rose Satin Monogram Gradient -->
+      <linearGradient id="hero_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2D1124" />
+        <stop offset="100%" stop-color="#1A0D18" />
+      </linearGradient>
+
+      <!-- Light Rose Ambient Surface Gradient -->
+      <linearGradient id="hero_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="100%" stop-color="#FFF5F8" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="hero_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
+        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
+        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
+      </linearGradient>
+
+      <!-- Platinum / Chrome Luxury Accent Gradient -->
       <linearGradient id="hero_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="25%" stop-color="#FFD6E8" />
-        <stop offset="50%" stop-color="#FFFFFF" />
-        <stop offset="75%" stop-color="#E2E8F0" />
-        <stop offset="100%" stop-color="#FFA8D3" />
+        <stop offset="35%" stop-color="#F1F5F9" />
+        <stop offset="70%" stop-color="#CBD5E1" />
+        <stop offset="100%" stop-color="#E2E8F0" />
       </linearGradient>
 
-      <!-- Signature Barbie Dreamhouse Pink Gradient -->
-      <linearGradient id="hero_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#D4145A" />
-        <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#FF2D87" />
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="hero_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Satin Rose Glow Gradient -->
-      <linearGradient id="hero_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
-        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
-        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
-      </linearGradient>
-
-      <!-- Glassmorphic Card Fill -->
-      <linearGradient id="hero_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
-        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
-      </linearGradient>
-
-      <!-- Subtle Accent Border Gradient -->
-      <linearGradient id="hero_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
-        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
-        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
-        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
-      </linearGradient>
-
-      <!-- Soft Radial Dreamhouse Glow -->
-      <radialGradient id="hero_radialAura" cx="50%" cy="0%" r="70%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
-        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
+      <radialGradient id="hero_radialAura" cx="80%" cy="10%" r="70%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
+        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
         <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Star / Sparkle Filter -->
+      <!-- Card Soft Shadow Filter -->
+      <filter id="hero_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="hero_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+
       <filter id="hero_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feGaussianBlur stdDeviation="6" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
     </defs>
   
     
-    <!-- Deep Haute Couture Studio Background -->
-    <rect width="940" height="330" rx="16" fill="#0D0B14" />
-    <rect width="940" height="330" rx="16" fill="url(#hero_radialAura)" />
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="340" rx="16" fill="#FAFAFC" />
+    <rect width="940" height="340" rx="16" fill="url(#hero_radialAura)" />
+
+    <!-- Architectural Background Hairline Grid -->
+    <g stroke="rgba(224, 33, 138, 0.05)" stroke-width="0.8">
+      <line x1="56" y1="0" x2="56" y2="340" />
+      <line x1="884" y1="0" x2="884" y2="340" />
+      <line x1="0" y1="46" x2="940" y2="46" />
+      <line x1="0" y1="284" x2="940" y2="284" />
+      <circle cx="760" cy="170" r="140" stroke="rgba(255, 45, 135, 0.04)" fill="none" />
+    </g>
+
+    <!-- Main Pure White Surface Card with Soft Shadow -->
+    <rect x="16" y="16" width="908" height="308" rx="14"
+          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#hero_cardShadow)" />
+
+    <!-- Abstract Barbie Silhouette / Ponytail Flowing Vector Graphic (Ambient Composition) -->
     
-    <!-- Architectural Dreamhouse Subtle Grid Lines -->
-    <g stroke="rgba(224, 33, 138, 0.07)" stroke-width="0.8">
-      <line x1="60" y1="0" x2="60" y2="330" />
-      <line x1="880" y1="0" x2="880" y2="330" />
-      <line x1="0" y1="50" x2="940" y2="50" />
-      <line x1="0" y1="280" x2="940" y2="280" />
-      <circle cx="470" cy="165" r="180" stroke="rgba(255, 45, 135, 0.05)" fill="none" />
-      <circle cx="470" cy="165" r="260" stroke="rgba(255, 45, 135, 0.03)" fill="none" />
+    <g transform="translate(650, 20) scale(1.05)" opacity="0.065" fill="#E0218A">
+      <path d="
+        M 10 90
+        C 15 65, 30 45, 55 35
+        C 80 25, 110 30, 125 50
+        C 140 70, 135 100, 115 125
+        C 105 138, 95 155, 95 175
+        C 95 195, 105 210, 120 225
+        C 100 220, 80 210, 68 190
+        C 58 175, 58 150, 68 130
+        C 75 115, 78 95, 65 80
+        C 52 65, 35 68, 25 78
+        C 18 85, 14 90, 10 90
+        Z
+      " />
+      <path d="
+        M 120 45
+        C 145 20, 185 15, 215 35
+        C 245 55, 260 95, 240 135
+        C 225 165, 195 195, 180 230
+        C 170 255, 175 275, 195 295
+        C 170 285, 155 260, 155 235
+        C 155 205, 180 175, 200 145
+        C 220 115, 220 80, 195 60
+        C 175 45, 145 42, 120 45
+        Z
+      " />
+      <path d="
+        M 68 190
+        C 80 220, 105 250, 140 270
+        C 115 265, 90 250, 75 230
+        C 65 215, 62 200, 68 190
+        Z
+      " />
+    </g>
+  
+
+    <!-- Corner Editorial Framing Accents -->
+    <g stroke="#FF2D87" stroke-width="1.5" stroke-opacity="0.45" fill="none">
+      <path d="M 26 38 L 26 26 L 38 26" />
+      <path d="M 902 26 L 914 26 L 914 38" />
+      <path d="M 26 302 L 26 314 L 38 314" />
+      <path d="M 902 314 L 914 314 L 914 302" />
     </g>
 
-    <!-- Outer Precision Frame with Chrome / Rose Gradient -->
-    <rect x="18" y="18" width="904" height="294" rx="12"
-          fill="rgba(255, 240, 245, 0.04)" stroke="url(#hero_borderGrad)" stroke-width="1.2" />
-
-    <!-- Corner Couture Framing Accents -->
-    <g stroke="url(#hero_chromeGrad)" stroke-width="2" fill="none">
-      <path d="M 28 42 L 28 28 L 42 28" />
-      <path d="M 898 28 L 912 28 L 912 42" />
-      <path d="M 28 288 L 28 302 L 42 302" />
-      <path d="M 898 302 L 912 302 L 912 288" />
-    </g>
-
-    <!-- Header Atelier Monogram & Badge -->
-    <g transform="translate(45, 44)">
-      <!-- Mini Badge -->
-      <rect x="0" y="0" width="220" height="22" rx="11" fill="rgba(224, 33, 138, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.8"/>
-      <circle cx="12" cy="11" r="3.5" fill="#FF2D87">
+    <!-- Header Brand Bar -->
+    <g transform="translate(46, 42)">
+      <!-- Brand Pill -->
+      <rect x="0" y="0" width="232" height="24" rx="12" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+      <circle cx="12" cy="12" r="3.5" fill="#FF2D87">
         <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="24" y="14.5" class="code-mono" font-size="9.5" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
-        ATELIER NO. 500 · 2026 COUTURE
+      <text x="24" y="15.5" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.12em">
+        ATELIER NO. 500 · AI/ML &amp; SYSTEMS
       </text>
     </g>
 
-    <g transform="translate(725, 44)">
-      <text x="170" y="14.5" text-anchor="end" class="code-mono" font-size="9.5" fill="#A89EAE" letter-spacing="0.14em">
-        @Shambhavi500 // DEPLOYED
+    <!-- Right Telemetry Badge -->
+    <g transform="translate(894, 42)">
+      <text x="0" y="15.5" text-anchor="end" class="code-mono" font-size="9.5" fill="#7A7A8E" letter-spacing="0.14em">
+        @Shambhavi500 // PICT ENTC
       </text>
     </g>
 
-    <!-- Main Editorial Display Name -->
-    <g transform="translate(470, 142)">
-      <!-- Chrome Mirror Shadow Glow -->
-      <text x="0" y="0" text-anchor="middle" class="editorial-title" font-size="44" fill="#FF2D87" opacity="0.3" filter="url(#hero_glowFilter)">
-        SHAMBHAVI PATIL
-      </text>
-      <!-- Main Text in Chrome & Platinum Gradient -->
-      <text x="0" y="0" text-anchor="middle" class="editorial-title" font-size="44" fill="url(#hero_chromeGrad)">
-        SHAMBHAVI PATIL
+    <!-- Flowing Decorative Accent Ribbon -->
+    <path d="M 46 80 C 120 74, 200 86, 280 80" stroke="url(#hero_barbieGrad)" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Main Editorial Heading: Hi, I'm Shambhavi. -->
+    <g transform="translate(46, 126)">
+      <text x="0" y="0" class="display-title" font-size="42" fill="#111116">
+        Hi, I&apos;m <tspan fill="#FF2D87">Shambhavi</tspan><tspan fill="#111116">.</tspan>
       </text>
     </g>
 
-    <!-- Subtitle Editorial Script Tagline -->
-    <g transform="translate(470, 184)">
-      <text x="0" y="0" text-anchor="middle" class="editorial-script" font-size="16" fill="#F3E8FF" letter-spacing="0.04em">
-        The Dreamhouse of Autonomous Intelligence &amp; Precision Engineering
+    <!-- Subtitle: Disciplines & Domains -->
+    <g transform="translate(46, 160)">
+      <text x="0" y="0" class="code-mono" font-size="12" font-weight="700" fill="#E0218A" letter-spacing="0.08em">
+        AI/ML • SOFTWARE ENGINEERING • ELECTRONICS &amp; TELECOMMUNICATION
       </text>
     </g>
 
-    <!-- Technical Discipline Spec Ribbon -->
-    <g transform="translate(470, 226)">
-      <rect x="-310" y="-14" width="620" height="28" rx="14"
-            fill="rgba(21, 17, 34, 0.85)" stroke="rgba(224, 33, 138, 0.4)" stroke-width="0.8" />
-      <text x="0" y="4.5" text-anchor="middle" class="code-mono" font-size="10.5" font-weight="600" fill="#FF85C0" letter-spacing="0.15em">
-        ELECTRONICS &amp; TELECOMMUNICATIONS · AUTONOMOUS AGENTS · AGRI-AI
+    <!-- Mission Statement -->
+    <g transform="translate(46, 192)">
+      <text x="0" y="0" class="editorial-sans" font-size="15" fill="#4A4A58">
+        Building intelligent systems with real-world impact.
       </text>
     </g>
 
-    <!-- Dynamic Metrics Preview Bar -->
-    <g transform="translate(60, 266)">
-      <text x="0" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        SYSTEM: <tspan fill="#FDFBFD" font-weight="600">ONLINE</tspan>
+    <!-- Interactive Navigation / Action Pills -->
+    <g transform="translate(46, 218)">
+      <!-- GitHub Button -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="104" height="28" rx="14" fill="#111116" />
+        <text x="52" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="#FFFFFF" letter-spacing="0.05em">
+          GITHUB &#8599;
+        </text>
+      </g>
+
+      <!-- LinkedIn Button -->
+      <g transform="translate(116, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="14" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" />
+        <text x="56" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="#E0218A" letter-spacing="0.05em">
+          LINKEDIN &#8599;
+        </text>
+      </g>
+
+      <!-- Projects Button -->
+      <g transform="translate(240, 0)">
+        <rect x="0" y="0" width="112" height="28" rx="14" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" />
+        <text x="56" y="18" text-anchor="middle" class="code-mono" font-size="10" font-weight="700" fill="#E0218A" letter-spacing="0.05em">
+          PROJECTS &#8595;
+        </text>
+      </g>
+
+      <!-- Hackathons Plaque Button -->
+      <g transform="translate(364, 0)">
+        <rect x="0" y="0" width="128" height="28" rx="14" fill="url(#hero_barbieGrad)" />
+        <text x="64" y="18" text-anchor="middle" class="code-mono" font-size="9.5" font-weight="700" fill="#FFFFFF" letter-spacing="0.06em">
+          ★ AWARDS 2026
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Telemetry Specs Strip -->
+    <g transform="translate(46, 292)">
+      <!-- Separator line -->
+      <line x1="0" y1="-14" x2="848" y2="-14" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
+
+      <text x="0" y="0" class="code-mono" font-size="9.5" fill="#7A7A8E" letter-spacing="0.06em">
+        STATUS: <tspan fill="#00E676" font-weight="700">● LIVE</tspan>
       </text>
-      <text x="210" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        CORE REPOSITORIES: <tspan fill="#FF2D87" font-weight="600">14 LIVE</tspan>
+
+      <text x="140" y="0" class="code-mono" font-size="9.5" fill="#7A7A8E" letter-spacing="0.06em">
+        REPOSITORIES: <tspan fill="#FF2D87" font-weight="700">14 SHIPPED</tspan>
       </text>
-      <text x="450" y="10" class="code-mono" font-size="9.5" fill="#8E8597" letter-spacing="0.1em">
-        STACK: <tspan fill="#FDFBFD" font-weight="600">PYTHON · TYPESCRIPT · KOTLIN</tspan>
+
+      <text x="340" y="0" class="code-mono" font-size="9.5" fill="#7A7A8E" letter-spacing="0.06em">
+        CORE STACK: <tspan fill="#111116" font-weight="700">PYTHON · TYPESCRIPT · JAVASCRIPT</tspan>
       </text>
-      <text x="820" y="10" text-anchor="end" class="code-mono" font-size="9.5" fill="#FF85C0" letter-spacing="0.12em">
-        BARBIE COUTURE EDITION
+
+      <text x="848" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+        HAUTE COUTURE ENGINEERING
       </text>
     </g>
 
-    <!-- Haute Sparkles -->
+    <!-- Restrained Luxury Glint Sparkles -->
     
-    <g class="sparkle-anim" style="transform-origin: 115px 110px;">
+    <g class="glint-anim" style="transform-origin: 860px 110px;">
       <path d="
-        M 115 102
-        Q 118.2 106.8 123 110
-        Q 118.2 113.2 115 118
-        Q 111.8 113.2 107 110
-        Q 111.8 106.8 115 102
-        Z"
-        fill="#FFFFFF"
-        opacity="0.9"
-      />
-      <circle cx="115" cy="110" r="2.4" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 810px 125px;">
-      <path d="
-        M 810 116
-        Q 813.6 121.4 819 125
-        Q 813.6 128.6 810 134
-        Q 806.4 128.6 801 125
-        Q 806.4 121.4 810 116
-        Z"
-        fill="#FF85C0"
-        opacity="0.9"
-      />
-      <circle cx="810" cy="125" r="2.6999999999999997" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 190px 180px;">
-      <path d="
-        M 190 174.5
-        Q 192.2 177.8 195.5 180
-        Q 192.2 182.2 190 185.5
-        Q 187.8 182.2 184.5 180
-        Q 187.8 177.8 190 174.5
+        M 860 103
+        Q 863.08 106.92 867 110
+        Q 863.08 113.08 860 117
+        Q 856.92 113.08 853 110
+        Q 856.92 106.92 860 103
         Z"
         fill="#FF2D87"
-        opacity="0.9"
+        opacity="0.85"
       />
-      <circle cx="190" cy="180" r="1.65" fill="#FFFFFF" />
+      <circle cx="860" cy="110" r="1.9600000000000002" fill="#FFFFFF" />
     </g>
   
     
-    <g class="sparkle-anim" style="transform-origin: 740px 160px;">
+    <g class="glint-anim" style="transform-origin: 750px 180px;">
       <path d="
-        M 740 153.5
-        Q 742.6 157.4 746.5 160
-        Q 742.6 162.6 740 166.5
-        Q 737.4 162.6 733.5 160
-        Q 737.4 157.4 740 153.5
-        Z"
-        fill="#FFFFFF"
-        opacity="0.9"
-      />
-      <circle cx="740" cy="160" r="1.95" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 210px 240px;">
-      <path d="
-        M 210 235.5
-        Q 211.8 238.2 214.5 240
-        Q 211.8 241.8 210 244.5
-        Q 208.2 241.8 205.5 240
-        Q 208.2 238.2 210 235.5
-        Z"
-        fill="#FFA8D3"
-        opacity="0.9"
-      />
-      <circle cx="210" cy="240" r="1.3499999999999999" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="sparkle-anim" style="transform-origin: 700px 245px;">
-      <path d="
-        M 700 240
-        Q 702 243 705 245
-        Q 702 247 700 250
-        Q 698 247 695 245
-        Q 698 243 700 240
+        M 750 174.5
+        Q 752.42 177.58 755.5 180
+        Q 752.42 182.42 750 185.5
+        Q 747.58 182.42 744.5 180
+        Q 747.58 177.58 750 174.5
         Z"
         fill="#FF85C0"
-        opacity="0.9"
+        opacity="0.85"
       />
-      <circle cx="700" cy="245" r="1.5" fill="#FFFFFF" />
+      <circle cx="750" cy="180" r="1.54" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 830px 240px;">
+      <path d="
+        M 830 235
+        Q 832.2 237.8 835 240
+        Q 832.2 242.2 830 245
+        Q 827.8 242.2 825 240
+        Q 827.8 237.8 830 235
+        Z"
+        fill="#CBD5E1"
+        opacity="0.85"
+      />
+      <circle cx="830" cy="240" r="1.4000000000000001" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 310px 78px;">
+      <path d="
+        M 310 73.5
+        Q 311.98 76.02 314.5 78
+        Q 311.98 79.98 310 82.5
+        Q 308.02 79.98 305.5 78
+        Q 308.02 76.02 310 73.5
+        Z"
+        fill="#FF2D87"
+        opacity="0.85"
+      />
+      <circle cx="310" cy="78" r="1.2600000000000002" fill="#FFFFFF" />
     </g>
   
   </svg>
