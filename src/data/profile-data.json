@@ -17,9 +17,9 @@
     "primaryFocus": "AI Systems & Distributed Engineering"
   },
   "languages": {
+    "JavaScript": 4,
     "Python": 4,
     "TypeScript": 4,
-    "JavaScript": 3,
     "Kotlin": 1
   },
   "projects": [
@@ -205,5 +205,5 @@
     "github": "https://github.com/Shambhavi500",
     "email": "shambhavipatil5631@gmail.com"
   },
-  "updatedAt": "2026-09-10T16:54:09.844Z"
+  "updatedAt": "2026-09-10T17:16:09.992Z"
 }
