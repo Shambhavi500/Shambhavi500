@@ -155,9 +155,9 @@
     "activeYears": "2025 - Present"
   },
   "languages": {
+    "JavaScript": 4,
     "Python": 4,
     "TypeScript": 4,
-    "JavaScript": 3,
     "Kotlin": 1
   },
   "languageDistribution": [
@@ -2594,6 +2594,36 @@
         }
       ]
     ]
+  },
+  "achievements": [
+    {
+      "code": "EDITION 01",
+      "title": "MULTI-AGENT ARCHITECT",
+      "description": "Engineered Ovio: Autonomous DaVinci Resolve agent orchestration pipeline.",
+      "metric": "Autonomous AI"
+    },
+    {
+      "code": "EDITION 02",
+      "title": "AGRITECH IMPACT BUILDER",
+      "description": "Designed KrishiSahAI, KrishiSetu & NDVI satellite systems for agricultural intelligence.",
+      "metric": "Social & Earth Impact"
+    },
+    {
+      "code": "EDITION 03",
+      "title": "FINTECH ALGO ENGINEER",
+      "description": "Developed AIRA autonomous recovery OS & AlphaTrader-RL reinforcement learning trading.",
+      "metric": "Quantitative Systems"
+    },
+    {
+      "code": "EDITION 04",
+      "title": "POLYGLOT ATELIER",
+      "description": "Production code spanning Python, TypeScript, Kotlin, JavaScript, and C/C++.",
+      "metric": "14 Repositories"
+    }
+  ],
+  "socials": {
+    "github": "https://github.com/Shambhavi500",
+    "email": "shambhavipatil5631@gmail.com"
   },
   "updatedAt": "2026-09-10T17:43:48.513Z"
 }

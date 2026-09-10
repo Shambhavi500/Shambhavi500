@@ -144,7 +144,7 @@
 
     <!-- 4 Fashion-Tech Award Plaques -->
     
-        <!-- Plaque Card 01 -->
+        <!-- Plaque Card 1 -->
         <g transform="translate(40, 72)">
           <!-- Card Base -->
           <rect x="0" y="0" width="203" height="270" rx="14"
@@ -168,7 +168,7 @@
 
           <!-- Event Name -->
           <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
-            TECHFIESTA &apos;26
+            MULTI-AGENT ARCHITECT
           </text>
 
           <!-- Place / Ranking -->
@@ -178,7 +178,7 @@
 
           <!-- Domain -->
           <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
-            AGRICULTURE DOMAIN
+            SYSTEMS
           </text>
 
           <!-- Subtle Center Decor Line -->
@@ -194,7 +194,7 @@
 
           <!-- Competition Scale / Metric -->
           <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
-            600+ teams
+            Autonomous AI
           </text>
 
           <!-- Badge Pill -->
@@ -208,7 +208,7 @@
           </g>
         </g>
       
-        <!-- Plaque Card 02 -->
+        <!-- Plaque Card 2 -->
         <g transform="translate(259, 72)">
           <!-- Card Base -->
           <rect x="0" y="0" width="203" height="270" rx="14"
@@ -232,17 +232,17 @@
 
           <!-- Event Name -->
           <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
-            PUNE AGRI HACKATHON
+            AGRITECH IMPACT BUILDER
           </text>
 
           <!-- Place / Ranking -->
           <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#E0218A" letter-spacing="0.05em">
-            NATIONAL RUNNER-UP
+            RUNNER-UP
           </text>
 
           <!-- Domain -->
           <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
-            PRECISION AGRITECH
+            SYSTEMS
           </text>
 
           <!-- Subtle Center Decor Line -->
@@ -253,12 +253,12 @@
             PROJECT
           </text>
           <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
-            Krishi Prabandh &amp; NDVI
+            KrishiSahAI
           </text>
 
           <!-- Competition Scale / Metric -->
           <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
-            ₹15L grant
+            Social &amp; Earth Impact
           </text>
 
           <!-- Badge Pill -->
@@ -267,12 +267,12 @@
                   fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
             <text x="83.5" y="17" text-anchor="middle"
                   class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
-              [RUNNER-UP]
+              [RECOGNIZED]
             </text>
           </g>
         </g>
       
-        <!-- Plaque Card 03 -->
+        <!-- Plaque Card 3 -->
         <g transform="translate(478, 72)">
           <!-- Card Base -->
           <rect x="0" y="0" width="203" height="270" rx="14"
@@ -296,17 +296,17 @@
 
           <!-- Event Name -->
           <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
-            MULTI-AGENT ARCHITECT
+            FINTECH ALGO ENGINEER
           </text>
 
           <!-- Place / Ranking -->
           <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#111116" letter-spacing="0.05em">
-            FLAGSHIP AGENT
+            RUNNER-UP
           </text>
 
           <!-- Domain -->
           <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
-            AUTONOMOUS WORKFLOWS
+            SYSTEMS
           </text>
 
           <!-- Subtle Center Decor Line -->
@@ -317,12 +317,12 @@
             PROJECT
           </text>
           <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
-            Ovio (DaVinci Resolve)
+            KrishiSahAI
           </text>
 
           <!-- Competition Scale / Metric -->
           <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
-            Agentic OS
+            Quantitative Systems
           </text>
 
           <!-- Badge Pill -->
@@ -331,12 +331,12 @@
                   fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
             <text x="83.5" y="17" text-anchor="middle"
                   class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
-              [ARCHITECT]
+              [RECOGNIZED]
             </text>
           </g>
         </g>
       
-        <!-- Plaque Card 04 -->
+        <!-- Plaque Card 4 -->
         <g transform="translate(697, 72)">
           <!-- Card Base -->
           <rect x="0" y="0" width="203" height="270" rx="14"
@@ -360,17 +360,17 @@
 
           <!-- Event Name -->
           <text x="18" y="70" class="display-title" font-size="13" font-weight="800" fill="#111116" letter-spacing="0.02em">
-            QUANTITATIVE RL LAB
+            POLYGLOT ATELIER
           </text>
 
           <!-- Place / Ranking -->
           <text x="18" y="92" class="code-mono" font-size="10.5" font-weight="800" fill="#111116" letter-spacing="0.05em">
-            SYSTEMS ENGINE
+            RUNNER-UP
           </text>
 
           <!-- Domain -->
           <text x="18" y="112" class="code-mono" font-size="8.5" font-weight="600" fill="#7A7A8E" letter-spacing="0.06em">
-            ALGORITHMIC TRADING
+            SYSTEMS
           </text>
 
           <!-- Subtle Center Decor Line -->
@@ -381,12 +381,12 @@
             PROJECT
           </text>
           <text x="18" y="174" class="editorial-sans" font-size="13" font-weight="700" fill="#111116">
-            AlphaTrader-RL &amp; AIRA
+            KrishiSahAI
           </text>
 
           <!-- Competition Scale / Metric -->
           <text x="18" y="200" class="code-mono" font-size="11" font-weight="700" fill="#4A4A58">
-            5+ Yrs NSE
+            14 Repositories
           </text>
 
           <!-- Badge Pill -->
@@ -395,7 +395,7 @@
                   fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
             <text x="83.5" y="17" text-anchor="middle"
                   class="code-mono" font-size="9" font-weight="800" fill="#E0218A" letter-spacing="0.1em">
-              [ALGO LAB]
+              [RECOGNIZED]
             </text>
           </g>
         </g>
