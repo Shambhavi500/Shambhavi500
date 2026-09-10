@@ -1,0 +1,209 @@
+{
+  "username": "Shambhavi500",
+  "name": "Shambhavi Patil",
+  "avatarUrl": "https://avatars.githubusercontent.com/u/222983931?v=4",
+  "profileUrl": "https://github.com/Shambhavi500",
+  "bio": "ENTC undergraduate | Curious about technology, systems, and their real-world impact | Learning by building projects",
+  "discipline": "Electronics & Telecommunication Engineering",
+  "headline": "Architecting Autonomous Systems, AI Engines & High-Impact AgriTech",
+  "stats": {
+    "publicRepos": 14,
+    "totalStars": 0,
+    "totalForks": 1,
+    "followers": 4,
+    "following": 4,
+    "activeYears": "2025 - Present",
+    "verifiedSince": "July 2025",
+    "primaryFocus": "AI Systems & Distributed Engineering"
+  },
+  "languages": {
+    "Python": 4,
+    "TypeScript": 4,
+    "JavaScript": 3,
+    "Kotlin": 1
+  },
+  "projects": [
+    {
+      "id": "01",
+      "name": "Ovio",
+      "fullName": "Shambhavi500/Ovio",
+      "url": "https://github.com/Shambhavi500/Ovio",
+      "description": "Ovio - AI-powered DaVinci Resolve video editing assistant and multi-agent workflow engine",
+      "highlight": "AI DaVinci Resolve editing assistant & multi-agent workflow engine",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "category": "AI / MULTI-AGENT",
+      "tag": "FLAGSHIP COUTURE",
+      "isPinned": true
+    },
+    {
+      "id": "02",
+      "name": "Aira",
+      "fullName": "Shambhavi500/Aira",
+      "url": "https://github.com/Shambhavi500/Aira",
+      "description": "AIRA - Autonomous Revenue Recovery Operating System for the Indian Fintech Ecosystem",
+      "highlight": "Autonomous Revenue Recovery OS for Indian Fintech Ecosystem",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "category": "FINTECH / AUTONOMOUS",
+      "tag": "SYSTEM ARCHITECTURE",
+      "isPinned": true
+    },
+    {
+      "id": "03",
+      "name": "KrishiSahAI",
+      "fullName": "Shambhavi500/KrishiSahAI",
+      "url": "https://github.com/Shambhavi500/KrishiSahAI",
+      "description": "In an era of rapid technological advancement, KrishiSahai Advisory serves as a bridge, bringing state-of-the-art Artificial Intelligence to the heart of the Indian farmhouse. Our mission is to transform agriculture into a data-driven, sustainable, and highly profitable enterprise for every farmer.",
+      "highlight": "Data-driven AI advisory empowering sustainable Indian farmhouses",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "category": "AGRITECH / AI ADVISORY",
+      "tag": "MISSION IMPACT",
+      "isPinned": true
+    },
+    {
+      "id": "04",
+      "name": "KrishiSetu",
+      "fullName": "Shambhavi500/KrishiSetu",
+      "url": "https://github.com/Shambhavi500/KrishiSetu",
+      "description": "Decentralized agri-supply chain solution using blockchain to empower farmers and ensure price transparency.",
+      "highlight": "Decentralized agri-supply chain ensuring fair price transparency",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "category": "BLOCKCHAIN / SUPPLY CHAIN",
+      "tag": "DECENTRALIZED",
+      "isPinned": true
+    },
+    {
+      "id": "05",
+      "name": "AlphaTrader-RL",
+      "fullName": "Shambhavi500/AlphaTrader-RL",
+      "url": "https://github.com/Shambhavi500/AlphaTrader-RL",
+      "description": "Reinforcement learning system for algorithmic trading execution",
+      "highlight": "Reinforcement learning system for algorithmic trading execution",
+      "language": "Python",
+      "stars": 0,
+      "forks": 1,
+      "category": "QUANTITATIVE / RL",
+      "tag": "RESEARCH LAB",
+      "isPinned": true
+    },
+    {
+      "id": "06",
+      "name": "StockItUp",
+      "fullName": "Shambhavi500/StockItUp",
+      "url": "https://github.com/Shambhavi500/StockItUp",
+      "description": "StockItUp is a stock tracking web application built to simplify market monitoring using real-time data APIs. It allows users to track live stock prices, create personalized watchlists, and analyze stock performance through interactive charts. The system focuses on clarity, responsiveness, and efficient data handling for a smooth user experience.",
+      "highlight": "Live market tracking application with real-time analytics & charts",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "category": "FINTECH / REAL-TIME",
+      "tag": "DATA VISUALIZATION",
+      "isPinned": true
+    },
+    {
+      "id": "07",
+      "name": "NDVI_satellite",
+      "fullName": "Shambhavi500/NDVI_satellite",
+      "url": "https://github.com/Shambhavi500/NDVI_satellite",
+      "description": "Vegetation index analysis using satellite spectral bands",
+      "highlight": "Vegetation index analysis using satellite spectral bands",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "category": "GEO-SPATIAL / REMOTE SENSING",
+      "tag": "EARTH OBSERVATION",
+      "isPinned": true
+    },
+    {
+      "id": "08",
+      "name": "EPeekPahani",
+      "fullName": "Shambhavi500/EPeekPahani",
+      "url": "https://github.com/Shambhavi500/EPeekPahani",
+      "description": "Digital agricultural crop inspection & digital survey application",
+      "highlight": "Digital agricultural crop inspection & digital survey application",
+      "language": "Kotlin",
+      "stars": 0,
+      "forks": 0,
+      "category": "MOBILE / ANDROID",
+      "tag": "FIELD OPERATIONS",
+      "isPinned": true
+    }
+  ],
+  "techWardrobe": {
+    "languages": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "Kotlin",
+      "C / C++",
+      "SQL"
+    ],
+    "autonomousAi": [
+      "Multi-Agent Workflows",
+      "Reinforcement Learning",
+      "Computer Vision",
+      "LLM Agents",
+      "NDVI Remote Sensing"
+    ],
+    "webFrontend": [
+      "React.js",
+      "Next.js",
+      "Vite",
+      "Tailwind CSS",
+      "Responsive UI",
+      "Modern SVG Architecture"
+    ],
+    "systemsBackend": [
+      "FastAPI",
+      "Node.js",
+      "Express",
+      "RESTful APIs",
+      "Blockchain / Smart Contracts",
+      "PostgreSQL"
+    ],
+    "specialized": [
+      "DaVinci Resolve API",
+      "Satellite Spectral Imagery",
+      "Real-Time Financial APIs",
+      "Android SDK"
+    ]
+  },
+  "achievements": [
+    {
+      "code": "EDITION 01",
+      "title": "MULTI-AGENT ARCHITECT",
+      "description": "Engineered Ovio: Autonomous DaVinci Resolve agent orchestration pipeline.",
+      "metric": "Autonomous AI"
+    },
+    {
+      "code": "EDITION 02",
+      "title": "AGRITECH IMPACT BUILDER",
+      "description": "Designed KrishiSahAI, KrishiSetu & NDVI satellite systems for agricultural intelligence.",
+      "metric": "Social & Earth Impact"
+    },
+    {
+      "code": "EDITION 03",
+      "title": "FINTECH ALGO ENGINEER",
+      "description": "Developed AIRA autonomous recovery OS & AlphaTrader-RL reinforcement learning trading.",
+      "metric": "Quantitative Systems"
+    },
+    {
+      "code": "EDITION 04",
+      "title": "POLYGLOT ATELIER",
+      "description": "Production code spanning Python, TypeScript, Kotlin, JavaScript, and C/C++.",
+      "metric": "14 Repositories"
+    }
+  ],
+  "socials": {
+    "github": "https://github.com/Shambhavi500",
+    "email": "shambhavipatil5631@gmail.com"
+  },
+  "updatedAt": "2026-09-10T16:54:09.844Z"
+}

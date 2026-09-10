@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 300" width="100%" height="300" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .editorial-title {
+          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-style: italic;
+        }
+        .editorial-sans {
+          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes shimmerPulse {
+          0% { stop-color: #E0218A; stop-opacity: 0.85; }
+          50% { stop-color: #FF2D87; stop-opacity: 1; }
+          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        }
+        @keyframes sparkleGlint {
+          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
+          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+        @keyframes runwayGlow {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        }
+        
+        .sparkle-anim {
+          animation: sparkleGlint 4s ease-in-out infinite;
+          transform-origin: center;
+        }
+        .runway-glow {
+          animation: runwayGlow 3s ease-in-out infinite;
+        }
+      ]]></style>
+
+      <!-- Barbie Chrome Metallic Gradient -->
+      <linearGradient id="ident_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#FFD6E8" />
+        <stop offset="50%" stop-color="#FFFFFF" />
+        <stop offset="75%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#FFA8D3" />
+      </linearGradient>
+
+      <!-- Signature Barbie Dreamhouse Pink Gradient -->
+      <linearGradient id="ident_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D4145A" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#FF2D87" />
+      </linearGradient>
+
+      <!-- Satin Rose Glow Gradient -->
+      <linearGradient id="ident_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
+        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
+      </linearGradient>
+
+      <!-- Glassmorphic Card Fill -->
+      <linearGradient id="ident_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
+        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Subtle Accent Border Gradient -->
+      <linearGradient id="ident_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
+        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
+        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
+      </linearGradient>
+
+      <!-- Soft Radial Dreamhouse Glow -->
+      <radialGradient id="ident_radialAura" cx="50%" cy="0%" r="70%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
+        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Star / Sparkle Filter -->
+      <filter id="ident_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Deep Glass Container -->
+    <rect width="940" height="300" rx="16" fill="#0D0B14" />
+    <rect width="940" height="300" rx="16" fill="url(#ident_radialAura)" />
+    
+    <!-- Subtle Architectural Background Ribbons -->
+    <g stroke="rgba(224, 33, 138, 0.08)" stroke-width="0.8">
+      <line x1="330" y1="20" x2="330" y2="280" stroke-dasharray="4 4" />
+      <line x1="20" y1="56" x2="920" y2="56" />
+    </g>
+
+    <!-- Outer Frame -->
+    <rect x="16" y="16" width="908" height="268" rx="14"
+          fill="url(#ident_cardGlass)" stroke="url(#ident_borderGrad)" stroke-width="1" />
+
+    <!-- Section Header Tag -->
+    <g transform="translate(42, 38)">
+      <text x="0" y="0" class="code-mono" font-size="10" font-weight="600" fill="#FF85C0" letter-spacing="0.14em">
+        DOSSIER NO. 01 // PROFILE IDENTITY &amp; CORE FOCUS
+      </text>
+    </g>
+    <g transform="translate(898, 38)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.12em">
+        AUTONOMOUS SYSTEMS ATELIER
+      </text>
+    </g>
+
+    <!-- Left Column: Stylized Haute Avatar Frame -->
+    <g transform="translate(45, 78)">
+      <!-- Outer Chrome Bezel -->
+      <rect x="0" y="0" width="245" height="184" rx="12" fill="#130F1E" stroke="rgba(255, 45, 135, 0.35)" stroke-width="1" />
+      
+      <!-- Inner Fashion Portrait Badge -->
+      <rect x="12" y="12" width="221" height="114" rx="8" fill="url(#ident_roseSatin)" />
+      
+      <!-- Minimalist Haute Silhouette / Monogram Art -->
+      <circle cx="122.5" cy="56" r="32" fill="#1A1428" stroke="url(#ident_chromeGrad)" stroke-width="1.5" />
+      <text x="122.5" y="65" text-anchor="middle" class="editorial-title" font-size="24" fill="url(#ident_chromeGrad)">
+        SP
+      </text>
+      
+      <!-- Verification Badge Pill -->
+      <rect x="52" y="100" width="141" height="20" rx="10" fill="rgba(13, 11, 20, 0.9)" stroke="#FF2D87" stroke-width="0.8" />
+      <circle cx="64" cy="110" r="3" fill="#00E676" />
+      <text x="74" y="113.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF" letter-spacing="0.08em">
+        VERIFIED BUILDER
+      </text>
+
+      <!-- Identity Meta beneath photo -->
+      <text x="122.5" y="145" text-anchor="middle" class="editorial-sans" font-size="13" font-weight="700" fill="#FFFFFF">
+        Shambhavi Patil
+      </text>
+      <text x="122.5" y="162" text-anchor="middle" class="code-mono" font-size="9.5" fill="#FF85C0" letter-spacing="0.08em">
+        @Shambhavi500 · ENTC
+      </text>
+    </g>
+
+    <!-- Right Column: Editorial Bio & Core Engineering Pillars -->
+    <g transform="translate(325, 78)">
+      <!-- Main Statement -->
+      <text x="0" y="18" class="editorial-title" font-size="18" fill="url(#ident_chromeGrad)">
+        ARCHITECTING IMPACT THROUGH CODE &amp; SILICON
+      </text>
+      
+      <!-- Real Bio Quote Card -->
+      <g transform="translate(0, 32)">
+        <rect x="0" y="0" width="565" height="54" rx="8" fill="rgba(255, 240, 245, 0.03)" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+        <text x="16" y="24" class="editorial-sans" font-size="11.5" fill="#E2D9E8" font-style="italic">
+          &quot;ENTC undergraduate | Curious about technology, systems, and their real-world impact | Learning by building projects&quot;
+        </text>
+        <text x="16" y="42" class="code-mono" font-size="9.5" fill="#A6195D" font-weight="600" letter-spacing="0.08em">
+          // ACADEMIC &amp; RESEARCH FOCUS: ELECTRONICS &amp; TELECOMMUNICATION ENGINEERING
+        </text>
+      </g>
+
+      <!-- 3 Key Pillars of Shambhavi's Work -->
+      <g transform="translate(0, 102)">
+        <!-- Pillar 1: Autonomous AI -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="178" height="80" rx="8" fill="#130F1E" stroke="rgba(224, 33, 138, 0.25)" stroke-width="0.8" />
+          <text x="12" y="20" class="code-mono" font-size="8.5" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
+            01 / AGENTIC AI
+          </text>
+          <text x="12" y="38" class="editorial-sans" font-size="12" font-weight="600" fill="#FFFFFF">
+            Autonomous Systems
+          </text>
+          <text x="12" y="54" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            Multi-agent workflows &amp;
+          </text>
+          <text x="12" y="68" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            intelligent automation (Ovio)
+          </text>
+        </g>
+
+        <!-- Pillar 2: AgriTech -->
+        <g transform="translate(193, 0)">
+          <rect x="0" y="0" width="178" height="80" rx="8" fill="#130F1E" stroke="rgba(224, 33, 138, 0.25)" stroke-width="0.8" />
+          <text x="12" y="20" class="code-mono" font-size="8.5" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
+            02 / EARTH &amp; AGRI
+          </text>
+          <text x="12" y="38" class="editorial-sans" font-size="12" font-weight="600" fill="#FFFFFF">
+            Precision AgriTech
+          </text>
+          <text x="12" y="54" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            Satellite spectral analysis &amp;
+          </text>
+          <text x="12" y="68" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            AI advisory (KrishiSahAI)
+          </text>
+        </g>
+
+        <!-- Pillar 3: FinTech & RL -->
+        <g transform="translate(386, 0)">
+          <rect x="0" y="0" width="178" height="80" rx="8" fill="#130F1E" stroke="rgba(224, 33, 138, 0.25)" stroke-width="0.8" />
+          <text x="12" y="20" class="code-mono" font-size="8.5" font-weight="600" fill="#FF85C0" letter-spacing="0.1em">
+            03 / QUANT &amp; FINTECH
+          </text>
+          <text x="12" y="38" class="editorial-sans" font-size="12" font-weight="600" fill="#FFFFFF">
+            Autonomous FinTech
+          </text>
+          <text x="12" y="54" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            Reinforcement learning &amp;
+          </text>
+          <text x="12" y="68" class="editorial-sans" font-size="9.5" fill="#9D93A8">
+            revenue recovery OS (AIRA)
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Sparkles -->
+    
+    <g class="sparkle-anim" style="transform-origin: 885px 65px;">
+      <path d="
+        M 885 59
+        Q 887.4 62.6 891 65
+        Q 887.4 67.4 885 71
+        Q 882.6 67.4 879 65
+        Q 882.6 62.6 885 59
+        Z"
+        fill="#FFFFFF"
+        opacity="0.9"
+      />
+      <circle cx="885" cy="65" r="1.7999999999999998" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 280px 240px;">
+      <path d="
+        M 280 235
+        Q 282 238 285 240
+        Q 282 242 280 245
+        Q 278 242 275 240
+        Q 278 238 280 235
+        Z"
+        fill="#FF85C0"
+        opacity="0.9"
+      />
+      <circle cx="280" cy="240" r="1.5" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 870px 255px;">
+      <path d="
+        M 870 248
+        Q 872.8 252.2 877 255
+        Q 872.8 257.8 870 262
+        Q 867.2 257.8 863 255
+        Q 867.2 252.2 870 248
+        Z"
+        fill="#FFA8D3"
+        opacity="0.9"
+      />
+      <circle cx="870" cy="255" r="2.1" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

@@ -1,0 +1,390 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 290" width="100%" height="290" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .editorial-title {
+          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-style: italic;
+        }
+        .editorial-sans {
+          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes shimmerPulse {
+          0% { stop-color: #E0218A; stop-opacity: 0.85; }
+          50% { stop-color: #FF2D87; stop-opacity: 1; }
+          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        }
+        @keyframes sparkleGlint {
+          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
+          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+        @keyframes runwayGlow {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        }
+        
+        .sparkle-anim {
+          animation: sparkleGlint 4s ease-in-out infinite;
+          transform-origin: center;
+        }
+        .runway-glow {
+          animation: runwayGlow 3s ease-in-out infinite;
+        }
+      ]]></style>
+
+      <!-- Barbie Chrome Metallic Gradient -->
+      <linearGradient id="ach_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#FFD6E8" />
+        <stop offset="50%" stop-color="#FFFFFF" />
+        <stop offset="75%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#FFA8D3" />
+      </linearGradient>
+
+      <!-- Signature Barbie Dreamhouse Pink Gradient -->
+      <linearGradient id="ach_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D4145A" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#FF2D87" />
+      </linearGradient>
+
+      <!-- Satin Rose Glow Gradient -->
+      <linearGradient id="ach_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
+        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
+      </linearGradient>
+
+      <!-- Glassmorphic Card Fill -->
+      <linearGradient id="ach_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
+        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Subtle Accent Border Gradient -->
+      <linearGradient id="ach_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
+        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
+        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
+      </linearGradient>
+
+      <!-- Soft Radial Dreamhouse Glow -->
+      <radialGradient id="ach_radialAura" cx="50%" cy="0%" r="70%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
+        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Star / Sparkle Filter -->
+      <filter id="ach_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Dark Studio Base -->
+    <rect width="940" height="290" rx="16" fill="#0D0B14" />
+    <rect width="940" height="290" rx="16" fill="url(#ach_radialAura)" />
+
+    <!-- Outer Structural Frame -->
+    <rect x="16" y="16" width="908" height="258" rx="14"
+          fill="url(#ach_cardGlass)" stroke="url(#ach_borderGrad)" stroke-width="1" />
+
+    <!-- Section Header -->
+    <g transform="translate(42, 44)">
+      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#ach_chromeGrad)">
+        CAREER EDITION // ATELIER MILESTONES
+      </text>
+      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
+        VERIFIED REPOSITORY RELEASES, ARCHITECTURAL DESIGNS &amp; IMPACT DOMAINS
+      </text>
+    </g>
+
+    <g transform="translate(898, 44)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.1em">
+        4 VERIFIED BADGES
+      </text>
+      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
+        ● AUTHENTIC CRITERIA MET
+      </text>
+    </g>
+
+    <!-- 4 Achievement Cards -->
+    
+      <!-- Achievement Card 1: MULTI-AGENT ARCHITECT -->
+      <g transform="translate(42, 74)">
+        <!-- Card Base -->
+        <rect x="0" y="0" width="200" height="180" rx="12"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Strip -->
+        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
+
+        <!-- Edition Tag -->
+        <g transform="translate(14, 24)">
+          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
+          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
+            EDITION 01
+          </text>
+        </g>
+
+        <!-- Medal / Badge Emblem in Chrome -->
+        <g transform="translate(156, 26)">
+          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
+          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
+        </g>
+
+        <!-- Title -->
+        <g transform="translate(14, 70)">
+          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            MULTI-AGENT
+          </text>
+          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            ARCHITECT
+          </text>
+        </g>
+
+        <!-- Description -->
+        <g transform="translate(14, 110)">
+          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            Engineered Ovio: Autonomous DaVi
+          </text>
+          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            nci Resolve agent orchestration 
+          </text>
+          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            pipeline.
+          </text>
+        </g>
+
+        <!-- Metric Footer -->
+        <g transform="translate(14, 162)">
+          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
+            &#10003; Autonomous AI
+          </text>
+        </g>
+      </g>
+    
+      <!-- Achievement Card 2: AGRITECH IMPACT BUILDER -->
+      <g transform="translate(258, 74)">
+        <!-- Card Base -->
+        <rect x="0" y="0" width="200" height="180" rx="12"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Strip -->
+        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
+
+        <!-- Edition Tag -->
+        <g transform="translate(14, 24)">
+          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
+          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
+            EDITION 02
+          </text>
+        </g>
+
+        <!-- Medal / Badge Emblem in Chrome -->
+        <g transform="translate(156, 26)">
+          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
+          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
+        </g>
+
+        <!-- Title -->
+        <g transform="translate(14, 70)">
+          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            AGRITECH
+          </text>
+          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            IMPACT BUILDER
+          </text>
+        </g>
+
+        <!-- Description -->
+        <g transform="translate(14, 110)">
+          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            Designed KrishiSahAI, KrishiSetu
+          </text>
+          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+             &amp; NDVI satellite systems for ag
+          </text>
+          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            ricultural intelligence.
+          </text>
+        </g>
+
+        <!-- Metric Footer -->
+        <g transform="translate(14, 162)">
+          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
+            &#10003; Social &amp; Earth Impact
+          </text>
+        </g>
+      </g>
+    
+      <!-- Achievement Card 3: FINTECH ALGO ENGINEER -->
+      <g transform="translate(474, 74)">
+        <!-- Card Base -->
+        <rect x="0" y="0" width="200" height="180" rx="12"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Strip -->
+        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
+
+        <!-- Edition Tag -->
+        <g transform="translate(14, 24)">
+          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
+          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
+            EDITION 03
+          </text>
+        </g>
+
+        <!-- Medal / Badge Emblem in Chrome -->
+        <g transform="translate(156, 26)">
+          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
+          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
+        </g>
+
+        <!-- Title -->
+        <g transform="translate(14, 70)">
+          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            FINTECH
+          </text>
+          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            ALGO ENGINEER
+          </text>
+        </g>
+
+        <!-- Description -->
+        <g transform="translate(14, 110)">
+          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            Developed AIRA autonomous recove
+          </text>
+          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            ry OS &amp; AlphaTrader-RL reinforce
+          </text>
+          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            ment learning trading.
+          </text>
+        </g>
+
+        <!-- Metric Footer -->
+        <g transform="translate(14, 162)">
+          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
+            &#10003; Quantitative Systems
+          </text>
+        </g>
+      </g>
+    
+      <!-- Achievement Card 4: POLYGLOT ATELIER -->
+      <g transform="translate(690, 74)">
+        <!-- Card Base -->
+        <rect x="0" y="0" width="200" height="180" rx="12"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Strip -->
+        <rect x="0" y="0" width="200" height="3" rx="1.5" fill="url(#ach_barbieGrad)" />
+
+        <!-- Edition Tag -->
+        <g transform="translate(14, 24)">
+          <rect x="0" y="0" width="84" height="18" rx="9" fill="rgba(255, 45, 135, 0.15)" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.7" />
+          <text x="42" y="12" text-anchor="middle" class="code-mono" font-size="8" font-weight="700" fill="#FF85C0" letter-spacing="0.1em">
+            EDITION 04
+          </text>
+        </g>
+
+        <!-- Medal / Badge Emblem in Chrome -->
+        <g transform="translate(156, 26)">
+          <circle cx="16" cy="7" r="14" fill="rgba(255, 255, 255, 0.03)" stroke="url(#ach_chromeGrad)" stroke-width="1" />
+          <polygon points="16,0 18,5 23,6 19,10 20,15 16,12 12,15 13,10 9,6 14,5" fill="#FF2D87" />
+        </g>
+
+        <!-- Title -->
+        <g transform="translate(14, 70)">
+          <text x="0" y="0" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            POLYGLOT
+          </text>
+          <text x="0" y="16" class="editorial-title" font-size="12" fill="url(#ach_chromeGrad)">
+            ATELIER
+          </text>
+        </g>
+
+        <!-- Description -->
+        <g transform="translate(14, 110)">
+          <text x="0" y="0" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+            Production code spanning Python,
+          </text>
+          <text x="0" y="14" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+             TypeScript, Kotlin, JavaScript,
+          </text>
+          <text x="0" y="28" class="editorial-sans" font-size="10" fill="#E2D9E8" opacity="0.9">
+             and C/C++.
+          </text>
+        </g>
+
+        <!-- Metric Footer -->
+        <g transform="translate(14, 162)">
+          <text x="0" y="0" class="code-mono" font-size="8.5" font-weight="600" fill="#00E676">
+            &#10003; 14 Repositories
+          </text>
+        </g>
+      </g>
+    
+
+    <!-- Sparkles -->
+    
+    <g class="sparkle-anim" style="transform-origin: 904px 36px;">
+      <path d="
+        M 904 31
+        Q 906 34 909 36
+        Q 906 38 904 41
+        Q 902 38 899 36
+        Q 902 34 904 31
+        Z"
+        fill="#FFFFFF"
+        opacity="0.9"
+      />
+      <circle cx="904" cy="36" r="1.5" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 470px 40px;">
+      <path d="
+        M 470 35
+        Q 472 38 475 40
+        Q 472 42 470 45
+        Q 468 42 465 40
+        Q 468 38 470 35
+        Z"
+        fill="#FF85C0"
+        opacity="0.9"
+      />
+      <circle cx="470" cy="40" r="1.5" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 880px 265px;">
+      <path d="
+        M 880 259.5
+        Q 882.2 262.8 885.5 265
+        Q 882.2 267.2 880 270.5
+        Q 877.8 267.2 874.5 265
+        Q 877.8 262.8 880 259.5
+        Z"
+        fill="#FFA8D3"
+        opacity="0.9"
+      />
+      <circle cx="880" cy="265" r="1.65" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

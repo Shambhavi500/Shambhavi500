@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 36" width="100%" height="36" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .editorial-title {
+          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-style: italic;
+        }
+        .editorial-sans {
+          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes shimmerPulse {
+          0% { stop-color: #E0218A; stop-opacity: 0.85; }
+          50% { stop-color: #FF2D87; stop-opacity: 1; }
+          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        }
+        @keyframes sparkleGlint {
+          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
+          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+        @keyframes runwayGlow {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        }
+        
+        .sparkle-anim {
+          animation: sparkleGlint 4s ease-in-out infinite;
+          transform-origin: center;
+        }
+        .runway-glow {
+          animation: runwayGlow 3s ease-in-out infinite;
+        }
+      ]]></style>
+
+      <!-- Barbie Chrome Metallic Gradient -->
+      <linearGradient id="div_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#FFD6E8" />
+        <stop offset="50%" stop-color="#FFFFFF" />
+        <stop offset="75%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#FFA8D3" />
+      </linearGradient>
+
+      <!-- Signature Barbie Dreamhouse Pink Gradient -->
+      <linearGradient id="div_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D4145A" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#FF2D87" />
+      </linearGradient>
+
+      <!-- Satin Rose Glow Gradient -->
+      <linearGradient id="div_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
+        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
+      </linearGradient>
+
+      <!-- Glassmorphic Card Fill -->
+      <linearGradient id="div_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
+        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Subtle Accent Border Gradient -->
+      <linearGradient id="div_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
+        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
+        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
+      </linearGradient>
+
+      <!-- Soft Radial Dreamhouse Glow -->
+      <radialGradient id="div_radialAura" cx="50%" cy="0%" r="70%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
+        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Star / Sparkle Filter -->
+      <filter id="div_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Central Ribbon Line -->
+    <line x1="42" y1="18" x2="420" y2="18" stroke="url(#div_barbieGrad)" stroke-width="0.8" opacity="0.6" />
+    <line x1="520" y1="18" x2="898" y2="18" stroke="url(#div_barbieGrad)" stroke-width="0.8" opacity="0.6" />
+
+    <!-- Center Faceted Haute Diamond -->
+    <g transform="translate(470, 18)">
+      <circle cx="0" cy="0" r="12" fill="#130F1E" stroke="rgba(255, 45, 135, 0.4)" stroke-width="0.8" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="url(#div_chromeGrad)" />
+      <circle cx="0" cy="0" r="1.5" fill="#FF2D87" />
+    </g>
+
+    
+    <g class="sparkle-anim" style="transform-origin: 410px 18px;">
+      <path d="
+        M 410 13.5
+        Q 411.8 16.2 414.5 18
+        Q 411.8 19.8 410 22.5
+        Q 408.2 19.8 405.5 18
+        Q 408.2 16.2 410 13.5
+        Z"
+        fill="#FFFFFF"
+        opacity="0.9"
+      />
+      <circle cx="410" cy="18" r="1.3499999999999999" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 530px 18px;">
+      <path d="
+        M 530 13.5
+        Q 531.8 16.2 534.5 18
+        Q 531.8 19.8 530 22.5
+        Q 528.2 19.8 525.5 18
+        Q 528.2 16.2 530 13.5
+        Z"
+        fill="#FF85C0"
+        opacity="0.9"
+      />
+      <circle cx="530" cy="18" r="1.3499999999999999" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

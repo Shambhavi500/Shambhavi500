@@ -1,0 +1,522 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 660" width="100%" height="660" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .editorial-title {
+          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-style: italic;
+        }
+        .editorial-sans {
+          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes shimmerPulse {
+          0% { stop-color: #E0218A; stop-opacity: 0.85; }
+          50% { stop-color: #FF2D87; stop-opacity: 1; }
+          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        }
+        @keyframes sparkleGlint {
+          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
+          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+        @keyframes runwayGlow {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        }
+        
+        .sparkle-anim {
+          animation: sparkleGlint 4s ease-in-out infinite;
+          transform-origin: center;
+        }
+        .runway-glow {
+          animation: runwayGlow 3s ease-in-out infinite;
+        }
+      ]]></style>
+
+      <!-- Barbie Chrome Metallic Gradient -->
+      <linearGradient id="proj_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#FFD6E8" />
+        <stop offset="50%" stop-color="#FFFFFF" />
+        <stop offset="75%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#FFA8D3" />
+      </linearGradient>
+
+      <!-- Signature Barbie Dreamhouse Pink Gradient -->
+      <linearGradient id="proj_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D4145A" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#FF2D87" />
+      </linearGradient>
+
+      <!-- Satin Rose Glow Gradient -->
+      <linearGradient id="proj_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
+        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
+      </linearGradient>
+
+      <!-- Glassmorphic Card Fill -->
+      <linearGradient id="proj_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
+        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Subtle Accent Border Gradient -->
+      <linearGradient id="proj_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
+        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
+        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
+      </linearGradient>
+
+      <!-- Soft Radial Dreamhouse Glow -->
+      <radialGradient id="proj_radialAura" cx="50%" cy="0%" r="70%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
+        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Star / Sparkle Filter -->
+      <filter id="proj_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Deep Container Background -->
+    <rect width="940" height="660" rx="16" fill="#0D0B14" />
+    <rect width="940" height="660" rx="16" fill="url(#proj_radialAura)" />
+
+    <!-- Outer Structural Frame -->
+    <rect x="16" y="16" width="908" height="628" rx="14"
+          fill="url(#proj_cardGlass)" stroke="url(#proj_borderGrad)" stroke-width="1" />
+
+    <!-- Editorial Section Header -->
+    <g transform="translate(42, 44)">
+      <text x="0" y="0" class="editorial-title" font-size="16" fill="url(#proj_chromeGrad)">
+        DREAM PROJECTS // THE ATELIER COLLECTION
+      </text>
+      <text x="0" y="18" class="code-mono" font-size="9" fill="#FF85C0" letter-spacing="0.12em">
+        FEATURED AUTONOMOUS AGENTS, AGRITECH PLATFORMS &amp; QUANT ENGINES
+      </text>
+    </g>
+
+    <g transform="translate(898, 44)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9.5" fill="#9D93A8" letter-spacing="0.1em">
+        6 CURATED ARCHITECTURES
+      </text>
+      <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676">
+        ● ALL PRODUCTION REPOSITORIES
+      </text>
+    </g>
+
+    <!-- The 6 Project Cards -->
+    
+      <!-- Project Card 01: Ovio -->
+      <g transform="translate(42, 82)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            AI / MULTI-AGENT
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 01
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            Ovio
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            AI DaVinci Resolve editing assistant &amp; multi-age
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            nt workflow engine
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            Python
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            FLAGSHIP COUTURE
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+      <!-- Project Card 02: Aira -->
+      <g transform="translate(482, 82)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            FINTECH / AUTONOMOUS
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 02
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            Aira
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            Autonomous Revenue Recovery OS for Indian Fintec
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            h Ecosystem
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            TypeScript
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            SYSTEM ARCHITECTURE
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+      <!-- Project Card 03: KrishiSahAI -->
+      <g transform="translate(42, 272)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            AGRITECH / AI ADVISORY
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 03
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            KrishiSahAI
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            Data-driven AI advisory empowering sustainable I
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            ndian farmhouses
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            Python
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            MISSION IMPACT
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+      <!-- Project Card 04: KrishiSetu -->
+      <g transform="translate(482, 272)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            BLOCKCHAIN / SUPPLY CHAIN
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 04
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            KrishiSetu
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            Decentralized agri-supply chain ensuring fair pr
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            ice transparency
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            TypeScript
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            DECENTRALIZED
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+      <!-- Project Card 05: AlphaTrader-RL -->
+      <g transform="translate(42, 462)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            QUANTITATIVE / RL
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 05
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            AlphaTrader-RL
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            Reinforcement learning system for algorithmic tr
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            ading execution
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            Python
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            RESEARCH LAB
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+      <!-- Project Card 06: StockItUp -->
+      <g transform="translate(482, 462)">
+        <!-- Card Backing -->
+        <rect x="0" y="0" width="416" height="168" rx="10"
+              fill="#130F1E" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.9" />
+
+        <!-- Top Accent Bar -->
+        <rect x="0" y="0" width="416" height="3" rx="1.5" fill="url(#proj_barbieGrad)" opacity="0.8" />
+
+        <!-- Category & Number Header -->
+        <g transform="translate(16, 22)">
+          <text x="0" y="0" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0" letter-spacing="0.12em">
+            FINTECH / REAL-TIME
+          </text>
+          <text x="384" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#FF2D87">
+            // NO. 06
+          </text>
+        </g>
+
+        <!-- Project Title -->
+        <g transform="translate(16, 52)">
+          <text x="0" y="0" class="editorial-title" font-size="19" fill="url(#proj_chromeGrad)">
+            StockItUp
+          </text>
+        </g>
+
+        <!-- Project Description -->
+        <g transform="translate(16, 74)">
+          <text x="0" y="0" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            Live market tracking application with real-time 
+          </text>
+          <text x="0" y="17" class="editorial-sans" font-size="11.5" fill="#E2D9E8" opacity="0.95">
+            analytics &amp; charts
+          </text>
+        </g>
+
+        <!-- Bottom Metadata Footer -->
+        <g transform="translate(16, 138)">
+          <!-- Language Tag Pill -->
+          <rect x="0" y="-14" width="90" height="20" rx="10" fill="rgba(255, 45, 135, 0.12)" stroke="rgba(255, 45, 135, 0.35)" stroke-width="0.7" />
+          <circle cx="10" cy="-4" r="3" fill="#FF2D87" />
+          <text x="18" y="-0.5" class="code-mono" font-size="8.5" font-weight="600" fill="#FFFFFF">
+            JavaScript
+          </text>
+
+          <!-- Edition Tag -->
+          <rect x="100" y="-14" width="130" height="20" rx="10" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="0.7" />
+          <text x="165" y="-0.5" text-anchor="middle" class="code-mono" font-size="8" fill="#A89EAE" letter-spacing="0.06em">
+            DATA VISUALIZATION
+          </text>
+
+          <!-- Action Indicator -->
+          <text x="384" y="-0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="600" fill="#FF85C0">
+            VIEW REPO &#8599;
+          </text>
+        </g>
+      </g>
+    
+
+    <!-- Sparkles -->
+    
+    <g class="sparkle-anim" style="transform-origin: 904px 36px;">
+      <path d="
+        M 904 30.5
+        Q 906.2 33.8 909.5 36
+        Q 906.2 38.2 904 41.5
+        Q 901.8 38.2 898.5 36
+        Q 901.8 33.8 904 30.5
+        Z"
+        fill="#FFFFFF"
+        opacity="0.9"
+      />
+      <circle cx="904" cy="36" r="1.65" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 470px 40px;">
+      <path d="
+        M 470 35
+        Q 472 38 475 40
+        Q 472 42 470 45
+        Q 468 42 465 40
+        Q 468 38 470 35
+        Z"
+        fill="#FF85C0"
+        opacity="0.9"
+      />
+      <circle cx="470" cy="40" r="1.5" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 885px 630px;">
+      <path d="
+        M 885 624
+        Q 887.4 627.6 891 630
+        Q 887.4 632.4 885 636
+        Q 882.6 632.4 879 630
+        Q 882.6 627.6 885 624
+        Z"
+        fill="#FFA8D3"
+        opacity="0.9"
+      />
+      <circle cx="885" cy="630" r="1.7999999999999998" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

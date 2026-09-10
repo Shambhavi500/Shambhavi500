@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 180" width="100%" height="180" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .editorial-title {
+          font-family: 'Cinzel', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+        }
+        .editorial-script {
+          font-family: 'Playfair Display', 'Didot', Georgia, serif;
+          font-style: italic;
+        }
+        .editorial-sans {
+          font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes shimmerPulse {
+          0% { stop-color: #E0218A; stop-opacity: 0.85; }
+          50% { stop-color: #FF2D87; stop-opacity: 1; }
+          100% { stop-color: #E0218A; stop-opacity: 0.85; }
+        }
+        @keyframes sparkleGlint {
+          0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.7; }
+          50% { transform: scale(1.15) rotate(15deg); opacity: 1; }
+        }
+        @keyframes runwayGlow {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; filter: drop-shadow(0 0 6px #FF2D87); }
+        }
+        
+        .sparkle-anim {
+          animation: sparkleGlint 4s ease-in-out infinite;
+          transform-origin: center;
+        }
+        .runway-glow {
+          animation: runwayGlow 3s ease-in-out infinite;
+        }
+      ]]></style>
+
+      <!-- Barbie Chrome Metallic Gradient -->
+      <linearGradient id="foot_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" />
+        <stop offset="25%" stop-color="#FFD6E8" />
+        <stop offset="50%" stop-color="#FFFFFF" />
+        <stop offset="75%" stop-color="#E2E8F0" />
+        <stop offset="100%" stop-color="#FFA8D3" />
+      </linearGradient>
+
+      <!-- Signature Barbie Dreamhouse Pink Gradient -->
+      <linearGradient id="foot_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D4145A" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#FF2D87" />
+      </linearGradient>
+
+      <!-- Satin Rose Glow Gradient -->
+      <linearGradient id="foot_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.3" />
+        <stop offset="50%" stop-color="#7928CA" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#151122" stop-opacity="0.8" />
+      </linearGradient>
+
+      <!-- Glassmorphic Card Fill -->
+      <linearGradient id="foot_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#1B162B" stop-opacity="0.92" />
+        <stop offset="100%" stop-color="#100D1C" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Subtle Accent Border Gradient -->
+      <linearGradient id="foot_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.7" />
+        <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.4" />
+        <stop offset="70%" stop-color="#E0218A" stop-opacity="0.2" />
+        <stop offset="100%" stop-color="#A6195D" stop-opacity="0.5" />
+      </linearGradient>
+
+      <!-- Soft Radial Dreamhouse Glow -->
+      <radialGradient id="foot_radialAura" cx="50%" cy="0%" r="70%">
+        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.22" />
+        <stop offset="60%" stop-color="#E0218A" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Star / Sparkle Filter -->
+      <filter id="foot_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Dark Studio Base -->
+    <rect width="940" height="180" rx="16" fill="#0D0B14" />
+    <rect width="940" height="180" rx="16" fill="url(#foot_radialAura)" />
+
+    <!-- Outer Frame with Chrome Bevel -->
+    <rect x="16" y="16" width="908" height="148" rx="14"
+          fill="url(#foot_cardGlass)" stroke="url(#foot_borderGrad)" stroke-width="1" />
+
+    <!-- Centerpiece Closing Editorial Statement -->
+    <g transform="translate(470, 64)">
+      <text x="0" y="0" text-anchor="middle" class="editorial-script" font-size="22" fill="#FFFFFF">
+        &quot;Welcome to Shambhavi&apos;s Dreamhouse.&quot;
+      </text>
+      <text x="0" y="24" text-anchor="middle" class="code-mono" font-size="10" font-weight="600" fill="#FF85C0" letter-spacing="0.16em">
+        WHERE AUTONOMOUS INTELLIGENCE MEETS HAUTE COUTURE ENGINEERING
+      </text>
+    </g>
+
+    <!-- Bottom Colophon Row -->
+    <g transform="translate(42, 136)">
+      <text x="0" y="0" class="code-mono" font-size="9" fill="#9D93A8" letter-spacing="0.12em">
+        ATELIER @Shambhavi500 · ELECTRONICS &amp; TELECOMMUNICATION
+      </text>
+    </g>
+
+    <g transform="translate(898, 136)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#E2D9E8" letter-spacing="0.1em">
+        DESIGNED WITH INTENTION · BUILT WITH CODE
+      </text>
+    </g>
+
+    <!-- Sparkles -->
+    
+    <g class="sparkle-anim" style="transform-origin: 230px 60px;">
+      <path d="
+        M 230 54
+        Q 232.4 57.6 236 60
+        Q 232.4 62.4 230 66
+        Q 227.6 62.4 224 60
+        Q 227.6 57.6 230 54
+        Z"
+        fill="#FFFFFF"
+        opacity="0.9"
+      />
+      <circle cx="230" cy="60" r="1.7999999999999998" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 710px 60px;">
+      <path d="
+        M 710 53
+        Q 712.8 57.2 717 60
+        Q 712.8 62.8 710 67
+        Q 707.2 62.8 703 60
+        Q 707.2 57.2 710 53
+        Z"
+        fill="#FF85C0"
+        opacity="0.9"
+      />
+      <circle cx="710" cy="60" r="2.1" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="sparkle-anim" style="transform-origin: 880px 48px;">
+      <path d="
+        M 880 43
+        Q 882 46 885 48
+        Q 882 50 880 53
+        Q 878 50 875 48
+        Q 878 46 880 43
+        Z"
+        fill="#FFA8D3"
+        opacity="0.9"
+      />
+      <circle cx="880" cy="48" r="1.5" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

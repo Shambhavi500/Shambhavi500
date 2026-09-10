@@ -1,0 +1,21 @@
+{
+  "name": "shambhavi500-profile",
+  "version": "1.0.0",
+  "description": "Haute Couture Barbie-Inspired Developer Profile README System for Shambhavi500",
+  "main": "scripts/generate.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate.js",
+    "validate": "node scripts/validate.js",
+    "test": "node scripts/validate.js"
+  },
+  "keywords": [
+    "github-profile",
+    "barbie",
+    "luxury-fashion",
+    "developer-portfolio",
+    "svg-generator"
+  ],
+  "author": "Shambhavi Patil <https://github.com/Shambhavi500>",
+  "license": "MIT"
+}
