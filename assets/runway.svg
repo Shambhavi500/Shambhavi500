@@ -132,7 +132,7 @@
         THE BUILD LOG // ACTIVITY RUNWAY &amp; CODE CADENCE
       </text>
       <text x="0" y="18" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.08em">
-        GENUINE 52-WEEK COMMIT CADENCE · 115 CONTRIBUTIONS IN THE LAST YEAR
+        GENUINE 52-WEEK COMMIT CADENCE · 117 CONTRIBUTIONS IN THE LAST YEAR
       </text>
     </g>
 
@@ -976,7 +976,7 @@
               fill="#F1F5F9" stroke="#E2E8F0" stroke-width="0.6" />
       
         <rect x="643.7" y="82.0" width="12.5" height="10.5" rx="2"
-              fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.6" />
+              fill="#F472B6" stroke="#E0218A" stroke-width="0.6" />
       
         <rect x="643.7" y="95.3" width="12.5" height="10.5" rx="2"
               fill="#F1F5F9" stroke="#E2E8F0" stroke-width="0.6" />
