@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 310" width="100%" height="310" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 650" width="100%" height="650" fill="none">
     
     <defs>
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
         .display-title {
-          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -14,12 +14,11 @@
           letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
-          font-style: italic;
+          font-family: 'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif;
           letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 500;
         }
         .code-mono {
@@ -45,45 +44,45 @@
         }
       ]]></style>
 
-      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
       <linearGradient id="ident_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#FF2D87" />
         <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#C2185B" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="ident_canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="ident_blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="ident_cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
       </linearGradient>
 
       <!-- Card Glass Backdrop Gradient -->
       <linearGradient id="ident_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
-        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
-      </linearGradient>
-
-      <!-- Rose Satin Monogram Gradient -->
-      <linearGradient id="ident_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#2D1124" />
-        <stop offset="100%" stop-color="#1A0D18" />
-      </linearGradient>
-
-      <!-- Light Rose Ambient Surface Gradient -->
-      <linearGradient id="ident_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#FFF5F8" />
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
       </linearGradient>
 
       <!-- Delicate Pink Hairline Gradient -->
       <linearGradient id="ident_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
-        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
-        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
-        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
-      </linearGradient>
-
-      <!-- Platinum / Chrome Luxury Accent Gradient -->
-      <linearGradient id="ident_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="35%" stop-color="#F1F5F9" />
-        <stop offset="70%" stop-color="#CBD5E1" />
-        <stop offset="100%" stop-color="#E2E8F0" />
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
       </linearGradient>
 
       <!-- Winner Gold Accent Gradient -->
@@ -93,16 +92,17 @@
         <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
-      <radialGradient id="ident_radialAura" cx="80%" cy="10%" r="70%">
-        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
-        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
-        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="ident_radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Card Soft Shadow Filter -->
-      <filter id="ident_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
-        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="ident_cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
       </filter>
 
       <!-- Subtle Plaque Glow Filter -->
@@ -110,134 +110,264 @@
         <feGaussianBlur stdDeviation="4" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
-
-      <filter id="ident_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="6" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
     </defs>
   
-    
+
     <!-- Light Studio Canvas Base -->
-    <rect width="940" height="310" rx="16" fill="#FAFAFC" />
-    
-    <!-- Outer Card with Soft Shadow -->
-    <rect x="16" y="16" width="908" height="278" rx="14"
-          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#ident_cardShadow)" />
+    <rect width="940" height="650" rx="24" fill="#FFF0F6" />
+
+    <!-- Outer Card with Soft Glam Shadow -->
+    <rect x="16" y="16" width="908" height="618" rx="24"
+          fill="#FFF7FB" stroke="rgba(224, 33, 138, 0.35)" stroke-width="1" filter="url(#ident_cardShadow)" />
 
     <!-- Section Header Tag -->
     <g transform="translate(42, 40)">
-      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#E0218A" letter-spacing="0.14em">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#C71585" letter-spacing="0.14em">
         THE PERSON // ENGINEERING PROFILE &amp; FOCUS
       </text>
     </g>
     <g transform="translate(898, 40)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.12em">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#6B7280" letter-spacing="0.12em">
         ATELIER NO. 500 · PUNE, INDIA
       </text>
     </g>
 
     <!-- Header Divider Line -->
-    <line x1="42" y1="52" x2="898" y2="52" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
+    <line x1="42" y1="52" x2="898" y2="52" stroke="rgba(224, 33, 138, 0.16)" stroke-width="1" />
 
     <!-- Left Column: Editorial Builder Card -->
     <g transform="translate(42, 68)">
       <!-- Outer Frame -->
-      <rect x="0" y="0" width="245" height="206" rx="10" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
-      
+      <rect x="0" y="0" width="245" height="544" rx="16" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+
       <!-- Inner White Portrait Bezel -->
-      <rect x="12" y="12" width="221" height="126" rx="8" fill="#FFFFFF" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
-      
+      <rect x="12" y="12" width="221" height="186" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+
       <!-- Monogram Art with Barbie Pink Accent Circle -->
-      <circle cx="122.5" cy="62" r="34" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="1.5" />
-      <text x="122.5" y="70" text-anchor="middle" class="editorial-title" font-size="22" font-weight="800" fill="#111116">
+      <circle cx="122.5" cy="58" r="32" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.45)" stroke-width="1.5" />
+      <text x="122.5" y="66" text-anchor="middle" class="editorial-title" font-size="20" font-weight="800" fill="#2D2D2D">
         SP
       </text>
-      
+
       <!-- Verification Badge Pill -->
-      <rect x="36" y="108" width="173" height="20" rx="10" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
-      <circle cx="48" cy="118" r="3" fill="#00E676" />
-      <text x="58" y="121.5" class="code-mono" font-size="8.5" font-weight="700" fill="#111116" letter-spacing="0.06em">
+      <rect x="36" y="102" width="173" height="20" rx="10" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.45)" stroke-width="0.8" />
+      <circle cx="48" cy="112" r="3" fill="#00E676" />
+      <text x="58" y="115.5" class="code-mono" font-size="8.5" font-weight="700" fill="#2D2D2D" letter-spacing="0.06em">
         VERIFIED BUILDER · CGPA 8.6
       </text>
 
       <!-- Identity Meta beneath portrait -->
-      <text x="122.5" y="164" text-anchor="middle" class="editorial-sans" font-size="14" font-weight="800" fill="#111116">
+      <text x="122.5" y="146" text-anchor="middle" class="editorial-sans" font-size="15" font-weight="800" fill="#2D2D2D">
         Shambhavi Patil
       </text>
-      <text x="122.5" y="184" text-anchor="middle" class="code-mono" font-size="9" font-weight="600" fill="#E0218A" letter-spacing="0.06em">
+      <text x="122.5" y="166" text-anchor="middle" class="code-mono" font-size="9" font-weight="600" fill="#E0218A" letter-spacing="0.06em">
         @Shambhavi500 · B.Tech ENTC
       </text>
+
+      <!-- Quick Specs Card inside left column -->
+      <g transform="translate(12, 210)">
+        <rect x="0" y="0" width="221" height="152" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+        <text x="14" y="20" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+          // ACADEMIC &amp; R&amp;D SNAPSHOT
+        </text>
+
+        <text x="14" y="42" class="editorial-sans" font-size="11" font-weight="700" fill="#2D2D2D">
+          PICT Pune · B.Tech ENTC
+        </text>
+        <text x="14" y="58" class="code-mono" font-size="9" fill="#6B7280">
+          Third-Year Undergrad · CGPA 8.6
+        </text>
+
+        <line x1="14" y1="70" x2="207" y2="70" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+
+        <text x="14" y="88" class="editorial-sans" font-size="11" font-weight="700" fill="#2D2D2D">
+          Mindstrix Technologies LLP
+        </text>
+        <text x="14" y="104" class="code-mono" font-size="9" fill="#6B7280">
+          AI/ML R&amp;D Intern (Mar 2026–)
+        </text>
+
+        <line x1="14" y1="116" x2="207" y2="116" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+
+        <text x="14" y="134" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585">
+          ★ TechFiesta '26 Winner · ₹15L Grant
+        </text>
+      </g>
+
+      <!-- Domains Card inside left column -->
+      <g transform="translate(12, 374)">
+        <rect x="0" y="0" width="221" height="158" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+        <text x="14" y="20" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+          // CORE COMPETENCIES
+        </text>
+
+        <text x="14" y="42" class="editorial-sans" font-size="10.5" font-weight="700" fill="#2D2D2D">
+          Software Dev &amp; Systems
+        </text>
+        <text x="14" y="56" class="code-mono" font-size="9" fill="#6B7280">
+          C++, Python, Java, JavaScript
+        </text>
+
+        <line x1="14" y1="68" x2="207" y2="68" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+
+        <text x="14" y="86" class="editorial-sans" font-size="10.5" font-weight="700" fill="#2D2D2D">
+          AI/ML &amp; Computer Vision
+        </text>
+        <text x="14" y="100" class="code-mono" font-size="9" fill="#6B7280">
+          Reinforcement Learning, NDVI
+        </text>
+
+        <line x1="14" y1="112" x2="207" y2="112" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+
+        <text x="14" y="130" class="editorial-sans" font-size="10.5" font-weight="700" fill="#2D2D2D">
+          DSA &amp; Practical Problem Solving
+        </text>
+        <text x="14" y="144" class="code-mono" font-size="9" fill="#6B7280">
+          Git/GitHub, Android, Real Systems
+        </text>
+      </g>
     </g>
 
     <!-- Right Column: Editorial Bio & 3 Engineering Pillars -->
     <g transform="translate(315, 68)">
       <!-- Statement Heading -->
-      <text x="0" y="18" class="display-title" font-size="18" font-weight="800" fill="#111116">
+      <text x="0" y="18" class="display-title" font-size="18" font-weight="800" fill="#2D2D2D">
         ARCHITECTING IMPACT THROUGH CODE &amp; SILICON
       </text>
-      
-      <!-- Bio Quote Card with Pink Hairline Accent -->
-      <g transform="translate(0, 32)">
-        <rect x="0" y="0" width="583" height="56" rx="8" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
-        <line x1="0" y1="0" x2="0" y2="56" stroke="url(#ident_barbieGrad)" stroke-width="4" />
-        <text x="16" y="24" class="editorial-sans" font-size="11.5" fill="#4A4A58" font-style="italic">
-          &quot;ENTC undergraduate | Curious about technology, systems, and their real-world impact | Learning by building projects&quot;
+      <text x="0" y="34" class="code-mono" font-size="9" fill="#E0218A" font-weight="700" letter-spacing="0.08em">
+        // PUNE INSTITUTE OF COMPUTER TECHNOLOGY (PICT) · B.TECH ENTC
+      </text>
+
+      <!-- Full About Me Narrative Card with Barbie Pink Hairline Accent -->
+      <g transform="translate(0, 46)">
+        <rect x="0" y="0" width="583" height="394" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <line x1="0" y1="0" x2="0" y2="394" stroke="url(#ident_barbieGrad)" stroke-width="4" />
+        
+        <!-- Render All 4 Paragraphs -->
+        
+        <text x="20" y="24" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          I’m a third-year Electronics and Telecommunication Engineering student at PICT,
         </text>
-        <text x="16" y="44" class="code-mono" font-size="9" fill="#E0218A" font-weight="700" letter-spacing="0.06em">
-          // PUNE INSTITUTE OF COMPUTER TECHNOLOGY (PICT) · B.TECH ENTC
+        <text x="20" y="39.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          Pune, with a strong interest in Software Development, AI/ML, and Data Structures &amp;
+        </text>
+        <text x="20" y="55" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          Algorithms. Although my academic background is in ENTC, I’ve been actively
+        </text>
+        <text x="20" y="70.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          exploring the software and AI space through projects, hackathons, research, and
+        </text>
+        <text x="20" y="86" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          hands-on learning.
+        </text>
+        <text x="20" y="111.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          I enjoy building practical solutions that use technology to solve real-world
+        </text>
+        <text x="20" y="127" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          problems. My work has included AI-driven agricultural systems, computer vision,
+        </text>
+        <text x="20" y="142.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          mobile applications, and cybersecurity-focused projects. I’ve worked with
+        </text>
+        <text x="20" y="158" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          technologies such as C++, Python, Java, JavaScript, Git/GitHub, Android, and
+        </text>
+        <text x="20" y="173.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          machine learning tools, while continuously improving my problem-solving and DSA
+        </text>
+        <text x="20" y="189" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          skills.
+        </text>
+        <text x="20" y="214.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          Hackathons have been an important part of my learning journey. I was part of the
+        </text>
+        <text x="20" y="230" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          winning team at TechFiesta 2026 in the Agriculture domain and also secured
+        </text>
+        <text x="20" y="245.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          Runner-Up at the Pune Agri International Hackathon, where our AI-powered
+        </text>
+        <text x="20" y="261" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          agricultural governance solution was presented to senior government officials.
+        </text>
+        <text x="20" y="276.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          These experiences have taught me how to work in a team, build under deadlines,
+        </text>
+        <text x="20" y="292" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          take an idea from a problem statement to a working prototype, and improve it
+        </text>
+        <text x="20" y="307.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          through testing and feedback.
+        </text>
+        <text x="20" y="333" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          I believe the best way to learn engineering is by building, experimenting,
+        </text>
+        <text x="20" y="348.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          debugging, and improving real systems rather than only studying theory. Currently,
+        </text>
+        <text x="20" y="364" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          I’m focused on strengthening my software, AI/ML and DSA fundamentals, gaining
+        </text>
+        <text x="20" y="379.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          industry experience through internships, and building technically strong projects
+        </text>
+        <text x="20" y="395" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          that have real-world impact. In the long term, I want to build a strong career in
+        </text>
+        <text x="20" y="410.5" class="editorial-sans" font-size="10.8" fill="#2D2D2D" line-height="1.4">
+          technology and continue growing as an engineer.
         </text>
       </g>
 
       <!-- 3 Strategic Pillars of Shambhavi's Work -->
-      <g transform="translate(0, 106)">
+      <g transform="translate(0, 452)">
         <!-- Pillar 1: Autonomous AI -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="186" height="92" rx="8" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <rect x="0" y="0" width="186" height="92" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
           <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
             01 / AGENTIC AI
           </text>
-          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#111116">
+          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#2D2D2D">
             Autonomous Systems
           </text>
-          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#4A4A58">
+          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#2D2D2D">
             Multi-agent workflows &amp;
           </text>
-          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#7A7A8E">
+          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#6B7280">
             intelligent automation (Ovio)
           </text>
         </g>
 
         <!-- Pillar 2: AgriTech -->
         <g transform="translate(198, 0)">
-          <rect x="0" y="0" width="186" height="92" rx="8" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <rect x="0" y="0" width="186" height="92" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
           <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
             02 / EARTH &amp; AGRI
           </text>
-          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#111116">
+          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#2D2D2D">
             Precision AgriTech
           </text>
-          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#4A4A58">
+          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#2D2D2D">
             Satellite spectral analysis &amp;
           </text>
-          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#7A7A8E">
+          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#6B7280">
             AI advisory (KrishiSahAI)
           </text>
         </g>
 
         <!-- Pillar 3: FinTech & RL -->
         <g transform="translate(396, 0)">
-          <rect x="0" y="0" width="186" height="92" rx="8" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
+          <rect x="0" y="0" width="186" height="92" rx="12" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
           <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
             03 / QUANT &amp; FINTECH
           </text>
-          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#111116">
+          <text x="14" y="42" class="editorial-sans" font-size="12" font-weight="700" fill="#2D2D2D">
             Autonomous FinTech
           </text>
-          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#4A4A58">
+          <text x="14" y="60" class="editorial-sans" font-size="9.5" fill="#2D2D2D">
             Reinforcement learning &amp;
           </text>
-          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#7A7A8E">
+          <text x="14" y="74" class="editorial-sans" font-size="9.5" fill="#6B7280">
             revenue recovery OS (AIRA)
           </text>
         </g>
@@ -254,25 +384,25 @@
         Q 892.36 67.64 889 65
         Q 892.36 62.36 895 59
         Z"
-        fill="#FF2D87"
-        opacity="0.85"
+        fill="#E0218A"
+        opacity="0.88"
       />
       <circle cx="895" cy="65" r="1.6800000000000002" fill="#FFFFFF" />
     </g>
   
     
-    <g class="glint-anim" style="transform-origin: 278px 260px;">
+    <g class="glint-anim" style="transform-origin: 278px 600px;">
       <path d="
-        M 278 255.5
-        Q 279.98 258.02 282.5 260
-        Q 279.98 261.98 278 264.5
-        Q 276.02 261.98 273.5 260
-        Q 276.02 258.02 278 255.5
+        M 278 595.5
+        Q 279.98 598.02 282.5 600
+        Q 279.98 601.98 278 604.5
+        Q 276.02 601.98 273.5 600
+        Q 276.02 598.02 278 595.5
         Z"
-        fill="#FF85C0"
-        opacity="0.85"
+        fill="#FFD1DC"
+        opacity="0.88"
       />
-      <circle cx="278" cy="260" r="1.2600000000000002" fill="#FFFFFF" />
+      <circle cx="278" cy="600" r="1.2600000000000002" fill="#FFFFFF" />
     </g>
   
   </svg>

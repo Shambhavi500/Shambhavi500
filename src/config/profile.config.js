@@ -40,22 +40,22 @@ export const PROFILE_CONFIG = {
     }
   ],
 
-  // Verified Major Achievements (from Resume & Hackathons)
+  // Verified Major Hackathon Wins (2 Hackathons Only)
   achievements: [
     {
       id: '01',
       edition: '01',
       event: "TECHFIESTA '26",
       title: "TECHFIESTA '26",
-      place: '1ST PLACE',
+      place: '1ST PLACE // WINNER',
       domain: 'AGRICULTURE DOMAIN',
       project: 'KrishiSahAI',
       scope: 'PICT ENTC · 600+ Participating Teams',
       year: '2026',
       grantOrPrize: '1st Place out of 600+ Teams',
-      summary: 'Secured 1st place among 600+ participating teams for building KrishiSahAI, an AI-driven agricultural assistance platform.',
+      summary: 'Secured 1st place among 600+ participating teams nationwide for building KrishiSahAI, an AI-driven agricultural assistance platform.',
       metric: '600+ teams',
-      badge: 'WINNER'
+      badge: '1ST PLACE WINNER'
     },
     {
       id: '02',
@@ -71,36 +71,6 @@ export const PROFILE_CONFIG = {
       summary: 'Secured National Runner-Up vs professional startups presenting Krishi Prabandh (AI governance & satellite NDVI validation) to Maharashtra CM.',
       metric: '₹15L grant',
       badge: 'RUNNER-UP'
-    },
-    {
-      id: '03',
-      edition: '03',
-      event: 'MULTI-AGENT ARCHITECT',
-      title: 'MULTI-AGENT ARCHITECT',
-      place: 'FLAGSHIP AGENT',
-      domain: 'AUTONOMOUS WORKFLOWS',
-      project: 'Ovio (DaVinci Resolve)',
-      scope: 'Autonomous Video Editing & Orchestration',
-      year: '2026',
-      grantOrPrize: 'Cinema-Grade AI Pipeline',
-      summary: 'Engineered Ovio: Autonomous DaVinci Resolve agent orchestration engine with multi-modal tools and video editing automation.',
-      metric: 'Agentic OS',
-      badge: 'ARCHITECT'
-    },
-    {
-      id: '04',
-      edition: '04',
-      event: 'QUANTITATIVE RL LAB',
-      title: 'QUANTITATIVE RL LAB',
-      place: 'SYSTEMS ENGINE',
-      domain: 'ALGORITHMIC TRADING',
-      project: 'AlphaTrader-RL & AIRA',
-      scope: 'NSE Market Simulation & Revenue Recovery',
-      year: '2025 - 2026',
-      grantOrPrize: 'Gymnasium & Distributed FinTech',
-      summary: 'Developed AlphaTrader-RL custom Gymnasium environment with 50-dim observation space on NSE data & AIRA fintech recovery OS.',
-      metric: '5+ Yrs NSE',
-      badge: 'ALGO LAB'
     }
   ],
 

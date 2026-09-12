@@ -10,12 +10,10 @@ const README_FILE = path.join(ROOT_DIR, 'README.md');
 const DATA_FILE = path.join(ROOT_DIR, 'src', 'data', 'profile-data.json');
 
 function validateXml(xmlString, filename) {
-  // Basic XML well-formedness checks
   if (!xmlString.startsWith('<svg') || !xmlString.trim().endsWith('</svg>')) {
     throw new Error(`${filename}: Does not start with <svg or end with </svg>`);
   }
 
-  // Check balanced tags for common container elements
   const tagsToCheck = ['svg', 'defs', 'style', 'g', 'filter', 'linearGradient', 'radialGradient'];
   for (const tag of tagsToCheck) {
     const openMatches = xmlString.match(new RegExp(`<${tag}(\\s+[^>]*)?>`, 'g')) || [];
@@ -25,12 +23,10 @@ function validateXml(xmlString, filename) {
     }
   }
 
-  // Check for forbidden unrendered tokens outside tags
   if (xmlString.includes('undefined') || xmlString.includes('NaN') || xmlString.includes('null')) {
     throw new Error(`${filename}: Contains unrendered JS token ('undefined', 'NaN', or 'null')`);
   }
 
-  // Check for invalid XML entities (only amp, lt, gt, quot, apos, or numeric entities are valid in SVG XML)
   const entityMatches = [...xmlString.matchAll(/&([a-zA-Z0-9]+);/g)];
   const validEntities = new Set(['amp', 'lt', 'gt', 'quot', 'apos']);
   for (const match of entityMatches) {
@@ -42,13 +38,13 @@ function validateXml(xmlString, filename) {
 
 export async function runValidation() {
   console.log('═══════════════════════════════════════════════════════════════');
-  console.log('✦  ATELIER NO. 500 // PROFILE AUTOMATED VALIDATION SUITE      ✦');
+  console.log('✦  SHAMBHAVI PATIL // BARBIECORE EDITORIAL VALIDATION SUITE   ✦');
   console.log('═══════════════════════════════════════════════════════════════\n');
 
   let errors = 0;
 
-  // 1. Validate Data File
-  console.log('[1/5] Validating Profile Data & Truth Sources...');
+  // 1. Data Integrity Checks
+  console.log('[1/4] Validating Profile Data & Truth Sources...');
   if (!fs.existsSync(DATA_FILE)) {
     console.error('  ✖ Missing data file at', DATA_FILE);
     errors++;
@@ -61,7 +57,6 @@ export async function runValidation() {
       console.log(`  ✔ Verified username: ${data.username} (${data.name})`);
     }
 
-    // Verify verified truth items
     if (!data.education || !data.education.institution.includes('PICT') || data.education.cgpa !== '8.6') {
       console.error(`  ✖ Missing or inaccurate education in profile data`);
       errors++;
@@ -76,35 +71,37 @@ export async function runValidation() {
       console.log(`  ✔ Verified Internship: ${data.experience[0].company} - ${data.experience[0].role}`);
     }
 
-    const hasTechFiesta = (data.achievements || []).some(a => a.title.includes('TECHFIESTA'));
-    const hasPuneAgri = (data.achievements || []).some(a => a.title.includes('PUNE AGRI'));
+    const hasTechFiesta = (data.achievements || []).some(a => a.title.includes('TECHFIESTA') || a.event.includes('TECHFIESTA'));
+    const hasPuneAgri = (data.achievements || []).some(a => a.title.includes('PUNE AGRI') || a.event.includes('PUNE AGRI'));
     if (!hasTechFiesta || !hasPuneAgri) {
       console.error(`  ✖ Missing prominent hackathon achievements in profile data`);
       errors++;
     } else {
       console.log(`  ✔ Verified Achievements: TechFiesta '26 (1st Place) & Pune Agri Hackathon (National Runner-Up)`);
     }
-
-    if (!data.projects || data.projects.length < 4) {
-      console.error(`  ✖ Expected at least 4 ranked featured projects, got ${data.projects?.length}`);
-      errors++;
-    } else {
-      console.log(`  ✔ Verified Ranked Projects: ${data.projects.length} showcase projects ranked`);
-    }
   }
 
-  // 2. Validate README
-  console.log('\n[2/5] Validating README.md...');
+  // 2. README Architecture & Strict Barbiecore Rules
+  console.log('\n[2/4] Validating README.md Structure & Barbiecore Rules...');
   if (!fs.existsSync(README_FILE)) {
     console.error('  ✖ Missing README.md at', README_FILE);
     errors++;
   } else {
     const readme = fs.readFileSync(README_FILE, 'utf-8');
-    if (readme.length < 500) {
+    if (readme.length < 1000) {
       console.error('  ✖ README.md is suspiciously short');
       errors++;
     } else {
       console.log(`  ✔ README.md exists (${readme.length} chars)`);
+    }
+
+    // STRICT NON-NEGOTIABLE RULE: NO EMOJIS ANYWHERE
+    const emojiRegex = /[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1FA00}-\u{1FAFF}]/u;
+    if (emojiRegex.test(readme)) {
+      console.error('  ✖ STRICT RULE VIOLATION: README contains forbidden emoji(s)!');
+      errors++;
+    } else {
+      console.log('  ✔ Verified ZERO emojis in README.md');
     }
 
     // Check for placeholders
@@ -116,89 +113,122 @@ export async function runValidation() {
       }
     }
 
-    // Check hierarchy: Achievements & Experience must appear BEFORE projects & dashboard
-    const achIdx = readme.indexOf('achievements.svg');
-    const expIdx = readme.indexOf('experience.svg');
-    const projIdx = readme.indexOf('projects.svg');
-    const dashIdx = readme.indexOf('dashboard.svg');
+    // Required editorial sections
+    const requiredSections = [
+      '01 / PROFILE',
+      '02 / ABOUT',
+      '03 / WHAT I BUILD',
+      '04 / SELECTED WORK',
+      '05 / RECOGNITION',
+      '06 / EXPERIENCE',
+      '07 / TECH STACK',
+      '08 / GITHUB ACTIVITY',
+      '09 / CURRENTLY BUILDING',
+      '10 / STATEMENT',
+      '11 / CONNECT'
+    ];
 
-    if (achIdx === -1 || expIdx === -1 || projIdx === -1 || dashIdx === -1) {
-      console.error('  ✖ README missing required SVG section references');
-      errors++;
-    } else if (achIdx > projIdx || expIdx > projIdx) {
-      console.error('  ✖ Hierarchy violation: Achievements and Experience must precede Projects in README');
+    for (const sec of requiredSections) {
+      if (!readme.includes(sec)) {
+        console.error(`  ✖ README missing required editorial section: "${sec}"`);
+        errors++;
+      } else {
+        console.log(`  ✔ Section present: "${sec}"`);
+      }
+    }
+
+    // Check that all 6 required projects are present
+    const requiredProjects = ['KrishiSahAI', 'KRISHI-PRABANDH', 'AlphaTrader-RL', 'Ovio', 'Aira', 'NDVI_satellite'];
+    for (const proj of requiredProjects) {
+      if (!readme.includes(proj)) {
+        console.error(`  ✖ README missing required project: ${proj}`);
+        errors++;
+      } else {
+        console.log(`  ✔ Project present: ${proj}`);
+      }
+    }
+
+    // Forbidden static text posters
+    const forbiddenTextPosters = [
+      'identity.svg',
+      'achievements.svg',
+      'experience.svg',
+      'projects.svg',
+      'project-01.svg',
+      'dashboard.svg',
+      'tech-wardrobe.svg',
+      'runway.svg'
+    ];
+    for (const poster of forbiddenTextPosters) {
+      if (readme.includes(poster)) {
+        console.error(`  ✖ Anti-pattern detected: README embeds static text poster "${poster}"!`);
+        errors++;
+      }
+    }
+
+    // Verify verbatim quote panel
+    if (!readme.includes('I learn by building, breaking, debugging and improving real systems.')) {
+      console.error('  ✖ README missing engineering axiom quote in About section');
       errors++;
     } else {
-      console.log('  ✔ Hierarchy verified: Achievements & Experience precede Projects & Dashboard');
+      console.log('  ✔ Verified Engineering Axiom quote panel');
     }
   }
 
   // 3. Validate Referenced Assets in README
-  console.log('\n[3/5] Validating Asset References...');
+  console.log('\n[3/4] Validating Referenced Assets...');
   const readme = fs.readFileSync(README_FILE, 'utf-8');
   const assetRefs = [...readme.matchAll(/src=["'](\.\/assets\/[^"']+)["']/g)].map(m => m[1]);
-  console.log(`  Found ${assetRefs.length} asset references in README.md`);
+  console.log(`  Found ${assetRefs.length} asset reference(s) in README.md: ${assetRefs.join(', ')}`);
   for (const ref of assetRefs) {
     const localPath = path.join(ROOT_DIR, ref);
     if (!fs.existsSync(localPath)) {
       console.error(`  ✖ Referenced asset missing: ${ref}`);
       errors++;
     } else {
-      console.log(`  ✔ Asset exists: ${ref}`);
+      try {
+        const svgContent = fs.readFileSync(localPath, 'utf-8');
+        validateXml(svgContent, ref);
+        console.log(`  ✔ Referenced asset exists and is well-formed XML: ${ref}`);
+      } catch (err) {
+        console.error(`  ✖ Invalid XML in ${ref}: ${err.message}`);
+        errors++;
+      }
     }
   }
 
-  // 4. Validate SVG XML Structure & File Sizes
-  console.log('\n[4/5] Validating SVG Well-Formedness & Optimization...');
-  const expectedSvgs = [
-    'hero.svg',
-    'identity.svg',
-    'achievements.svg',
-    'experience.svg',
-    'projects.svg',
-    'dashboard.svg',
-    'tech-wardrobe.svg',
-    'runway.svg',
-    'footer.svg',
-    'divider.svg'
-  ];
-
-  let totalSvgSize = 0;
-  for (const file of expectedSvgs) {
-    const filePath = path.join(ASSETS_DIR, file);
-    if (!fs.existsSync(filePath)) {
-      console.error(`  ✖ Expected SVG missing: assets/${file}`);
-      errors++;
-      continue;
+  // 4. Validate Asset Directory Optimization
+  console.log('\n[4/4] Validating Asset Files & XML Well-Formedness...');
+  if (fs.existsSync(ASSETS_DIR)) {
+    const files = fs.readdirSync(ASSETS_DIR).filter(f => f.endsWith('.svg'));
+    for (const file of files) {
+      const filePath = path.join(ASSETS_DIR, file);
+      try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        validateXml(content, file);
+      } catch (err) {
+        console.error(`  ✖ Invalid SVG in ${file}: ${err.message}`);
+        errors++;
+      }
     }
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const size = Buffer.byteLength(content, 'utf-8');
-    totalSvgSize += size;
-    try {
-      validateXml(content, file);
-      console.log(`  ✔ assets/${file.padEnd(18)} valid XML [${(size / 1024).toFixed(2)} KB]`);
-    } catch (err) {
-      console.error(`  ✖ ${err.message}`);
-      errors++;
-    }
+    console.log(`  ✔ All ${files.length} SVG files in /assets are syntactically valid XML`);
   }
 
-  const totalMb = (totalSvgSize / (1024 * 1024)).toFixed(3);
-  console.log(`  Total SVG bundle size: ${totalMb} MB (target < 2 MB: ✔)`);
-
-  // 5. Verification Summary
-  console.log('\n[5/5] Final Verification Status:');
+  // Final Verdict
+  console.log('\n═══════════════════════════════════════════════════════════════');
   if (errors === 0) {
-    console.log('  ✨ ALL VALIDATION CHECKS PASSED! Ready for production deployment.');
+    console.log('✨ ALL 4 TEST SUITES PASSED — ZERO ERRORS DETECTED ✨');
+    console.log('═══════════════════════════════════════════════════════════════\n');
   } else {
-    console.error(`  ✖ VALIDATION FAILED with ${errors} error(s).`);
+    console.error(`❌ VALIDATION FAILED WITH ${errors} ERROR(S)`);
+    console.log('═══════════════════════════════════════════════════════════════\n');
     process.exit(1);
   }
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   runValidation().catch(err => {
-    console.error('Validation error:', err);
+    console.error('Validation crashed:', err);
     process.exit(1);
   });
 }

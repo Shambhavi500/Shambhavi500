@@ -35,21 +35,21 @@ export function generateRunwaySvg(data) {
       let stroke = '#E2E8F0';
 
       if (level >= 4) {
-        fill = theme.colors.accentHot; // Hot Barbie pink
+        fill = theme.colors.barbiePink; // Signature Barbie Hot Pink
         stroke = '#FFFFFF';
       } else if (level === 3) {
-        fill = theme.colors.accent; // Signature Barbie pink
-        stroke = theme.colors.accentHot;
+        fill = theme.colors.retroMagenta; // Retro Magenta
+        stroke = theme.colors.barbiePink;
       } else if (level === 2) {
         fill = '#F472B6'; // Rose pink
-        stroke = theme.colors.accent;
+        stroke = theme.colors.barbiePink;
       } else if (level === 1) {
         fill = theme.colors.accentBlush; // Soft blush
         stroke = theme.colors.borderPink;
       }
 
       gridCells += `
-        <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${cellWidth}" height="${cellHeight}" rx="2"
+        <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${cellWidth}" height="${cellHeight}" rx="3"
               fill="${fill}" stroke="${stroke}" stroke-width="0.6" />
       `;
     }
@@ -69,16 +69,16 @@ export function generateRunwaySvg(data) {
     ${getSharedDefs('run_')}
     
     <!-- Light Studio Canvas Base -->
-    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="${theme.colors.background}" />
-    <rect width="${width}" height="${height}" rx="${theme.radius.card + 2}" fill="url(#run_radialAura)" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card}" fill="${theme.colors.background}" />
+    <rect width="${width}" height="${height}" rx="${theme.radius.card}" fill="url(#run_radialAura)" />
 
-    <!-- Outer Structural Frame with Soft Shadow -->
+    <!-- Outer Structural Frame with Soft Glam Shadow -->
     <rect x="16" y="16" width="${width - 32}" height="${height - 32}" rx="${theme.radius.card}"
           fill="${theme.colors.surface}" stroke="${theme.colors.border}" stroke-width="1" filter="url(#run_cardShadow)" />
 
     <!-- Section Header Tag -->
     <g transform="translate(42, 42)">
-      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="${theme.colors.accent}" letter-spacing="0.14em">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="${theme.colors.retroMagenta}" letter-spacing="0.14em">
         THE BUILD LOG // ACTIVITY RUNWAY &amp; CODE CADENCE
       </text>
       <text x="0" y="18" class="code-mono" font-size="9" fill="${theme.colors.textMuted}" letter-spacing="0.08em">
@@ -114,21 +114,21 @@ export function generateRunwaySvg(data) {
         <rect x="36" y="1" width="10" height="10" rx="2" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="0.6" />
         <rect x="52" y="1" width="10" height="10" rx="2" fill="${theme.colors.accentBlush}" stroke="${theme.colors.borderPink}" stroke-width="0.6" />
         <rect x="68" y="1" width="10" height="10" rx="2" fill="#F472B6" />
-        <rect x="84" y="1" width="10" height="10" rx="2" fill="${theme.colors.accent}" />
-        <rect x="100" y="1" width="10" height="10" rx="2" fill="${theme.colors.accentHot}" stroke="#FFFFFF" stroke-width="0.5" />
-        <text x="120" y="10" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.accent}">
-          MORE (HAUTE GLOW)
+        <rect x="84" y="1" width="10" height="10" rx="2" fill="${theme.colors.retroMagenta}" />
+        <rect x="100" y="1" width="10" height="10" rx="2" fill="${theme.colors.barbiePink}" stroke="#FFFFFF" stroke-width="0.5" />
+        <text x="120" y="10" class="code-mono" font-size="9" font-weight="700" fill="${theme.colors.barbiePink}">
+          MORE (GLAM GLOW)
         </text>
 
         <!-- Metric Callout on right -->
         <text x="844" y="10" text-anchor="end" class="code-mono" font-size="9.5" fill="${theme.colors.textSecondary}">
-          CURRENT FOCUS: <tspan fill="${theme.colors.accentHot}" font-weight="700">AUTONOMOUS MULTI-AGENT &amp; AGRITECH AI</tspan>
+          CURRENT FOCUS: <tspan fill="${theme.colors.barbiePink}" font-weight="700">AUTONOMOUS MULTI-AGENT &amp; AGRITECH AI</tspan>
         </text>
       </g>
     </g>
 
     <!-- Restrained Luxury Glint Sparkles -->
-    ${renderSparkle(width - 36, 42, 10, theme.colors.accentHot)}
-    ${renderSparkle(width / 2, 44, 10, theme.colors.accentSoft)}
+    ${renderSparkle(width - 36, 42, 10, theme.colors.barbiePink)}
+    ${renderSparkle(width / 2, 44, 10, theme.colors.dreamhouseBlush)}
   </svg>`;
 }

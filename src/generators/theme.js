@@ -2,49 +2,58 @@
 
 export const theme = {
   colors: {
-    primary: '#111116',            // Deep Onyx Black for titles and prominent headings
-    accent: '#E0218A',             // Iconic Barbie Pink
-    accentHot: '#FF2D87',          // Hot Pink for stats and highlights
-    accentSoft: '#FF85C0',         // Soft Rose for badge accents
-    accentBlush: '#FFF5F8',        // Very light blush for subtle card surfaces
-    background: '#FAFAFC',         // Crisp studio background
-    surface: '#FFFFFF',            // Pure white card surface
-    surfaceCard: '#FFFFFF',
-    surfaceDark: '#0D0B14',        // Deep Obsidian for Haute dark backgrounds
+    // Official Barbiecore Design Tokens
+    barbiePink: '#E0218A',         // Primary Barbie Hot Pink
+    dreamhouseBlush: '#FFD1DC',    // Secondary Dreamhouse Blush
+    retroMagenta: '#C71585',       // Dark Accent Retro Magenta
+    malibuCyan: '#00B4D8',         // Accent Malibu Cyan (Tech / Live status)
+    plasticWhite: '#FFFFFF',       // Neutral Plastic White
+    deepCharcoal: '#2D2D2D',       // Neutral Deep Charcoal for readable body/headings
+
+    // Semantic mappings & compatibility
+    primary: '#111116',            // Deep Onyx Black for high-contrast titles
+    accent: '#E0218A',             // Signature Barbie Pink
+    accentHot: '#FF2D87',          // Electric Hot Pink
+    accentSoft: '#FF85C0',         // Soft Rose
+    accentBlush: '#FFEBF3',        // Delicate rich blush surface
+    background: '#FFF0F6',         // Dreamhouse Blush Studio base (rich pink, eliminates white element)
+    surface: '#FFF7FB',            // Soft rose satin card surface
+    surfaceCard: '#FFF5FA',
+    surfaceDark: '#0D0B14',        // Deep Obsidian
     surfaceDarkGlass: '#130F1E',    // Dark glass tile surface
-    surfaceLightGlass: 'rgba(255, 255, 255, 0.03)',
-    surfaceCardGlass: 'rgba(255, 255, 255, 0.94)',
-    surfaceSoft: '#FDF7FA',
-    border: 'rgba(224, 33, 138, 0.18)',      // Subtle pink hairline border
-    borderSubtle: 'rgba(17, 17, 22, 0.08)',  // Subtle slate hairline
-    borderChrome: 'rgba(203, 213, 225, 0.7)',
-    borderPink: 'rgba(224, 33, 138, 0.28)',
-    textPrimary: '#111116',        // Dark / black headings
-    textSecondary: '#4A4A58',      // Charcoal body text
-    textMuted: '#7A7A8E',          // Muted slate
+    surfaceLightGlass: 'rgba(255, 240, 246, 0.92)',
+    surfaceCardGlass: 'rgba(255, 235, 244, 0.96)',
+    surfaceSoft: '#FFE8F2',
+    border: 'rgba(224, 33, 138, 0.35)',      // Luminous pink border
+    borderSubtle: 'rgba(224, 33, 138, 0.16)', // Subtle rose hairline
+    borderChrome: 'rgba(224, 33, 138, 0.30)',
+    borderPink: 'rgba(224, 33, 138, 0.45)',
+    textPrimary: '#111116',        // Dark headings
+    textSecondary: '#2D2D2D',      // Deep charcoal for high-contrast body
+    textMuted: '#6B7280',          // Muted slate
     textPink: '#E0218A',           // Signature Barbie Pink
     chromeLight: '#FFFFFF',
     chromeMid: '#E2E8F0',
     chromeDark: '#94A3B8',
     success: '#00E676',            // Verifiable green
-    gold: '#FFD700'                // Subtle trophy gold
+    gold: '#F59E0B'                // Trophy gold
   },
   typography: {
-    display: "'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    display: "'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif",
     editorial: "'Cinzel', 'Playfair Display', 'Didot', Georgia, serif",
-    script: "'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive",
-    mono: "'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace",
-    body: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    sans: "'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    body: "'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    mono: "'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace"
   },
   radius: {
     sm: 6,
-    md: 10,
-    card: 14,
-    pill: 20
+    md: 12,
+    card: 24,                      // Official 24px Glam Card Radius
+    pill: 50                       // Official 50px Pill Button Radius
   },
   shadows: {
-    card: '0 4px 24px rgba(224, 33, 138, 0.06)',
-    glow: '0 0 16px rgba(224, 33, 138, 0.22)'
+    card: '0 8px 24px rgba(224, 33, 138, 0.16)', // Official Glam Shadow
+    glow: '0 0 20px rgba(224, 33, 138, 0.28)'
   }
 };
 
@@ -57,7 +66,7 @@ export function getSharedDefs(idPrefix = '') {
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
         .display-title {
-          font-family: ${theme.typography.display};
+          font-family: ${theme.typography.sans};
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -67,8 +76,7 @@ export function getSharedDefs(idPrefix = '') {
           letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: ${theme.typography.script};
-          font-style: italic;
+          font-family: ${theme.typography.display};
           letter-spacing: 0.02em;
         }
         .editorial-sans {
@@ -98,45 +106,45 @@ export function getSharedDefs(idPrefix = '') {
         }
       ]]></style>
 
-      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
       <linearGradient id="${idPrefix}barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#FF2D87" />
         <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#C2185B" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="${idPrefix}canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="${idPrefix}blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="${idPrefix}cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
       </linearGradient>
 
       <!-- Card Glass Backdrop Gradient -->
       <linearGradient id="${idPrefix}cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
-        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
-      </linearGradient>
-
-      <!-- Rose Satin Monogram Gradient -->
-      <linearGradient id="${idPrefix}roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#2D1124" />
-        <stop offset="100%" stop-color="#1A0D18" />
-      </linearGradient>
-
-      <!-- Light Rose Ambient Surface Gradient -->
-      <linearGradient id="${idPrefix}lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#FFF5F8" />
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
       </linearGradient>
 
       <!-- Delicate Pink Hairline Gradient -->
       <linearGradient id="${idPrefix}borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
-        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
-        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
-        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
-      </linearGradient>
-
-      <!-- Platinum / Chrome Luxury Accent Gradient -->
-      <linearGradient id="${idPrefix}chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="35%" stop-color="#F1F5F9" />
-        <stop offset="70%" stop-color="#CBD5E1" />
-        <stop offset="100%" stop-color="#E2E8F0" />
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
       </linearGradient>
 
       <!-- Winner Gold Accent Gradient -->
@@ -146,26 +154,22 @@ export function getSharedDefs(idPrefix = '') {
         <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
-      <radialGradient id="${idPrefix}radialAura" cx="80%" cy="10%" r="70%">
-        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
-        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
-        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="${idPrefix}radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Card Soft Shadow Filter -->
-      <filter id="${idPrefix}cardShadow" x="-5%" y="-5%" width="110%" height="115%">
-        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="${idPrefix}cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
       </filter>
 
       <!-- Subtle Plaque Glow Filter -->
       <filter id="${idPrefix}pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
         <feGaussianBlur stdDeviation="4" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
-
-      <filter id="${idPrefix}glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="6" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
     </defs>
@@ -227,7 +231,7 @@ export function renderSparkle(cx, cy, size = 12, color = theme.colors.accent, cl
         Q ${cx - inner} ${cy - inner} ${cx} ${cy - half}
         Z"
         fill="${color}"
-        opacity="0.85"
+        opacity="0.88"
       />
       <circle cx="${cx}" cy="${cy}" r="${size * 0.14}" fill="#FFFFFF" />
     </g>

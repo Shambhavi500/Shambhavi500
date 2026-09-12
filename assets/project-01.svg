@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" width="100%" height="210" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        .editorial-title {
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+        }
+        .editorial-script {
+          font-family: 'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif;
+          letter-spacing: 0.02em;
+        }
+        .editorial-sans {
+          font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
+        }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
+        }
+        
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
+        }
+      ]]></style>
+
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
+      <linearGradient id="pcard_0_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="pcard_0_canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="pcard_0_blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="pcard_0_cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="pcard_0_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="pcard_0_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
+      </linearGradient>
+
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="pcard_0_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
+      </linearGradient>
+
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="pcard_0_radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="pcard_0_cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="pcard_0_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Base Background with 24px Glam Radius -->
+    <rect width="440" height="210" rx="24" fill="#FFF7FB" />
+    <rect width="440" height="210" rx="24" fill="url(#pcard_0_radialAura)" />
+
+    <!-- Card Frame with Glam Drop Shadow -->
+    <rect x="8" y="8" width="424" height="194" rx="20"
+          fill="#FFF7FB" stroke="#E0218A"
+          stroke-width="1.4" filter="url(#pcard_0_cardShadow)" />
+
+    <!-- Signature Pink Accent Line along Top -->
+    <rect x="8" y="8" width="424" height="3.5" rx="1.75" fill="url(#pcard_0_barbieGrad)" />
+
+    <!-- Subtle Silhouette-Inspired Flowing Curve Art (Top Right) -->
+    <path d="
+      M 340 18
+      C 370 12, 392 24, 408 38
+      C 424 54, 426 78, 416 94
+      C 406 110, 388 118, 372 124
+    " fill="none" stroke="#E0218A" stroke-width="1.2" stroke-linecap="round" opacity="0.12" />
+
+    <!-- Category & Number Header -->
+    <g transform="translate(24, 34)">
+      <text x="0" y="0" class="code-mono" font-size="9" font-weight="700" fill="#C71585" letter-spacing="0.12em">
+        AGRITECH / AI ADVISORY
+      </text>
+      <text x="392" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="800" fill="#E0218A">
+        // NO. 01
+      </text>
+    </g>
+
+    <!-- Project Title -->
+    <g transform="translate(24, 68)">
+      <text x="0" y="0" class="display-title" font-size="20" font-weight="800" fill="#2D2D2D">
+        KrishiSahAI
+      </text>
+    </g>
+
+    <!-- Project Description -->
+    <g transform="translate(24, 98)">
+      <text x="0" y="0" class="editorial-sans" font-size="12" fill="#2D2D2D">
+        Flagship AI agriculture platform for crop
+      </text>
+      <text x="0" y="20" class="editorial-sans" font-size="12" fill="#2D2D2D">
+        recommendations, soil telemetry &amp; rural...
+      </text>
+    </g>
+
+    <!-- Bottom Metadata Footer -->
+    <g transform="translate(24, 172)">
+      <!-- Language Tag Pill -->
+      <rect x="0" y="-14" width="70" height="22" rx="11" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+      <circle cx="10" cy="-3" r="3.2" fill="#E0218A" />
+      <text x="18" y="0.5" class="code-mono" font-size="8.5" font-weight="700" fill="#2D2D2D">
+        Python
+      </text>
+
+      <!-- Dynamic Badge Pill -->
+      <rect x="80" y="-14" width="181.20000000000002" height="22" rx="11"
+            fill="#FFD1DC"
+            stroke="#E0218A" stroke-width="0.8" />
+      <text x="170.60000000000002" y="0.5" text-anchor="middle"
+            class="code-mono" font-size="8" font-weight="700" fill="#C71585" letter-spacing="0.04em">
+        1ST PLACE · TECHFIESTA &apos;26
+      </text>
+
+      <!-- Action Indicator -->
+      <text x="392" y="0.5" text-anchor="end" class="code-mono" font-size="9" font-weight="800" fill="#E0218A">
+        VIEW REPO &#8599;
+      </text>
+    </g>
+
+    <!-- Subtle Luxury Glint Sparkle -->
+    
+    <g class="glint-anim" style="transform-origin: 398px 64px;">
+      <path d="
+        M 398 58.5
+        Q 400.42 61.58 403.5 64
+        Q 400.42 66.42 398 69.5
+        Q 395.58 66.42 392.5 64
+        Q 395.58 61.58 398 58.5
+        Z"
+        fill="#E0218A"
+        opacity="0.88"
+      />
+      <circle cx="398" cy="64" r="1.54" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

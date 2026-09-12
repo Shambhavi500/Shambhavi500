@@ -1,0 +1,244 @@
+/* ==========================================================================
+   ATELIER NO. 500 // BARBIECORE × HIGH-FASHION EDITORIAL × ENGINEERING LAB
+   Central Design Tokens, Light Background System, & Responsive Component Rules
+   ========================================================================== */
+
+:root {
+  /* Barbiecore Palette */
+  --primary-hot-pink: #E0218A;
+  --barbie-pink: #FF69B4;
+  --soft-pink: #FFC2DD;
+  --blush: #FFE5F0;
+  --very-light-pink: #FFF5FA;
+  --white: #FFFFFF;
+  --deep-pink: #C21875;
+  --cyber-purple: #D9A7FF;
+  
+  /* Text System */
+  --text-main: #241B22;
+  --text-secondary: #6F5A67;
+  --text-light: #8E7785;
+  
+  /* Borders & Surfaces */
+  --border-pink: rgba(224, 33, 138, 0.22);
+  --border-pink-strong: rgba(224, 33, 138, 0.45);
+  --border-hairline: rgba(224, 33, 138, 0.14);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --card-bg: rgba(255, 255, 255, 0.94);
+  --card-bg-subtle: #FFF7FB;
+  --badge-bg: #FFEBF3;
+  --badge-border: rgba(224, 33, 138, 0.28);
+  
+  /* Shadows & Glows */
+  --shadow-subtle: 0 4px 20px rgba(224, 33, 138, 0.06);
+  --shadow-card: 0 10px 30px rgba(224, 33, 138, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-hover: 0 16px 36px rgba(224, 33, 138, 0.16);
+  --pink-glow: 0 0 24px rgba(224, 33, 138, 0.22);
+  --pink-glow-strong: 0 0 32px rgba(224, 33, 138, 0.38);
+  
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-card: 24px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
+  --font-editorial: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* Base Reset & Light Barbiecore Canvas */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  background-color: var(--very-light-pink);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(255, 194, 221, 0.35) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(217, 167, 255, 0.22) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 229, 240, 0.4) 0px, transparent 70%),
+    radial-gradient(at 100% 100%, rgba(255, 105, 180, 0.16) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(224, 33, 138, 0.12) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Subtle Engineering Grid Overlay */
+.editorial-grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(224, 33, 138, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 33, 138, 0.035) 1px, transparent 1px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Focus outline for accessibility */
+:focus-visible {
+  outline: 2px solid var(--primary-hot-pink);
+  outline-offset: 3px;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+.editorial-accent {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Hot Pink Gradient Text */
+.text-hot-pink {
+  color: var(--primary-hot-pink);
+}
+
+.text-gradient-pink {
+  background: linear-gradient(135deg, var(--deep-pink) 0%, var(--primary-hot-pink) 50%, var(--barbie-pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-spacing {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding: 56px 0;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Glass Panels & Surfaces */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-pink);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--border-pink-strong);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Barbiecore Decorative Hairline Divider */
+.editorial-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 48px auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.editorial-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(224, 33, 138, 0.35), transparent);
+}
+
+.editorial-divider-diamond {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: var(--primary-hot-pink);
+  box-shadow: 0 0 8px rgba(224, 33, 138, 0.4);
+}
+
+/* Interactive Badge / Tag */
+.barbie-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background-color: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--deep-pink);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Sparkle & Shimmer Animations */
+@keyframes sparklePulse {
+  0%, 100% {
+    transform: scale(0.92) rotate(0deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.14) rotate(8deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(224, 33, 138, 0.5));
+  }
+}
+
+.sparkle-anim {
+  animation: sparklePulse 3.5s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: center;
+}
+
+/* Smooth Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

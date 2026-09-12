@@ -1,167 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 36" width="100%" height="36" fill="none">
-    
-    <defs>
-      <!-- Embedded Styles in XML CDATA -->
-      <style type="text/css"><![CDATA[
-        .display-title {
-          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          font-weight: 800;
-          letter-spacing: -0.02em;
-        }
-        .editorial-title {
-          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
-          font-weight: 700;
-          letter-spacing: 0.08em;
-        }
-        .editorial-script {
-          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
-          font-style: italic;
-          letter-spacing: 0.02em;
-        }
-        .editorial-sans {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          font-weight: 500;
-        }
-        .code-mono {
-          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
-        }
-        
-        /* Subtle Shimmer & Pulse Keyframes */
-        @keyframes subtlePulse {
-          0%, 100% { opacity: 0.85; }
-          50% { opacity: 1; }
-        }
-        @keyframes glint {
-          0%, 100% { transform: scale(0.95); opacity: 0.7; }
-          50% { transform: scale(1.08); opacity: 1; }
-        }
-        
-        .pulse-anim {
-          animation: subtlePulse 3s ease-in-out infinite;
-        }
-        .glint-anim {
-          animation: glint 3.5s ease-in-out infinite;
-          transform-origin: center;
-        }
-      ]]></style>
+  <defs>
+    <style type="text/css"><![CDATA[
+      @keyframes subtlePulse {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; }
+      }
+      @keyframes glint {
+        0%, 100% { transform: scale(0.95); opacity: 0.7; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      .pulse-anim { animation: subtlePulse 3s ease-in-out infinite; }
+      .glint-anim { animation: glint 3.5s ease-in-out infinite; transform-origin: center; }
+    ]]></style>
 
-      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
-      <linearGradient id="div_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" stop-color="#FF2D87" />
-        <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#C2185B" />
-      </linearGradient>
+    <linearGradient id="divBarbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4F9A" />
+      <stop offset="50%" stop-color="#E0218A" />
+      <stop offset="100%" stop-color="#C71585" />
+    </linearGradient>
+  </defs>
 
-      <!-- Card Glass Backdrop Gradient -->
-      <linearGradient id="div_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
-        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
-      </linearGradient>
+  <path d="M 42 18 C 160 12, 280 24, 430 18" stroke="url(#divBarbieGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <path d="M 120 18 C 220 22, 320 14, 410 18" stroke="#E0218A" stroke-width="1" stroke-linecap="round" opacity="0.35" />
 
-      <!-- Rose Satin Monogram Gradient -->
-      <linearGradient id="div_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#2D1124" />
-        <stop offset="100%" stop-color="#1A0D18" />
-      </linearGradient>
+  <g transform="translate(470, 18)">
+    <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="#E0218A" stroke-width="1.2" />
+    <polygon points="0,-4.5 4.5,0 0,4.5 -4.5,0" fill="#E0218A" />
+    <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
+  </g>
 
-      <!-- Light Rose Ambient Surface Gradient -->
-      <linearGradient id="div_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#FFF5F8" />
-      </linearGradient>
+  <path d="M 510 18 C 660 12, 780 24, 898 18" stroke="url(#divBarbieGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <path d="M 530 18 C 620 22, 720 14, 820 18" stroke="#E0218A" stroke-width="1" stroke-linecap="round" opacity="0.35" />
 
-      <!-- Delicate Pink Hairline Gradient -->
-      <linearGradient id="div_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
-        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
-        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
-        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
-      </linearGradient>
+  <g class="glint-anim" style="transform-origin: 420px 18px;">
+    <path d="M 420 13.5 Q 422 16 424.5 18 Q 422 20 420 22.5 Q 418 20 415.5 18 Q 418 16 420 13.5 Z" fill="#E0218A" opacity="0.88" />
+    <circle cx="420" cy="18" r="1.2" fill="#FFFFFF" />
+  </g>
 
-      <!-- Platinum / Chrome Luxury Accent Gradient -->
-      <linearGradient id="div_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="35%" stop-color="#F1F5F9" />
-        <stop offset="70%" stop-color="#CBD5E1" />
-        <stop offset="100%" stop-color="#E2E8F0" />
-      </linearGradient>
-
-      <!-- Winner Gold Accent Gradient -->
-      <linearGradient id="div_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FDE68A" />
-        <stop offset="50%" stop-color="#F59E0B" />
-        <stop offset="100%" stop-color="#D97706" />
-      </linearGradient>
-
-      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
-      <radialGradient id="div_radialAura" cx="80%" cy="10%" r="70%">
-        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
-        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
-        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
-      </radialGradient>
-
-      <!-- Card Soft Shadow Filter -->
-      <filter id="div_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
-        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
-      </filter>
-
-      <!-- Subtle Plaque Glow Filter -->
-      <filter id="div_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="4" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
-
-      <filter id="div_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="6" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
-    </defs>
-  
-    
-    <!-- Left Flowing Pink Curve -->
-    <path d="M 42 18 C 160 12, 280 24, 430 18" stroke="url(#div_barbieGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.65" />
-    <path d="M 120 18 C 220 22, 320 14, 410 18" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" stroke-linecap="round" opacity="0.5" />
-
-    <!-- Center Editorial Monogram Knot -->
-    <g transform="translate(470, 18)">
-      <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.28)" stroke-width="1" />
-      <polygon points="0,-4.5 4.5,0 0,4.5 -4.5,0" fill="#FF2D87" />
-      <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
-    </g>
-
-    <!-- Right Flowing Pink Curve -->
-    <path d="M 510 18 C 660 12, 780 24, 898 18" stroke="url(#div_barbieGrad)" stroke-width="1.2" stroke-linecap="round" opacity="0.65" />
-    <path d="M 530 18 C 620 22, 720 14, 820 18" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" stroke-linecap="round" opacity="0.5" />
-
-    <!-- Restrained Sparkles -->
-    
-    <g class="glint-anim" style="transform-origin: 420px 18px;">
-      <path d="
-        M 420 14
-        Q 421.76 16.24 424 18
-        Q 421.76 19.76 420 22
-        Q 418.24 19.76 416 18
-        Q 418.24 16.24 420 14
-        Z"
-        fill="#FF2D87"
-        opacity="0.85"
-      />
-      <circle cx="420" cy="18" r="1.12" fill="#FFFFFF" />
-    </g>
-  
-    
-    <g class="glint-anim" style="transform-origin: 520px 18px;">
-      <path d="
-        M 520 14
-        Q 521.76 16.24 524 18
-        Q 521.76 19.76 520 22
-        Q 518.24 19.76 516 18
-        Q 518.24 16.24 520 14
-        Z"
-        fill="#FF85C0"
-        opacity="0.85"
-      />
-      <circle cx="520" cy="18" r="1.12" fill="#FFFFFF" />
-    </g>
-  
-  </svg>
+  <g class="glint-anim" style="transform-origin: 520px 18px;">
+    <path d="M 520 13.5 Q 522 16 524.5 18 Q 522 20 520 22.5 Q 518 20 515.5 18 Q 518 16 520 13.5 Z" fill="#FFD1DC" opacity="0.88" />
+    <circle cx="520" cy="18" r="1.2" fill="#FFFFFF" />
+  </g>
+</svg>

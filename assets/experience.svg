@@ -4,7 +4,7 @@
       <!-- Embedded Styles in XML CDATA -->
       <style type="text/css"><![CDATA[
         .display-title {
-          font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -14,12 +14,11 @@
           letter-spacing: 0.08em;
         }
         .editorial-script {
-          font-family: 'Playfair Display', 'Dancing Script', 'Brush Script MT', Georgia, cursive;
-          font-style: italic;
+          font-family: 'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif;
           letter-spacing: 0.02em;
         }
         .editorial-sans {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 500;
         }
         .code-mono {
@@ -45,45 +44,45 @@
         }
       ]]></style>
 
-      <!-- Signature Barbie Gradient (Hot Pink to Barbie Pink to Magenta) -->
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
       <linearGradient id="exp_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stop-color="#FF2D87" />
         <stop offset="50%" stop-color="#E0218A" />
-        <stop offset="100%" stop-color="#C2185B" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="exp_canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="exp_blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="exp_cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
       </linearGradient>
 
       <!-- Card Glass Backdrop Gradient -->
       <linearGradient id="exp_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#151122" stop-opacity="0.94" />
-        <stop offset="100%" stop-color="#0E0B16" stop-opacity="0.97" />
-      </linearGradient>
-
-      <!-- Rose Satin Monogram Gradient -->
-      <linearGradient id="exp_roseSatin" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#2D1124" />
-        <stop offset="100%" stop-color="#1A0D18" />
-      </linearGradient>
-
-      <!-- Light Rose Ambient Surface Gradient -->
-      <linearGradient id="exp_lightSurfaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="100%" stop-color="#FFF5F8" />
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
       </linearGradient>
 
       <!-- Delicate Pink Hairline Gradient -->
       <linearGradient id="exp_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FF2D87" stop-opacity="0.45" />
-        <stop offset="40%" stop-color="#FF85C0" stop-opacity="0.20" />
-        <stop offset="70%" stop-color="#CBD5E1" stop-opacity="0.30" />
-        <stop offset="100%" stop-color="#E0218A" stop-opacity="0.35" />
-      </linearGradient>
-
-      <!-- Platinum / Chrome Luxury Accent Gradient -->
-      <linearGradient id="exp_chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFFFFF" />
-        <stop offset="35%" stop-color="#F1F5F9" />
-        <stop offset="70%" stop-color="#CBD5E1" />
-        <stop offset="100%" stop-color="#E2E8F0" />
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
       </linearGradient>
 
       <!-- Winner Gold Accent Gradient -->
@@ -93,16 +92,17 @@
         <stop offset="100%" stop-color="#D97706" />
       </linearGradient>
 
-      <!-- Soft Ambient Radial Aura (Haute Dark Mode) -->
-      <radialGradient id="exp_radialAura" cx="80%" cy="10%" r="70%">
-        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.14" />
-        <stop offset="40%" stop-color="#FF2D87" stop-opacity="0.06" />
-        <stop offset="100%" stop-color="#0D0B14" stop-opacity="0" />
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="exp_radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
       </radialGradient>
 
-      <!-- Card Soft Shadow Filter -->
-      <filter id="exp_cardShadow" x="-5%" y="-5%" width="110%" height="115%">
-        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#E0218A" flood-opacity="0.06" />
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="exp_cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
       </filter>
 
       <!-- Subtle Plaque Glow Filter -->
@@ -110,34 +110,29 @@
         <feGaussianBlur stdDeviation="4" result="blur" />
         <feComposite in="SourceGraphic" in2="blur" operator="over" />
       </filter>
-
-      <filter id="exp_glowFilter" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="6" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
     </defs>
   
     
     <!-- Light Studio Canvas Base -->
-    <rect width="940" height="320" rx="16" fill="#FAFAFC" />
-    <rect width="940" height="320" rx="16" fill="url(#exp_radialAura)" />
+    <rect width="940" height="320" rx="24" fill="#FFF0F6" />
+    <rect width="940" height="320" rx="24" fill="url(#exp_radialAura)" />
 
-    <!-- Outer Frame with Soft Shadow -->
-    <rect x="16" y="16" width="908" height="288" rx="14"
-          fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="1" filter="url(#exp_cardShadow)" />
+    <!-- Outer Frame with Soft Glam Shadow -->
+    <rect x="16" y="16" width="908" height="288" rx="24"
+          fill="#FFF7FB" stroke="rgba(224, 33, 138, 0.35)" stroke-width="1" filter="url(#exp_cardShadow)" />
 
     <!-- Section Header Line -->
     <g transform="translate(42, 42)">
-      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#E0218A" letter-spacing="0.14em">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#C71585" letter-spacing="0.14em">
         PROFESSIONAL EDIT // INDUSTRY APPOINTMENT &amp; ACADEMICS
       </text>
-      <text x="0" y="18" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.08em">
+      <text x="0" y="18" class="code-mono" font-size="9" fill="#6B7280" letter-spacing="0.08em">
         AI/ML R&amp;D INTERNSHIP · PICT ENTC UNDERGRADUATE PEDIGREE · APPLIED SYSTEMS
       </text>
     </g>
 
     <g transform="translate(898, 42)">
-      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#7A7A8E" letter-spacing="0.1em">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#6B7280" letter-spacing="0.1em">
         CURRENT CADENCE
       </text>
       <text x="0" y="18" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676" font-weight="700">
@@ -146,60 +141,60 @@
     </g>
 
     <!-- Header Divider Line -->
-    <line x1="42" y1="68" x2="898" y2="68" stroke="rgba(17, 17, 22, 0.08)" stroke-width="1" />
+    <line x1="42" y1="68" x2="898" y2="68" stroke="rgba(224, 33, 138, 0.16)" stroke-width="1" />
 
     <!-- Card 1: Internship (Mindstrix Technologies LLP) -->
     <g transform="translate(42, 82)">
-      <rect x="0" y="0" width="460" height="212" rx="14" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.9" />
-      <rect x="0" y="0" width="460" height="3" rx="1.5" fill="url(#exp_barbieGrad)" />
+      <rect x="0" y="0" width="460" height="212" rx="20" fill="#FFF7FB" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.9" />
+      <rect x="0" y="0" width="460" height="3.5" rx="1.75" fill="url(#exp_barbieGrad)" />
 
       <!-- Edition Tag -->
       <g transform="translate(16, 22)">
-        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
+        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.45)" stroke-width="0.8" />
         <circle cx="10" cy="10" r="3" fill="#00E676">
           <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
         </circle>
-        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
           INDUSTRY R&amp;D INTERNSHIP
         </text>
       </g>
 
       <!-- Company & Role -->
       <g transform="translate(16, 66)">
-        <text x="0" y="0" class="display-title" font-size="18" font-weight="800" fill="#111116">
+        <text x="0" y="0" class="display-title" font-size="18" font-weight="800" fill="#2D2D2D">
           MINDSTRIX TECHNOLOGIES LLP
         </text>
-        <text x="0" y="20" class="editorial-sans" font-size="13" font-weight="700" fill="#FF2D87">
+        <text x="0" y="20" class="editorial-sans" font-size="13" font-weight="700" fill="#E0218A">
           AI/ML Research &amp; Development Intern
         </text>
-        <text x="0" y="36" class="code-mono" font-size="9" fill="#7A7A8E">
+        <text x="0" y="36" class="code-mono" font-size="9" fill="#6B7280">
           Mar 2026 – Ongoing · Remote / Hybrid
         </text>
       </g>
 
       <!-- Verified Responsibilities -->
       <g transform="translate(16, 126)">
-        <circle cx="4" cy="5" r="2.5" fill="#FF2D87" />
-        <text x="14" y="8" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+        <circle cx="4" cy="5" r="2.5" fill="#E0218A" />
+        <text x="14" y="8" class="editorial-sans" font-size="10.5" fill="#2D2D2D">
           Full SDLC contribution on live AI/ML &amp; software platform projects.
         </text>
 
-        <circle cx="4" cy="25" r="2.5" fill="#FF2D87" />
-        <text x="14" y="28" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+        <circle cx="4" cy="25" r="2.5" fill="#E0218A" />
+        <text x="14" y="28" class="editorial-sans" font-size="10.5" fill="#2D2D2D">
           Designing modules for data processing, model training &amp; integration.
         </text>
 
-        <circle cx="4" cy="45" r="2.5" fill="#FF2D87" />
-        <text x="14" y="48" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+        <circle cx="4" cy="45" r="2.5" fill="#E0218A" />
+        <text x="14" y="48" class="editorial-sans" font-size="10.5" fill="#2D2D2D">
           Agile technical reviews, test execution &amp; cross-functional teamwork.
         </text>
       </g>
 
       <!-- Verified Metric Footer -->
       <g transform="translate(16, 186)">
-        <rect x="0" y="-12" width="200" height="22" rx="11" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.8" />
-        <circle cx="12" cy="-1" r="3" fill="#FF2D87" />
-        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A">
+        <rect x="0" y="-12" width="200" height="22" rx="11" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <circle cx="12" cy="-1" r="3" fill="#E0218A" />
+        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#2D2D2D">
           SDLC · ML MODEL PIPELINES
         </text>
         <text x="428" y="2.5" text-anchor="end" class="code-mono" font-size="8.5" fill="#00E676" font-weight="700">
@@ -210,52 +205,52 @@
 
     <!-- Card 2: Academic Pedigree (PICT) -->
     <g transform="translate(522, 82)">
-      <rect x="0" y="0" width="376" height="212" rx="14" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.18)" stroke-width="0.9" />
-      <rect x="0" y="0" width="376" height="3" rx="1.5" fill="url(#exp_barbieGrad)" />
+      <rect x="0" y="0" width="376" height="212" rx="20" fill="#FFF7FB" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.9" />
+      <rect x="0" y="0" width="376" height="3.5" rx="1.75" fill="url(#exp_barbieGrad)" />
 
       <!-- Edition Tag -->
       <g transform="translate(16, 22)">
-        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
-        <circle cx="10" cy="10" r="3" fill="#FF2D87" />
-        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A" letter-spacing="0.1em">
+        <rect x="0" y="0" width="168" height="20" rx="10" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.45)" stroke-width="0.8" />
+        <circle cx="10" cy="10" r="3" fill="#E0218A" />
+        <text x="20" y="13.5" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
           ACADEMIC FOUNDATION
         </text>
       </g>
 
       <!-- University & Degree -->
       <g transform="translate(16, 66)">
-        <text x="0" y="0" class="display-title" font-size="16" font-weight="800" fill="#111116">
+        <text x="0" y="0" class="display-title" font-size="16" font-weight="800" fill="#2D2D2D">
           PICT PUNE
         </text>
-        <text x="0" y="20" class="editorial-sans" font-size="12" font-weight="700" fill="#111116">
+        <text x="0" y="20" class="editorial-sans" font-size="12" font-weight="700" fill="#2D2D2D">
           B.Tech, Electronics &amp; Telecommunication
         </text>
-        <text x="0" y="36" class="code-mono" font-size="9" fill="#7A7A8E">
+        <text x="0" y="36" class="code-mono" font-size="9" fill="#6B7280">
           Aug 2024 – May 2028 · Pune, Maharashtra
         </text>
       </g>
 
       <!-- Academic Standing & Extracurriculars -->
       <g transform="translate(16, 126)">
-        <rect x="0" y="-8" width="140" height="24" rx="6" fill="#FFF5F8" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
-        <text x="70" y="8" text-anchor="middle" class="code-mono" font-size="10" font-weight="800" fill="#FF2D87">
+        <rect x="0" y="-8" width="140" height="24" rx="12" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.45)" stroke-width="0.8" />
+        <text x="70" y="8" text-anchor="middle" class="code-mono" font-size="10" font-weight="800" fill="#E0218A">
           CGPA: 8.6 / 10.0
         </text>
 
-        <text x="0" y="32" class="code-mono" font-size="9" fill="#7A7A8E">
+        <text x="0" y="32" class="code-mono" font-size="9" fill="#6B7280">
           HSC: 89.83% · SSC: 96.40%
         </text>
 
-        <text x="0" y="48" class="editorial-sans" font-size="10.5" fill="#4A4A58">
+        <text x="0" y="48" class="editorial-sans" font-size="10.5" fill="#2D2D2D">
           Extracurricular: Volunteer @ NGO UPAY · Zonal Chess
         </text>
       </g>
 
       <!-- Verified Metric Footer -->
       <g transform="translate(16, 186)">
-        <rect x="0" y="-12" width="160" height="22" rx="11" fill="#F8FAFC" stroke="rgba(17, 17, 22, 0.08)" stroke-width="0.8" />
-        <circle cx="12" cy="-1" r="3" fill="#FF2D87" />
-        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#111116">
+        <rect x="0" y="-12" width="160" height="22" rx="11" fill="#F8FAFC" stroke="rgba(224, 33, 138, 0.16)" stroke-width="0.8" />
+        <circle cx="12" cy="-1" r="3" fill="#E0218A" />
+        <text x="22" y="2.5" class="code-mono" font-size="8.5" font-weight="700" fill="#2D2D2D">
           CLASS OF 2028 · ENTC
         </text>
         <text x="344" y="2.5" text-anchor="end" class="code-mono" font-size="8.5" font-weight="700" fill="#E0218A">
@@ -274,8 +269,8 @@
         Q 901.58 44.42 898.5 42
         Q 901.58 39.58 904 36.5
         Z"
-        fill="#FF2D87"
-        opacity="0.85"
+        fill="#E0218A"
+        opacity="0.88"
       />
       <circle cx="904" cy="42" r="1.54" fill="#FFFFFF" />
     </g>
@@ -289,8 +284,8 @@
         Q 467.8 46.2 465 44
         Q 467.8 41.8 470 39
         Z"
-        fill="#FF85C0"
-        opacity="0.85"
+        fill="#FFD1DC"
+        opacity="0.88"
       />
       <circle cx="470" cy="44" r="1.4000000000000001" fill="#FFFFFF" />
     </g>
