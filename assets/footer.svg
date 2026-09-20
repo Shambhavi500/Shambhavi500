@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 160" width="100%" height="160" fill="none">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&family=JetBrains+Mono:wght@500;700&display=swap');
+      
+      .foot-statement {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 19px;
+        font-weight: 700;
+        fill: #3A2630;
+        letter-spacing: -0.01em;
+      }
+      .foot-mono {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        fill: #C71585;
+      }
+      .foot-colophon {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 9px;
+        fill: #8B6F7B;
+        letter-spacing: 0.1em;
+      }
+      
+      @keyframes gleamFooter {
+        0%, 100% { transform: scale(0.95); opacity: 0.7; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      .gleam-foot {
+        animation: gleamFooter 3.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+    ]]></style>
+
+    <linearGradient id="footBarbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4F9A" />
+      <stop offset="50%" stop-color="#E0218A" />
+      <stop offset="100%" stop-color="#C71585" />
+    </linearGradient>
+
+    <linearGradient id="footSurface" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FFF9FC" />
+      <stop offset="100%" stop-color="#FFF0F6" />
+    </linearGradient>
+
+    <radialGradient id="footRadialAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD6E7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFF9FC" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="footCardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#E0218A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="940" height="160" rx="20" fill="#FFF9FC" />
+  <rect width="940" height="160" rx="20" fill="url(#footRadialAura)" />
+
+  <rect x="14" y="14" width="912" height="132" rx="16" fill="url(#footSurface)" stroke="#FFD6E7" stroke-width="1.2" filter="url(#footCardShadow)" />
+
+  <g stroke="#E0218A" stroke-width="1.4" stroke-linecap="square" fill="none">
+    <path d="M 24 32 L 24 22 L 34 22" />
+    <path d="M 906 22 L 916 22 L 916 32" />
+    <path d="M 24 128 L 24 138 L 34 138" />
+    <path d="M 906 138 L 916 138 L 916 128" />
+  </g>
+
+  <g transform="translate(470, 56)">
+    <text x="0" y="0" text-anchor="middle" class="foot-statement">&quot;Building practical systems, one experiment at a time.&quot;</text>
+    <text x="0" y="24" text-anchor="middle" class="foot-mono">SHAMBHAVI PATIL · PICT PUNE · ATELIER 500</text>
+  </g>
+
+  <path d="M 360 94 C 430 90, 510 98, 580 94" stroke="url(#footBarbieGrad)" stroke-width="2" stroke-linecap="round" />
+
+  <g transform="translate(40, 122)">
+    <text x="0" y="0" class="foot-colophon">ATELIER @Shambhavi500 · B.TECH ENTC · PUNE, INDIA</text>
+  </g>
+
+  <g transform="translate(900, 122)">
+    <text x="0" y="0" text-anchor="end" class="foot-colophon" fill="#E0218A" font-weight="700">DESIGNED WITH INTENTION · BUILT WITH CODE</text>
+  </g>
+
+  <g class="gleam-foot" style="transform-origin: 240px 54px;">
+    <path d="M 240 48 Q 242 52 245 54 Q 242 56 240 60 Q 238 56 235 54 Q 238 52 240 48 Z" fill="#E0218A" />
+    <circle cx="240" cy="54" r="1.3" fill="#FFFFFF" />
+  </g>
+  <g class="gleam-foot" style="transform-origin: 700px 54px;">
+    <path d="M 700 48 Q 702 52 705 54 Q 702 56 700 60 Q 698 56 695 54 Q 698 52 700 48 Z" fill="#FF4F9A" />
+    <circle cx="700" cy="54" r="1.3" fill="#FFFFFF" />
+  </g>
+</svg>

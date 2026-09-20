@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 36" width="100%" height="36" fill="none">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @keyframes subtlePulse {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; }
+      }
+      @keyframes glint {
+        0%, 100% { transform: scale(0.95); opacity: 0.7; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      .pulse-anim { animation: subtlePulse 3s ease-in-out infinite; }
+      .glint-anim { animation: glint 3.5s ease-in-out infinite; transform-origin: center; }
+    ]]></style>
+
+    <linearGradient id="divBarbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4F9A" />
+      <stop offset="50%" stop-color="#E0218A" />
+      <stop offset="100%" stop-color="#C71585" />
+    </linearGradient>
+  </defs>
+
+  <path d="M 42 18 C 160 12, 280 24, 430 18" stroke="url(#divBarbieGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <path d="M 120 18 C 220 22, 320 14, 410 18" stroke="#E0218A" stroke-width="1" stroke-linecap="round" opacity="0.35" />
+
+  <g transform="translate(470, 18)">
+    <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="#E0218A" stroke-width="1.2" />
+    <polygon points="0,-4.5 4.5,0 0,4.5 -4.5,0" fill="#E0218A" />
+    <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
+  </g>
+
+  <path d="M 510 18 C 660 12, 780 24, 898 18" stroke="url(#divBarbieGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.75" />
+  <path d="M 530 18 C 620 22, 720 14, 820 18" stroke="#E0218A" stroke-width="1" stroke-linecap="round" opacity="0.35" />
+
+  <g class="glint-anim" style="transform-origin: 420px 18px;">
+    <path d="M 420 13.5 Q 422 16 424.5 18 Q 422 20 420 22.5 Q 418 20 415.5 18 Q 418 16 420 13.5 Z" fill="#E0218A" opacity="0.88" />
+    <circle cx="420" cy="18" r="1.2" fill="#FFFFFF" />
+  </g>
+
+  <g class="glint-anim" style="transform-origin: 520px 18px;">
+    <path d="M 520 13.5 Q 522 16 524.5 18 Q 522 20 520 22.5 Q 518 20 515.5 18 Q 518 16 520 13.5 Z" fill="#FFD1DC" opacity="0.88" />
+    <circle cx="520" cy="18" r="1.2" fill="#FFFFFF" />
+  </g>
+</svg>

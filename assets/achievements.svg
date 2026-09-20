@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 350" width="100%" height="350" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        .editorial-title {
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+        }
+        .editorial-script {
+          font-family: 'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif;
+          letter-spacing: 0.02em;
+        }
+        .editorial-sans {
+          font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
+        }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
+        }
+        
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
+        }
+      ]]></style>
+
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
+      <linearGradient id="ach_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="ach_canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="ach_blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="ach_cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="ach_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="ach_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
+      </linearGradient>
+
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="ach_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
+      </linearGradient>
+
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="ach_radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="ach_cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="ach_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+
+    <defs>
+      <!-- Dreamhouse Rose Satin Card 01 Gradient -->
+      <linearGradient id="ach_card01Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFF9FC" />
+        <stop offset="50%" stop-color="#FFEBF4" />
+        <stop offset="100%" stop-color="#FFD9EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Rose Satin Card 02 Gradient -->
+      <linearGradient id="ach_card02Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFF9FC" />
+        <stop offset="50%" stop-color="#FFEAF3" />
+        <stop offset="100%" stop-color="#FFD6E8" />
+      </linearGradient>
+
+      <!-- Runner Up Magenta Gradient -->
+      <linearGradient id="ach_runnerUpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#D6188A" />
+        <stop offset="50%" stop-color="#C71585" />
+        <stop offset="100%" stop-color="#9E0E68" />
+      </linearGradient>
+    </defs>
+    
+    <!-- Dreamhouse Pink Studio Canvas Base (Eliminating White Element) -->
+    <rect width="940" height="350" rx="24" fill="url(#ach_canvasPinkGrad)" />
+    <rect width="940" height="350" rx="24" fill="url(#ach_radialAura)" />
+
+    <!-- Outer Structural Frame with Luminous Pink Border & Glow -->
+    <rect x="14" y="14" width="912" height="322" rx="24"
+          fill="url(#ach_blushGrad)" stroke="#E0218A" stroke-width="1.5" filter="url(#ach_cardShadow)" />
+
+    <!-- Section Header Tag -->
+    <g transform="translate(36, 40)">
+      <text x="0" y="0" class="code-mono" font-size="11" font-weight="800" fill="#C71585" letter-spacing="0.14em">
+        THE WINS // 2 ACCREDITED HACKATHONS
+      </text>
+    </g>
+
+    <g transform="translate(904, 40)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9.5" font-weight="700" fill="#C71585" letter-spacing="0.08em">
+        OFFICIALLY ACCREDITED · <tspan fill="#00B4D8" font-weight="800">● 100% VERIFIED MILESTONES</tspan>
+      </text>
+    </g>
+
+    <!-- Header Pink Gradient Line -->
+    <line x1="36" y1="52" x2="904" y2="52" stroke="url(#ach_barbieGrad)" stroke-width="1.5" />
+
+    <!-- The 2 Prestigious Hackathon Award Plaques -->
+    
+        <!-- Hackathon Plaque 01 -->
+        <g transform="translate(36, 68)">
+          <!-- Card Base in Dreamhouse Rose Satin with Rich Pink Border -->
+          <rect x="0" y="0" width="422" height="254" rx="22"
+                fill="url(#ach_card01Grad)"
+                stroke="#E0218A" stroke-width="2" filter="url(#ach_cardShadow)" />
+
+          <!-- Top Accent Ribbon in Hot Pink / Magenta -->
+          <rect x="0" y="0" width="422" height="5" rx="2.5" fill="url(#ach_barbieGrad)" />
+
+          <!-- Edition Tag & Trophy/Medal Icon -->
+          <text x="20" y="32" class="display-title" font-size="18" font-weight="800" fill="#E0218A">
+            01
+          </text>
+          <text x="48" y="31" class="code-mono" font-size="10" font-weight="700" fill="#6B7280" letter-spacing="0.1em">
+            // HACKATHON WIN
+          </text>
+          <text x="402" y="32" text-anchor="end" font-size="18">
+            🏆
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="20" y1="42" x2="402" y2="42" stroke="rgba(224, 33, 138, 0.28)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="20" y="68" class="display-title" font-size="17" font-weight="800" fill="#2D2D2D" letter-spacing="0.02em">
+            TECHFIESTA &apos;26
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="20" y="88" class="code-mono" font-size="11" font-weight="800" fill="#E0218A" letter-spacing="0.06em">
+            1ST PLACE // WINNER
+          </text>
+
+          <!-- Domain -->
+          <text x="20" y="105" class="code-mono" font-size="9" font-weight="700" fill="#C71585" letter-spacing="0.06em">
+            AGRICULTURE DOMAIN
+          </text>
+
+          <!-- Project Showcase Box (Translucent Pink Glass) -->
+          <g transform="translate(20, 118)">
+            <rect x="0" y="0" width="382" height="76" rx="14"
+                  fill="rgba(224, 33, 138, 0.08)" stroke="rgba(224, 33, 138, 0.28)" stroke-width="1" />
+
+            <!-- Project Title -->
+            <text x="14" y="24" class="code-mono" font-size="9" font-weight="700" fill="#E0218A" letter-spacing="0.08em">
+              FLAGSHIP SOLUTION:
+            </text>
+            <text x="145" y="24" class="editorial-sans" font-size="13" font-weight="800" fill="#2D2D2D">
+              KrishiSahAI
+            </text>
+
+            <!-- Scope / Metric -->
+            <text x="14" y="44" class="editorial-sans" font-size="10.5" font-weight="700" fill="#C71585">
+              ★ 600+ Competing Engineering Teams
+            </text>
+
+            <!-- Summary / Impact -->
+            <text x="14" y="62" class="code-mono" font-size="9" font-weight="600" fill="#2D2D2D">
+              ✦ AI Agricultural Decision Support &amp; Farm Telemetry
+            </text>
+          </g>
+
+          <!-- Barbiecore Pill Button CTA -->
+          <g transform="translate(20, 206)">
+            <rect x="0" y="0" width="382" height="34" rx="17"
+                  fill="url(#ach_barbieGrad)" stroke="#FFFFFF" stroke-width="0.8" filter="url(#ach_pinkGlow)" />
+            <text x="191" y="22" text-anchor="middle"
+                  class="code-mono" font-size="10" font-weight="800" fill="#FFFFFF" letter-spacing="0.12em">
+              1ST PLACE WINNER · 🏆
+            </text>
+          </g>
+        </g>
+      
+        <!-- Hackathon Plaque 02 -->
+        <g transform="translate(482, 68)">
+          <!-- Card Base in Dreamhouse Rose Satin with Rich Pink Border -->
+          <rect x="0" y="0" width="422" height="254" rx="22"
+                fill="url(#ach_card02Grad)"
+                stroke="#C71585" stroke-width="2" filter="url(#ach_cardShadow)" />
+
+          <!-- Top Accent Ribbon in Hot Pink / Magenta -->
+          <rect x="0" y="0" width="422" height="5" rx="2.5" fill="url(#ach_runnerUpGrad)" />
+
+          <!-- Edition Tag & Trophy/Medal Icon -->
+          <text x="20" y="32" class="display-title" font-size="18" font-weight="800" fill="#C71585">
+            02
+          </text>
+          <text x="48" y="31" class="code-mono" font-size="10" font-weight="700" fill="#6B7280" letter-spacing="0.1em">
+            // HACKATHON WIN
+          </text>
+          <text x="402" y="32" text-anchor="end" font-size="18">
+            🥈
+          </text>
+
+          <!-- Hairline Divider -->
+          <line x1="20" y1="42" x2="402" y2="42" stroke="rgba(199, 21, 133, 0.28)" stroke-width="0.8" />
+
+          <!-- Event Name -->
+          <text x="20" y="68" class="display-title" font-size="17" font-weight="800" fill="#2D2D2D" letter-spacing="0.02em">
+            PUNE AGRI HACKATHON
+          </text>
+
+          <!-- Place / Ranking -->
+          <text x="20" y="88" class="code-mono" font-size="11" font-weight="800" fill="#C71585" letter-spacing="0.06em">
+            NATIONAL RUNNER-UP
+          </text>
+
+          <!-- Domain -->
+          <text x="20" y="105" class="code-mono" font-size="9" font-weight="700" fill="#C71585" letter-spacing="0.06em">
+            PRECISION AGRITECH &amp; AI
+          </text>
+
+          <!-- Project Showcase Box (Translucent Pink Glass) -->
+          <g transform="translate(20, 118)">
+            <rect x="0" y="0" width="382" height="76" rx="14"
+                  fill="rgba(199, 21, 133, 0.08)" stroke="rgba(199, 21, 133, 0.28)" stroke-width="1" />
+
+            <!-- Project Title -->
+            <text x="14" y="24" class="code-mono" font-size="9" font-weight="700" fill="#C71585" letter-spacing="0.08em">
+              FLAGSHIP SOLUTION:
+            </text>
+            <text x="145" y="24" class="editorial-sans" font-size="13" font-weight="800" fill="#2D2D2D">
+              Krishi Prabandh &amp; NDVI
+            </text>
+
+            <!-- Scope / Metric -->
+            <text x="14" y="44" class="editorial-sans" font-size="10.5" font-weight="700" fill="#C71585">
+              ★ National Competition vs Startups · ₹15L Grant
+            </text>
+
+            <!-- Summary / Impact -->
+            <text x="14" y="62" class="code-mono" font-size="9" font-weight="600" fill="#2D2D2D">
+              ✦ Presented to Hon. Maharashtra CM · Satellite NDVI
+            </text>
+          </g>
+
+          <!-- Barbiecore Pill Button CTA -->
+          <g transform="translate(20, 206)">
+            <rect x="0" y="0" width="382" height="34" rx="17"
+                  fill="url(#ach_runnerUpGrad)" stroke="#FFFFFF" stroke-width="0.8" filter="url(#ach_pinkGlow)" />
+            <text x="191" y="22" text-anchor="middle"
+                  class="code-mono" font-size="10" font-weight="800" fill="#FFFFFF" letter-spacing="0.12em">
+              NATIONAL RUNNER-UP · ₹15L GRANT · 🥈
+            </text>
+          </g>
+        </g>
+      
+
+    <!-- Luxury Sparkles placed safely without text collisions -->
+    
+    <g class="glint-anim" style="transform-origin: 260px 38px;">
+      <path d="
+        M 260 32
+        Q 262.64 35.36 266 38
+        Q 262.64 40.64 260 44
+        Q 257.36 40.64 254 38
+        Q 257.36 35.36 260 32
+        Z"
+        fill="#E0218A"
+        opacity="0.88"
+      />
+      <circle cx="260" cy="38" r="1.6800000000000002" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 916px 326px;">
+      <path d="
+        M 916 320
+        Q 918.64 323.36 922 326
+        Q 918.64 328.64 916 332
+        Q 913.36 328.64 910 326
+        Q 913.36 323.36 916 320
+        Z"
+        fill="#E0218A"
+        opacity="0.88"
+      />
+      <circle cx="916" cy="326" r="1.6800000000000002" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 24px 326px;">
+      <path d="
+        M 24 321
+        Q 26.2 323.8 29 326
+        Q 26.2 328.2 24 331
+        Q 21.8 328.2 19 326
+        Q 21.8 323.8 24 321
+        Z"
+        fill="#FFD1DC"
+        opacity="0.88"
+      />
+      <circle cx="24" cy="326" r="1.4000000000000001" fill="#FFFFFF" />
+    </g>
+  
+  </svg>

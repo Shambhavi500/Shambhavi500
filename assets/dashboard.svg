@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 310" width="100%" height="310" fill="none">
+    
+    <defs>
+      <!-- Embedded Styles in XML CDATA -->
+      <style type="text/css"><![CDATA[
+        .display-title {
+          font-family: 'Montserrat', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+        .editorial-title {
+          font-family: 'Cinzel', 'Playfair Display', 'Didot', Georgia, serif;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+        }
+        .editorial-script {
+          font-family: 'Pacifico', 'Cinzel', 'Playfair Display', 'Brush Script MT', cursive, sans-serif;
+          letter-spacing: 0.02em;
+        }
+        .editorial-sans {
+          font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-weight: 500;
+        }
+        .code-mono {
+          font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', Menlo, Consolas, monospace;
+        }
+        
+        /* Subtle Shimmer & Pulse Keyframes */
+        @keyframes subtlePulse {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 1; }
+        }
+        @keyframes glint {
+          0%, 100% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.08); opacity: 1; }
+        }
+        
+        .pulse-anim {
+          animation: subtlePulse 3s ease-in-out infinite;
+        }
+        .glint-anim {
+          animation: glint 3.5s ease-in-out infinite;
+          transform-origin: center;
+        }
+      ]]></style>
+
+      <!-- Signature Barbie Gradient: Hot Pink -> Barbie Pink -> Retro Magenta -->
+      <linearGradient id="dash_barbieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF2D87" />
+        <stop offset="50%" stop-color="#E0218A" />
+        <stop offset="100%" stop-color="#C71585" />
+      </linearGradient>
+
+      <!-- Dreamhouse Canvas Pink Gradient (Eliminates White Element) -->
+      <linearGradient id="dash_canvasPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF0F6" />
+        <stop offset="50%" stop-color="#FFE4F0" />
+        <stop offset="100%" stop-color="#FFD6EA" />
+      </linearGradient>
+
+      <!-- Dreamhouse Blush Satin Gradient -->
+      <linearGradient id="dash_blushGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFF5FA" />
+        <stop offset="50%" stop-color="#FFEBF3" />
+        <stop offset="100%" stop-color="#FFD1DC" />
+      </linearGradient>
+
+      <!-- Malibu Cyan Accent Gradient -->
+      <linearGradient id="dash_cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4D8" />
+        <stop offset="100%" stop-color="#0077B6" />
+      </linearGradient>
+
+      <!-- Card Glass Backdrop Gradient -->
+      <linearGradient id="dash_cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FFF8FA" stop-opacity="0.98" />
+        <stop offset="100%" stop-color="#FFE8F2" stop-opacity="0.96" />
+      </linearGradient>
+
+      <!-- Delicate Pink Hairline Gradient -->
+      <linearGradient id="dash_borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.55" />
+        <stop offset="45%" stop-color="#FFD1DC" stop-opacity="0.40" />
+        <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.30" />
+        <stop offset="100%" stop-color="#C71585" stop-opacity="0.50" />
+      </linearGradient>
+
+      <!-- Winner Gold Accent Gradient -->
+      <linearGradient id="dash_goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FDE68A" />
+        <stop offset="50%" stop-color="#F59E0B" />
+        <stop offset="100%" stop-color="#D97706" />
+      </linearGradient>
+
+      <!-- Soft Ambient Radial Aura -->
+      <radialGradient id="dash_radialAura" cx="85%" cy="15%" r="75%">
+        <stop offset="0%" stop-color="#E0218A" stop-opacity="0.18" />
+        <stop offset="35%" stop-color="#FFD1DC" stop-opacity="0.12" />
+        <stop offset="70%" stop-color="#00B4D8" stop-opacity="0.04" />
+        <stop offset="100%" stop-color="#FFF0F6" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Glam Drop Shadow Filter -->
+      <filter id="dash_cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+        <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#E0218A" flood-opacity="0.14" />
+      </filter>
+
+      <!-- Subtle Plaque Glow Filter -->
+      <filter id="dash_pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="4" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+  
+    
+    <!-- Light Studio Canvas Base -->
+    <rect width="940" height="310" rx="24" fill="#FFF0F6" />
+    <rect width="940" height="310" rx="24" fill="url(#dash_radialAura)" />
+
+    <!-- Outer Structural Frame with Soft Glam Shadow -->
+    <rect x="16" y="16" width="908" height="278" rx="24"
+          fill="#FFF7FB" stroke="rgba(224, 33, 138, 0.35)" stroke-width="1" filter="url(#dash_cardShadow)" />
+
+    <!-- Header Section -->
+    <g transform="translate(42, 42)">
+      <text x="0" y="0" class="code-mono" font-size="10.5" font-weight="700" fill="#C71585" letter-spacing="0.14em">
+        THE TELEMETRY // REPOSITORY METRICS &amp; STACK DISTRIBUTION
+      </text>
+    </g>
+
+    <g transform="translate(898, 42)">
+      <text x="0" y="0" text-anchor="end" class="code-mono" font-size="9" fill="#6B7280" letter-spacing="0.1em">
+        DATA SOURCE: API.GITHUB.COM · <tspan fill="#00E676" font-weight="700">● LIVE</tspan>
+      </text>
+    </g>
+
+    <!-- Header Divider Line -->
+    <line x1="42" y1="54" x2="898" y2="54" stroke="rgba(224, 33, 138, 0.16)" stroke-width="1" />
+
+    <!-- Top 4 Metric Tiles Grid -->
+    <g transform="translate(42, 74)">
+      <!-- Tile 1: Public Repos -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="16" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
+          01 // REPOSITORIES
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="#E0218A">
+          14
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="#2D2D2D">
+          PUBLIC REPOSITORIES
+        </text>
+      </g>
+
+      <!-- Tile 2: Total Stargazers -->
+      <g transform="translate(220, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="16" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
+          02 // STARGAZERS
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="#E0218A">
+          0
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="#2D2D2D">
+          COMMUNITY STARS
+        </text>
+      </g>
+
+      <!-- Tile 3: Total Forks -->
+      <g transform="translate(440, 0)">
+        <rect x="0" y="0" width="200" height="92" rx="16" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
+          03 // FORKS &amp; LABS
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="#E0218A">
+          1
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="#2D2D2D">
+          BRANCHED FORKS
+        </text>
+      </g>
+
+      <!-- Tile 4: Network -->
+      <g transform="translate(660, 0)">
+        <rect x="0" y="0" width="196" height="92" rx="16" fill="#FFEBF3" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+        <text x="14" y="22" class="code-mono" font-size="8.5" font-weight="700" fill="#C71585" letter-spacing="0.1em">
+          04 // NETWORK
+        </text>
+        <text x="14" y="58" class="display-title" font-size="32" font-weight="800" fill="#E0218A">
+          4
+        </text>
+        <text x="14" y="78" class="code-mono" font-size="8.5" font-weight="600" fill="#2D2D2D">
+          4 FOLLOWERS · 4 FOLLOWING
+        </text>
+      </g>
+    </g>
+
+    <!-- Lower Panel: Dynamic Language Spectrum Progress Bar & Legend -->
+    <g transform="translate(42, 186)">
+      <rect x="0" y="0" width="856" height="94" rx="16" fill="#FFFFFF" stroke="rgba(224, 33, 138, 0.35)" stroke-width="0.8" />
+      
+      <!-- Panel Title -->
+      <text x="18" y="24" class="code-mono" font-size="9" font-weight="700" fill="#C71585" letter-spacing="0.12em">
+        LANGUAGE SPECTRUM BREAKDOWN
+      </text>
+      <text x="838" y="24" text-anchor="end" class="code-mono" font-size="8.5" fill="#6B7280">
+        DYNAMIC REPOSITORY AUDIT
+      </text>
+
+      <!-- Dynamic Progress Bar -->
+      <g transform="translate(18, 36)">
+        <rect x="0" y="0" width="273" height="10" rx="5" fill="#E0218A" />
+        <rect x="273" y="0" width="273" height="10" rx="0" fill="#00B4D8" />
+        <rect x="546" y="0" width="205" height="10" rx="0" fill="#F1E05A" />
+        <rect x="751" y="0" width="69" height="10" rx="5" fill="#A97BFF" />
+      </g>
+
+      <!-- Dynamic Legend Row -->
+      <g transform="translate(18, 58)">
+        <g transform="translate(0, 0)">
+        <circle cx="5" cy="5" r="4.5" fill="#E0218A" />
+        <text x="16" y="8.5" class="code-mono" font-size="9" fill="#2D2D2D" font-weight="700">
+          Python
+        </text>
+        <text x="16" y="22" class="code-mono" font-size="8.5" fill="#6B7280">
+          33.3% · 4 Repos
+        </text>
+      </g>
+        <g transform="translate(205, 0)">
+        <circle cx="5" cy="5" r="4.5" fill="#00B4D8" />
+        <text x="16" y="8.5" class="code-mono" font-size="9" fill="#2D2D2D" font-weight="700">
+          TypeScript
+        </text>
+        <text x="16" y="22" class="code-mono" font-size="8.5" fill="#6B7280">
+          33.3% · 4 Repos
+        </text>
+      </g>
+        <g transform="translate(410, 0)">
+        <circle cx="5" cy="5" r="4.5" fill="#F1E05A" />
+        <text x="16" y="8.5" class="code-mono" font-size="9" fill="#2D2D2D" font-weight="700">
+          JavaScript
+        </text>
+        <text x="16" y="22" class="code-mono" font-size="8.5" fill="#6B7280">
+          25% · 3 Repos
+        </text>
+      </g>
+        <g transform="translate(615, 0)">
+        <circle cx="5" cy="5" r="4.5" fill="#A97BFF" />
+        <text x="16" y="8.5" class="code-mono" font-size="9" fill="#2D2D2D" font-weight="700">
+          Kotlin
+        </text>
+        <text x="16" y="22" class="code-mono" font-size="8.5" fill="#6B7280">
+          8.3% · 1 Repos
+        </text>
+      </g>
+      </g>
+    </g>
+
+    <!-- Restrained Luxury Glint Sparkles -->
+    
+    <g class="glint-anim" style="transform-origin: 890px 48px;">
+      <path d="
+        M 890 42
+        Q 892.64 45.36 896 48
+        Q 892.64 50.64 890 54
+        Q 887.36 50.64 884 48
+        Q 887.36 45.36 890 42
+        Z"
+        fill="#E0218A"
+        opacity="0.88"
+      />
+      <circle cx="890" cy="48" r="1.6800000000000002" fill="#FFFFFF" />
+    </g>
+  
+    
+    <g class="glint-anim" style="transform-origin: 470px 44px;">
+      <path d="
+        M 470 39.5
+        Q 471.98 42.02 474.5 44
+        Q 471.98 45.98 470 48.5
+        Q 468.02 45.98 465.5 44
+        Q 468.02 42.02 470 39.5
+        Z"
+        fill="#FFD1DC"
+        opacity="0.88"
+      />
+      <circle cx="470" cy="44" r="1.2600000000000002" fill="#FFFFFF" />
+    </g>
+  
+  </svg>
