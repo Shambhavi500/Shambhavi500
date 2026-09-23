@@ -27,15 +27,25 @@ export default function SkillBadge({ skill }) {
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-        <span
-          style={{
-            width: '6px',
-            height: '6px',
-            borderRadius: '50%',
-            backgroundColor: isPrimary ? 'var(--primary-hot-pink)' : 'var(--deep-pink)',
-            display: 'inline-block'
-          }}
-        />
+        {skill.icon ? (
+          <skill.icon 
+            style={{
+              color: isPrimary ? 'var(--primary-hot-pink)' : 'var(--deep-pink)',
+              fontSize: '14px',
+              display: 'inline-block'
+            }}
+          />
+        ) : (
+          <span
+            style={{
+              width: '6px',
+              height: '6px',
+              borderRadius: '50%',
+              backgroundColor: isPrimary ? 'var(--primary-hot-pink)' : 'var(--deep-pink)',
+              display: 'inline-block'
+            }}
+          />
+        )}
         <span
           style={{
             fontSize: '13px',
