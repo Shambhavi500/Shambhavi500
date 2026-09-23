@@ -15,6 +15,7 @@ export const ACHIEVEMENTS = [
     scope: 'National Hackathon',
     summary: 'Secured 1st place out of 600+ teams for building KrishiSahAI, an AI-based agricultural platform for crop recommendations and soil analysis.',
     technologies: ['Python', 'AI/ML', 'Soil Telemetry', 'Computer Vision'],
+    grant: 'Prize Secured: INR 50,000',
     highlight: '1st Place out of 600+ teams.'
   },
   {
