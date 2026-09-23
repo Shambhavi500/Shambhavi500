@@ -7,13 +7,13 @@ export const PROFILE = {
   username: 'Shambhavi500',
   eyebrow: 'ATELIER NO. 500 // AI/ML & SYSTEMS',
   headline: 'AI/ML • SOFTWARE DEVELOPMENT • DATA STRUCTURES & ALGORITHMS',
-  heroDescription: 'Building intelligent, data-driven systems with real-world impact.',
+  heroDescription: 'I enjoy building systems that connect software with the real world, exploring AI/ML, and participating in hackathons.',
   metaChips: [
     { label: 'PICT • ENTC', category: 'ACADEMICS' },
     { label: 'SOFTWARE + AI/ML', category: 'FOCUS' },
     { label: 'PUNE, INDIA', category: 'LOCATION' }
   ],
-  bioTagline: 'Architecting Autonomous Systems, AI Engines & High-Impact AgriTech',
+  bioTagline: 'Engineering student building software and AI systems',
   avatarUrl: 'https://avatars.githubusercontent.com/u/222983931?v=4',
   initials: 'SP',
   email: 'shambhavipatil5631@gmail.com',

@@ -12,10 +12,10 @@ export const ACHIEVEMENTS = [
     project: 'KrishiSahAI',
     projectUrl: 'https://github.com/Shambhavi500/KrishiSahAI',
     year: '2026',
-    scope: '600+ Participating Teams Nationwide',
-    summary: 'Secured 1st place among 600+ participating teams nationwide for building KrishiSahAI, an AI-driven agricultural assistance platform providing intelligent crop recommendations, soil telemetry, and rural decision support.',
+    scope: 'National Hackathon',
+    summary: 'Secured 1st place out of 600+ teams for building KrishiSahAI, an AI-based agricultural platform for crop recommendations and soil analysis.',
     technologies: ['Python', 'AI/ML', 'Soil Telemetry', 'Computer Vision'],
-    highlight: 'Selected as 1st Place Champion out of 600+ competitive teams across India.'
+    highlight: '1st Place out of 600+ teams.'
   },
   {
     id: '02',
@@ -28,11 +28,11 @@ export const ACHIEVEMENTS = [
     project: 'KRISHI-PRABANDH',
     projectUrl: 'https://github.com/Shambhavi500/KRISHI-PRABANDH',
     year: '2026',
-    scope: 'National Competition vs Startups & Industry Teams',
-    grant: 'INR 15 Lakh Government Development Grant',
-    summary: 'Secured National Runner-Up competing against professional startups and industry participants. Our AI-powered agricultural governance solution with OCR fraud detection and satellite NDVI spectral validation was presented to senior government officials.',
-    presentationNote: 'Presented to senior government officials and Maharashtra State Leadership.',
+    scope: 'National Competition',
+    grant: 'INR 15 Lakh Government Grant',
+    summary: 'Runner-Up against startups and industry participants. Our project used OCR and satellite imagery to verify land records and process subsidies. We presented the solution to senior government officials.',
+    presentationNote: 'Presented to senior government officials.',
     technologies: ['Python', 'Satellite GIS', 'NDVI Spectral', 'OCR Fraud Detection', 'Multi-stack'],
-    highlight: 'Awarded INR 15 Lakh government grant for state-level prototype deployment.'
+    highlight: 'Awarded INR 15 Lakh government grant for further development.'
   }
 ];

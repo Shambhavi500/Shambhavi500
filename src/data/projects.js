@@ -12,7 +12,7 @@ export const SHOWCASE_PROJECTS = [
     badge: '1st Place · TechFiesta 2026',
     badgeType: 'winner',
     language: 'Python',
-    description: 'AI-powered agricultural platform for crop recommendations, soil telemetry, and rural decision support to empower Indian farming ecosystems.',
+    description: 'An AI-based platform that provides crop recommendations and analyzes soil data to help farmers make better decisions.',
     technologies: ['Python', 'AI/ML', 'Computer Vision', 'Soil Telemetry', 'IoT Sensors'],
     achievement: 'Winner at TechFiesta 2026 (Agriculture Domain) out of 600+ teams',
     featured: true
@@ -26,7 +26,7 @@ export const SHOWCASE_PROJECTS = [
     badge: 'Runner-Up · Pune Agri Hackathon',
     badgeType: 'winner',
     language: 'Python',
-    description: 'AI-driven agricultural governance platform combining OCR fraud detection, land record digitization, and satellite NDVI validation for state agricultural subsidy disbursement.',
+    description: 'An agricultural governance platform that uses OCR and satellite imagery to verify land records and help process agricultural subsidies.',
     technologies: ['Python', 'OCR / Vision', 'Satellite GIS', 'NDVI Analysis', 'FastAPI'],
     achievement: 'Runner-Up at Pune Agri International Hackathon; presented to senior government officials; ₹15L grant',
     featured: true
@@ -40,7 +40,7 @@ export const SHOWCASE_PROJECTS = [
     badge: 'Quantitative RL Research',
     badgeType: 'research',
     language: 'Python',
-    description: 'Custom Gymnasium RL trading environment benchmarked on 5+ years of National Stock Exchange (NSE) order-book data with a 50-dimensional state space and containerized execution.',
+    description: 'A Reinforcement Learning environment built with Gymnasium for algorithmic trading, trained on 5 years of NSE order-book data.',
     technologies: ['Python', 'Gymnasium', 'Deep RL', 'NSE Telemetry', 'Docker'],
     achievement: 'High-frequency simulation environment for algorithmic policy optimization',
     featured: true
@@ -54,7 +54,7 @@ export const SHOWCASE_PROJECTS = [
     badge: 'Multi-Agent Workflow Engine',
     badgeType: 'highlight',
     language: 'Python',
-    description: 'AI DaVinci Resolve editing assistant & multi-agent workflow engine orchestrating timeline operations, asset synthesis, and automated editorial cuts.',
+    description: 'A multi-agent workflow engine that automates timeline operations and editing tasks within DaVinci Resolve.',
     technologies: ['Python', 'DaVinci Resolve API', 'Multi-Agent Systems', 'Async IO', 'Automation'],
     achievement: 'Autonomous workflow orchestration for professional video editing pipelines',
     featured: true
@@ -68,7 +68,7 @@ export const SHOWCASE_PROJECTS = [
     badge: 'Autonomous FinTech OS',
     badgeType: 'highlight',
     language: 'TypeScript',
-    description: 'Autonomous revenue recovery operating system designed for the Indian fintech ecosystem, featuring real-time payment reconciliation and event-driven architecture.',
+    description: 'An event-driven system built for payment reconciliation and automated revenue recovery.',
     technologies: ['TypeScript', 'Node.js', 'Fintech APIs', 'Event-Driven Arch', 'Distributed Systems'],
     achievement: 'Event-driven payment reconciliation and automated recovery state machine',
     featured: true
@@ -82,7 +82,7 @@ export const SHOWCASE_PROJECTS = [
     badge: 'Satellite Remote Sensing',
     badgeType: 'highlight',
     language: 'JavaScript',
-    description: 'Vegetation index computation and canopy health analysis using satellite spectral bands, remote sensing imagery, and Google Earth Engine APIs.',
+    description: 'A tool that uses Google Earth Engine and satellite imagery to calculate vegetation indices and analyze crop health.',
     technologies: ['JavaScript', 'Google Earth Engine', 'Remote Sensing', 'GIS', 'Spectral Bands'],
     achievement: 'Canopy telemetry and vegetative health index extraction from multispectral imagery',
     featured: true
