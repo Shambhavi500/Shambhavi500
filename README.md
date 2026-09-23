@@ -10,14 +10,17 @@
 
 <br>
 
+<a href="https://shambhavi5631-portfolio.vercel.app/">
+<img src="https://img.shields.io/badge/PORTFOLIO-E0218A?style=for-the-badge&logo=vercel&logoColor=white">
+</a>
 <a href="https://github.com/Shambhavi500">
-<img src="https://img.shields.io/badge/GITHUB-E0218A?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB-FF4F9A?style=for-the-badge&logo=github&logoColor=white">
 </a>
 <a href="https://www.linkedin.com/in/shambhavi-patil05/">
-<img src="https://img.shields.io/badge/LINKEDIN-FF4F9A?style=for-the-badge&logo=linkedin&logoColor=white">
+<img src="https://img.shields.io/badge/LINKEDIN-C71585?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 <a href="mailto:shambhavipatil5631@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-C71585?style=for-the-badge&logo=gmail&logoColor=white">
+<img src="https://img.shields.io/badge/EMAIL-8B008B?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
 <br><br>
@@ -696,16 +699,20 @@ technically strong projects with real-world impact.
 
 <br>
 
+<a href="https://shambhavi5631-portfolio.vercel.app/">
+<img src="https://img.shields.io/badge/PORTFOLIO-E0218A?style=for-the-badge&logo=vercel&logoColor=white">
+</a>
+
 <a href="https://github.com/Shambhavi500">
-<img src="https://img.shields.io/badge/GITHUB-E0218A?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/GITHUB-FF4F9A?style=for-the-badge&logo=github&logoColor=white">
 </a>
 
 <a href="https://www.linkedin.com/in/shambhavi-patil05/">
-<img src="https://img.shields.io/badge/LINKEDIN-FF4F9A?style=for-the-badge&logo=linkedin&logoColor=white">
+<img src="https://img.shields.io/badge/LINKEDIN-C71585?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
 <a href="mailto:shambhavipatil5631@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-C71585?style=for-the-badge&logo=gmail&logoColor=white">
+<img src="https://img.shields.io/badge/EMAIL-8B008B?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
 <br><br>
