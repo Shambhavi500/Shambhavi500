@@ -56,7 +56,7 @@ export default function SectionHeader({
       >
         {title}{' '}
         {highlightWord && (
-          <span className="text-gradient-pink editorial-accent">
+          <span className="text-hot-pink">
             {highlightWord}
           </span>
         )}
@@ -75,12 +75,6 @@ export default function SectionHeader({
           {subtitle}
         </p>
       )}
-
-      <div className="editorial-divider" style={{ margin: '24px auto 0 auto' }}>
-        <div className="editorial-divider-line" />
-        <div className="editorial-divider-diamond" />
-        <div className="editorial-divider-line" />
-      </div>
     </div>
   );
 }

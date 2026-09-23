@@ -63,13 +63,7 @@ html {
 }
 
 body {
-  background-color: var(--very-light-pink);
-  background-image: 
-    radial-gradient(at 0% 0%, rgba(255, 194, 221, 0.35) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(217, 167, 255, 0.22) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(255, 229, 240, 0.4) 0px, transparent 70%),
-    radial-gradient(at 100% 100%, rgba(255, 105, 180, 0.16) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, rgba(224, 33, 138, 0.12) 0px, transparent 50%);
+  background-color: #FAFAFA;
   background-attachment: fixed;
   color: var(--text-main);
   font-family: var(--font-body);
@@ -158,44 +152,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Glass Panels & Surfaces */
 .glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--border-pink);
-  border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .glass-panel:hover {
-  border-color: var(--border-pink-strong);
-  box-shadow: var(--shadow-hover);
+  border-color: #DDDDDD;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Barbiecore Decorative Hairline Divider */
-.editorial-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin: 48px auto;
-  max-width: 900px;
-  width: 100%;
-}
 
-.editorial-divider-line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(224, 33, 138, 0.35), transparent);
-}
-
-.editorial-divider-diamond {
-  width: 8px;
-  height: 8px;
-  transform: rotate(45deg);
-  background-color: var(--primary-hot-pink);
-  box-shadow: 0 0 8px rgba(224, 33, 138, 0.4);
-}
 
 /* Interactive Badge / Tag */
 .barbie-badge {
@@ -223,7 +192,6 @@ h1, h2, h3, h4, h5, h6 {
   50% {
     transform: scale(1.14) rotate(8deg);
     opacity: 1;
-    filter: drop-shadow(0 0 6px rgba(224, 33, 138, 0.5));
   }
 }
 

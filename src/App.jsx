@@ -13,8 +13,7 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <div className="portfolio-app" style={{ position: 'relative', minHeight: '100vh' }}>
-      {/* Subtle Grid Overlay */}
-      <div className="editorial-grid-overlay" aria-hidden="true" />
+
 
       {/* Fixed Navigation */}
       <Navigation />

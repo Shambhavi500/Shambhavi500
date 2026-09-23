@@ -26,45 +26,13 @@ export default function Hero() {
         overflow: 'hidden'
       }}
     >
-      {/* Background Soft Pink Ambient Aura */}
-      <div
-        style={{
-          position: 'absolute',
-          top: '20px',
-          right: '8%',
-          width: '420px',
-          height: '420px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(255, 105, 180, 0.18) 0%, rgba(224, 33, 138, 0.05) 50%, transparent 70%)',
-          filter: 'blur(50px)',
-          pointerEvents: 'none',
-          zIndex: 0
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '20px',
-          left: '6%',
-          width: '360px',
-          height: '360px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(217, 167, 255, 0.2) 0%, rgba(255, 194, 221, 0.1) 60%, transparent 70%)',
-          filter: 'blur(60px)',
-          pointerEvents: 'none',
-          zIndex: 0
-        }}
-      />
+
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div
           className="glass-panel"
           style={{
             padding: 'clamp(32px, 5vw, 56px) clamp(24px, 5vw, 48px)',
-            borderRadius: 'var(--radius-card)',
-            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 245, 250, 0.94) 100%)',
-            border: '1px solid rgba(224, 33, 138, 0.25)',
-            boxShadow: '0 20px 48px rgba(224, 33, 138, 0.08)',
             position: 'relative',
             overflow: 'hidden'
           }}

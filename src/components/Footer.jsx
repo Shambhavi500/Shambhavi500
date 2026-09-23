@@ -18,10 +18,6 @@ export default function Footer() {
           className="glass-panel"
           style={{
             padding: 'clamp(40px, 6vw, 64px) clamp(24px, 5vw, 48px)',
-            borderRadius: 'var(--radius-card)',
-            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 235, 245, 0.95) 100%)',
-            border: '1.5px solid rgba(224, 33, 138, 0.35)',
-            boxShadow: '0 20px 50px rgba(224, 33, 138, 0.14)',
             textAlign: 'center',
             marginBottom: '60px',
             position: 'relative'
@@ -57,7 +53,7 @@ export default function Footer() {
             }}
           >
             Let&apos;s Build Something That{' '}
-            <span className="text-gradient-pink editorial-accent">
+            <span className="text-hot-pink">
               Matters.
             </span>
           </h2>
