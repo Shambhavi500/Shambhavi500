@@ -118,18 +118,6 @@ export default function Navigation() {
               }}
             >
               <span>SHAMBHAVI PATIL</span>
-              <span style={{ color: 'var(--primary-hot-pink)' }}>//</span>
-              <span style={{ color: 'var(--deep-pink)', fontSize: '11px' }}>PICT ENTC</span>
-            </div>
-            <div
-              style={{
-                fontSize: '10px',
-                color: 'var(--text-secondary)',
-                letterSpacing: '0.06em',
-                fontFamily: 'var(--font-mono)'
-              }}
-            >
-              SOFTWARE &amp; AI/ML
             </div>
           </div>
         </a>

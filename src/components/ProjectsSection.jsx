@@ -9,15 +9,15 @@ export default function ProjectsSection() {
       <div className="container">
         <SectionHeader
           eyebrow="SELECTED WORK"
-          title="Engineered Solutions &amp;"
-          highlightWord="Real-World Impact"
-          subtitle="Practical software systems, AI/ML models, and agricultural platforms built with clean architecture and empirical testing."
+          title="Projects &amp;"
+          highlightWord="Code"
+          subtitle="Software systems, AI/ML tools, and hackathon projects."
         />
 
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '24px'
           }}
         >

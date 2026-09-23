@@ -9,16 +9,16 @@ export default function AchievementsSection() {
       <span id="wins" style={{ position: 'absolute', top: '-100px', visibility: 'hidden' }} aria-hidden="true" />
       <div className="container">
         <SectionHeader
-          eyebrow="ACHIEVEMENTS &amp; HONORS"
-          title="Hackathon Victories &amp;"
-          highlightWord="National Grants"
-          subtitle="Proven track record in competitive hackathons, transforming ideas from problem statements into working prototypes under strict deadlines."
+          eyebrow="HACKATHONS &amp; HONORS"
+          title="Competitions &amp;"
+          highlightWord="Achievements"
+          subtitle="Building projects from ideas to working prototypes under deadlines."
         />
 
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '28px'
           }}
         >

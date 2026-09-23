@@ -9,15 +9,15 @@ export default function ExperienceSection() {
       <div className="container">
         <SectionHeader
           eyebrow="EXPERIENCE &amp; EDUCATION"
-          title="Industry Experience &amp;"
-          highlightWord="Academic Pedigree"
-          subtitle="Applied R&amp;D engineering experience combined with rigorous technical education at PICT Pune."
+          title="Experience &amp;"
+          highlightWord="Education"
+          subtitle="My professional work and academic background."
         />
 
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '24px'
           }}
         >
@@ -44,7 +44,7 @@ export default function ExperienceSection() {
             location="Pune, Maharashtra"
             highlights={[
               'Third-year undergraduate specializing in signal processing, communication systems, embedded hardware, and algorithmic computation.',
-              'Higher Secondary Certificate (HSC): 89.83% | Secondary School Certificate (SSC): 96.40%.',
+              'Higher Secondary Certificate (HSC): 89.83%, Secondary School Certificate (SSC): 96.40%.',
               'Active in competitive coding, technical hackathons, and hardware-software system integration.'
             ]}
           />

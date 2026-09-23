@@ -27,8 +27,8 @@ export default function AboutSection() {
       <div className="container">
         <SectionHeader
           eyebrow="ABOUT ME"
-          title="Engineering Practical Solutions for"
-          highlightWord="Real-World Impact"
+          title="Building Software and"
+          highlightWord="AI Systems"
           subtitle="Third-year ENTC undergraduate at PICT Pune with a focus on Software Development, AI/ML, and Data Structures & Algorithms."
         />
 
@@ -176,7 +176,7 @@ export default function AboutSection() {
                 className="mono-label"
                 style={{ fontSize: '11px', color: 'var(--text-main)', fontWeight: 700 }}
               >
-                VERIFIED BUILDER · CGPA {PROFILE.education.cgpa}
+                CGPA {PROFILE.education.cgpa}
               </span>
             </div>
 
@@ -380,17 +380,6 @@ export default function AboutSection() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             {/* Statement Header */}
             <div style={{ marginBottom: '4px' }}>
-              <div
-                style={{
-                  fontSize: '20px',
-                  fontWeight: 800,
-                  color: 'var(--text-main)',
-                  letterSpacing: '-0.01em',
-                  marginBottom: '4px'
-                }}
-              >
-                ARCHITECTING IMPACT THROUGH CODE &amp; SILICON
-              </div>
               <div
                 style={{
                   fontSize: '11px',
