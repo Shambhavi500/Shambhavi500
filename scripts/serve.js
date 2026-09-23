@@ -18,7 +18,9 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/' || reqPath === '' || reqPath === '/preview.html') reqPath = '/index.html';
-  const filePath = path.join(ROOT_DIR, reqPath);
+  const distPath = path.join(ROOT_DIR, 'dist', reqPath);
+  const rootPath = path.join(ROOT_DIR, reqPath);
+  const filePath = fs.existsSync(distPath) ? distPath : rootPath;
 
   if (!fs.existsSync(filePath)) {
     res.writeHead(404);
