@@ -1,722 +1,197 @@
-<!-- ============================================================= -->
-<!-- SHAMBHAVI PATIL | BARBIECORE ENGINEERING PORTFOLIO -->
-<!-- ============================================================= -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:E0218A,50:FF4F9A,100:FFB6D9&text=SHAMBHAVI%20PATIL&fontSize=44&fontColor=FFFFFF&fontAlignY=40&desc=SOFTWARE%20ENGINEERING%20%7C%20AI%2FML%20%7C%20INTELLIGENT%20SYSTEMS&descSize=16&descAlignY=63&descColor=FFFFFF&animation=fadeIn" width="100%">
-
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=19&duration=2600&pause=1000&color=E0218A&background=FFFFFF00&center=true&vCenter=true&width=700&lines=Software+Engineering;AI+%2F+ML+Systems;Computer+Vision;Reinforcement+Learning;Multi-Agent+Systems;DSA+%26+Algorithms">
-
-<br>
-
-<a href="https://shambhavi5631-portfolio.vercel.app/">
-<img src="https://img.shields.io/badge/PORTFOLIO-E0218A?style=for-the-badge&logo=vercel&logoColor=white">
-</a>
-<a href="https://github.com/Shambhavi500">
-<img src="https://img.shields.io/badge/GITHUB-FF4F9A?style=for-the-badge&logo=github&logoColor=white">
-</a>
-<a href="https://www.linkedin.com/in/shambhavi-patil05/">
-<img src="https://img.shields.io/badge/LINKEDIN-C71585?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-<a href="mailto:shambhavipatil5631@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-8B008B?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
+<img src="./assets/header.svg" alt="Shambhavi Patil: Software Development, AI/ML, Data Structures and Algorithms" width="100%">
 
 <br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=E0218A" width="90%">
+<a href="https://shambhavi5631-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-E0218A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/shambhavi-patil05/"><img src="https://img.shields.io/badge/LinkedIn-C71585?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:shambhavipatil5631@gmail.com"><img src="https://img.shields.io/badge/Email-FF4F9A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://github.com/Shambhavi500/Leetcode_Que"><img src="https://img.shields.io/badge/LeetCode-175%2B_solved-8B008B?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode: 175+ problems solved"></a>
 
 </div>
 
 <br>
 
+## 01 / PROFILE
 
-<!-- ============================================================= -->
-<!-- PROFILE -->
-<!-- ============================================================= -->
+- **Education:** B.Tech in Electronics & Telecommunication Engineering, PICT Pune (2024 – 2028) · CGPA 8.6
+- **Experience:** AI/ML Research & Development Intern, Mindstrix Technologies LLP (Mar 2026 – present)
+- **Focus:** Software development · AI/ML · Data structures & algorithms
+- **Based in:** Pune, Maharashtra, India
+
+## 02 / ABOUT
+
+<img src="./assets/shambhavi.png" align="right" width="160" alt="Illustrated portrait of Shambhavi Patil">
+
+I'm a third-year Electronics and Telecommunication Engineering student at PICT, Pune. My degree is in ENTC, but most of my time goes into software and AI: projects, hackathons, research and an internship on live AI/ML systems.
+
+My work spans AI for agriculture, Android banking-fraud analysis, satellite remote sensing, reinforcement learning and multi-agent systems. I like taking an idea from a problem statement to a working prototype, testing it against real constraints and improving it from feedback.
+
+> **BUILD · EXPERIMENT · DEBUG · IMPROVE**
+>
+> I learn by building, breaking, debugging and improving real systems.
+
+<br clear="right">
+
+## 03 / AT A GLANCE
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="25%"><h3>1st of 600+</h3>teams at TechFiesta 2026</td>
+    <td align="center" valign="top" width="25%"><h3>₹15 lakh</h3>government grant, Pune Agri International Hackathon</td>
+    <td align="center" valign="top" width="25%"><h3>175+</h3>LeetCode problems solved in C++ and SQL</td>
+    <td align="center" valign="top" width="25%"><h3>7</h3>hackathons, from agritech to fintech</td>
+  </tr>
+</table>
+
+## 04 / SELECTED WORK
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/KrishiSahAI">KrishiSahAI</a></h3>
+      <sub><b>WINNER · TECHFIESTA 2026</b></sub>
+      <p>AI farm advisory platform that gives Indian farmers crop recommendations and soil analysis.</p>
+      <code>Python</code> <code>AI/ML</code> <code>Firebase</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/KRISHI-PRABANDH">KRISHI-PRABANDH</a></h3>
+      <sub><b>RUNNER-UP · PUNE AGRI INTERNATIONAL HACKATHON</b></sub>
+      <p>Agricultural governance platform that verifies land records with OCR and satellite NDVI to speed up subsidy processing.</p>
+      <code>React</code> <code>FastAPI</code> <code>OCR</code> <code>NDVI</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/Sudarshan">Sudarshan</a></h3>
+      <sub><b>ANDROID SECURITY</b></sub>
+      <p>Finds fake banking apps, takes them apart in a Frida sandbox and tells the bank exactly what to do next.</p>
+      <code>Python</code> <code>Frida</code> <code>FastAPI</code> <code>React</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/Pramaan">Pramaan</a></h3>
+      <sub><b>CODE CUBICLE 6.0 · CLOUDINARY TRACK</b></sub>
+      <p>Tamper-evident evidence pipeline for field photos, with an explainable trust score for every image.</p>
+      <code>Next.js</code> <code>Cloudinary</code> <code>Supabase</code> <code>Gemini</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/Nivasa">Nivasa</a></h3>
+      <sub><b>STUDENT HOUSING</b></sub>
+      <p>Hostel and PG finder for Pune students that ranks stays by budget, commute and food on a real OpenStreetMap map.</p>
+      <code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Leaflet</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/AlphaTrader-RL">AlphaTrader-RL</a></h3>
+      <sub><b>META PYTORCH OPENENV CHALLENGE</b></sub>
+      <p>Reinforcement-learning trading environment on NSE stock data, with a 50-dimensional observation space.</p>
+      <code>Python</code> <code>Gymnasium</code> <code>Docker</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/Aira">Aira</a></h3>
+      <sub><b>FINTECH</b></sub>
+      <p>Revenue recovery system that diagnoses failed payments and runs the right recovery workflow for each case.</p>
+      <code>TypeScript</code> <code>Python</code> <code>Gemini</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Shambhavi500/Ovio">Ovio</a></h3>
+      <sub><b>AGENTIC CINEMA HACKATHON</b></sub>
+      <p>Multi-agent assistant that turns plain-language instructions into DaVinci Resolve timeline edits.</p>
+      <code>Python</code> <code>FastAPI</code> <code>Next.js</code> <code>Gemini</code>
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><b>More projects</b></summary>
+<br>
+
+| Project | What it is |
+|---|---|
+| [NDVI_satellite](https://github.com/Shambhavi500/NDVI_satellite) | Crop-health engine on Google Earth Engine that fuses six Sentinel-2 vegetation indices |
+| [Bhumi](https://github.com/Shambhavi500/Bhumi) | Explains satellite-flagged crop stress and seals the field evidence on-chain |
+| [FieldDX](https://github.com/Shambhavi500/FieldDX) | Differential diagnosis for farm fields from Sentinel-2 imagery |
+| [Nova](https://github.com/Shambhavi500/Nova) | Household commerce agent on Amazon Bedrock and MCP, built for AWS Agents for Humans |
+| [Smaran](https://github.com/Shambhavi500/Smaran) | Offline-first memory for edge fleets on Qdrant, built for Code Cubicle 6.0 |
+| [Kounter](https://github.com/Shambhavi500/Kounter) | Offline shop-audit concept for kirana stores on the iQOO 15, built for the iQOO Hackathon 2026 |
+| [Leetcode_Que](https://github.com/Shambhavi500/Leetcode_Que) | My LeetCode solutions, synced automatically and sorted by topic |
+
+</details>
+
+## 05 / RECOGNITION
+
+| Result | Event | Project |
+|---|---|---|
+| **Winner:** 1st of 600+ teams, ₹50,000 prize | TechFiesta 2026, Agriculture domain | [KrishiSahAI](https://github.com/Shambhavi500/KrishiSahAI) |
+| **National runner-up:** ₹15 lakh government development grant, presented to senior government officials | Pune Agri International Hackathon 2026 | [KRISHI-PRABANDH](https://github.com/Shambhavi500/KRISHI-PRABANDH) |
+
+**Also built for:** Code Cubicle 6.0 · iQOO Hackathon 2026 · AWS Agents for Humans · Meta PyTorch OpenEnv Challenge · Agentic Cinema (Devpost)
+
+## 06 / EXPERIENCE
+
+**AI/ML Research & Development Intern** · Mindstrix Technologies LLP<br>
+<sub>MAR 2026 – PRESENT · PUNE · REMOTE / HYBRID</sub>
+
+- Build modules for data processing, model training and system integration on live AI/ML products.
+- Prepare test data and run test cases across the software development lifecycle.
+- Work in an Agile team through technical reviews and cross-functional planning.
+
+**B.Tech, Electronics & Telecommunication Engineering** · Pune Institute of Computer Technology<br>
+<sub>2024 – 2028 · CGPA 8.6 · HSC 89.83% · SSC 96.40%</sub>
+
+**Beyond code:** Volunteer with NGO UPAY, teaching digital skills to underprivileged students · Zonal-level chess player
+
+## 07 / TECH STACK
+
+| Area | Tools |
+|---|---|
+| **Languages** | <img src="https://skillicons.dev/icons?i=cpp,c,py,java,js,ts,html,css&theme=light" alt="C++, C, Python, Java, JavaScript, TypeScript, HTML, CSS" height="40"> |
+| **Frameworks** | <img src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind,fastapi,nodejs&theme=light" alt="React, Next.js, Vite, Tailwind CSS, FastAPI, Node.js" height="40"> |
+| **AI / ML** | <img src="https://skillicons.dev/icons?i=sklearn,opencv&theme=light" alt="scikit-learn, OpenCV" height="40"><br><sub>Gymnasium · Google Earth Engine · Gemini API · multi-agent systems</sub> |
+| **Mobile & hardware** | <img src="https://skillicons.dev/icons?i=kotlin,androidstudio,arduino&theme=light" alt="Kotlin, Android Studio, Arduino" height="40"><br><sub>Embedded C · sensors · Proteus · Tinkercad</sub> |
+| **Tools & data** | <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,firebase,supabase,postgres,sqlite&theme=light" alt="Git, GitHub, Docker, VS Code, Firebase, Supabase, PostgreSQL, SQLite" height="40"> |
+
+## 08 / GITHUB ACTIVITY
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFF0F6&text=PROFILE&fontSize=28&fontColor=E0218A&fontAlign=50&stroke=FF4F9A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="12">
-
-<tr>
-
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/PICT%20PUNE-E0218A?style=for-the-badge">
-<br>
-<b>B.Tech ENTC</b> · 2024 – 2028
-<br>
-CGPA 8.6/10 · HSC 89.83% · SSC 96.40%
-
-</td>
-
-<td align="center" width="34%">
-
-<img src="https://img.shields.io/badge/MINDSTRIX-FF4F9A?style=for-the-badge">
-<br>
-<b>AI/ML Research & Development Intern</b>
-<br>
-Mar 2026 – Present · Pune, India
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/FOCUS-C71585?style=for-the-badge">
-<br>
-<b>Software Engineering</b>
-<br>
-AI/ML · Computer Vision · DSA & Algorithms
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFF0F6" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- ABOUT -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFD6E7&text=ABOUT%20ME&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="0">
-
-<tr>
-
-<td width="68%" valign="middle">
-
-<b>THIRD-YEAR ENTC STUDENT · PICT PUNE</b>
+<a href="https://github.com/Shambhavi500"><img src="https://ghchart.rshah.org/E0218A/Shambhavi500" alt="Shambhavi's GitHub contribution chart" width="100%"></a>
 
 <br><br>
-
-I am a third-year Electronics and Telecommunication Engineering student at PICT, Pune, with a strong interest in <b>Software Development, AI/ML, and Data Structures & Algorithms</b>.
-
-<br><br>
-
-Although my academic background is in ENTC, I have been actively exploring the software and AI space through <b>projects, hackathons, research, and hands-on learning</b>.
-
-<br><br>
-
-I enjoy building practical solutions that use technology to solve real-world problems. My work has included <b>AI-driven agricultural systems, computer vision, mobile applications, and cybersecurity-focused projects</b>.
-
-<br><br>
-
-My engineering philosophy is simple:
-
-<br>
-
-<font color="#E0218A" size="4">
-<b>BUILD · EXPERIMENT · DEBUG · IMPROVE</b>
-</font>
-
-</td>
-
-<td width="32%" align="center" valign="middle">
-
-<img src="./assets/shambhavi.png" width="230">
-
-<br>
-
-<font color="#C71585">
-<b>ENGINEER IN PROGRESS</b>
-</font>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="0">
-
-<tr>
-
-<td align="center">
-
-<font color="#C71585" size="4">
-<b>WHAT DRIVES ME</b>
-</font>
-
-<br><br>
-
-Taking an idea from a problem statement to a working prototype,
-testing it under real constraints, learning from feedback,
-and continuously making the system better.
-
-<br>
-
-<font color="#E0218A">
-<b>REAL SYSTEMS OVER JUST THEORY</b>
-</font>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFD6E7" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- RECOGNITION -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFF0F6&text=RECOGNITION&fontSize=28&fontColor=E0218A&fontAlign=50&stroke=FF4F9A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="10" cellspacing="0">
-
-<tr>
-<td width="50%" align="center"><img src="https://img.shields.io/badge/WINNER-E0218A?style=for-the-badge"></td>
-<td width="50%" align="center"><img src="https://img.shields.io/badge/RUNNER--UP-C71585?style=for-the-badge"></td>
-</tr>
-
-<tr>
-<td align="center"><b>TECHFIESTA 2026</b> · Agriculture Domain</td>
-<td align="center"><b>PUNE AGRI INTERNATIONAL HACKATHON</b></td>
-</tr>
-
-<tr>
-<td align="center"><font color="#E0218A"><b>600+ teams nationwide</b></font></td>
-<td align="center"><font color="#E0218A"><b>₹15L Development Grant</b></font></td>
-</tr>
-
-<tr>
-<td align="center">Built <b>KrishiSahAI</b></td>
-<td align="center">Built <b>KRISHI-PRABANDH</b></td>
-</tr>
-
-<tr>
-<td align="center">AI-powered agricultural advisory platform</td>
-<td align="center">AI governance using OCR and satellite NDVI validation</td>
-</tr>
-
-<tr>
-<td align="center">&nbsp;</td>
-<td align="center">Presented to senior government officials</td>
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFF0F6" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- FEATURED WORK -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFB6D9&text=FEATURED%20WORK&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="0">
-
-<tr>
-
-<td align="center">
-
-<img src="https://img.shields.io/badge/TECHFIESTA_2026_WINNER-E0218A?style=for-the-badge">
-
-<br>
-
-<h2>
-<a href="https://github.com/Shambhavi500/KrishiSahAI">
-KrishiSahAI
-</a>
-</h2>
-
-<b>AI AGRICULTURAL ADVISORY PLATFORM</b>
-<br>
-Crop recommendations · Soil telemetry · Rural decision support
-
-<br><br>
-
-<img src="https://img.shields.io/badge/PYTHON-E0218A?style=flat-square">
-<img src="https://img.shields.io/badge/AI%2FML-FF4F9A?style=flat-square">
-<img src="https://img.shields.io/badge/AGRITECH-C71585?style=flat-square">
-
-<br><br>
-
-<a href="https://github.com/Shambhavi500/KrishiSahAI">
-<img src="https://img.shields.io/badge/VIEW_REPOSITORY-E0218A?style=for-the-badge">
-</a>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFB6D9" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- PROJECT COLLECTION -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFD6E7&text=PROJECT%20COLLECTION&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="12">
-
-<tr>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/GOV--TECH-C71585?style=for-the-badge">
-
-<br>
-
-<h3>
-<a href="https://github.com/Shambhavi500/KRISHI-PRABANDH">
-KRISHI-PRABANDH
-</a>
-</h3>
-
-<b>AI AGRICULTURAL GOVERNANCE</b>
-<br>
-OCR fraud detection · Land records · Satellite NDVI validation
-
-<br><br>
-
-<code>Python</code> <code>OCR</code> <code>GIS</code> <code>NDVI</code>
-
-</td>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/QUANT_RL-E0218A?style=for-the-badge">
-
-<br>
-
-<h3>
-<a href="https://github.com/Shambhavi500/AlphaTrader-RL">
-AlphaTrader-RL
-</a>
-</h3>
-
-<b>REINFORCEMENT LEARNING</b>
-<br>
-Trading environment using 5+ years of NSE data with a 50-dimensional observation space.
-
-<br><br>
-
-<code>Python</code> <code>Gymnasium</code> <code>RL</code> <code>Docker</code>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/MULTI--AGENT-FF4F9A?style=for-the-badge">
-
-<br>
-
-<h3>
-<a href="https://github.com/Shambhavi500/Ovio">
-Ovio
-</a>
-</h3>
-
-<b>AI EDITING WORKFLOW ENGINE</b>
-<br>
-DaVinci Resolve assistant for automated timeline operations and editing workflows.
-
-<br><br>
-
-<code>Python</code> <code>AI Agents</code>
-
-</td>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/FINTECH-C71585?style=for-the-badge">
-
-<br>
-
-<h3>
-<a href="https://github.com/Shambhavi500/Aira">
-Aira
-</a>
-</h3>
-
-<b>AUTONOMOUS REVENUE RECOVERY</b>
-<br>
-Autonomous system for financial reconciliation and revenue recovery workflows.
-
-<br><br>
-
-<code>TypeScript</code> <code>AI</code>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/EARTH_OBSERVATION-E0218A?style=for-the-badge">
-
-<br>
-
-<h3>
-<a href="https://github.com/Shambhavi500/NDVI_satellite">
-NDVI_satellite
-</a>
-</h3>
-
-<b>SATELLITE INTELLIGENCE</b>
-<br>
-Vegetation index analysis using satellite spectral bands and Google Earth Engine.
-
-<br><br>
-
-<code>JavaScript</code> <code>GIS</code>
-
-</td>
-
-<td width="50%" align="center">
-
-<img src="https://img.shields.io/badge/EXPLORE_MORE-FF4F9A?style=for-the-badge">
-
-<br>
-
-<h3>MORE IN THE CODEBASE</h3>
-
-Experiments across software engineering, AI/ML, algorithms and systems.
-
-<br><br>
-
-<a href="https://github.com/Shambhavi500?tab=repositories">
-<img src="https://img.shields.io/badge/ALL_REPOSITORIES-E0218A?style=for-the-badge">
-</a>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFD6E7" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- EXPERIENCE -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFF0F6&text=EXPERIENCE&fontSize=28&fontColor=E0218A&fontAlign=50&stroke=FF4F9A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="16" cellspacing="0">
-
-<tr>
-
-<td align="center">
-
-<img src="https://img.shields.io/badge/MAR_2026%20--%20PRESENT-E0218A?style=for-the-badge">
-
-<br>
-
-<h3>Mindstrix Technologies LLP</h3>
-
-<b>AI/ML Research & Development Intern</b> · Pune, India
-
-<br><br>
-
-Working across AI/ML and software development, with exposure to data processing, model development, system integration and application engineering.
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFF0F6" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- TECH STACK -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFD6E7&text=TECH%20STACK&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
-
-<table width="94%" cellpadding="14" cellspacing="12">
-
-<tr>
-
-<td width="33%" align="center">
-
-<img src="https://img.shields.io/badge/LANGUAGES-E0218A?style=for-the-badge">
-<br><br>
-<img src="https://img.shields.io/badge/C%2B%2B-E0218A?style=flat-square&logo=c%2B%2B&logoColor=white">
-<img src="https://img.shields.io/badge/Python-FF4F9A?style=flat-square&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/Java-C71585?style=flat-square&logo=openjdk&logoColor=white">
-<br>
-<img src="https://img.shields.io/badge/JavaScript-E0218A?style=flat-square&logo=javascript&logoColor=white">
-<img src="https://img.shields.io/badge/TypeScript-FF4F9A?style=flat-square&logo=typescript&logoColor=white">
-<img src="https://img.shields.io/badge/C-C71585?style=flat-square&logo=c&logoColor=white">
-
-</td>
-
-<td width="33%" align="center">
-
-<img src="https://img.shields.io/badge/AI_%2F_ML-FF4F9A?style=for-the-badge">
-<br><br>
-<img src="https://img.shields.io/badge/Machine_Learning-E0218A?style=flat-square">
-<img src="https://img.shields.io/badge/Computer_Vision-FF4F9A?style=flat-square">
-<br>
-<img src="https://img.shields.io/badge/Reinforcement_Learning-C71585?style=flat-square">
-<img src="https://img.shields.io/badge/Multi--Agent_Systems-E0218A?style=flat-square">
-
-</td>
-
-<td width="33%" align="center">
-
-<img src="https://img.shields.io/badge/ENGINEERING-C71585?style=for-the-badge">
-<br><br>
-<img src="https://img.shields.io/badge/Git-E0218A?style=flat-square&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/GitHub-FF4F9A?style=flat-square&logo=github&logoColor=white">
-<img src="https://img.shields.io/badge/Docker-C71585?style=flat-square&logo=docker&logoColor=white">
-<br>
-<img src="https://img.shields.io/badge/Android-E0218A?style=flat-square&logo=android&logoColor=white">
-<img src="https://img.shields.io/badge/REST_APIs-FF4F9A?style=flat-square">
-<img src="https://img.shields.io/badge/GIS-C71585?style=flat-square">
-<img src="https://img.shields.io/badge/System_Development-E0218A?style=flat-square">
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFD6E7" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- GITHUB -->
-<!-- ============================================================= -->
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFB6D9&text=GITHUB%20ACTIVITY&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
 
 <a href="https://github.com/Shambhavi500">
-
-<img src="https://ghchart.rshah.org/E0218A/Shambhavi500"
-alt="GitHub contribution graph"
-width="92%">
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Shambhavi500&background=0D1117&border=30363D&stroke=E0218A&ring=FF4F9A&fire=FF4F9A&currStreakNum=FFB6D9&sideNums=FFB6D9&currStreakLabel=FF4F9A&sideLabels=C9A9B8&dates=8B949E">
+    <img src="https://streak-stats.demolab.com?user=Shambhavi500&background=FFF6FA&border=F6C1DA&stroke=FF4F9A&ring=E0218A&fire=E0218A&currStreakNum=C71585&sideNums=C71585&currStreakLabel=E0218A&sideLabels=8B6F7B&dates=8B6F7B" alt="GitHub streak stats">
+  </picture>
 </a>
-
-<br><br>
-
-<table width="92%" cellspacing="10">
-
-<tr>
-
-<td width="50%" align="center">
-
-<a href="https://github.com/Shambhavi500">
-
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Shambhavi500&show_icons=true&bg_color=FFF0F6&title_color=E0218A&text_color=3A2630&icon_color=FF4F9A&border_color=FFB6D9"
-alt="GitHub statistics">
-
-</a>
-
-</td>
-
-<td width="50%" align="center">
-
-<a href="https://github.com/Shambhavi500">
-
-<img src="https://streak-stats.demolab.com?user=Shambhavi500&background=FFF0F6&border=FFB6D9&stroke=FF4F9A&ring=E0218A&fire=E0218A&currStreakNum=C71585&sideNums=C71585&currStreakLabel=E0218A&sideLabels=8B6F7B&dates=8B6F7B"
-alt="GitHub streak">
-
-</a>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<a href="https://github.com/Shambhavi500">
-
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Shambhavi500&layout=compact&bg_color=FFF0F6&title_color=E0218A&text_color=3A2630&border_color=FFB6D9"
-alt="Top languages">
-
-</a>
-
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=Shambhavi500&color=E0218A&style=for-the-badge&label=PROFILE+VIEWS">
 
 </div>
 
-<br>
+## 09 / PROBLEM SOLVING
 
+175+ LeetCode problems solved, mostly arrays, math and hash tables in C++ and database problems in MySQL. Every accepted submission is pushed to [Leetcode_Que](https://github.com/Shambhavi500/Leetcode_Que) automatically and sorted by topic.
 
-<!-- ============================================================= -->
-<!-- CURRENT DIRECTION -->
-<!-- ============================================================= -->
+## 10 / STATEMENT
 
-<div align="center">
+Right now I'm strengthening my software, AI/ML and DSA fundamentals, learning from industry work at Mindstrix, and building projects for real users: farmers, students and the analysts who fight banking fraud.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFF0F6&text=CURRENT%20DIRECTION&fontSize=28&fontColor=E0218A&fontAlign=50&stroke=FF4F9A&strokeWidth=2" width="94%">
+**Building today for the engineer I want to become.**
 
-<br>
-
-<table width="94%" cellpadding="16">
-
-<tr>
-
-<td align="center">
-
-<b>SOFTWARE</b>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<b>AI / ML</b>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<b>DSA</b>
-&nbsp;&nbsp;·&nbsp;&nbsp;
-<b>REAL-WORLD SYSTEMS</b>
-
-<br><br>
-
-Currently strengthening my software, AI/ML and DSA fundamentals,
-gaining industry experience through internships, and building
-technically strong projects with real-world impact.
-
-<br>
-
-<font color="#E0218A">
-<b>BUILDING TODAY FOR THE ENGINEER I WANT TO BECOME.</b>
-</font>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&height=8&color=FFF0F6" width="94%">
-
-</div>
-
-<br>
-
-
-<!-- ============================================================= -->
-<!-- CONNECT -->
-<!-- ============================================================= -->
+## 11 / CONNECT
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&height=65&color=FFD6E7&text=LET'S%20CONNECT&fontSize=28&fontColor=C71585&fontAlign=50&stroke=E0218A&strokeWidth=2" width="94%">
-
-<br>
-
-<a href="https://shambhavi5631-portfolio.vercel.app/">
-<img src="https://img.shields.io/badge/PORTFOLIO-E0218A?style=for-the-badge&logo=vercel&logoColor=white">
-</a>
-
-<a href="https://github.com/Shambhavi500">
-<img src="https://img.shields.io/badge/GITHUB-FF4F9A?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<a href="https://www.linkedin.com/in/shambhavi-patil05/">
-<img src="https://img.shields.io/badge/LINKEDIN-C71585?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-
-<a href="mailto:shambhavipatil5631@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-8B008B?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
+<a href="https://shambhavi5631-portfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-E0218A?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/shambhavi-patil05/"><img src="https://img.shields.io/badge/LinkedIn-C71585?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:shambhavipatil5631@gmail.com"><img src="https://img.shields.io/badge/Email-FF4F9A?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 
 <br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:FFF0F6,50:FFB6D9,100:E0218A" width="100%">
+<sub>Pune, India</sub>
 
 </div>

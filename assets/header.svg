@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="title desc">
+  <title id="title">Shambhavi Patil</title>
+  <desc id="desc">Software Development, AI/ML, Data Structures and Algorithms. B.Tech ENTC at PICT Pune, AI/ML R&amp;D Intern at Mindstrix Technologies.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6FA"/>
+      <stop offset="1" stop-color="#FFE1EE"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E0218A"/>
+      <stop offset="1" stop-color="#FF8DC2"/>
+    </linearGradient>
+    <style>
+      .eyebrow { font: 700 15px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; letter-spacing: 3px; fill: #C71585; }
+      .name { font: 400 76px Georgia, 'Times New Roman', serif; fill: #3A2630; }
+      .sub { font: 600 25px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5A3D4A; }
+      .meta { font: 400 19px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #8B6F7B; }
+      .mono { font: 400 92px Georgia, 'Times New Roman', serif; fill: #FFFFFF; }
+      .float { animation: float 6s ease-in-out infinite; }
+      .float2 { animation: float 7s ease-in-out infinite reverse; }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      @media (prefers-reduced-motion: reduce) { .float, .float2 { animation: none; } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="318" rx="28" fill="url(#card)" stroke="#F6C1DA" stroke-width="2"/>
+
+  <text x="72" y="92" class="eyebrow">PICT PUNE · B.TECH ENTC '28 · PUNE, INDIA</text>
+  <text x="68" y="172" class="name">Shambhavi Patil</text>
+  <rect x="72" y="194" width="88" height="5" rx="2.5" fill="#E0218A"/>
+  <text x="72" y="240" class="sub">Software Development · AI/ML · Data Structures &amp; Algorithms</text>
+  <text x="72" y="274" class="meta">AI/ML R&amp;D Intern at Mindstrix Technologies · TechFiesta 2026 Winner</text>
+
+  <g class="float2">
+    <circle cx="905" cy="74" r="7" fill="#FFB6D9"/>
+    <circle cx="1132" cy="262" r="10" fill="#FFB6D9"/>
+    <path d="M1128 62 l5 13 l13 5 l-13 5 l-5 13 l-5 -13 l-13 -5 l13 -5 z" fill="#E0218A"/>
+  </g>
+  <circle cx="1012" cy="162" r="128" fill="none" stroke="#F6C1DA" stroke-width="2" stroke-dasharray="4 10"/>
+  <g class="float">
+    <circle cx="1012" cy="162" r="98" fill="url(#badge)"/>
+    <text x="1012" y="194" text-anchor="middle" class="mono">SP</text>
+  </g>
+</svg>
